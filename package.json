@@ -16,7 +16,7 @@
             },
             {
                 "name": "Coffee",
-                "url": "./src/dark-coffee-new.css",
+                "url": "./src/dark-coffee.css",
                 "description": "Coffee",
                 "mode": "dark"
             },

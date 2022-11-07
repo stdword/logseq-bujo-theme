@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* logseq non-color vars */
+
+:root {
+    --ls-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    /* --ls-font-family: Inter; */
+
+    --ls-main-content-max-width: 900px; /*810px;*/
+  /*--ls-main-content-max-width-wide: 100%*/
+
+    --ls-tag-text-opacity: 0.6; /*0.8;*/
+    --ls-tag-text-hover-opacity: 0.8; /*1;*/
+
+/*
+    --ls-right-sidebar-width: 40%;
+    --ls-left-sidebar-nav-btn-size: 38px;
+    --ls-left-sidebar-sm-width: 70%;
+    --ls-left-sidebar-width: 246px;
+
+    --ls-border-radius-low: 4px;
+    --ls-border-radius-medium: 8px;
+
+    --ls-draggable-handle-height: 30px;
+    --ls-headbar-height: 3rem;
+    --ls-headbar-inner-top-padding: 0px;
+    --ls-scrollbar-width: 6px;
+
+    --ls-page-text-size: 1em;
+    --ls-page-title-size: 36px;
+
+    --ls-z-index-level-0: 0;
+    --ls-z-index-level-1: 9;
+    --ls-z-index-level-2: 99;
+    --ls-z-index-level-3: 999;
+    --ls-z-index-level-4: 9999;
+    --ls-z-index-level-5: 99999;
+*/
+}
+
+#app-container {
+    background-image: radial-gradient(var(--bujo-foreground-color1) 5%, var(--bujo-background-color2) 5%);
+    background-position: 0 0;
+    background-size: 25px 25px;
+}
+
+::selection {
+    background-color: var(--ls-selection-background-color);
+    color: var(--ls-selection-text-color);
+}
+
+
+/* ------------- */
+/* SIDEBARS      */
+/* ------------- */
+
+/* right sidebar */
+
+.cp__right-sidebar .sidebar-item {
+    padding: 10px 20px 10px 6px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+
+/* left sidebar */
+
+#left-sidebar .ui__icon {
+    color: var(--ls-secondary-text-color);
+}
+
+
+/* menu */
+
+.menu-links-wrapper .menu-link {
+    opacity: 1 !important;
+}
+
+.menu-links-wrapper .ui__icon {
+    color: var(--ls-secondary-text-color);
+}
+
+.menu-links-wrapper .title-wrap {
+    color: var(--ls-primary-text-color);
+}
+
+
+/* search */
+
+.ls-search a.menu-link {
+    color: var(--ls-primary-text-color);
+}
+
+.ls-search a.menu-link.chosen,
+.ls-search a.menu-link:hover {
+    color: var(--ls-secondary-text-color);
+}
+
+.ls-search .search-item svg,
+.ls-search .search-result .type-icon,
+.ls-search .search-result .type-icon::before {
+    color: var(--ls-secondary-text-color);
+    background: none;
+    border: none;
+}
+
+
+/* ---- */
+/* MAIN */
+/* ---- */
+
+.cp__sidebar-main-layout {
+    background: none;
+}
+
+
+/* blocks with background */
+
+.with-bg-color {
+    border-radius: 3px;
+    padding: 5px 6px;
+}
+
+.with-bg-color:is(h1, h2, h3, h4, h5, h6) {
+    border-radius: 5px;
+    padding: 5px 6px;
+}
+
+
+/* text decorations */
+
+mark {
+    background: var(--ls-text-hightlight-color);
+    color: var(--ls-secondary-text-color);
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+
+
+b, strong, i {
+    color: var(--ls-secondary-text-color); /* orig #baa695 */
+}
+
+
+/* page title */
+
+h1.title {
+    font-weight: 700;
+}
+
+
+/* properties */
+
+.page-property-key:hover {
+    color: var(--ls-tertiary-text-color);
+    background: var(--ls-page-properties-background-color);
+}
+
+
+/* page link */
+
+.page-reference .bracket {
+    opacity: .5;
+}
+
+.page-reference:hover {
+    background: rgba(255, 255, 255, .05);
+}
+
+.ls-block.selected .page-reference:hover,
+mark .page-reference:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+
+/* block references */
+
+.block-ref {
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-style: italic;
+
+    background: rgba(var(--bujo-box-color5_rgb), .5);
+    color: var(--ls-secondary-text-color);
+    border-bottom-color: rgba(var(--bujo-box-color5_rgb), .5);
+}
+
+
+/* linked references filter */
+
+.fade-link {
+    color:  var(--ls-primary-text-color);
+    opacity: 0.8;
+}
+.fade-link:hover {
+    color:  var(--ls-primary-text-color);
+}
+
+
+/* custom query first line */
+
+.custom-query-title .title-text {
+    color:  var(--ls-primary-text-color);
+    opacity: 0.7;
+}
+
+.custom-query-title .result-count {
+    color:  var(--ls-primary-text-color);
+}
+
+.custom-query-title a {
+    color:  var(--ls-primary-text-color);
+    opacity: 0.8;
+}
+
+
+/* custom query second line */
+
+/* "Table view" text label: there is no specifyed class */
+.custom-query .text-sm {
+    color:  var(--ls-primary-text-color);
+    opacity: 0.7;
+}
+
+.table-query-properties {
+    opacity: 0.7;
+}
+
+
+/* task */
+
+.form-checkbox {
+    border-radius: 2px;
+    z-index: var(--ls-z-index-level-1);
+}
+
+.marker-switch {
+    border-radius: 2px;
+
+    opacity: 1;
+    padding: 0;
+    margin: 0 5px 0 2px;
+
+    margin-left: -23px;
+    padding-left: 24px;
+    padding-right: 14px;
+}
+
+.marker-switch, .block-ref .marker-switch {
+    color: var(--ls-marker-text-color);
+    background: var(--ls-marker-text-bg-color);
+}
+
+.block-ref .marker-switch {
+    opacity: 0.7;
+}
+
+.marker-switch:hover, .block-ref .marker-switch:hover {
+    color: var(--ls-marker-text-color);
+    background: var(--ls-marker-text-bg-hover-color);
+}
+
+
+/* ---- */
+/* MISC */
+/* ---- */
+
+/* settings */
+
+.form-input {
+    background-color: var(--ls-primary-background-color) !important;
+}
+
+
+/* button */
+
+.ui__button {
+    background: var(--ls-link-text-color);
+    color: var(--bujo-foreground-color6);
+}
+.ui__button:hover {
+    background: var(--ls-link-text-hover-color);
+}
+
+
+/* toggle */
+
+.cp__settings-inner .panel-wrap span[role=checkbox]:hover {
+    opacity: 1;
+}
+
+.ui__toggle [aria-checked="false"] {
+    background-color: var(--ls-quaternary-background-color);
+}
+.ui__toggle [aria-checked="false"]:hover {
+    background-color: var(--bujo-foreground-color1);
+}
+.ui__toggle [aria-checked="false"] .switcher {
+    background-color: var(--bujo-foreground-color3);
+}
+.ui__toggle [aria-checked="false"]:hover .switcher {
+    background-color: var(--bujo-foreground-color3);
+}
+
+.ui__toggle [aria-checked="true"] {
+    background-color: var(--ls-link-text-color);
+}
+.ui__toggle [aria-checked="true"]:hover {
+    background-color: var(--ls-link-text-hover-color);
+}
+.ui__toggle [aria-checked="true"] .switcher {
+    background-color: var(--bujo-foreground-color5);
+}
+.ui__toggle [aria-checked="true"]:hover .switcher {
+    background-color: var(--bujo-foreground-color5);
+}

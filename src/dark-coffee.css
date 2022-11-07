@@ -1,258 +1,146 @@
-@import './main.css';
+@import './base.css';
 
-/***************************************************************
-****************************************************************
-****************************************************************
-************************ DARK - COFFEE *************************
-****************************************************************
-****************************************************************
-***************************************************************/
 
 .dark-theme, html[data-theme=dark] {
-    --ls-primary-background-color: #211c1b;
-    --ls-secondary-background-color: #27211f;
-    --ls-tertiary-background-color: #2b2524;
-    --ls-quaternary-background-color: #362f2e;
+    /* theme palette */
+    --bujo-highlight-color1: #1D4544;
+    --bujo-highlight-color2: #196755;
+    --bujo-highlight-color3: #4B9A7D;
+    --bujo-highlight-color4: #79B990;
+    --bujo-highlight-color5: #93CEA9;
 
-    --ls-active-primary-color: #c28eaa;
-    --ls-active-secondary-color: #e8d0dc;
+    --bujo-accent-color1: #B9543B;
+    --bujo-accent-color2: #DD745B;
+    --bujo-accent-color3: #EB8E77;
 
-    --ls-primary-text-color: #9e836d;
-    --ls-secondary-text-color: #e0d8cb; /*#dbd7d5;*/
+    --bujo-background-color1: #1D1614;
+    --bujo-background-color2: #211C1B;
+    --bujo-background-color3: #27211F;
+    --bujo-background-color4: #2B2524;
+    --bujo-background-color5: #362F2E;
 
-    --ls-table-tr-even-background-color: var(--ls-quaternary-background-color);
-    --ls-page-properties-background-color: var(--ls-secondary-background-color);
+    --bujo-box-color1_rgb: 60, 38, 41; /* #3C2629; */
+    --bujo-box-color1: rgb(var(--bujo-box-color1_rgb));
+    --bujo-box-color2: #52373A;
+    --bujo-box-color3: #5D3E41;
+    --bujo-box-color4: #935C62;
+    --bujo-box-color5_rgb: 121, 94, 110; /* #795E6E; */
+    --bujo-box-color5: rgb(var(--bujo-box-color5_rgb));
+
+    --bujo-foreground-color1: #423834;
+    --bujo-foreground-color2: #61554D;
+    --bujo-foreground-color3: #9E836D;
+    --bujo-foreground-color4: #C4B2A6;
+    --bujo-foreground-color5: #E0D8CB;
+    --bujo-foreground-color6: #ECE7DF;
+
+
+    /* logseq colors */
+    --ls-primary-background-color: var(--bujo-background-color2);
+    --ls-secondary-background-color: var(--bujo-background-color3);
+    --ls-tertiary-background-color: var(--bujo-background-color4);
+    --ls-quaternary-background-color: var(--bujo-background-color5);
+
+    --ls-table-tr-even-background-color: var(--bujo-background-color4);
+
+    --ls-active-primary-color: var(--bujo-foreground-color2);
+    --ls-active-secondary-color: var(--bujo-foreground-color3);
+
+    --ls-primary-text-color: var(--bujo-foreground-color3);
+    --ls-secondary-text-color: var(--bujo-foreground-color4);
+    --ls-tertiary-text-color: var(--bujo-foreground-color5); /* new var */
+    --ls-text-hightlight-color: var(--bujo-highlight-color2); /* new var */
+
+    --ls-page-properties-background-color: var(--bujo-background-color3);
     --ls-block-properties-background-color: var(--ls-page-properties-background-color);
-    --ls-block-ref-link-text-color: #b9543b;
-    --ls-search-background-color: var(--ls-primary-background-color);
-    --ls-border-color: #473134;
-    --ls-guideline-color: #2f2928;
+
+    --ls-block-ref-link-text-color: red;
+    --ls-search-background-color: var(--bujo-background-color2);
+
+    --ls-border-color: var(--bujo-box-color1); /* table header border */
+    --ls-secondary-border-color: red;
+    --ls-tertiary-border-color: red;
+
+    --ls-guideline-color: var(--ls-quaternary-background-color);
     --ls-menu-hover-color: var(--ls-secondary-background-color);
+
     --ls-title-text-color: var(--ls-primary-text-color);
-    --ls-link-text-color: #dd745b;
-    --ls-link-text-hover-color: #eb8e77;
-    --ls-link-ref-text-color: #79b990;
-    --ls-link-ref-text-hover-color: #93cea9;
+    --ls-link-text-color: var(--bujo-accent-color2);
+    --ls-link-text-hover-color: var(--bujo-accent-color3);
+    --ls-link-ref-text-color: var(--bujo-highlight-color4);
+    --ls-link-ref-text-hover-color: var(--bujo-highlight-color5);
+    --ls-cloze-text-color: var(--bujo-highlight-color5);
+
     --ls-tag-text-color: var(--ls-link-text-color);
     --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+
+    --ls-marker-text-color: var(--ls-secondary-text-color);
+    --ls-marker-text-bg-color: var(--bujo-box-color2);
+    --ls-marker-text-bg-hover-color: var(--bujo-box-color3);
+
     --ls-slide-background-color: var(--ls-primary-background-color);
-    --ls-block-bullet-border-color: #61554d;
-    --ls-block-bullet-color: #423834;
-    --ls-block-highlight-color: #064645;
-    --ls-selection-background-color: #AB3641;
-    --ls-page-checkbox-color: #935c62;
-    --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+
+    --ls-block-bullet-border-color: var(--bujo-foreground-color2);
+    --ls-block-bullet-color: var(--bujo-foreground-color1);
+    --ls-block-highlight-color: var(--bujo-highlight-color1);
+
+    --ls-selection-background-color: var(--bujo-highlight-color3);
+    --ls-selection-text-color: var(--bujo-foreground-color4);
+
+    --ls-page-checkbox-color: var(--bujo-box-color4);
+    --ls-page-checkbox-border-color: red;
     --ls-page-blockquote-color: var(--ls-primary-text-color);
-    --ls-page-blockquote-bg-color: #1d1614;
-    --ls-page-blockquote-border-color: #3c2629;
+    --ls-page-blockquote-bg-color: var(--bujo-background-color1);
+    --ls-page-blockquote-border-color: var(--bujo-box-color1);
     --ls-page-inline-code-color: var(--ls-primary-text-color);
-    --ls-page-inline-code-bg-color: #1b1715;
+    --ls-page-inline-code-bg-color: var(--bujo-background-color1);
+
     --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.05);
-    --ls-scrollbar-background-color: rgba(67, 30, 41, 0.9);
+    --ls-scrollbar-background-color: rgba(var(--bujo-box-color1_rgb), 0.9);
     --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
-    --ls-head-text-color: var(--ls-primary-text-color);
-    --ls-icon-color: var(--ls-quaternary-background-color);
-    --ls-search-icon-color: var(--ls-quaternary-background-color);
-    --ls-a-chosen-bg: var(--ls-secondary-background-color);
-    --ls-right-sidebar-code-bg-color: #3c041f;
+
+    --ls-head-text-color: var(--ls-primary-text-color); /*var(--ls-link-text-color);*/
+    --ls-icon-color: var(--ls-link-text-color);
+    --ls-search-icon-color: var(--ls-link-text-color);
+    --ls-a-chosen-bg: var(--bujo-background-color3);
+
+    --ls-right-sidebar-code-bg-color: red;
+    --ls-header-button-background: var(--ls-primary-text-color);
+    /* ↑↑ background var uses as a text color in logseq css */
+
+    --ls-focus-ring-color: rgba(255, 0, 0, .5);
+    --ls-pie-fg-color: red;
+    --ls-pie-bg-color: red;
+
     --color-level-1: var(--ls-secondary-background-color);
     --color-level-2: var(--ls-tertiary-background-color);
     --color-level-3: var(--ls-quaternary-background-color);
-    --color-level-4: #632f46;
-    --color-level-5: #865673;
-    --color-level-6: #9e6889;
+    --color-level-4: var(--bujo-foreground-color1);
+    --color-level-5: var(--bujo-foreground-color2);
+    --color-level-6: var(--bujo-foreground-color3);
 
-    --ls-marker-text-color: #000;
-    --ls-marker-text-bg-color: #52373a;
-    --ls-marker-text-bg-hover-color: #5d3e41;
-}
+    --ls-highlight-color-gray: var(--color-gray-700);
+    --ls-highlight-color-red: var(--color-red-900);
+    --ls-highlight-color-yellow: var(--color-yellow-800);
+    --ls-highlight-color-green: var(--color-green-900);
+    --ls-highlight-color-blue: var(--color-blue-900);
+    --ls-highlight-color-purple: var(--color-purple-900);
+    --ls-highlight-color-pink: var(--color-pink-900);
 
+/*
+    --ls-success-color: var(--color-green-500);
+    --ls-warning-color: var(--color-orange-500);
+    --ls-error-color: var(--color-red-500);
 
-/***************************************************************
-***************************** TOP ******************************
-***************************************************************/
+    --ls-success-text-color: var(--color-green-100);
+    --ls-success-background-color: var(--color-green-900);
+    --ls-warning-text-color: var(--color-yellow-100);
+    --ls-warning-background-color: var(--color-yellow-900);
+    --ls-error-text-color: var(--color-red-100);
+    --ls-error-background-color: var(--color-red-900);
 
-
-/* gradient on top for aesthetics */
-
-.dark-theme .cp__sidebar-main-content:before {
-    background: linear-gradient(to bottom, rgba(33, 28, 27, .7) 0%, rgba(33, 28, 27, 0) 100%);
-}
-
-.dark-theme .cp__sidebar-main-content:after {
-    background: linear-gradient(to top, rgba(33, 28, 27, .7) 0%, rgba(33, 28, 27, 0) 100%);
-}
-
-
-/* < > buttons */
-
-.dark-theme a[title="Go Back"],
-.dark-theme a[title="Go Forward"] {
-    background: var(--ls-primary-background-color);
-}
-
-.dark-theme a[title="Go Back"]:hover,
-.dark-theme a[title="Go Forward"]:hover {
-    background: var(--ls-secondary-background-color);
-}
-
-
-/* search-field */
-
-.dark-theme #search_field {
-    background: linear-gradient(to right, rgba(39, 33, 33, 1) 0%, rgba(39, 33, 33, .7) 200px, rgba(39, 33, 33, 0) 100%);
-    transition: background .3s;
-}
-
-.dark-theme #search_field:focus {
-    box-shadow: 0px 0px 20px 0px rgba(27, 22, 22, 0.8);
-}
-
-
-/***************************************************************
-************************** MAIN AREA ***************************
-***************************************************************/
-
-
-/* title menu ... */
-
-.dark-theme [title="More options"] svg {
-    color: #ab6341;
-}
-
-
-/* text mark/highlight */
-
-.dark-theme mark {
-    background: #196755;
-    color: var(--ls-secondary-text-color);
-}
-
-
-/* bold and italics */
-
-.dark-theme b,
-.dark-theme strong,
-.dark-theme i {
-    color: #baa695;
-}
-
-
-/* page reference */
-
-.dark-theme .page-reference:hover {
-    background: var(--ls-tertiary-background-color);
-}
-
-.dark-theme .references-blocks .page-reference:hover {
-    background: var(--ls-tertiary-background-color);
-}
-
-.dark-theme .page-reference .text-gray-500 {
-    /* page brackets */
-    opacity: .5;
-}
-
-
-/* block reference */
-
-.dark-theme .block-ref {
-    background: rgba(121, 94, 110, .5);
-    color: var(--ls-secondary-text-color);
-    border-bottom-color: rgba(121, 85, 106, .5);
-}
-
-
-/* selected block or higlighted page link */
-
-.dark-theme .ls-block.selected .page-reference:hover,
-.dark-theme mark .page-reference:hover {
-    background: #145042;
-}
-
-.dark-theme .ls-block.selected .page-ref,
-.dark-theme mark .page-ref {
-    color: #fff;
-}
-
-.dark-theme .ls-block.selected .page-ref:hover,
-.dark-theme mark .page-ref:hover {
-    color: #f7f7e8;
-}
-
-
-/* checkbox */
-
-.dark-theme .form-input {
-    background-color: var(--ls-primary-background-color) !important;
-}
-
-.dark-theme .marker-switch, .dark-theme .block-ref .marker-switch {
-    color: var(--ls-marker-text-color);
-    background: var(--ls-marker-text-bg-color);
-}
-
-.dark-theme .marker-switch:hover, .dark-theme .block-ref .marker-switch:hover {
-    background: var(--ls-marker-text-bg-hover-color);
-}
-
-.dark-theme .block-ref .marker-switch {
-    opacity: 0.7;
-    color: var(--ls-secondary-text-color);
-}
-
-.dark-theme .page-property-key:hover {
-    color: var(--ls-link-text-color);
-    background: var(--ls-block-properties-background-hover-color);
-}
-
-
-/***************************************************************
-************************ RIGHT SIDEBAR *************************
-***************************************************************/
-
-.dark-theme .cp__right-sidebar.is-open {
-    background: rgba(97, 67, 55, .05);
-}
-
-.dark-theme .cp__right-sidebar .sidebar-item .close svg {
-    color: #776857;
-}
-
-
-/***************************************************************
-**************************** MISC ******************************
-***************************************************************/
-
-
-/* dotted bg */
-
-.dark-theme #app-container {
-    background-image: radial-gradient(#423019 5%, #211c1b 5%);
-    background-position: 0 0;
-    background-size: 25px 25px;
-}
-
-.dark-theme textarea {
-    caret-color: #a79486;
-}
-
-.dark-theme ::selection {
-    background: #69b6a7;
-    color: #c4b2a6;
-}
-
-
-/* settings switcher */
-
-.dark-theme .bg-indigo-600 {
-    background: #dd745b;
-}
-
-.dark-theme .bg-indigo-600:hover {
-    background: #eb8e77;
-}
-
-.dark-theme .query-title {
-    opacity: 0.7
+    --ls-color-file-sync-error: var(--ls-error-color);
+    --ls-color-file-sync-pending: var(--color-yellow-500);
+    --ls-color-file-sync-idle: var(--ls-success-color);
+*/
 }
