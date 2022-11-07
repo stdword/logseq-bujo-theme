@@ -1,3 +1,5 @@
+@import './main.css';
+
 /***************************************************************
 ****************************************************************
 ****************************************************************
@@ -30,6 +32,7 @@ html[data-theme=light] {
     --ls-page-blockquote-border-color: #799bbc;
     --ls-page-checkbox-color: #9dbbd8;
     --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
+    --ls-block-highlight-color: #ff0000;
     --color-level-1: var(--ls-secondary-background-color);
     --color-level-2: var(--ls-tertiary-background-color);
 }

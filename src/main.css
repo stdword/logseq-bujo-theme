@@ -214,14 +214,6 @@ h1.title {
 ************************ RIGHT SIDEBAR *************************
 ***************************************************************/
 
-.cp__sidebar-layout.is-right-sidebar-open .cp__sidebar-main-layout {
-    margin-right: 30%;
-}
-
-.cp__right-sidebar.is-open {
-    width: 30%;
-}
-
 .cp__right-sidebar .sidebar-item {
     padding: 10px 20px 10px 2px;
     border: none;

@@ -1,3 +1,5 @@
+@import './main.css';
+
 /***************************************************************
 ****************************************************************
 ****************************************************************
@@ -6,24 +8,27 @@
 ****************************************************************
 ***************************************************************/
 
-.dark-theme,
-html[data-theme=dark] {
+.dark-theme, html[data-theme=dark] {
     --ls-primary-background-color: #211c1b;
     --ls-secondary-background-color: #27211f;
     --ls-tertiary-background-color: #2b2524;
     --ls-quaternary-background-color: #362f2e;
-    --ls-table-tr-even-background-color: #362f2e;
+
     --ls-active-primary-color: #c28eaa;
     --ls-active-secondary-color: #e8d0dc;
-    --ls-block-properties-background-color: var(--ls-secondary-background-color);
+
+    --ls-primary-text-color: #9e836d;
+    --ls-secondary-text-color: #e0d8cb; /*#dbd7d5;*/
+
+    --ls-table-tr-even-background-color: var(--ls-quaternary-background-color);
+    --ls-page-properties-background-color: var(--ls-secondary-background-color);
+    --ls-block-properties-background-color: var(--ls-page-properties-background-color);
     --ls-block-ref-link-text-color: #b9543b;
     --ls-search-background-color: var(--ls-primary-background-color);
     --ls-border-color: #473134;
     --ls-guideline-color: #2f2928;
     --ls-menu-hover-color: var(--ls-secondary-background-color);
-    --ls-primary-text-color: #9e836d;
-    --ls-secondary-text-color: #dbd7d5;
-    --ls-title-text-color: #9e836d;
+    --ls-title-text-color: var(--ls-primary-text-color);
     --ls-link-text-color: #dd745b;
     --ls-link-text-hover-color: #eb8e77;
     --ls-link-ref-text-color: #79b990;
@@ -45,7 +50,7 @@ html[data-theme=dark] {
     --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.05);
     --ls-scrollbar-background-color: rgba(67, 30, 41, 0.9);
     --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
-    --ls-head-text-color: #9e836d;
+    --ls-head-text-color: var(--ls-primary-text-color);
     --ls-icon-color: var(--ls-quaternary-background-color);
     --ls-search-icon-color: var(--ls-quaternary-background-color);
     --ls-a-chosen-bg: var(--ls-secondary-background-color);
@@ -56,6 +61,10 @@ html[data-theme=dark] {
     --color-level-4: #632f46;
     --color-level-5: #865673;
     --color-level-6: #9e6889;
+
+    --ls-marker-text-color: #000;
+    --ls-marker-text-bg-color: #52373a;
+    --ls-marker-text-bg-hover-color: #5d3e41;
 }
 
 
@@ -116,7 +125,7 @@ html[data-theme=dark] {
 
 .dark-theme mark {
     background: #196755;
-    color: #e0d3c9;
+    color: var(--ls-secondary-text-color);
 }
 
 
@@ -149,7 +158,7 @@ html[data-theme=dark] {
 
 .dark-theme .block-ref {
     background: rgba(121, 94, 110, .5);
-    color: #e0d8cb;
+    color: var(--ls-secondary-text-color);
     border-bottom-color: rgba(121, 85, 106, .5);
 }
 
@@ -174,13 +183,27 @@ html[data-theme=dark] {
 
 /* checkbox */
 
-.dark-theme .marker-switch {
-    color: #000;
-    background: #52373a;
+.dark-theme .form-input {
+    background-color: var(--ls-primary-background-color) !important;
 }
 
-.dark-theme .marker-switch:hover {
-    background: #5d3e41;
+.dark-theme .marker-switch, .dark-theme .block-ref .marker-switch {
+    color: var(--ls-marker-text-color);
+    background: var(--ls-marker-text-bg-color);
+}
+
+.dark-theme .marker-switch:hover, .dark-theme .block-ref .marker-switch:hover {
+    background: var(--ls-marker-text-bg-hover-color);
+}
+
+.dark-theme .block-ref .marker-switch {
+    opacity: 0.7;
+    color: var(--ls-secondary-text-color);
+}
+
+.dark-theme .page-property-key:hover {
+    color: var(--ls-link-text-color);
+    background: var(--ls-block-properties-background-hover-color);
 }
 
 
@@ -228,4 +251,8 @@ html[data-theme=dark] {
 
 .dark-theme .bg-indigo-600:hover {
     background: #eb8e77;
+}
+
+.dark-theme .query-title {
+    opacity: 0.7
 }
