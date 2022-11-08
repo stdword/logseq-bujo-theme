@@ -2,16 +2,15 @@
 
 
 /* logseq non-color vars */
-
 :root {
     --ls-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     /* --ls-font-family: Inter; */
 
-    --ls-main-content-max-width: 900px; /*810px;*/
+    --ls-main-content-max-width: 900px; /* default: 810px; */
   /*--ls-main-content-max-width-wide: 100%*/
 
-    --ls-tag-text-opacity: 0.6; /*0.8;*/
-    --ls-tag-text-hover-opacity: 0.8; /*1;*/
+    --ls-tag-text-opacity: 0.6; /* default: 0.8; */
+    --ls-tag-text-hover-opacity: 0.8; /* default: 1; */
 
 /*
     --ls-right-sidebar-width: 40%;
@@ -38,6 +37,119 @@
     --ls-z-index-level-5: 99999;
 */
 }
+
+
+/* logseq color vars */
+.dark-theme, html[data-theme=dark] {
+    --ls-primary-background-color: var(--bujo-background-color2);
+    --ls-secondary-background-color: var(--bujo-background-color3);
+    --ls-tertiary-background-color: var(--bujo-background-color4);
+    --ls-quaternary-background-color: var(--bujo-background-color5);
+
+    --ls-table-tr-even-background-color: var(--bujo-background-color4);
+
+    --ls-active-primary-color: var(--bujo-foreground-color2);
+    --ls-active-secondary-color: var(--bujo-foreground-color3);
+
+    --ls-primary-text-color: var(--bujo-foreground-color3);
+    --ls-secondary-text-color: var(--bujo-foreground-color4);
+    --ls-tertiary-text-color: var(--bujo-foreground-color5); /* new var */
+    --ls-text-hightlight-color: var(--bujo-highlight-color2); /* new var */
+
+    --ls-page-properties-background-color: var(--bujo-background-color3);
+    --ls-block-properties-background-color: var(--ls-page-properties-background-color);
+
+    --ls-block-ref-link-text-color: var(--bujo-accent-color1);
+    --ls-search-background-color: var(--bujo-background-color2);
+
+    --ls-border-color: var(--bujo-box-color1); /* table header border */
+    --ls-secondary-border-color: red;
+    --ls-tertiary-border-color: red;
+
+    --ls-guideline-color: var(--ls-quaternary-background-color);
+    --ls-menu-hover-color: var(--ls-secondary-background-color);
+
+    --ls-title-text-color: var(--ls-primary-text-color);
+    --ls-link-text-color: var(--bujo-accent-color2);
+    --ls-link-text-hover-color: var(--bujo-accent-color3);
+    --ls-link-ref-text-color: var(--bujo-highlight-color4);
+    --ls-link-ref-text-hover-color: var(--bujo-highlight-color5);
+    --ls-cloze-text-color: var(--bujo-highlight-color5);
+
+    --ls-tag-text-color: var(--ls-link-text-color);
+    --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+
+    --ls-marker-text-color: var(--ls-secondary-text-color);
+    --ls-marker-text-bg-color: var(--bujo-box-color2);
+    --ls-marker-text-bg-hover-color: var(--bujo-box-color3);
+
+    --ls-slide-background-color: var(--ls-primary-background-color);
+
+    --ls-block-bullet-border-color: var(--bujo-foreground-color2);
+    --ls-block-bullet-color: var(--bujo-foreground-color1);
+    --ls-block-highlight-color: var(--bujo-highlight-color1);
+
+    --ls-selection-text-color: var(--bujo-foreground-color4);
+    --ls-selection-background-color: var(--bujo-highlight-color3);
+
+    --ls-page-checkbox-color: var(--bujo-box-color4);
+    --ls-page-checkbox-border-color: red;
+    --ls-page-blockquote-color: var(--ls-primary-text-color);
+    --ls-page-blockquote-bg-color: var(--bujo-background-color1);
+    --ls-page-blockquote-border-color: var(--bujo-box-color1);
+    --ls-page-inline-code-color: var(--ls-primary-text-color);
+    --ls-page-inline-code-bg-color: var(--bujo-background-color1);
+
+    --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.05);
+    --ls-scrollbar-background-color: rgba(var(--bujo-box-color1_rgb), 0.9);
+    --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
+
+    --ls-head-text-color: var(--ls-primary-text-color);
+    --ls-icon-color: var(--ls-secondary-text-color);
+    --ls-search-icon-color: var(--ls-link-text-color);
+    --ls-a-chosen-bg: var(--bujo-background-color3);
+
+    --ls-right-sidebar-code-bg-color: red;
+    --ls-header-button-background: var(--ls-primary-text-color);
+    /* ↑↑ background var uses as a text color in logseq css */
+
+    --ls-focus-ring-color: rgba(255, 0, 0, .5);
+    --ls-pie-fg-color: red;
+    --ls-pie-bg-color: red;
+
+    --color-level-1: var(--ls-secondary-background-color);
+    --color-level-2: var(--ls-tertiary-background-color);
+    --color-level-3: var(--ls-quaternary-background-color);
+    --color-level-4: var(--bujo-foreground-color1);
+    --color-level-5: var(--bujo-foreground-color2);
+    --color-level-6: var(--bujo-foreground-color3);
+
+    --ls-highlight-color-gray: var(--color-gray-700);
+    --ls-highlight-color-red: var(--color-red-900);
+    --ls-highlight-color-yellow: var(--color-yellow-800);
+    --ls-highlight-color-green: var(--color-green-900);
+    --ls-highlight-color-blue: var(--color-blue-900);
+    --ls-highlight-color-purple: var(--color-purple-900);
+    --ls-highlight-color-pink: var(--color-pink-900);
+
+/*
+    --ls-success-color: var(--color-green-500);
+    --ls-warning-color: var(--color-orange-500);
+    --ls-error-color: var(--color-red-500);
+
+    --ls-success-text-color: var(--color-green-100);
+    --ls-success-background-color: var(--color-green-900);
+    --ls-warning-text-color: var(--color-yellow-100);
+    --ls-warning-background-color: var(--color-yellow-900);
+    --ls-error-text-color: var(--color-red-100);
+    --ls-error-background-color: var(--color-red-900);
+
+    --ls-color-file-sync-error: var(--ls-error-color);
+    --ls-color-file-sync-pending: var(--color-yellow-500);
+    --ls-color-file-sync-idle: var(--ls-success-color);
+*/
+}
+
 
 #app-container {
     background-image: radial-gradient(var(--bujo-foreground-color1) 5%, var(--bujo-background-color2) 5%);
@@ -143,6 +255,27 @@ b, strong, i {
     color: var(--ls-secondary-text-color); /* orig #baa695 */
 }
 
+mark > b,
+mark > strong,
+mark > i,
+mark > i > b,
+mark > b > i {
+    color: var(--ls-tertiary-text-color);
+}
+
+mark>code {
+    background: var(--ls-block-highlight-color) !important;
+    color: var(--ls-tertiary-text-color) !important;
+    padding: 3px 5px
+}
+
+
+/* code */
+
+.copy-button:hover {
+    background: 0 0;
+}
+
 
 /* page title */
 
@@ -157,6 +290,43 @@ h1.title {
     color: var(--ls-tertiary-text-color);
     background: var(--ls-page-properties-background-color);
 }
+
+/*.page-property-key:before {
+    content: "\eabc";
+    font-family: 'tabler-icons';
+    padding-right: 4px;
+    vertical-align: bottom;
+    color: var(--ls-primary-text-color);
+    opacity: .8;
+}
+    
+.page-property-key[data-ref="ref"]:before,
+.page-property-key[data-ref="reference"]:before,
+.page-property-key[data-ref="source"]:before {
+    content: "\eb54";
+}
+.page-property-key[data-ref="author"]:before {
+    content: "\eb4d";
+}
+.page-property-key[data-ref="description"]:before,
+.page-property-key[data-ref="summary"]:before {
+    content: "\ee09";
+}
+.page-property-key[data-ref="file"]:before,
+.page-property-key[data-ref="path"]:before,
+.page-property-key[data-ref="file-path"]:before {
+    content: "\eaa4";
+}
+.page-property-key[data-ref="tags"]:before {
+    content: "\ef86";
+}
+.page-property-key[data-ref="status"]:before {
+    content: "\ea5e";
+}
+.page-property-key[data-ref="date"]:before,
+.page-property-key[data-ref*="date-"]:before {
+    content: "\ea53";
+}*/
 
 
 /* page link */
@@ -174,13 +344,20 @@ mark .page-reference:hover {
     background: rgba(0, 0, 0, .2);
 }
 
+.page-tags a {
+    color: var(--ls-link-ref-text-color);
+}
+.page-tags a:hover {
+    color: var(--ls-link-ref-text-hover-color);
+}
+
 
 /* block references */
 
 .block-ref {
     padding: 2px 5px;
     border-radius: 3px;
-    font-style: italic;
+    /*font-style: italic;*/
 
     background: rgba(var(--bujo-box-color5_rgb), .5);
     color: var(--ls-secondary-text-color);
@@ -199,19 +376,27 @@ mark .page-reference:hover {
 }
 
 
+/* linked & unlinked references */
+
+.references h2 {
+    opacity: .3;
+}
+
+
 /* custom query first line */
 
 .custom-query-title .title-text {
     color:  var(--ls-primary-text-color);
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .custom-query-title .result-count {
     color:  var(--ls-primary-text-color);
+    opacity: 0.6;
 }
 
-.custom-query-title a {
-    color:  var(--ls-primary-text-color);
+a > svg {
+    color: var(--ls-primary-text-color);
     opacity: 0.8;
 }
 
@@ -263,9 +448,153 @@ mark .page-reference:hover {
 }
 
 
+/* task priority */
+/* (forked from logseq-flow-theme) */
+
+a.priority {
+    opacity: 1 !important;
+    font-size: 0px;
+    color: #0000;
+}
+a.priority::before {
+    font-family: 'tabler-icons';
+    font-size: 11px;
+    padding: 2px 2px;
+    margin-right: 0px;
+    border-radius: 2px;
+    position: relative;
+    color: var(--ls-tertiary-text-color);
+}
+a.priority[href="#/page/A" i]::before {
+    content: "\ea66";
+    background-color: var(--ls-highlight-color-red);
+}
+a.priority[href="#/page/B" i]::before {
+    content: "\ee87";
+    background-color: var(--ls-highlight-color-yellow);
+}
+a.priority[href="#/page/C" i]::before {
+    content: "\ea5f";
+    background-color: var(--ls-highlight-color-blue);
+}
+.done {
+    opacity: 1;
+}
+
+
+/* ----------- */
+/* Code Mirror */
+/* ----------- */
+
+#right-sidebar pre.CodeMirror-line {
+    background: transparent;
+}
+
+.extensions__code-lang {
+    margin: 2px;
+    background-color: transparent;
+    color: var(--ls-primary-text-color);
+    opacity: .5;
+}
+
+html[data-theme="dark"] .CodeMirror {
+    background-color: var(--ls-secondary-background-color);
+    color: var(--ls-primary-text-color);
+    border-radius: 4px;
+    text-shadow: none;
+}
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
+    background-color: var(--ls-secondary-background-color);
+}
+html[data-theme="dark"] .CodeMirror .CodeMirror-cursor {
+    border-left: solid thin var(--ls-primary-text-color);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-gutter-filler,
+html[data-theme="dark"] .CodeMirror .CodeMirror-scrollbar-filler {
+    background-color: none;
+}
+html[data-theme="dark"] .CodeMirror .CodeMirror-scroll {
+    padding-bottom: 50px;
+    padding-top: 0px;
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-linenumber {
+    text-shadow: none;
+    opacity: .5;
+    color: var(--ls-primary-text-color);
+    text-align: center;
+}
+html[data-theme="dark"] .CodeMirror .CodeMirror-line {
+    box-shadow: none;
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-activeline-background {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .CodeMirror .CodeMirror-selected,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line::selection,
+html[data-theme="dark"] .CodeMirror .CodeMirror-line > span::selection,
+html[data-theme="dark"] .cm-s-default .CodeMirror-line > span > span::selection {
+    background: var(--bujo-highlight-color2);
+}
+
+
+/* keywords */
+html[data-theme="dark"] .CodeMirror .cm-keyword {
+    color: var(--ls-secondary-text-color);
+}
+html[data-theme="dark"] .CodeMirror .cm-operator {
+    color: var(--ls-primary-text-color);
+    opacity: 0.7;
+}
+html[data-theme="dark"] .CodeMirror .cm-property {
+    color: var(--ls-primary-text-color);
+}
+html[data-theme="dark"] .CodeMirror .cm-builtin {
+    color: var(--bujo-accent-color1);
+}
+html[data-theme="dark"] .CodeMirror .cm-number {
+    color: var(--bujo-highlight-color3);
+}
+html[data-theme="dark"] .CodeMirror .cm-meta {
+    color: var(--bujo-highlight-color3);
+}
+html[data-theme="dark"] .CodeMirror .cm-string,
+html[data-theme="dark"] .CodeMirror .cm-string-2 {
+    color: var(--bujo-box-color4);
+}
+html[data-theme="dark"] .CodeMirror .cm-comment {
+    color: var(--bujo-foreground-color2);
+}
+html[data-theme="dark"] .CodeMirror .cm-variable,
+html[data-theme="dark"] .CodeMirror .cm-qualifier,
+html[data-theme="dark"] .CodeMirror .cm-variable-3,
+html[data-theme="dark"] .CodeMirror .cm-type {
+    color: var(--ls-primary-text-color);
+}
+html[data-theme="dark"] .CodeMirror .cm-variable-2 {
+    color: var(--ls-primary-text-color);
+    font-style: italic;
+}
+html[data-theme="dark"] .CodeMirror .cm-def,
+html[data-theme="dark"] .CodeMirror .cm-attribute,
+html[data-theme="dark"] .CodeMirror .cm-atom,
+html[data-theme="dark"] .CodeMirror .cm-tag {
+    color: var(--ls-secondary-text-color);
+    font-style: italic;
+}
+
+
 /* ---- */
 /* MISC */
 /* ---- */
+
+.datepicker td.active,
+.datepicker td.available:hover {
+    color: var(--ls-secondary-text-color);
+}
 
 /* settings */
 
