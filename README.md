@@ -13,7 +13,7 @@ Sepia:
 Black:
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/dark-black.jpeg)
 Coffee:
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/dark-coffee.jpeg)
+![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.jpeg)
 
 ## Installation
 From Logseq:
