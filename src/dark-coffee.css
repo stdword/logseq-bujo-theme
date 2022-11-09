@@ -2,15 +2,19 @@
 
 
 .dark-theme, html[data-theme=dark] {
-    --bujo-highlight-color1: #1D4544;
-    --bujo-highlight-color2: #196755;
-    --bujo-highlight-color3: #4B9A7D;
-    --bujo-highlight-color4: #79B990;
-    --bujo-highlight-color5: #93CEA9;
+    /* ------- */
+    /* PALETTE */
+    /* ------- */
 
-    --bujo-accent-color1: #B9543B;
-    --bujo-accent-color2: #DD745B;
-    --bujo-accent-color3: #EB8E77;
+    --bujo-highlight-dimmed: #1D4544;
+    --bujo-highlight-normal: #196755;
+    --bujo-highlight-clean:  #4B9A7D;
+    --bujo-highlight-lit:    #79B990;
+    --bujo-highlight-bright: #93CEA9;
+
+    --bujo-accent-dimmed: #B9543B;
+    --bujo-accent-normal: #DD745B;
+    --bujo-accent-clean:  #EB8E77;
 
     --bujo-background-color1: #1D1614;
     --bujo-background-color2: #211C1B;
@@ -28,8 +32,146 @@
 
     --bujo-foreground-color1: #423834;
     --bujo-foreground-color2: #61554D;
-    --bujo-foreground-color3: #9E836D;
+
+    --bujo-foreground3: #9E836D;
     --bujo-foreground-color4: #C4B2A6;
     --bujo-foreground-color5: #E0D8CB;
     --bujo-foreground-color6: #ECE7DF;
+
+
+    /* ---------------- */
+    /* THEME COLOR VARS */
+    /* ---------------- */
+
+    --bujo-text-accent: var(--bujo-foreground-color5);
+    --bujo-text-hightlight: var(--bujo-highlight-normal);
+
+    --bujo-block-embed-background: rgba(var(--bujo-box-color5_rgb), .5);
+    --bujo-block-embed-background-hover: rgba(var(--bujo-box-color5_rgb), .6);
+
+    --bujo-toggle-switcher-off: var(--bujo-foreground3);
+    --bujo-toggle-switcher-on:  var(--bujo-foreground-color5);
+    --bujo-toggle-off: var(--ls-quaternary-background-color);
+    --bujo-toggle-off-hover: var(--bujo-foreground-color1);
+    --bujo-toggle-on: var(--ls-link-text-color);
+    --bujo-toggle-on-hover: var(--ls-link-text-hover-color);
+
+
+    /* ----------------- */
+    /* LOGSEQ COLOR VARS */
+    /* ----------------- */
+
+    /* text */
+    --ls-primary-text-color: var(--bujo-foreground3);
+    --ls-secondary-text-color: var(--bujo-foreground-color4);
+
+    --ls-title-text-color: var(--ls-primary-text-color);
+
+    --ls-selection-text-color: var(--ls-secondary-text-color);
+    --ls-selection-background-color: var(--bujo-highlight-lit);
+
+    /* external links */
+    --ls-link-text-color: var(--bujo-accent2);
+    --ls-link-text-hover-color: var(--bujo-accent3);
+
+    /* internal links */
+    --ls-link-ref-text-color: var(--bujo-highlight-lit);
+    --ls-link-ref-text-hover-color: var(--bujo-highlight-bright);
+
+    --ls-tag-text-color: var(--ls-link-text-color);
+    --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+
+    --ls-cloze-text-color: var(--ls-link-ref-text-hover-color);
+
+    /* block parts */
+    --ls-block-highlight-color: var(--bujo-highlight-dimmed);
+--ls-block-bullet-color: var(--bujo-foreground-color1);
+--ls-block-bullet-border-color: var(--bujo-foreground-color2);
+
+    /* scrollbars, table header and various ui borders */
+--ls-border-color: var(--bujo-box-color1);
+    --ls-secondary-border-color: var(--ls-border-color);
+    --ls-tertiary-border-color: var(--ls-border-color);
+
+    /* checkboxes and radio buttons */
+--ls-page-checkbox-color: var(--bujo-box-color4);
+    --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
+
+    /* task */
+    --ls-marker-text-color: var(--ls-secondary-text-color);
+--ls-marker-text-bg-color: var(--bujo-box-color2);
+--ls-marker-text-bg-hover-color: var(--bujo-box-color3);
+
+    /* other ui */
+--ls-active-primary-color: var(--bujo-foreground-color2);
+    --ls-active-secondary-color: var(--ls-active-primary-color);
+
+    /* (!confusing name) block references border color and slash-commands group color */
+    --ls-block-ref-link-text-color: var(--bujo-accent-dimmed);
+
+
+
+
+
+
+    --ls-primary-background-color: var(--bujo-background-color2);
+    --ls-secondary-background-color: var(--bujo-background-color3);
+    --ls-tertiary-background-color: var(--bujo-background-color4);
+    --ls-quaternary-background-color: var(--bujo-background-color5);
+
+    --ls-table-tr-even-background-color: var(--bujo-background-color4);
+
+    --ls-page-properties-background-color: var(--bujo-background-color3);
+    --ls-block-properties-background-color: var(--ls-page-properties-background-color);
+
+    --ls-search-background-color: var(--bujo-background-color2);
+
+
+    --ls-guideline-color: var(--ls-quaternary-background-color);
+    --ls-menu-hover-color: var(--ls-secondary-background-color);
+
+    --ls-slide-background-color: var(--ls-primary-background-color);
+
+    
+
+
+    
+
+    --ls-page-blockquote-color: var(--ls-primary-text-color);
+    --ls-page-blockquote-bg-color: var(--bujo-background-color1);
+    --ls-page-blockquote-border-color: var(--bujo-box-color1);
+    --ls-page-inline-code-color: var(--ls-primary-text-color);
+    --ls-page-inline-code-bg-color: var(--bujo-background-color1);
+
+    --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.05);
+    --ls-scrollbar-background-color: rgba(var(--bujo-box-color1_rgb), 0.9);
+    --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
+
+    --ls-head-text-color: var(--ls-primary-text-color);
+    --ls-icon-color: var(--ls-secondary-text-color);
+    --ls-search-icon-color: var(--ls-link-text-color);
+    --ls-a-chosen-bg: var(--bujo-background-color3);
+
+    --ls-right-sidebar-code-bg-color: red;
+    --ls-header-button-background: var(--ls-primary-text-color);
+    /* ↑↑ background var uses as a text color in logseq css */
+
+    --ls-focus-ring-color: rgba(255, 0, 0, .5);
+    --ls-pie-fg-color: unset;
+    --ls-pie-bg-color: unset;
+
+    --color-level-1: var(--ls-secondary-background-color);
+    --color-level-2: var(--ls-tertiary-background-color);
+    --color-level-3: var(--ls-quaternary-background-color);
+    --color-level-4: var(--bujo-foreground-color1);
+    --color-level-5: var(--bujo-foreground-color2);
+    --color-level-6: var(--bujo-foreground3);
+
+    --ls-highlight-color-gray: var(--color-gray-700);
+    --ls-highlight-color-red: var(--color-red-900);
+    --ls-highlight-color-yellow: var(--color-yellow-800);
+    --ls-highlight-color-green: var(--color-green-900);
+    --ls-highlight-color-blue: var(--color-blue-900);
+    --ls-highlight-color-purple: var(--color-purple-900);
+    --ls-highlight-color-pink: var(--color-pink-900);
 }
