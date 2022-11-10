@@ -40,7 +40,10 @@
 
 
 #app-container {
-    background-image: radial-gradient(var(--bujo-foreground-color1) 5%, var(--bujo-background-color2) 5%);
+    background-image: radial-gradient(
+        var(--bujo-dots) 5%,
+        var(--bujo-dots-background) 5%
+    );
     background-position: 0 0;
     background-size: 25px 25px;
 }
@@ -69,6 +72,9 @@
 
 #left-sidebar .ui__icon {
     color: var(--ls-secondary-text-color);
+}
+#left-sidebar .ui__icon.tie-page {
+    color: var(--ls-primary-text-color);
 }
 
 
@@ -153,7 +159,7 @@ mark > b > i {
 
 mark>code {
     background: var(--ls-block-highlight-color) !important;
-    color: var(--bujo-text-hover) !important;
+    color: var(--bujo-text-accent) !important;
     padding: 3px 5px
 }
 
@@ -170,13 +176,44 @@ mark>code {
 h1.title {
     font-weight: 700;
 }
+a.asset-ref { /* title in pdf extension */
+    color:  var(--ls-title-text-color);
+}
 
 
 /* properties */
 
+.page-properties {
+    border-radius: var(--ls-border-radius-low);
+}
+
 .page-property-key:hover {
-    color: var(--bujo-text-hover);
+    color: var(--bujo-text-accent);
     background: var(--ls-page-properties-background-color);
+}
+
+
+/* pdf asset link */
+
+.asset-ref.is-pdf:before {
+    content: "\eaa2"; /* https://tabler-icons.io/i/file-text */
+    font-family: 'tabler-icons';
+
+    color: var(--ls-secondary-text-color);
+    opacity: 0.8;
+    transition: .3s;
+}
+.asset-ref.is-pdf:hover:before {
+    opacity: 1;
+}
+.asset-ref.is-pdf:after {
+    content: "";
+}
+.asset-ref.is-pdf {
+    color: var(--ls-link-ref-text-color);
+}
+.asset-ref.is-pdf:hover {
+    color: var(--ls-link-ref-text-hover-color);
 }
 
 
@@ -184,16 +221,20 @@ h1.title {
 
 .page-reference .bracket {
     opacity: .5;
+    color: var(--bujo-link-ref-brackets);
 }
 
 .page-reference:hover {
-    background: rgba(255, 255, 255, .05);
+    background: var(--bujo-shadow);
 }
 
 .ls-block.selected .page-reference:hover,
 mark .page-reference:hover {
-    background: rgba(0, 0, 0, .2);
+    background: var(--bujo-shadow-black);
 }
+
+
+/* page tags section */
 
 .page-tags a {
     color: var(--ls-link-ref-text-color);
@@ -208,14 +249,13 @@ mark .page-reference:hover {
 .block-ref {
     padding: 2px 5px;
     border-radius: 3px;
-    /*font-style: italic;*/
 
     background: var(--bujo-block-embed-background);
     color: var(--ls-secondary-text-color);
     border-bottom: none;
 }
 .block-ref:hover {
-    color: none;
+    color: var(--ls-secondary-text-color); /* same as w/o hover */
     background: var(--bujo-block-embed-background-hover);
 }
 
@@ -250,8 +290,8 @@ mark .page-reference:hover {
     opacity: 0.6;
 }
 
-a > svg {
-    color: var(--ls-primary-text-color);
+.cp__sidebar-main-layout a > svg {
+    color: var(--ls-icon-color);
     opacity: 0.8;
 }
 
@@ -318,7 +358,7 @@ a.priority::before {
     margin-right: 0px;
     border-radius: 2px;
     position: relative;
-    color: var(--bujo-text-hover);
+    color: var(--bujo-text-accent);
 }
 a.priority[href="#/page/A" i]::before {
     content: "\ea66";
@@ -362,7 +402,7 @@ html[data-theme="dark"] .CodeMirror .CodeMirror-gutters {
     background-color: var(--ls-secondary-background-color);
 }
 html[data-theme="dark"] .CodeMirror .CodeMirror-cursor {
-    border-left: solid thin var(--ls-primary-text-color);
+    border-left: solid thin var(--bujo-caret);
 }
 
 html[data-theme="dark"] .CodeMirror .CodeMirror-gutter-filler,
@@ -385,7 +425,7 @@ html[data-theme="dark"] .CodeMirror .CodeMirror-line {
 }
 
 html[data-theme="dark"] .CodeMirror .CodeMirror-activeline-background {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--bujo-shadow-white);
 }
 
 html[data-theme="dark"] .CodeMirror .CodeMirror-selected,
@@ -396,49 +436,43 @@ html[data-theme="dark"] .cm-s-default .CodeMirror-line > span > span::selection 
 }
 
 
-/* keywords */
-html[data-theme="dark"] .CodeMirror .cm-keyword {
+/* pdf extension */
+
+.extensions__pdf-toolbar a.button > svg {
+    color: var(--ls-icon-color);
+}
+
+.ls-hl-colored .block-content[data-hl-color="purple"] .prefix-link:before {
+    content: "\ec9c  "; /* https://tabler-icons.io/i/pin */
+    font-family: "tabler-icons";
+    color: var(--color-purple-500);
+}
+.ls-hl-colored .block-content[data-hl-color="green"] .prefix-link:before {
+    content: "\ec9c  ";
+    font-family: "tabler-icons";
+    color: var(--color-green-500);
+}
+.ls-hl-colored .block-content[data-hl-color="red"] .prefix-link:before {
+    content: "\ec9c  ";
+    font-family: "tabler-icons";
+    color: var(--color-red-400);
+}
+.ls-hl-colored .block-content[data-hl-color="blue"] .prefix-link:before {
+    content: "\ec9c  ";
+    font-family: "tabler-icons";
+    color: var(--color-blue-500);
+}
+.ls-hl-colored .block-content[data-hl-color="yellow"] .prefix-link:before {
+    content: "\ec9c  ";
+    font-family: "tabler-icons";
+    color: var(--color-yellow-400);
+}
+
+.block-content[data-type="annotation"] .prefix-link:before {
+    content: "\ec9c  " ;
+    font-family: "tabler-icons";
     color: var(--ls-secondary-text-color);
-}
-html[data-theme="dark"] .CodeMirror .cm-operator {
-    color: var(--ls-primary-text-color);
-    opacity: 0.7;
-}
-html[data-theme="dark"] .CodeMirror .cm-property {
-    color: var(--ls-primary-text-color);
-}
-html[data-theme="dark"] .CodeMirror .cm-builtin {
-    color: var(--bujo-accent-dimmed);
-}
-html[data-theme="dark"] .CodeMirror .cm-number {
-    color: var(--bujo-highlight-lit);
-}
-html[data-theme="dark"] .CodeMirror .cm-meta {
-    color: var(--bujo-highlight-lit);
-}
-html[data-theme="dark"] .CodeMirror .cm-string,
-html[data-theme="dark"] .CodeMirror .cm-string-2 {
-    color: var(--bujo-box-color4);
-}
-html[data-theme="dark"] .CodeMirror .cm-comment {
-    color: var(--bujo-foreground-color2);
-}
-html[data-theme="dark"] .CodeMirror .cm-variable,
-html[data-theme="dark"] .CodeMirror .cm-qualifier,
-html[data-theme="dark"] .CodeMirror .cm-variable-3,
-html[data-theme="dark"] .CodeMirror .cm-type {
-    color: var(--ls-primary-text-color);
-}
-html[data-theme="dark"] .CodeMirror .cm-variable-2 {
-    color: var(--ls-primary-text-color);
-    font-style: italic;
-}
-html[data-theme="dark"] .CodeMirror .cm-def,
-html[data-theme="dark"] .CodeMirror .cm-attribute,
-html[data-theme="dark"] .CodeMirror .cm-atom,
-html[data-theme="dark"] .CodeMirror .cm-tag {
-    color: var(--ls-secondary-text-color);
-    font-style: italic;
+    opacity: .8;
 }
 
 
@@ -446,21 +480,56 @@ html[data-theme="dark"] .CodeMirror .cm-tag {
 /* MISC */
 /* ---- */
 
-.extensions__code-calc {
-    background: var(--bujo-background-color4);
+/* fix right sidebar items indentation */
+
+.sidebar-item div.ml-1 {
+    margin-left: 0;
 }
+
+
+/* generalize right sidebar items hover style */
+
+.sidebar-item a.page-title {
+    transition: .3s;
+}
+.sidebar-item a.page-title:hover {
+    color: var(--ls-link-ref-text-hover-color);
+}
+.sidebar-item .breadcrumb > a a.page-ref:hover {
+    color: var(--ls-link-ref-text-hover-color);
+}
+
+
+/* calculator */
+
+.extensions__code-calc {
+    background: var(--ls-tertiary-background-color);
+}
+
+
+/* decrease embeded videos' margins */
 
 iframe {
     margin-bottom: 0.2rem;
 }
 
 textarea {
-    caret-color: var(--ls-primary-text-color);
+    caret-color: var(--bujo-caret);
 }
+
+
+/* date picker */
 
 .datepicker td.active,
 .datepicker td.available:hover {
     color: var(--ls-secondary-text-color);
+}
+
+
+/* callouts (admonitions) */
+
+svg.tip {
+    color: var(--ls-primary-text-color);
 }
 
 
@@ -473,12 +542,12 @@ textarea {
 
 /* button */
 
-.ui__button {
-    background: var(--ls-link-text-color);
-    color: var(--bujo-foreground-color6);
+.ui__button:not(.to-heading-button) {
+    background: var(--bujo-button-background);
+    color: var(--bujo-button-text);
 }
-.ui__button:hover {
-    background: var(--ls-link-text-hover-color);
+.ui__button:not(.to-heading-button):hover {
+    background: var(--bujo-button-background-hover);
 }
 
 
