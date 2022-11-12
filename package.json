@@ -1,7 +1,7 @@
 {
     "name": "BuJo",
     "author": "PiotrSss & stdword",
-    "version": "0.1.0",
+    "version": "0.1.7",
     "description": "A theme inspired by Bullet Journals",
     "logseq": {
         "id": "logseq-bujo-theme",
@@ -15,25 +15,19 @@
                 "mode": "dark"
             },
             {
-                "name": "Black orig",
-                "url": "./src/dark-black-old.css",
-                "description": "Black",
-                "mode": "dark"
-            },
-            {
                 "name": "Coffee",
                 "url": "./src/dark-coffee.css",
                 "description": "Coffee",
                 "mode": "dark"
             },
             {
-                "name": "Sepia",
+                "name": "Sepia (will be reviewed soon)",
                 "url": "./src/light-sepia.css",
                 "description": "Sepia",
                 "mode": "light"
             },
             {
-                "name": "White",
+                "name": "White (will be reviewed soon)",
                 "url": "./src/light-white.css",
                 "description": "White",
                 "mode": "light"
