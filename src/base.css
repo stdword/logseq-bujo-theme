@@ -36,6 +36,10 @@
     --ls-z-index-level-4: 9999;
     --ls-z-index-level-5: 99999;
 */
+
+    --bujo-shadow:       rgba(255, 255, 255, .05);
+    --bujo-shadow-white: rgba(255, 255, 255, .2);
+    --bujo-shadow-black: rgba(0, 0, 0, .2);
 }
 
 
@@ -425,14 +429,14 @@ html[data-theme="dark"] .CodeMirror .CodeMirror-line {
 }
 
 html[data-theme="dark"] .CodeMirror .CodeMirror-activeline-background {
-    background: var(--bujo-shadow-white);
+    background: var(--bujo-shadow);
 }
 
 html[data-theme="dark"] .CodeMirror .CodeMirror-selected,
 html[data-theme="dark"] .CodeMirror .CodeMirror-line::selection,
 html[data-theme="dark"] .CodeMirror .CodeMirror-line > span::selection,
 html[data-theme="dark"] .cm-s-default .CodeMirror-line > span > span::selection {
-    background: var(--bujo-highlight-normal);
+    background: var(--bujo-code-selection-background);
 }
 
 
@@ -545,9 +549,11 @@ svg.tip {
 .ui__button:not(.to-heading-button) {
     background: var(--bujo-button-background);
     color: var(--bujo-button-text);
+    opacity: .9;
 }
 .ui__button:not(.to-heading-button):hover {
     background: var(--bujo-button-background-hover);
+    opacity: 1;
 }
 
 

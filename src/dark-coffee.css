@@ -6,40 +6,37 @@
     /* PALETTE */
     /* ------- */
 
-    --bujo-highlight-dimmed: #1D4544;
-    --bujo-highlight-normal: #196755;
-    --bujo-highlight-clean:  #4B9A7D;
-    --bujo-highlight-lit:    #79B990;
-    --bujo-highlight-bright: #93CEA9;
+    --bujo-highlight-dimmed: hsl(179, 41%, 19%);
+    --bujo-highlight-normal: hsl(166, 61%, 25%);
+    --bujo-highlight-clean:  hsl(158, 34%, 45%);
+    --bujo-highlight-lit:    hsl(149, 31%, 60%);
+    --bujo-highlight-bright: hsl(140, 38%, 69%);
 
-    --bujo-accent-dimmed: #B9543B;
-    --bujo-accent-normal: #DD745B;
-    --bujo-accent-clean:  #EB8E77;
+    --bujo-accent-dimmed: hsl(12, 52%, 48%);
+    --bujo-accent-normal: hsl(12, 66%, 61%);
+    --bujo-accent-clean:  hsl(12, 74%, 69%);
 
-    --bujo-background1: #1D1614;
-    --bujo-background2: #211C1B;
-    --bujo-background3: #27211F;
-    --bujo-background4: #2B2524;
-    --bujo-background5: #362F2E;
-    --bujo-background6: #423834;
-    --bujo-background7: #61554D;
+    --bujo-background1: hsl(13, 18%, 10%);
+    --bujo-background2: hsl(10, 10%, 12%);
+    --bujo-background3: hsl(15, 11%, 14%);
+    --bujo-background4: hsl(9, 9%, 15%);
+    --bujo-background5: hsl(8, 8%, 20%);
+    --bujo-background6: hsl(17, 12%, 23%);
+    --bujo-background7: hsl(24, 11%, 34%);
 
-    --bujo-foreground1: #9E836D;
-    --bujo-foreground2: #C4B2A6;
-    --bujo-foreground3: #E0D8CB;
-    --bujo-foreground4: #ECE7DF;
+    --bujo-foreground1: hsl(27, 20%, 52%);
+    --bujo-foreground2: hsl(27, 20%, 71%);
+    --bujo-foreground3: hsl(37, 25%, 84%);
+    --bujo-foreground4: hsl(37, 25%, 90%);
 
-    --bujo-fill1_rgb: 60, 38, 41; /* #3C2629; */
-    --bujo-fill1: rgb(var(--bujo-fill1_rgb));
-    --bujo-fill2: #52373A;
-    --bujo-fill3: #5D3E41;
-    --bujo-fill4: #935C62;
-    --bujo-fill5_rgb: 121, 94, 110; /* #795E6E; */
-    --bujo-fill5: rgb(var(--bujo-fill5_rgb));
+    --bujo-fill1_hsl: /*hsl(353, 22%, 19%)*/ 353, 22%, 19%; 
+    --bujo-fill2:       hsl(353, 19%, 27%);
+    --bujo-fill3:       hsl(353, 22%, 30%);
+    --bujo-fill4:       hsl(353, 23%, 47%);
+    --bujo-fill5_hsl: /*hsl(324, 13%, 42%)*/ 324, 13%, 42%;
 
-    --bujo-shadow:       rgba(255, 255, 255, .05);
-    --bujo-shadow-white: rgba(255, 255, 255, .2);
-    --bujo-shadow-black: rgba(0, 0, 0, .2);
+    --bujo-fill1: hsl(var(--bujo-fill1_hsl));
+    --bujo-fill5: hsl(var(--bujo-fill5_hsl));
 
 
     /* ---------------- */
@@ -55,8 +52,8 @@
     --bujo-caret: var(--ls-primary-text-color);
     --bujo-link-ref-brackets: var(--color-gray-500);
 
-    --bujo-block-embed-background: rgba(var(--bujo-fill5_rgb), .5);
-    --bujo-block-embed-background-hover: rgba(var(--bujo-fill5_rgb), .6);
+    --bujo-block-embed-background: hsla(var(--bujo-fill5_hsl), .5);
+    --bujo-block-embed-background-hover: hsla(var(--bujo-fill5_hsl), .6);
 
     --bujo-toggle-switcher-off: var(--bujo-foreground1);
     --bujo-toggle-switcher-on:  var(--bujo-foreground3);
@@ -66,8 +63,10 @@
     --bujo-toggle-on-hover: var(--ls-link-text-hover-color);
 
     --bujo-button-text: var(--bujo-foreground4);
-    --bujo-button-background: var(--ls-link-text-color);
-    --bujo-button-background-hover: var(--ls-link-text-hover-color);
+    --bujo-button-background: var(--bujo-accent-dimmed);
+    --bujo-button-background-hover: var(--bujo-accent-normal);
+
+    --bujo-code-selection-background: var(--bujo-highlight-normal);
 
 
     /* ----------------- */
@@ -96,7 +95,7 @@
     --ls-head-text-color: var(--ls-primary-text-color); /* unknown disposition */
 
     --ls-selection-text-color: var(--ls-secondary-text-color);
-    --ls-selection-background-color: var(--bujo-highlight-lit);
+    --ls-selection-background-color: var(--bujo-highlight-clean);
 
     --ls-page-blockquote-color: var(--ls-primary-text-color);
     --ls-page-blockquote-bg-color: var(--bujo-background1);
@@ -117,7 +116,7 @@
     --ls-tag-text-color: var(--ls-link-text-color);
     --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
 
-    --ls-cloze-text-color: var(--ls-link-ref-text-hover-color);
+    --ls-cloze-text-color: var(--ls-link-ref-text-color);
 
 
     /* task */
@@ -168,13 +167,13 @@
 
 
     /* block background hightlights */
-    --ls-highlight-color-gray: hsl(0deg, 0%, 32%);
-    --ls-highlight-color-red: hsl(0deg, 68% ,26%);
-    --ls-highlight-color-yellow: hsl(23deg, 40%, 33%);
-    --ls-highlight-color-green: hsl(130deg, 50%, 20%);
-    --ls-highlight-color-blue: hsl(222deg, 80%, 30%);
-    --ls-highlight-color-purple: hsl(274deg, 60%, 28%);
-    --ls-highlight-color-pink: hsl(336deg, 70%, 25%);
+    --ls-highlight-color-gray: hsl(0, 0%, 32%);
+    --ls-highlight-color-red: hsl(0, 68% ,26%);
+    --ls-highlight-color-yellow: hsl(23, 40%, 33%);
+    --ls-highlight-color-green: hsl(130, 50%, 20%);
+    --ls-highlight-color-blue: hsl(222, 80%, 30%);
+    --ls-highlight-color-purple: hsl(274, 60%, 28%);
+    --ls-highlight-color-pink: hsl(336, 70%, 25%);
 
 
     /* embeded block levels */
