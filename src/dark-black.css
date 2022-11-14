@@ -6,10 +6,6 @@
     /* PALETTE */
     /* ------- */
 
-/*
-    rgb(92, 112, 128)    r-sidebar bg #5c7080
-*/
-
     --bujo-highlight-dark:   hsl(331, 88%, 13%);
     --bujo-highlight-dimmed: hsl(331, 50%, 24%);
     --bujo-highlight-normal: hsl(331, 64%, 28%);
@@ -47,7 +43,7 @@
     --bujo-new2: hsl(354, 61%, 83%);
     --bujo-new3: hsl(354, 45%, 91%);
 
-    --bujo-box1:       hsl(338, 21%, 17%);
+    --bujo-box1:       hsl(333, 21%, 17%);
     --bujo-box2_hsl: /*hsl(343, 38%, 19%)*/ 343, 38%, 19%;
     --bujo-box3_hsl: /*hsl(348, 31%, 40%)*/ 348, 31%, 40%;
     --bujo-box4:       hsl(353, 23%, 47%);
@@ -68,6 +64,10 @@
 
     --bujo-text-accent: var(--bujo-foreground4);
     --bujo-text-hightlight: var(--bujo-highlight-clean);
+
+    --bujo-search-item-text-hover: var(--bujo-accent-normal);
+    --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
+    --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
 
     --bujo-caret: var(--bujo-highlight-lit);
     --bujo-link-ref-brackets: var(--color-gray-500);
@@ -94,47 +94,47 @@
     /* ----------------- */
 
     /* backgrounds */
-    /* */--ls-primary-background-color: var(--bujo-background1);
-    /* */--ls-secondary-background-color: var(--bujo-background2);
-    /* */--ls-tertiary-background-color: var(--bujo-background5);
-    /* */--ls-quaternary-background-color: var(--bujo-background7);
+    --ls-primary-background-color: var(--bujo-background1);
+    --ls-secondary-background-color: var(--bujo-background2);
+    --ls-tertiary-background-color: var(--bujo-background5);
+    --ls-quaternary-background-color: var(--bujo-background7);
 
-    /* */--ls-table-tr-even-background-color: var(--bujo-box1);
-    /* */--ls-menu-hover-color: var(--ls-secondary-background-color);
-    /* */--ls-a-chosen-bg: var(--ls-secondary-background-color);
-    /* */--ls-slide-background-color: var(--ls-primary-background-color);
-    /* */--ls-search-background-color: var(--ls-primary-background-color); /* unknown disposition */
-    /* */--ls-right-sidebar-code-bg-color: var(--bujo-highlight-dark); /* unknown disposition */
+    --ls-table-tr-even-background-color: var(--bujo-box1);
+    --ls-menu-hover-color: var(--ls-secondary-background-color);
+    --ls-slide-background-color: var(--ls-primary-background-color);
 
+     /* unknown disposition */ --ls-search-background-color: var(--ls-primary-background-color);
+
+    /* search item hover */
+    --ls-a-chosen-bg: var(--ls-tertiary-background-color);
 
     /* text */
-    /* */--ls-primary-text-color: var(--bujo-foreground2);
-    /* */--ls-secondary-text-color: var(--bujo-foreground3);
+    --ls-primary-text-color: var(--bujo-foreground2);
+    --ls-secondary-text-color: var(--bujo-foreground3);
 
-    /* */--ls-title-text-color: var(--bujo-foreground1);
-    /* */--ls-head-text-color: var(--ls-primary-text-color); /* unknown disposition */
+    --ls-title-text-color: var(--bujo-foreground1);
 
     --ls-selection-text-color: var(--ls-secondary-text-color);
-    /* */--ls-selection-background-color: var(--bujo-new1);
+    --ls-selection-background-color: var(--bujo-new1);
 
-    /* */--ls-page-blockquote-color: var(--ls-primary-text-color);
-    /* */--ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
-    /* */--ls-page-blockquote-border-color: var(--bujo-highlight-dimmed);
+    --ls-page-blockquote-color: var(--ls-primary-text-color);
+    --ls-page-blockquote-bg-color: var(--bujo-fill1);
+    --ls-page-blockquote-border-color: var(--bujo-highlight-dimmed);
 
-    /* */--ls-page-inline-code-color: var(--ls-primary-text-color);
-    /* */--ls-page-inline-code-bg-color: var(--bujo-fill2);
+    --ls-page-inline-code-color: var(--ls-primary-text-color);
+    --ls-page-inline-code-bg-color: var(--bujo-fill1);
 
 
     /* external links */
-    /* */--ls-link-text-color: var(--bujo-accent-normal);
-    /* */--ls-link-text-hover-color: var(--bujo-accent-clean);
+    --ls-link-text-color: var(--bujo-accent-normal);
+    --ls-link-text-hover-color: var(--bujo-accent-clean);
 
     /* internal links */
-    /* */--ls-link-ref-text-color: var(--bujo-highlight-lit);
-    /* */--ls-link-ref-text-hover-color: var(--bujo-highlight-bright);
+    --ls-link-ref-text-color: var(--bujo-highlight-lit);
+    --ls-link-ref-text-hover-color: var(--bujo-highlight-bright);
 
-    /* */--ls-tag-text-color: var(--ls-link-ref-text-color);
-    /* */--ls-tag-text-hover-color: var(--ls-link-text-ref-hover-color);
+    /--ls-tag-text-color: var(--ls-link-ref-text-color);
+    --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
 
     --ls-cloze-text-color: var(--ls-link-ref-text-color);
 
@@ -187,22 +187,22 @@
 
 
     /* block background hightlights */
-    --ls-highlight-color-gray: hsl(0deg, 0%, 36%);
-    --ls-highlight-color-red: hsl(0deg, 71%, 34%);
-    --ls-highlight-color-yellow: hsl(64deg, 46%, 41%);
-    --ls-highlight-color-green: hsl(101deg, 75%, 28%);
-    --ls-highlight-color-blue: hsl(217deg, 80%, 38%);
-    --ls-highlight-color-purple: hsl(274deg, 58%, 34%);
-    --ls-highlight-color-pink: hsl(336deg, 70%, 30%);
+    --ls-highlight-color-gray: hsl(0, 0%, 36%);
+    --ls-highlight-color-red: hsl(0, 71%, 34%);
+    --ls-highlight-color-yellow: hsl(64, 46%, 41%);
+    --ls-highlight-color-green: hsl(101, 75%, 28%);
+    --ls-highlight-color-blue: hsl(217, 80%, 38%);
+    --ls-highlight-color-purple: hsl(274, 58%, 34%);
+    --ls-highlight-color-pink: hsl(336, 70%, 30%);
 
 
     /* embeded block levels */
-    /* */--color-level-1: var(--bujo-background2);
-    /* */--color-level-2: var(--bujo-background3);
-    /* */--color-level-3: var(--bujo-background4);
-    /* */--color-level-4: var(--bujo-background5);
-    /* */--color-level-5: var(--bujo-background6);
-    /* */--color-level-6: var(--bujo-background7);
+    --color-level-1: var(--bujo-background2);
+    --color-level-2: var(--bujo-background3);
+    --color-level-3: var(--bujo-background4);
+    --color-level-4: var(--bujo-background5);
+    --color-level-5: var(--bujo-background6);
+    --color-level-6: var(--bujo-background7);
 }
 
 

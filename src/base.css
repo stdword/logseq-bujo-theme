@@ -99,21 +99,71 @@
 
 /* search */
 
-.ls-search a.menu-link {
+/* make items in recent searches and search result modals have the same height */
+/*.ls-search a > span > div {
+    padding-top: 0;
+    padding-bottom: 0;
+}*/
+
+/* set that height ↑↑ */
+/*.ls-search .menu-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}*/
+
+/* search page: fix icon and text laying on different lines */
+#search .search-result {
+    display: flex;
+}
+
+#search .menu-link:not(.chosen, :hover) {
+    background-color: unset;
+}
+
+/* matching modal (.search-results-wrap) and page (.search-results) */
+div[class^="search-results"] a.menu-link,
+div[class^="search-results"] a.menu-link p {
     color: var(--ls-primary-text-color);
 }
 
-.ls-search a.menu-link.chosen,
-.ls-search a.menu-link:hover {
-    color: var(--ls-secondary-text-color);
+div[class^="search-results"] a.menu-link.chosen,
+div[class^="search-results"] a.menu-link.chosen p,
+div[class^="search-results"] a.menu-link:hover,
+div[class^="search-results"] a.menu-link:hover p {
+    color: var(--bujo-search-item-text-hover);
+    background: var(--ls-a-chosen-bg);
 }
 
-.ls-search .search-item svg,
-.ls-search .search-result .type-icon,
-.ls-search .search-result .type-icon::before {
-    color: var(--ls-secondary-text-color);
-    background: none;
-    border: none;
+/* magnifier icon */
+a.menu-link .search-item>svg {
+    color: var(--ls-primary-text-color);
+}
+a.menu-link:hover .search-item>svg {
+    color: var(--bujo-search-item-text-hover);
+}
+
+/* new page icon */
+a.menu-link .search-result .type-icon.highlight {
+    color: var(--bujo-search-item-new-page-icon-text);
+    border-color: var(--bujo-search-item-new-page-icon-background);
+}
+a.menu-link .search-result .type-icon.highlight::before {
+    background: var(--bujo-search-item-new-page-icon-background);
+    opacity: .8;
+}
+
+/* other icons */
+a.menu-link .search-result .type-icon:not(.highlight) {
+    color: var(--ls-primary-text-color);
+    border-color: var(--ls-primary-background-color);
+}
+a.menu-link.chosen .search-result .type-icon:not(.highlight),
+a.menu-link:hover .search-result .type-icon:not(.highlight) {
+    color: var(--bujo-search-item-text-hover);
+}
+
+a.menu-link .search-result .type-icon:not(.highlight)::before {
+    background: var(--ls-primary-background-color);
 }
 
 

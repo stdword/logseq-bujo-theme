@@ -49,6 +49,10 @@
     --bujo-text-accent: var(--bujo-foreground3);
     --bujo-text-hightlight: var(--bujo-highlight-normal);
 
+    --bujo-search-item-text-hover: var(--bujo-text-accent);
+    --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
+    --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
+
     --bujo-caret: var(--ls-primary-text-color);
     --bujo-link-ref-brackets: var(--color-gray-500);
 
@@ -81,10 +85,9 @@
 
     --ls-table-tr-even-background-color: var(--bujo-background4);
     --ls-menu-hover-color: var(--ls-secondary-background-color);
-    --ls-a-chosen-bg: var(--bujo-background3);
+    --ls-a-chosen-bg: var(--bujo-background5);
     --ls-slide-background-color: var(--ls-primary-background-color);
-    --ls-search-background-color: var(--bujo-background2); /* unknown disposition */
-    --ls-right-sidebar-code-bg-color: var(--bujo-background3); /* unknown disposition */
+     /* unknown disposition */ --ls-search-background-color: var(--bujo-background2);
 
 
     /* text */
@@ -92,7 +95,6 @@
     --ls-secondary-text-color: var(--bujo-foreground2);
 
     --ls-title-text-color: var(--ls-primary-text-color);
-    --ls-head-text-color: var(--ls-primary-text-color); /* unknown disposition */
 
     --ls-selection-text-color: var(--ls-secondary-text-color);
     --ls-selection-background-color: var(--bujo-highlight-clean);
@@ -145,6 +147,7 @@
 
 
     /* other ui */
+
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--ls-secondary-text-color);
     --ls-search-icon-color: var(--ls-icon-color); /* unknown disposition */
