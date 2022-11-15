@@ -85,9 +85,10 @@
 
     --ls-table-tr-even-background-color: var(--bujo-background4);
     --ls-menu-hover-color: var(--ls-secondary-background-color);
-    --ls-a-chosen-bg: var(--bujo-background5);
     --ls-slide-background-color: var(--ls-primary-background-color);
-     /* unknown disposition */ --ls-search-background-color: var(--bujo-background2);
+
+    /* search item hover */
+    --ls-a-chosen-bg: var(--bujo-background5);
 
 
     /* text */

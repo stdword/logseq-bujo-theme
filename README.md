@@ -4,14 +4,14 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 Original author of all themes: [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme). This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq.
 
 ## How it looks
+### Coffee
+![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.jpeg)
 ### White (will be reviewed)
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.jpeg)
 ### Sepia (will be reviewed)
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.jpeg)
 ### Black
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.jpeg)
-### Coffee
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.jpeg)
 
 ## Installation
 From Logseq:

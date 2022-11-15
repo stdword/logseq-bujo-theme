@@ -316,12 +316,12 @@ mark .page-reference:hover {
 
 /* linked references filter */
 
-.fade-link {
-    color:  var(--ls-primary-text-color);
+.ls-icon-filter {
+    color: var(--ls-icon-color);
     opacity: 0.8;
 }
-.fade-link:hover {
-    color:  var(--ls-primary-text-color);
+.ls-icon-filter:hover {
+    color: var(--ls-icon-color);
 }
 
 
@@ -370,12 +370,24 @@ mark .page-reference:hover {
     z-index: var(--ls-z-index-level-1);
 }
 
+/*.form-checkbox:checked {
+     opacity: .8; 
+}*/
+
+.canceled, .cancelled, .done {
+    opacity: .8;
+}
+
+.block-ref :is(.later, .now, .todo, .doing, .wait, .done) {
+    opacity: .8;
+}
+
 .marker-switch {
     border-radius: 2px;
 
     opacity: 1;
     padding: 0;
-    margin: 0 5px 0 2px;
+    margin: 0 5px 0 2px
 
     margin-left: -23px;
     padding-left: 24px;
@@ -385,10 +397,6 @@ mark .page-reference:hover {
 .marker-switch, .block-ref .marker-switch {
     color: var(--ls-marker-text-color);
     background: var(--ls-marker-text-bg-color);
-}
-
-.block-ref .marker-switch {
-    opacity: 0.7;
 }
 
 .marker-switch:hover, .block-ref .marker-switch:hover {
@@ -425,9 +433,6 @@ a.priority[href="#/page/B" i]::before {
 a.priority[href="#/page/C" i]::before {
     content: "\ea5f";
     background-color: var(--ls-highlight-color-blue);
-}
-.done {
-    opacity: 1;
 }
 
 
