@@ -138,6 +138,7 @@ div[class^="search-results"] a.menu-link:hover p {
 a.menu-link .search-item>svg {
     color: var(--ls-primary-text-color);
 }
+a.menu-link.chosen .search-item>svg,
 a.menu-link:hover .search-item>svg {
     color: var(--bujo-search-item-text-hover);
 }
@@ -325,6 +326,16 @@ mark .page-reference:hover {
 }
 
 
+/* plugins page filter */
+
+.cp__plugins-page .ls-icon-filter {
+    color: var(--bujo-text-accent);
+}
+.cp__plugins-page .ls-icon-filter:hover {
+    color: var(--bujo-text-accent);
+}
+
+
 /* linked & unlinked references */
 
 .references h2 {
@@ -387,7 +398,7 @@ mark .page-reference:hover {
 
     opacity: 1;
     padding: 0;
-    margin: 0 5px 0 2px
+    margin: 0 5px 0 2px;
 
     margin-left: -23px;
     padding-left: 24px;
@@ -453,7 +464,6 @@ a.priority[href="#/page/C" i]::before {
 
 html[data-theme="dark"] .CodeMirror {
     background-color: var(--ls-secondary-background-color);
-    color: var(--ls-primary-text-color);
     border-radius: 4px;
     text-shadow: none;
 }
@@ -596,6 +606,14 @@ svg.tip {
 
 .form-input {
     background-color: var(--ls-primary-background-color) !important;
+}
+
+
+/* plugins */
+.cp__plugins-page .control-tabs .ti,
+.cp__plugins-page .control-tabs .tie {
+    margin-right: unset;
+    margin-left: unset;
 }
 
 

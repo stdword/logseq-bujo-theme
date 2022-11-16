@@ -24,10 +24,12 @@
     --bujo-background6: hsl(17, 12%, 23%);
     --bujo-background7: hsl(24, 11%, 34%);
 
-    --bujo-foreground1: hsl(27, 20%, 52%);
-    --bujo-foreground2: hsl(27, 20%, 71%);
-    --bujo-foreground3: hsl(37, 25%, 84%);
-    --bujo-foreground4: hsl(37, 25%, 90%);
+    --bujo-foreground1:       hsl(27, 20%, 52%);
+    --bujo-foreground2_hsl: /*hsl(27, 20%, 71%)*/ 27, 20%, 71%;
+    --bujo-foreground3:       hsl(37, 25%, 84%);
+    --bujo-foreground4:       hsl(37, 25%, 90%);
+
+    --bujo-foreground2: hsl(var(--bujo-foreground2_hsl));
 
     --bujo-fill1_hsl: /*hsl(353, 22%, 19%)*/ 353, 22%, 19%; 
     --bujo-fill2:       hsl(353, 19%, 27%);
@@ -86,9 +88,6 @@
     --ls-table-tr-even-background-color: var(--bujo-background4);
     --ls-menu-hover-color: var(--ls-secondary-background-color);
     --ls-slide-background-color: var(--ls-primary-background-color);
-
-    /* search item hover */
-    --ls-a-chosen-bg: var(--bujo-background5);
 
 
     /* text */
@@ -151,7 +150,10 @@
 
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--ls-secondary-text-color);
-    --ls-search-icon-color: var(--ls-icon-color); /* unknown disposition */
+
+    /* search results palette */
+    --ls-search-icon-color: var(--bujo-accent-normal);
+    --ls-a-chosen-bg: var(--bujo-background5);
 
     /* menu header icons color*/
     --ls-header-button-background: var(--ls-primary-text-color);
@@ -193,6 +195,10 @@
 /* ---------- */
 /* CODE BLOCK */
 /* ---------- */
+
+html[data-theme="dark"] .CodeMirror {
+    color: hsla(var(--bujo-foreground2_hsl), .7);
+}
 
 html[data-theme="dark"] .CodeMirror .cm-keyword {
     color: var(--ls-secondary-text-color);
