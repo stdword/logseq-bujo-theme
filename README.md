@@ -5,18 +5,20 @@ Original author of all themes: [@PiotrSss](https://github.com/PiotrSss/logseq-bu
 
 ## How it looks
 ### Coffee
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.jpeg)
+![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png)
 ### White (will be reviewed)
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.jpeg)
 ### Sepia (will be reviewed)
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.jpeg)
 ### Black
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.jpeg)
+![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png)
 
 ## Installation
 From Logseq:
 * Click «...» and open the «Plugins» section (or press `t p`)
 * Click on the «Marketplace»
 * Select the «Themes» tab
-* Click install for the «BuJo theme»
-* Now click «...» and open the «Themes» (or press `t i`) to bring up the theme selection window and select one with «BuJo» prefix
+* Search for «BuJo theme» and click install
+* Close «Marketplace» and open «...» → «Themes» (or press `t i`) to bring up the theme selection window
+* Select one with «BuJo» prefix
+* To switch between Light and Dark themes press `t t`

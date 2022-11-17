@@ -48,15 +48,14 @@
     --bujo-dots: var(--bujo-background6);
     --bujo-dots-background: var(--bujo-background2);
 
-    --bujo-text-accent: var(--bujo-foreground3);
-    --bujo-text-hightlight: var(--bujo-highlight-normal);
-
     --bujo-search-item-text-hover: var(--bujo-text-accent);
     --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
     --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
 
     --bujo-caret: var(--ls-primary-text-color);
     --bujo-link-ref-brackets: var(--color-gray-500);
+    --bujo-text-accent: var(--bujo-foreground3);
+    --bujo-code-selection-background: var(--bujo-highlight-normal);
 
     --bujo-block-embed-background: hsla(var(--bujo-fill5_hsl), .5);
     --bujo-block-embed-background-hover: hsla(var(--bujo-fill5_hsl), .6);
@@ -71,8 +70,6 @@
     --bujo-button-text: var(--bujo-foreground4);
     --bujo-button-background: var(--bujo-accent-dimmed);
     --bujo-button-background-hover: var(--bujo-accent-normal);
-
-    --bujo-code-selection-background: var(--bujo-highlight-normal);
 
 
     /* ----------------- */
@@ -98,6 +95,9 @@
 
     --ls-selection-text-color: var(--ls-secondary-text-color);
     --ls-selection-background-color: var(--bujo-highlight-clean);
+
+    --ls-page-mark-color: var(--ls-secondary-text-color);
+    --ls-page-mark-bg-color: var(--bujo-highlight-normal);
 
     --ls-page-blockquote-color: var(--ls-primary-text-color);
     --ls-page-blockquote-bg-color: var(--bujo-background1);
@@ -165,7 +165,7 @@
     --ls-guideline-color: var(--ls-quaternary-background-color);
 
     --ls-scrollbar-foreground-color: var(--bujo-shadow);
-    --ls-scrollbar-background-color: rgba(var(--bujo-fill1_rgb), 0.9);
+    --ls-scrollbar-background-color: hsla(var(--bujo-fill1_hsl), 0.9);
     --ls-scrollbar-thumb-hover-color: var(--bujo-shadow-white);
 
     /* block references border color (disabled) and slash-commands group color */

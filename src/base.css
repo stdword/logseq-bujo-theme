@@ -193,8 +193,6 @@ a.menu-link .search-result .type-icon:not(.highlight)::before {
 /* text decorations */
 
 mark {
-    background: var(--bujo-text-hightlight);
-    color: var(--ls-secondary-text-color);
     border-radius: 3px;
     padding: 3px 5px;
 }
