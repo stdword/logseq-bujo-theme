@@ -21,7 +21,8 @@ From Logseq:
 * Click on the «Marketplace»
 * Select the «Themes» tab
 * Search for «BuJo theme» and click install
-<img src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/marketplace.png" width="400"/>
+
+  <img src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/marketplace.png" width="400"/>
 * Close «Marketplace» and open «...» → «Themes» (or press `t i`) to bring up the theme selection window
 * Select one with «BuJo» prefix
 * To switch between Light and Dark themes press `t t`
