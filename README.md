@@ -1,7 +1,8 @@
 # Logseq BuJo Theme
 A theme for https://logseq.com, inspired by Bullet Journals.
 
-Original author of all themes: [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme). This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq.
+This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
+
 
 ## How it looks
 ### Coffee
@@ -13,12 +14,21 @@ Original author of all themes: [@PiotrSss](https://github.com/PiotrSss/logseq-bu
 ### Black
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png)
 
+
 ## Installation
 From Logseq:
 * Click «...» and open the «Plugins» section (or press `t p`)
 * Click on the «Marketplace»
 * Select the «Themes» tab
 * Search for «BuJo theme» and click install
+
+  ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/marketplace.png)
 * Close «Marketplace» and open «...» → «Themes» (or press `t i`) to bring up the theme selection window
 * Select one with «BuJo» prefix
 * To switch between Light and Dark themes press `t t`
+
+
+# Credits
+* Original author of all themes — [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme): `Copyright (c) 2021 Piotr Skarżyński`
+* [logseq-flow-theme](https://github.com/nmartin84/logseq-flow): `Copyright (c) 2021 Nicholas Martin` (under [MIT License](https://github.com/nmartin84/logseq-flow/blob/f0a6dacfe8469a978c681dbafa98b3bf2625f180/LICENSE))
+* [logtools](https://github.com/cannibalox/logtools): `Copyright (c) 2021 Phi` (under [MIT License](https://github.com/cannibalox/logtools/blob/79853d657f3b7d26469e685025de554cbd682e02/LICENSE))

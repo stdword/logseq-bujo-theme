@@ -111,11 +111,7 @@
     padding-bottom: 1rem;
 }*/
 
-/* search page: fix icon and text laying on different lines */
-#search .search-result {
-    display: flex;
-}
-
+/* search page: remove background */
 #search .menu-link:not(.chosen, :hover) {
     background-color: unset;
 }
@@ -659,4 +655,142 @@ svg.tip {
 }
 .ui__toggle [aria-checked="true"]:hover .switcher {
     background-color: var(--bujo-toggle-switcher-on);
+}
+
+
+/* ---------- */
+/* EXTENSIONS */
+/* ---------- */
+
+/* hide tags, started with "." */
+/* (forked from logtools) */
+
+a.tag[data-ref^="."]:before {
+    content: "…";
+    font-size: 1.0rem;
+    line-height: 1.0rem;
+}
+
+a.tag[data-ref^="."]:hover:before {
+    content: "";
+    padding-right: 0.7rem;
+}
+
+a.tag[data-ref^="."]:hover {
+    font-size: 1.0rem !important;
+    border: 1px solid var(--ls-primary-text-color);
+    color: var(--ls-primary-text-color) !important;
+}
+
+a.tag[data-ref^="."] {
+    font-family: monospace;
+    
+    font-size: 0px !important;
+    color: var(--ls-primary-text-color) !important;
+    background-color: var(--ls-primary-background-color) !important;
+
+    border: none;
+    
+    border-radius: 3px;
+    padding: 0 2px;
+}
+
+
+/* numbered lists */
+/* (forked from logtools) */
+
+.ls-block[data-refs-self*='".numlist"'] > .block-children-container > .block-children > .ls-block {
+    counter-increment: lvlNumber;
+}
+
+.ls-block[data-refs-self*='".numlist"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container > .bullet {
+    visibility: hidden;
+}
+
+.ls-block[data-refs-self*='".numlist"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container::before {
+    content: counters(lvlNumber, ".") ":";
+    position: absolute;
+    display: block;
+    width: 25px;
+}
+
+.ls-block[data-refs-self*='".numlist"'] > .block-children-container > .block-children > .ls-block > div > div > a:hover > .bullet-container,
+.ls-block[data-refs-self*='".numlist"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container.bullet-closed {
+    font-weight: bold;
+    background-color: unset;
+}
+
+.ls-block[data-refs-self*='".numlist"'] > .block-children-container > .block-children > .ls-block[data-collapsed^="{"] > div > div > .block-control > .control-hide {
+    display: unset;
+}
+
+
+/* numbered lists - second level */
+/* (forked from logtools) */
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block {
+    counter-increment: lvlNumber;
+}
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container::before {
+    content: counters(lvlNumber, ".") ":";
+    position: absolute;
+    display: block;
+    width: 25px;
+}
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block {
+    counter-increment: sublvlNumber;
+}
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container::before {
+    content: counters(lvlNumber, ".") "." counters(sublvlNumber, ".") ":";
+    position: absolute;
+    display: block;
+    padding-right: 0.25em;
+    width: 50px;
+}
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block[data-collapsed^="{"] > div > div > .block-control > .control-hide,
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block[data-collapsed^="{"] > div > div > .block-control > .control-hide {
+    display: unset;
+}
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > div > div > a:hover > .bullet-container,
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container.bullet-closed,
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block > div > div > a:hover > .bullet-container,
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container.bullet-closed {
+    font-weight: bold;
+    background-color: unset;
+}
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block > div > div > .block-control {
+    width: 33px !important;
+}
+
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container > .bullet,
+.ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container > .bullet {
+    visibility: hidden;
+}
+
+
+/* borders around blocks */
+/* (forked from logtools) */
+
+[data-refs-self*='".border"'] {
+    box-shadow: 2px 2px 3px #0000003b;
+    border: 1px solid var(--ls-border-color);
+    border-radius: var(--ls-border-radius-medium);
+    background-color: var(--ls-primary-background-color);
+    margin: 0em 0.5em 0.2em 1em !important;
+    padding: 0.5em 1em 0.5em 0em !important;
+
+}
+[data-refs-self*='".border-child"'] > .block-children-container > .block-children > .ls-block {
+    box-shadow: 2px 2px 3px #0000003b;
+    border: 1px solid var(--ls-border-color);
+    border-radius: var(--ls-border-radius-low);
+    background-color: var(--ls-tertiary-background-color);
+    margin: 0.5em 1em 0.5em 0em !important;
+    padding: 0.5em 1em 0.5em 0em !important;
 }
