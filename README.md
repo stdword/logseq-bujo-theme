@@ -30,5 +30,5 @@ From Logseq:
 
 # Credits
 * Original author of all themes — [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme): `Copyright (c) 2021 Piotr Skarżyński`
-* [logseq-flow-theme](https://github.com/nmartin84/logseq-flow): `Copyright (c) 2021 Nicholas Martin` (under [MIT License](https://github.com/nmartin84/logseq-flow/blob/f0a6dacfe8469a978c681dbafa98b3bf2625f180/LICENSE))
-* [logtools](https://github.com/cannibalox/logtools): `Copyright (c) 2021 Phi` (under [MIT License](https://github.com/cannibalox/logtools/blob/79853d657f3b7d26469e685025de554cbd682e02/LICENSE))
+* Some CSS from [logseq-flow-theme](https://github.com/nmartin84/logseq-flow): `Copyright (c) 2021 Nicholas Martin` (under [MIT License](https://github.com/nmartin84/logseq-flow/blob/f0a6dacfe8469a978c681dbafa98b3bf2625f180/LICENSE))
+* Some CSS from [logtools](https://github.com/cannibalox/logtools): `Copyright (c) 2021 Phi` (under [MIT License](https://github.com/cannibalox/logtools/blob/79853d657f3b7d26469e685025de554cbd682e02/LICENSE))
