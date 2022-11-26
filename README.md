@@ -1,7 +1,7 @@
 # Logseq BuJo Theme
 A theme for https://logseq.com, inspired by Bullet Journals.
 
-This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
+⚠️ This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
 
 
 ## How it looks
@@ -28,7 +28,7 @@ From Logseq:
 * To switch between Light and Dark themes press `t t`
 
 
-# How to turn off property icons?
+## How to turn off property icons?
 In Logseq:
 * Click «...» and open the «Settings» section (or press `t s`)
 * Click «Edit custom.css»
