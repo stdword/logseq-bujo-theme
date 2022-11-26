@@ -28,6 +28,19 @@ From Logseq:
 * To switch between Light and Dark themes press `t t`
 
 
+# How to turn off property icons?
+In Logseq:
+* Click «...» and open the «Settings» section (or press `t s`)
+* Click «Edit custom.css»
+* Add following lines to the end
+
+  ```css
+  .page-property-key::before {
+      display: none;
+  }
+  ```
+
+
 # Credits
 * Original author of all themes — [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme): `Copyright (c) 2021 Piotr Skarżyński`
 * Some CSS from [logseq-flow-theme](https://github.com/nmartin84/logseq-flow): `Copyright (c) 2021 Nicholas Martin` (under [MIT License](https://github.com/nmartin84/logseq-flow/blob/f0a6dacfe8469a978c681dbafa98b3bf2625f180/LICENSE))

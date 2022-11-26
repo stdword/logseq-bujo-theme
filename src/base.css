@@ -206,7 +206,7 @@ mark > b > i {
     color: var(--bujo-text-accent);
 }
 
-mark>code {
+mark > code {
     background: var(--ls-block-highlight-color) !important;
     color: var(--bujo-text-accent) !important;
     padding: 3px 5px
@@ -244,7 +244,7 @@ a.asset-ref { /* title in pdf extension */
 
 /* pdf asset link */
 
-.asset-ref.is-pdf:before {
+.asset-ref.is-pdf::before {
     content: "\eaa2"; /* https://tabler-icons.io/i/file-text */
     font-family: 'tabler-icons';
 
@@ -252,10 +252,10 @@ a.asset-ref { /* title in pdf extension */
     opacity: 0.8;
     transition: .3s;
 }
-.asset-ref.is-pdf:hover:before {
+.asset-ref.is-pdf:hover::before {
     opacity: 1;
 }
-.asset-ref.is-pdf:after {
+.asset-ref.is-pdf::after {
     content: "";
 }
 .asset-ref.is-pdf {
@@ -665,13 +665,13 @@ svg.tip {
 /* hide tags, started with "." */
 /* (forked from logtools) */
 
-a.tag[data-ref^="."]:before {
+a.tag[data-ref^="."]::before {
     content: "…";
     font-size: 1.0rem;
     line-height: 1.0rem;
 }
 
-a.tag[data-ref^="."]:hover:before {
+a.tag[data-ref^="."]:hover::before {
     content: "";
     padding-right: 0.7rem;
 }
@@ -784,8 +784,8 @@ a.tag[data-ref^="."] {
     background-color: var(--ls-primary-background-color);
     margin: 0em 0.5em 0.2em 1em !important;
     padding: 0.5em 1em 0.5em 0em !important;
-
 }
+
 [data-refs-self*='".border-child"'] > .block-children-container > .block-children > .ls-block {
     box-shadow: 2px 2px 3px #0000003b;
     border: 1px solid var(--ls-border-color);
@@ -794,3 +794,67 @@ a.tag[data-ref^="."] {
     margin: 0.5em 1em 0.5em 0em !important;
     padding: 0.5em 1em 0.5em 0em !important;
 }
+
+
+/* property icons */
+/* (forked from logseq-flow-theme) */
+.page-property-key::before {
+    content: "\eabc";
+    font-family: 'tabler-icons';
+
+    padding-right: 4px;
+    vertical-align: bottom;
+
+    color: var(--ls-primary-text-color);
+    opacity: .8;
+}
+
+.page-property-key[data-ref="tags"]::before        { content: "\ef86" }
+.page-property-key[data-ref="alias"]::before       { content: "\eef7" }
+.page-property-key[data-ref|="file"]::before       { content: "\eb02" }
+
+.page-property-key[data-ref="ref"]::before,
+.page-property-key[data-ref="source"]::before      { content: "\eb54" }
+.page-property-key[data-ref="author"]::before,
+.page-property-key[data-ref="creator"]::before,
+.page-property-key[data-ref="leading"]::before     { content: "\eee0" }
+.page-property-key[data-ref="owner"]::before,
+.page-property-key[data-ref="assignee"]::before,
+.page-property-key[data-ref="who"]::before         { content: "\ea2b" }
+.page-property-key[data-ref="state"]::before,
+.page-property-key[data-ref="status"]::before      { content: "\f3b0" }
+.page-property-key[data-ref|="date"]::before,
+.page-property-key[data-ref="start"]::before,
+.page-property-key[data-ref="end"]::before,
+.page-property-key[data-ref="day"]::before,
+.page-property-key[data-ref="week"]::before,
+.page-property-key[data-ref="month"]::before,
+.page-property-key[data-ref="year"]::before,
+.page-property-key[data-ref="when"]::before        { content: "\ea53" }
+.page-property-key[data-ref="related"]::before     { content: "\eb21" }
+.page-property-key[data-ref="url"]::before,
+.page-property-key[data-ref="link"]::before        { content: "\eade" }
+.page-property-key[data-ref="color"]::before       { content: "\eb01" }
+.page-property-key[data-ref="text"]::before,
+.page-property-key[data-ref="summary"]::before,
+.page-property-key[data-ref="description"]::before { content: "\ea08" }
+.page-property-key[data-ref="comment"]::before,
+.page-property-key[data-ref="note"]::before        { content: "\eb6d" }
+.page-property-key[data-ref="category"]::before    { content: "\ea45" }
+.page-property-key[data-ref="topic"]::before       { content: "\f06c" }
+.page-property-key[data-ref="area"]::before        { content: "\eeae" }
+.page-property-key[data-ref="price"]::before       { content: "\eb85" }
+.page-property-key[data-ref="duration"]::before    { content: "\f146" }
+.page-property-key[data-ref="time"]::before        { content: "\ea70" }
+.page-property-key[data-ref="rating"]::before      { content: "\eb2e" }
+.page-property-key[data-ref="location"]::before,
+.page-property-key[data-ref="place"]::before,
+.page-property-key[data-ref="where"]::before       { content: "\eae8" }
+.page-property-key[data-ref="format"]::before      { content: "\eebd" }
+.page-property-key[data-ref="type"]::before        { content: "\eaba" }
+.page-property-key[data-ref="size"]::before,
+.page-property-key[data-ref="level"]::before       { content: "\f015" }
+.page-property-key[data-ref="isbn"]::before,
+.page-property-key[data-ref="number"]::before      { content: "\f1fe" }
+.page-property-key[data-ref="task"]::before        { content: "\eba6" }
+.page-property-key[data-ref="project"]::before     { content: "\edba" }
