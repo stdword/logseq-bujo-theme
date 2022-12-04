@@ -23,6 +23,7 @@
     --bujo-background5: hsl(8, 8%, 20%);
     --bujo-background6: hsl(17, 12%, 23%);
     --bujo-background7: hsl(24, 11%, 34%);
+    --bujo-background8: hsl(24, 11%, 40%);
 
     --bujo-foreground1:       hsl(27, 20%, 52%);
     --bujo-foreground2_hsl: /*hsl(27, 20%, 71%)*/ 27, 20%, 71%;
@@ -188,7 +189,7 @@
     --color-level-3: var(--ls-quaternary-background-color);
     --color-level-4: var(--bujo-background6);
     --color-level-5: var(--bujo-background7);
-    --color-level-6: var(--bujo-foreground1);
+    --color-level-6: var(--bujo-background8);
 }
 
 

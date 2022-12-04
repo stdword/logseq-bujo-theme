@@ -36,6 +36,16 @@
     --ls-z-index-level-4: 9999;
     --ls-z-index-level-5: 99999;
 */
+}
+
+
+/* global color vars */
+:root {
+    --ls-error-color: var(--color-red-500);
+    --ls-warning-color: var(--color-yellow-400);
+    --ls-success-color: var(--color-green-500);
+
+    --bujo-caution-color: hsl(29, 92%, 50%);
 
     --bujo-shadow:       rgba(255, 255, 255, .05);
     --bujo-shadow-white: rgba(255, 255, 255, .2);
@@ -210,13 +220,6 @@ mark > code {
     background: var(--ls-block-highlight-color) !important;
     color: var(--bujo-text-accent) !important;
     padding: 3px 5px
-}
-
-
-/* code */
-
-.copy-button:hover {
-    background: 0 0;
 }
 
 
@@ -558,8 +561,20 @@ html[data-theme="dark"] .cm-s-default .CodeMirror-line > span > span::selection 
 .sidebar-item a.page-title:hover {
     color: var(--ls-link-ref-text-hover-color);
 }
-.sidebar-item .breadcrumb > a a.page-ref:hover {
+.sidebar-item .breadcrumb > a span.page-reference:hover {
     color: var(--ls-link-ref-text-hover-color);
+}
+
+
+/* copy-button plugin */
+
+.copy-button {
+    top: 1em;
+    right: -2em;
+}
+
+.copy-button:hover {
+    background: 0 0;
 }
 
 
@@ -567,6 +582,7 @@ html[data-theme="dark"] .cm-s-default .CodeMirror-line > span > span::selection 
 
 .extensions__code-calc {
     background: var(--ls-tertiary-background-color);
+    padding-top: 0.25em;
 }
 
 
@@ -593,6 +609,20 @@ textarea {
 
 svg.tip {
     color: var(--ls-primary-text-color);
+}
+/*
+.admonition-icon[title="Caution"]::before {
+    content: "\ec2c";
+    font-family: "tabler-icons";
+    font-size: 2.5rem;
+    color: var(--bujo-caution-color);
+} */
+.admonition-icon[title="Caution"] {
+    /* change colors here to --bujo-caution-color */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-160 -1 700 512' fill='%23f59e0b' class='h-8 w-8 caution'%3E%3Cpath d='M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z'%3E%3C/path%3E%3C/svg%3E");
+}
+.admonition-icon[title="Caution"] > svg {
+    opacity: 0;
 }
 
 
