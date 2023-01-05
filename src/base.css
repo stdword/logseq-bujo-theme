@@ -568,13 +568,50 @@ html[data-theme="dark"] .cm-s-default .CodeMirror-line > span > span::selection 
 
 /* copy-button plugin */
 
-.copy-button {
-    top: 1em;
-    right: -2em;
-}
-
 .copy-button:hover {
     background: 0 0;
+}
+
+
+/* smartblocks plugin  */
+
+.templater-btn {
+    background-color: var(--ls-secondary-background-color) !important;
+    color: var(--ls-link-text-color) !important;
+}
+.templater-btn:hover {
+    background-color: var(--bujo-button-background-hover) !important;
+    border-color: var(--ls-border-color) !important;
+    color: var(--bujo-button-text) !important;
+}
+
+
+/* days plugin */
+
+.kef-days-num {
+    opacity: 1;
+}
+/* uncomment to enable opacity for days text
+.kef-days-num > span {
+    opacity: .7;
+}
+.kef-days-highlight > span {
+    opacity: 1;
+} */
+
+.kef-days-weekend {
+    color: var(--ls-primary-text-color);
+}
+.kef-days-today {
+    color: var(--ls-selection-text-color);
+    background-color: var(--ls-selection-background-color);
+}
+
+.kef-days-contentful {
+    background: var(--ls-link-ref-text-hover-color);
+}
+.kef-days-referred {
+    background: var(--ls-link-text-color);
 }
 
 
@@ -634,6 +671,7 @@ svg.tip {
 
 
 /* plugins */
+
 .cp__plugins-page .control-tabs .ti,
 .cp__plugins-page .control-tabs .tie {
     margin-right: unset;
