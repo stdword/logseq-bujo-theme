@@ -22,7 +22,7 @@
             },
             {
                 "name": "Sepia",
-                "url": "./src/light-sepia-new.css",
+                "url": "./src/light-sepia.css",
                 "description": "Sepia",
                 "mode": "light"
             },
