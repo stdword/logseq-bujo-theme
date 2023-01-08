@@ -1,7 +1,7 @@
 {
     "name": "BuJo",
     "author": "PiotrSss & stdword",
-    "version": "0.2.1",
+    "version": "0.3.1",
     "description": "A theme inspired by Bullet Journals",
     "logseq": {
         "id": "logseq-bujo-theme",
@@ -21,8 +21,8 @@
                 "mode": "dark"
             },
             {
-                "name": "Sepia (will be reviewed soon)",
-                "url": "./src/light-sepia.css",
+                "name": "Sepia",
+                "url": "./src/light-sepia-new.css",
                 "description": "Sepia",
                 "mode": "light"
             },

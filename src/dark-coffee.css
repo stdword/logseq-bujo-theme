@@ -50,16 +50,22 @@
     --bujo-dots-background: var(--bujo-background2);
 
     --bujo-search-item-text-hover: var(--bujo-text-accent);
+    --bujo-search-item-background: var(--ls-primary-background-color);
     --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
     --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
 
     --bujo-caret: var(--ls-primary-text-color);
     --bujo-link-ref-brackets: var(--color-gray-500);
+    --bujo-link-ref-hover: var(--bujo-tiny-shadow-white);
+    --bujo-link-ref-block-ref-hover: var(--bujo-half-shadow-white);
+    --bujo-link-ref-mark-hover: var(--bujo-shadow-black);
+    --bujo-link-ref-selected-hover: var(--bujo-half-shadow-black);
     --bujo-text-accent: var(--bujo-foreground3);
     --bujo-code-selection-background: var(--bujo-highlight-normal);
 
-    --bujo-block-embed-background: hsla(var(--bujo-fill5_hsl), .5);
-    --bujo-block-embed-background-hover: hsla(var(--bujo-fill5_hsl), .6);
+    --bujo-block-ref-text: var(--ls-secondary-text-color);
+    --bujo-block-ref-background: hsla(var(--bujo-fill5_hsl), .5);
+    --bujo-block-ref-background-hover: hsla(var(--bujo-fill5_hsl), .6);
 
     --bujo-toggle-switcher-off: var(--bujo-foreground1);
     --bujo-toggle-switcher-on:  var(--bujo-foreground3);
@@ -106,6 +112,7 @@
 
     --ls-page-inline-code-color: var(--ls-primary-text-color);
     --ls-page-inline-code-bg-color: var(--bujo-background1);
+    --bujo-page-inline-code-mark-color: var(--ls-block-highlight-color);
 
 
     /* external links */
@@ -159,18 +166,29 @@
     /* menu header icons color*/
     --ls-header-button-background: var(--ls-primary-text-color);
 
-    /* right panel resizer, onboarding and some unknown ui */
+    /* onboarding and some unknown ui */
     --ls-active-primary-color: var(--bujo-background7);
     --ls-active-secondary-color: var(--bujo-foreground1);
 
     --ls-guideline-color: var(--ls-quaternary-background-color);
 
-    --ls-scrollbar-foreground-color: var(--bujo-shadow);
+    --ls-scrollbar-foreground-color: var(--bujo-tiny-shadow-white);
     --ls-scrollbar-background-color: hsla(var(--bujo-fill1_hsl), 0.9);
     --ls-scrollbar-thumb-hover-color: var(--bujo-shadow-white);
 
     /* block references border color (disabled) and slash-commands group color */
     --ls-block-ref-link-text-color: var(--bujo-accent-dimmed); /* !confusing name */
+
+
+    --bujo-menu-icon: var(--ls-secondary-text-color);
+    --bujo-menu-text: var(--ls-primary-text-color);
+    --bujo-left-sidebar-page-icon: var(--ls-primary-text-color);
+    --bujo-left-sidebar-page-text: var(--ls-primary-text-color);
+    --bujo-right-sidebar-resizer: var(--bujo-background7);
+
+    --bujo-left-sidebar-background: var(--ls-secondary-background-color);
+
+    --bujo-property-text-hover: var(--bujo-text-accent);
 
 
     /* block background hightlights */
@@ -197,50 +215,59 @@
 /* CODE BLOCK */
 /* ---------- */
 
-html[data-theme="dark"] .CodeMirror {
+html[data-theme=dark] .CodeMirror {
     color: hsla(var(--bujo-foreground2_hsl), .7);
 }
+html[data-theme=dark] .CodeMirror .CodeMirror-activeline-background  {
+    background: var(--bujo-tiny-shadow-white);
+}
+html[data-theme=dark] .CodeMirror {
+    background-color: var(--ls-primary-background-color);
+}
+html[data-theme=dark] .CodeMirror .CodeMirror-gutters {
+    background-color: var(--ls-secondary-background-color);
+}
 
-html[data-theme="dark"] .CodeMirror .cm-keyword {
+html[data-theme=dark] .CodeMirror .cm-keyword {
     color: var(--ls-secondary-text-color);
 }
-html[data-theme="dark"] .CodeMirror .cm-operator {
+html[data-theme=dark] .CodeMirror .cm-operator {
     color: var(--ls-primary-text-color);
     opacity: 0.7;
 }
-html[data-theme="dark"] .CodeMirror .cm-property {
+html[data-theme=dark] .CodeMirror .cm-property {
     color: var(--ls-primary-text-color);
 }
-html[data-theme="dark"] .CodeMirror .cm-builtin {
+html[data-theme=dark] .CodeMirror .cm-builtin {
     color: var(--bujo-accent-dimmed);
 }
-html[data-theme="dark"] .CodeMirror .cm-number {
+html[data-theme=dark] .CodeMirror .cm-number {
     color: var(--bujo-highlight-lit);
 }
-html[data-theme="dark"] .CodeMirror .cm-meta {
+html[data-theme=dark] .CodeMirror .cm-meta {
     color: var(--bujo-highlight-lit);
 }
-html[data-theme="dark"] .CodeMirror .cm-string,
-html[data-theme="dark"] .CodeMirror .cm-string-2 {
+html[data-theme=dark] .CodeMirror .cm-string,
+html[data-theme=dark] .CodeMirror .cm-string-2 {
     color: var(--bujo-fill4);
 }
-html[data-theme="dark"] .CodeMirror .cm-comment {
+html[data-theme=dark] .CodeMirror .cm-comment {
     color: var(--bujo-background7);
 }
-html[data-theme="dark"] .CodeMirror .cm-variable,
-html[data-theme="dark"] .CodeMirror .cm-qualifier,
-html[data-theme="dark"] .CodeMirror .cm-variable-3,
-html[data-theme="dark"] .CodeMirror .cm-type {
+html[data-theme=dark] .CodeMirror .cm-variable,
+html[data-theme=dark] .CodeMirror .cm-qualifier,
+html[data-theme=dark] .CodeMirror .cm-variable-3,
+html[data-theme=dark] .CodeMirror .cm-type {
     color: var(--ls-primary-text-color);
 }
-html[data-theme="dark"] .CodeMirror .cm-variable-2 {
+html[data-theme=dark] .CodeMirror .cm-variable-2 {
     color: var(--ls-primary-text-color);
     font-style: italic;
 }
-html[data-theme="dark"] .CodeMirror .cm-def,
-html[data-theme="dark"] .CodeMirror .cm-attribute,
-html[data-theme="dark"] .CodeMirror .cm-atom,
-html[data-theme="dark"] .CodeMirror .cm-tag {
+html[data-theme=dark] .CodeMirror .cm-def,
+html[data-theme=dark] .CodeMirror .cm-attribute,
+html[data-theme=dark] .CodeMirror .cm-atom,
+html[data-theme=dark] .CodeMirror .cm-tag {
     color: var(--ls-secondary-text-color);
     font-style: italic;
 }

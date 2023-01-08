@@ -53,16 +53,22 @@
     --bujo-dots-background: var(--bujo-background1);
 
     --bujo-search-item-text-hover: var(--bujo-accent-normal);
+    --bujo-search-item-background: var(--ls-primary-background-color);
     --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
     --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
 
     --bujo-caret: var(--bujo-highlight-lit);
     --bujo-link-ref-brackets: var(--color-gray-500);
+    --bujo-link-ref-hover: var(--bujo-tiny-shadow-white);
+    --bujo-link-ref-block-ref-hover: var(--bujo-half-shadow-white);
+    --bujo-link-ref-mark-hover: var(--bujo-shadow-black);
+    --bujo-link-ref-selected-hover: var(--bujo-half-shadow-black);
     --bujo-text-accent: var(--bujo-foreground4);
     --bujo-code-selection-background: var(--bujo-highlight-normal);
 
-    --bujo-block-embed-background: hsla(var(--bujo-background8_hsl), .4);
-    --bujo-block-embed-background-hover: hsla(var(--bujo-background8_hsl), .5);
+    --bujo-block-ref-text: var(--ls-secondary-text-color);
+    --bujo-block-ref-background: hsla(var(--bujo-background8_hsl), .4);
+    --bujo-block-ref-background-hover: hsla(var(--bujo-background8_hsl), .5);
 
     --bujo-toggle-switcher-off: var(--bujo-foreground2);
     --bujo-toggle-switcher-on:  var(--bujo-foreground4);
@@ -109,6 +115,7 @@
 
     --ls-page-inline-code-color: var(--ls-primary-text-color);
     --ls-page-inline-code-bg-color: var(--bujo-fill0);
+    --bujo-page-inline-code-mark-color: var(--ls-block-highlight-color);
 
 
     /* external links */
@@ -142,6 +149,8 @@
     /* properties */
     --ls-page-properties-background-color: var(--bujo-background3);
     --ls-block-properties-background-color: var(--ls-page-properties-background-color);
+    --bujo-right-sidebar-properties-background: var(--bujo-background3);
+    --bujo-property-text-hover: var(--ls-link-text-color);
 
     /* scrollbars, table header and various ui borders */
     --ls-border-color: var(--bujo-fill0);
@@ -166,7 +175,7 @@
 
     --ls-guideline-color: var(--bujo-background3);
 
-    --ls-scrollbar-foreground-color: var(--bujo-shadow);
+    --ls-scrollbar-foreground-color: var(--bujo-tiny-shadow-white);
     --ls-scrollbar-background-color: hsla(var(--bujo-fill2_hsl), 0.9);
     --ls-scrollbar-thumb-hover-color: var(--bujo-shadow-white);
 
@@ -200,6 +209,15 @@
 
 html[data-theme="dark"] .CodeMirror {
     color: hsla(var(--bujo-foreground2_hsl), .7);
+}
+html[data-theme=dark] .CodeMirror .CodeMirror-activeline-background  {
+    background: var(--bujo-tiny-shadow-white);
+}
+html[data-theme=dark] .CodeMirror {
+    background-color: var(--ls-primary-background-color);
+}
+html[data-theme=dark] .CodeMirror .CodeMirror-gutters {
+    background-color: var(--ls-secondary-background-color);
 }
 
 html[data-theme="dark"] .CodeMirror .cm-keyword {

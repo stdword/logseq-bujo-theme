@@ -10,7 +10,7 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 ### White (will be reviewed)
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.jpeg)
 ### Sepia (will be reviewed)
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.jpeg)
+![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png)
 ### Black
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png)
 
