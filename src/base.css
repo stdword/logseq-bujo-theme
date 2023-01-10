@@ -4,7 +4,6 @@
 /* logseq non-color vars */
 :root {
     --ls-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    /* --ls-font-family: Inter; */
 
     --ls-main-content-max-width: 900px; /* default: 810px; */
   /*--ls-main-content-max-width-wide: 100%*/
@@ -49,6 +48,7 @@
 
     --bujo-tiny-shadow-white: rgba(255, 255, 255, .05);
     --bujo-tiny-shadow-black: rgba(0, 0, 0, .05);
+    --bujo-tiny2-shadow-black: rgba(0, 0, 0, .04);
 
     --bujo-half-shadow-white: rgba(255, 255, 255, .1);
     --bujo-half-shadow-black: rgba(0, 0, 0, .1);
@@ -83,6 +83,10 @@
     background-color: var(--color-level-1);
 }
 
+#right-sidebar .button:hover {
+    background-color: var(--ls-menu-hover-color);
+}
+
 #right-sidebar .sidebar-item {
     padding: 10px 20px 10px 6px;
     border: none;
@@ -93,11 +97,29 @@
 #right-sidebar .resizer:active,
 #right-sidebar .resizer:focus,
 #right-sidebar .resizer:hover {
-    background-color: var(--bujo-right-sidebar-resizer);
+    background-color: var(--bujo-resizer);
 }
 
 #right-sidebar tr:nth-child(2n) {
     background-color: var(--bujo-right-sidebar-table-even-background);
+}
+
+/* fix right sidebar items indentation */
+
+#right-sidebar .sidebar-item div.ml-1 {
+    margin-left: 0;
+}
+
+/* generalize right sidebar items hover style */
+
+#right-sidebar .sidebar-item a.page-title {
+    transition: .3s;
+}
+#right-sidebar .sidebar-item a.page-title:hover {
+    color: var(--ls-link-ref-text-hover-color);
+}
+#right-sidebar .sidebar-item .breadcrumb > a span.page-reference:hover {
+    color: var(--ls-link-ref-text-hover-color);
 }
 
 
@@ -133,6 +155,10 @@
 
 /* menu */
 
+#head .button:hover {
+    background-color: var(--ls-menu-hover-color);
+}
+
 .toolbar-plugins-manager .ls-icon-puzzle {
     color: var(--ls-header-button-background);
 }
@@ -148,6 +174,28 @@
 }
 .menu-links-wrapper .title-wrap {
     color: var(--bujo-menu-text);
+}
+
+a[title=Gray] > .heading-bg {
+    background-color: var(--ls-highlight-color-gray) !important;
+}
+a[title=Red] > .heading-bg {
+    background-color: var(--ls-highlight-color-red) !important;
+}
+a[title=Yellow] > .heading-bg {
+    background-color: var(--ls-highlight-color-yellow) !important;
+}
+a[title=Green] > .heading-bg {
+    background-color: var(--ls-highlight-color-green) !important;
+}
+a[title=Blue] > .heading-bg {
+    background-color: var(--ls-highlight-color-blue) !important;
+}
+a[title=Purple] > .heading-bg {
+    background-color: var(--ls-highlight-color-purple) !important;
+}
+a[title=Pink] > .heading-bg {
+    background-color: var(--ls-highlight-color-pink) !important;
 }
 
 
@@ -578,34 +626,47 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 
 /* pdf extension */
 
-.extensions__pdf-toolbar a.button > svg {
+.extensions__pdf-resizer {
+    height: 100vh;
+    top: 0vh;
+    width: 4px;
+    transition-duration: 0.3s;
+}
+
+.extensions__pdf-resizer:active,
+.extensions__pdf-resizer:focus,
+.extensions__pdf-resizer:hover {
+    background-color: var(--bujo-resizer);
+}
+
+.extensions__pdf-toolbar a.button {
     color: var(--ls-icon-color);
 }
 
 .ls-hl-colored .block-content[data-hl-color="purple"] .prefix-link:before {
     content: "\ec9c  "; /* https://tabler-icons.io/i/pin */
     font-family: "tabler-icons";
-    color: var(--color-purple-500);
+    color: var(--bujo-pdf-pin-purple);
 }
 .ls-hl-colored .block-content[data-hl-color="green"] .prefix-link:before {
     content: "\ec9c  ";
     font-family: "tabler-icons";
-    color: var(--color-green-500);
+    color: var(--bujo-pdf-pin-green);
 }
 .ls-hl-colored .block-content[data-hl-color="red"] .prefix-link:before {
     content: "\ec9c  ";
     font-family: "tabler-icons";
-    color: var(--color-red-400);
+    color: var(--bujo-pdf-pin-red);
 }
 .ls-hl-colored .block-content[data-hl-color="blue"] .prefix-link:before {
     content: "\ec9c  ";
     font-family: "tabler-icons";
-    color: var(--color-blue-500);
+    color: var(--bujo-pdf-pin-blue);
 }
 .ls-hl-colored .block-content[data-hl-color="yellow"] .prefix-link:before {
     content: "\ec9c  ";
     font-family: "tabler-icons";
-    color: var(--color-yellow-400);
+    color: var(--bujo-pdf-pin-yellow);
 }
 
 .block-content[data-type="annotation"] .prefix-link:before {
@@ -620,23 +681,17 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 /* MISC */
 /* ---- */
 
-/* fix right sidebar items indentation */
+/* guidelines */
 
-.sidebar-item div.ml-1 {
-    margin-left: 0;
+.block-children-left-border {
+    opacity: 1;
+}
+.block-children-left-border:hover {
+    background-color: var(--bujo-guideline-hover);
 }
 
-
-/* generalize right sidebar items hover style */
-
-.sidebar-item a.page-title {
-    transition: .3s;
-}
-.sidebar-item a.page-title:hover {
-    color: var(--ls-link-ref-text-hover-color);
-}
-.sidebar-item .breadcrumb > a span.page-reference:hover {
-    color: var(--ls-link-ref-text-hover-color);
+.editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2) {
+    border-bottom-color: var(--ls-guideline-color);
 }
 
 
@@ -647,13 +702,19 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 }
 
 
-/* block-calendar plugin: disable days opacity */
+/* block-calendar plugin */
 
+/* disable days opacity */
 .logseq-block-calendar .calendar-day.button {
     opacity: 1;
 }
+
 .logseq-block-calendar .calendar-day.button:hover {
-    background: var(--ls-secondary-background-color);
+    background-color: var(--bujo-hover-shadow);
+}
+
+#right-sidebar .logseq-block-calendar tr:nth-child(2n) {
+    background-color: transparent;
 }
 
 
@@ -676,7 +737,7 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
     opacity: 1 !important;
 }
 .kef-days-num:hover {
-    background-color: var(--ls-secondary-background-color) !important;
+    background-color: var(--bujo-hover-shadow) !important;
 }
 /* uncomment to enable opacity for days text
 .kef-days-num > span {
@@ -689,9 +750,10 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 .kef-days-weekend {
     color: var(--ls-primary-text-color) !important;
 }
-.kef-days-today {
-    color: var(--ls-selection-text-color) !important;
-    background-color: var(--ls-selection-background-color) !important;
+.kef-days-today,
+.kef-days-today:hover {
+    color: var(--bujo-days-plugin-today-text) !important;
+    background-color: var(--bujo-days-plugin-today-background) !important;
 }
 
 .kef-days-contentful {
@@ -705,7 +767,7 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 /* calculator */
 
 .extensions__code-calc {
-    background: var(--ls-quaternary-background-color);
+    background: var(--ls-secondary-background-color);
     padding-top: 0.25em;
 }
 
@@ -739,14 +801,14 @@ label.day-enabled {
 
 .datepicker td.available:hover,
 .datepicker th.available:hover {
-    background-color: var(--ls-secondary-background-color);
+    background-color: var(--bujo-hover-shadow) !important;
     color: var(--ls-primary-text-color);
 }
 .datepicker td.active,
 .datepicker td.active:hover {
     border-style: none;
     color: var(--ls-selection-text-color);
-    background-color: var(--ls-selection-background-color);
+    background-color: var(--ls-selection-background-color) !important;
 }
 
 
@@ -782,18 +844,26 @@ svg.tip {
 
 
 /* buttons */
-#settings .ui__button:not(.to-heading-button) {
+
+/* "intent" and "link" values are from plugins page */
+.ui__button:not([intent="link"]):not([intent="logseq"]) {
     background: var(--bujo-button-background);
     color: var(--bujo-button-text);
     opacity: .9;
 }
-#settings .ui__button:not(.to-heading-button):hover {
+.ui__button:not([intent="link"]):not([intent="logseq"]):hover {
     background: var(--bujo-button-background-hover);
     opacity: 1;
 }
 
 
 /* toggle */
+
+.ui__toggle [aria-checked],
+.ui__toggle .switcher {
+    transition-duration: 0s;
+}
+
 .ui__toggle [aria-checked="false"] {
     background-color: var(--bujo-toggle-off);
 }
@@ -806,7 +876,6 @@ svg.tip {
 .ui__toggle [aria-checked="false"]:hover .switcher {
     background-color: var(--bujo-toggle-switcher-off);
 }
-
 
 .ui__toggle [aria-checked="true"] {
     background-color: var(--bujo-toggle-on);
@@ -1029,7 +1098,10 @@ a.tag[data-ref^="."] {
 .page-property-key[data-ref="tags"]::before        { content: "\ef86" }
 .page-property-key[data-ref="alias"]::before       { content: "\eef7" }
 .page-property-key[data-ref|="file"]::before       { content: "\eb02" }
+.page-property-key[data-ref|="template"]::before   { content: "\eb39" }
 
+.page-property-key[data-ref="tag"]::before         { content: "\ef86" }
+.page-property-key[data-ref="label"]::before       { content: "\ef86" }
 .page-property-key[data-ref="ref"]::before,
 .page-property-key[data-ref="source"]::before      { content: "\eb54" }
 .page-property-key[data-ref="author"]::before,

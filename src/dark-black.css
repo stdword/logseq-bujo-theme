@@ -6,16 +6,16 @@
     /* PALETTE */
     /* ------- */
 
-    --bujo-highlight-dimmed: hsl(331, 50%, 24%);
-    --bujo-highlight-normal: hsl(331, 64%, 28%);
+    --bujo-highlight-dimmed:  hsl(331, 50%, 24%);
+    --bujo-highlight-normal:  hsl(331, 64%, 28%);
 
-    --bujo-highlight-clean:  hsl(355, 52%, 44%);
-    --bujo-highlight-lit:    hsl(355, 55%, 56%);
-    --bujo-highlight-bright: hsl(355, 83%, 63%);
+    --bujo-highlight-clean:   hsl(355, 52%, 44%);
+    --bujo-highlight-lit:     hsl(355, 55%, 56%);
+    --bujo-highlight-bright:  hsl(355, 83%, 63%);
 
-    --bujo-accent-dimmed: hsl(80, 55%, 55%);
-    --bujo-accent-normal: hsl(80, 61%, 65%);
-    --bujo-accent-clean:  hsl(80, 90%, 77%);
+    --bujo-accent-dimmed:     hsl(80, 55%, 55%);
+    --bujo-accent-normal:     hsl(80, 61%, 65%);
+    --bujo-accent-clean:      hsl(80, 90%, 77%);
 
     --bujo-foreground1:       hsl(45, 100%,  74%);
     --bujo-foreground2_hsl: /*hsl(40, 100%, 83%)*/ 40, 100%, 83%;
@@ -32,99 +32,100 @@
     --bujo-background6:       hsl(0, 0%, 25%);
     --bujo-background7:       hsl(0, 0%, 35%);
     --bujo-background8_hsl: /*hsl(0, 0%, 40%)*/ 0, 0%, 40%;
+
     --bujo-background8: hsl(var(--bujo-background8_hsl));
 
-
-    --bujo-fill0:       hsl(333,  8%, 15%);
-    --bujo-fill1:       hsl(333, 21%, 17%);
-    --bujo-fill2_hsl: /*hsl(343, 38%, 19%)*/ 343, 38%, 19%;
-    --bujo-fill3_hsl: /*hsl(348, 31%, 40%)*/ 348, 31%, 40%;
-    --bujo-fill4:       hsl(353, 23%, 47%);
-
-    --bujo-fill2: hsla(var(--bujo-fill2_hsl));
-    --bujo-fill3: hsla(var(--bujo-fill3_hsl));
+    --bujo-fill1:             hsl(333,  8%, 15%);
+    --bujo-fill2:             hsl(333, 21%, 17%);
+    --bujo-fill3:             hsl(353, 23%, 47%);
 
 
-    /* ---------------- */
-    /* THEME COLOR VARS */
-    /* ---------------- */
+    /* ---------- */
+    /* COLOR VARS */
+    /* ---------- */
 
+    /* background */
     --bujo-dots: var(--bujo-background6);
     --bujo-dots-background: var(--bujo-background1);
 
-    --bujo-search-item-text-hover: var(--bujo-accent-normal);
-    --bujo-search-item-background: var(--ls-primary-background-color);
-    --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
-    --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
-
-    --bujo-caret: var(--bujo-highlight-lit);
-    --bujo-link-ref-brackets: var(--color-gray-500);
-    --bujo-link-ref-hover: var(--bujo-tiny-shadow-white);
-    --bujo-link-ref-block-ref-hover: var(--bujo-half-shadow-white);
-    --bujo-link-ref-mark-hover: var(--bujo-shadow-black);
-    --bujo-link-ref-selected-hover: var(--bujo-half-shadow-black);
-    --bujo-text-accent: var(--bujo-foreground4);
-    --bujo-code-selection-background: var(--bujo-highlight-normal);
-
-    --bujo-block-ref-text: var(--ls-secondary-text-color);
-    --bujo-block-ref-background: hsla(var(--bujo-background8_hsl), .4);
-    --bujo-block-ref-background-hover: hsla(var(--bujo-background8_hsl), .5);
-
-    --bujo-toggle-switcher-off: var(--bujo-foreground2);
-    --bujo-toggle-switcher-on:  var(--bujo-foreground4);
-    --bujo-toggle-off: var(--bujo-background5);
-    --bujo-toggle-off-hover: var(--bujo-background6);
-    --bujo-toggle-on: var(--ls-link-text-color);
-    --bujo-toggle-on-hover: var(--ls-link-text-hover-color);
-
-    --bujo-button-text: var(--bujo-foreground4);
-    --bujo-button-background: var(--bujo-accent-dimmed);
-    --bujo-button-background-hover: var(--bujo-accent-normal);
-
-
-    /* ----------------- */
-    /* LOGSEQ COLOR VARS */
-    /* ----------------- */
-
-    /* backgrounds */
     --ls-primary-background-color: var(--bujo-background1);
     --ls-secondary-background-color: var(--bujo-background2);
     --ls-tertiary-background-color: var(--bujo-background4);
     --ls-quaternary-background-color: var(--bujo-background6);
 
-    --ls-table-tr-even-background-color: var(--bujo-fill1);
-    --ls-menu-hover-color: var(--ls-secondary-background-color);
+
+    /* menu & sidebars */
+    --ls-header-button-background: var(--bujo-foreground2);
+    --ls-menu-hover-color: var(--bujo-background3);
+    --bujo-menu-icon: var(--ls-secondary-text-color);
+    --bujo-menu-text: var(--ls-primary-text-color);
+
+    --bujo-left-sidebar-background: var(--bujo-background2);
+    --bujo-left-sidebar-page-icon: var(--ls-primary-text-color);
+    --bujo-left-sidebar-page-text: var(--ls-primary-text-color);
+
     --ls-slide-background-color: var(--ls-primary-background-color);
 
 
     /* text */
-    --ls-primary-text-color: var(--bujo-foreground2);
-    --ls-secondary-text-color: var(--bujo-foreground3);
+    --bujo-caret: var(--bujo-highlight-lit);
 
     --ls-title-text-color: var(--bujo-foreground1);
+    --ls-primary-text-color: var(--bujo-foreground2);
+    --ls-secondary-text-color: var(--bujo-foreground3);
+    --bujo-text-accent: var(--bujo-foreground4);
 
     --ls-selection-text-color: var(--ls-secondary-text-color);
     --ls-selection-background-color: var(--bujo-highlight-clean);
+    --bujo-code-selection-background: var(--bujo-highlight-normal);
+    --ls-block-highlight-color: var(--bujo-highlight-normal);
 
     --ls-page-mark-color: var(--ls-secondary-text-color);
     --ls-page-mark-bg-color: var(--bujo-highlight-clean);
 
+    --ls-page-inline-code-color: var(--ls-primary-text-color);
+    --ls-page-inline-code-bg-color: var(--bujo-fill1);
+    --bujo-page-inline-code-mark-color: var(--ls-block-highlight-color);
+
     --ls-page-blockquote-color: var(--ls-primary-text-color);
-    --ls-page-blockquote-bg-color: var(--bujo-fill0);
+    --ls-page-blockquote-bg-color: var(--bujo-fill1);
     --ls-page-blockquote-border-color: var(--bujo-highlight-dimmed);
 
-    --ls-page-inline-code-color: var(--ls-primary-text-color);
-    --ls-page-inline-code-bg-color: var(--bujo-fill0);
-    --bujo-page-inline-code-mark-color: var(--ls-block-highlight-color);
+
+    /* block parts */
+    --ls-block-bullet-color: var(--bujo-background6);
+    --ls-block-bullet-border-color: var(--bujo-background8);
+
+    --bujo-block-ref-text: var(--ls-secondary-text-color);
+    --bujo-block-ref-background: hsla(var(--bujo-background8_hsl), .4);
+    --bujo-block-ref-background-hover: hsla(var(--bujo-background8_hsl), .5);
+
+
+    /* search results palette */
+    --bujo-search-item-text-hover: var(--bujo-accent-normal);
+
+    --bujo-search-item-background: var(--ls-primary-background-color);
+    --ls-a-chosen-bg: var(--ls-tertiary-background-color);
+
+    --ls-search-icon-color: var(--bujo-accent-normal);
+    --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
+    --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
 
 
     /* external links */
     --ls-link-text-color: var(--bujo-accent-normal);
     --ls-link-text-hover-color: var(--bujo-accent-clean);
 
+
     /* internal links */
+    --bujo-link-ref-brackets: var(--color-gray-500);
     --ls-link-ref-text-color: var(--bujo-highlight-lit);
     --ls-link-ref-text-hover-color: var(--bujo-highlight-bright);
+
+    --bujo-link-ref-hover: var(--bujo-tiny-shadow-white);
+    --bujo-link-ref-block-ref-hover: var(--bujo-half-shadow-white);
+    --bujo-link-ref-mark-hover: var(--bujo-shadow-black);
+    --bujo-link-ref-selected-hover: var(--bujo-half-shadow-black);
 
     --ls-tag-text-color: var(--ls-link-ref-text-color);
     --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
@@ -137,14 +138,11 @@
     --ls-marker-text-bg-color: var(--bujo-background7);
     --ls-marker-text-bg-hover-color: var(--bujo-background8);
 
+
     /* checkboxes and radio buttons */
     --ls-page-checkbox-color: var(--bujo-accent-dimmed);
     --ls-page-checkbox-border-color: var(--ls-primary-background-color);
 
-    /* block parts */
-    --ls-block-highlight-color: var(--bujo-highlight-normal);
-    --ls-block-bullet-color: var(--bujo-background6);
-    --ls-block-bullet-border-color: var(--bujo-background8);
 
     /* properties */
     --ls-page-properties-background-color: var(--bujo-background3);
@@ -152,35 +150,54 @@
     --bujo-right-sidebar-properties-background: var(--bujo-background3);
     --bujo-property-text-hover: var(--ls-link-text-color);
 
+
     /* scrollbars, table header and various ui borders */
-    --ls-border-color: var(--bujo-fill0);
+    --ls-table-tr-even-background-color: var(--bujo-fill1);
+    --bujo-right-sidebar-table-even-background: var(--ls-table-tr-even-background-color);
+
+    --ls-border-color: var(--bujo-fill1);
     --ls-secondary-border-color: var(--ls-border-color);
     --ls-tertiary-border-color: var(--ls-border-color);
 
 
+    /* settings */
+    --bujo-settings-background: var(--bujo-background3);
+    --bujo-toggle-switcher-off: var(--bujo-foreground2);
+    --bujo-toggle-switcher-on:  var(--bujo-foreground3);
+    --bujo-toggle-off: var(--bujo-background5);
+    --bujo-toggle-off-hover: var(--bujo-background6);
+    --bujo-toggle-on: var(--bujo-accent-dimmed);
+    --bujo-toggle-on-hover: var(--bujo-accent-normal);
+
+    --bujo-button-text: var(--bujo-foreground4);
+    --bujo-button-background: var(--bujo-accent-dimmed);
+    --bujo-button-background-hover: var(--bujo-accent-normal);
+
+
     /* other ui */
+    --bujo-resizer: var(--bujo-background7);
+    --bujo-hover-shadow: var(--bujo-tiny-shadow-white);
+
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--bujo-foreground2);
 
-    /* search results palette */
-    --ls-search-icon-color: var(--bujo-accent-normal);
-    --ls-a-chosen-bg: var(--ls-tertiary-background-color);
-
-    /* menu header icons color*/
-    --ls-header-button-background: var(--bujo-foreground2);
-
-    /* right panel resizer, onboarding and some unknown ui */
-    --ls-active-primary-color: var(--bujo-fill3);
-    --ls-active-secondary-color: var(--bujo-fill4);
+    /* onboarding and some unknown ui */
+    --ls-active-primary-color: var(--bujo-fill2);
+    --ls-active-secondary-color: var(--bujo-fill3);
 
     --ls-guideline-color: var(--bujo-background3);
+    --bujo-guideline-hover: var(--bujo-fill2);
 
     --ls-scrollbar-foreground-color: var(--bujo-tiny-shadow-white);
-    --ls-scrollbar-background-color: hsla(var(--bujo-fill2_hsl), 0.9);
+    --ls-scrollbar-background-color: var(--bujo-fill1);
     --ls-scrollbar-thumb-hover-color: var(--bujo-shadow-white);
 
     /* block references border color and slash-commands group color */
     --ls-block-ref-link-text-color: var(--bujo-highlight-normal); /* !confusing name */
+
+    /*  days plugin  */
+    --bujo-days-plugin-today-text: var(--ls-primary-text-color);
+    --bujo-days-plugin-today-background: var(--bujo-highlight-clean);
 
 
     /* block background hightlights */
@@ -191,6 +208,13 @@
     --ls-highlight-color-blue: hsl(217, 80%, 38%);
     --ls-highlight-color-purple: hsl(274, 58%, 34%);
     --ls-highlight-color-pink: hsl(336, 70%, 30%);
+
+
+    --bujo-pdf-pin-red: var(--color-purple-500);
+    --bujo-pdf-pin-yellow: var(--color-green-500);
+    --bujo-pdf-pin-green: var(--color-red-400);
+    --bujo-pdf-pin-blue: var(--color-blue-500);
+    --bujo-pdf-pin-purple: var(--color-yellow-400);
 
 
     /* embeded block levels */
@@ -241,7 +265,7 @@ html[data-theme="dark"] .CodeMirror .cm-meta {
 }
 html[data-theme="dark"] .CodeMirror .cm-string,
 html[data-theme="dark"] .CodeMirror .cm-string-2 {
-    color: var(--bujo-fill4);
+    color: var(--bujo-fill3);
 }
 html[data-theme="dark"] .CodeMirror .cm-comment {
     color: var(--bujo-background6);

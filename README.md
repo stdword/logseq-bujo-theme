@@ -7,9 +7,9 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 ## How it looks
 ### Coffee
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png)
-### White (will be reviewed)
+### White (will be reviewed soon)
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.jpeg)
-### Sepia (will be reviewed)
+### Sepia
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png)
 ### Black
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png)
