@@ -16,7 +16,7 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 
 
 ## Installation
-From Logseq:
+### From Logseq (recommended way)
 * Click «...» and open the «Plugins» section (or press `t p`)
 * Click on the «Marketplace»
 * Select the «Themes» tab
@@ -26,6 +26,13 @@ From Logseq:
 * Close «Marketplace» and open «...» → «Themes» (or press `t i`) to bring up the theme selection window
 * Select one with «BuJo» prefix
 * To switch between Light and Dark themes press `t t`
+
+### Manual way (in case of any troubles with recommended way)
+* Download the latest theme release in a raw .zip archive from here and unzip it
+* Enable «Developer mode» in «...» → Settings → Advanced
+* Go to the «...» → Plugins, click «Load unpacked plugin» and point to the unzipped theme
+* Enjoy the nice colors and work experience :)
+* The only point here is: every new theme release should be also updated manually
 
 
 ## How to turn off property icons?
