@@ -412,17 +412,53 @@ mark .page-reference:hover,
 
 /* block references */
 
-.block-ref {
+.block-ref p.warning {
+    display: inline;
+}
+
+/* TODO: review after :has become available */
+/* TODO: add support for .dsl-query */
+
+.block-ref :is(b, strong, i) {
+    color: var(--bujo-block-ref-text);
+}
+
+.block-ref > .block-content > .block-content-inner > :not(:empty) {
     padding: 2px 5px;
     border-radius: 3px;
 
-    background: var(--bujo-block-ref-background);
     color: var(--bujo-block-ref-text);
+    background: var(--bujo-block-ref-background);
+}
+.block-ref:hover > .block-content > .block-content-inner > :not(:empty) {
+    background: var(--bujo-block-ref-background-hover);
+}
+
+.block-ref:is(*, :hover) .block-ref > .block-content > .block-content-inner > :not(:empty) {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.block-ref:is(*, :hover) .block-ref .block-ref > .block-content > .block-content-inner > :not(:empty) {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.block-ref:is(*, :hover) .block-ref .block-ref .block-ref > .block-content > .block-content-inner > :not(:empty) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.block-ref > .block-content > .block-body > :not(:empty),
+.block-ref > .block-content > .block-body > .is-paragraph:not(:empty) {
+    border-bottom: 0.5px solid;
+    border-bottom-color: var(--ls-block-ref-link-text-color);
+}
+
+.block-ref {
     border-bottom: none;
 }
 .block-ref:hover {
-    color: var(--bujo-block-ref-text); /* same as w/o hover */
-    background: var(--bujo-block-ref-background-hover);
+    color: unset;
 }
 
 
