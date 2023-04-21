@@ -459,6 +459,16 @@ mark .page-reference:hover,
 }
 
 
+/* macros */
+
+div.macro {
+    display: inline-block;
+}
+div.macro > div.inline {
+    margin-right: 0;
+}
+
+
 /* custom query first line */
 
 .custom-query-title .title-text {
@@ -479,7 +489,7 @@ mark .page-reference:hover,
 
 /* custom query second line */
 
-/* "Table view" text label: there is no specifyed class */
+/* "Table view" text label: there is no specified class */
 .custom-query .text-sm {
     color:  var(--ls-primary-text-color);
     opacity: 0.7;
