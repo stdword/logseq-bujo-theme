@@ -40,6 +40,7 @@
 
     --bujo-fill1:             hsl(205, 25%, 59%);
     --bujo-fill2:             hsl(  0, 50%, 100%);
+    --bujo-fill3:             hsl( 51, 33%, 96%);
 
 
     /* ---------- */
@@ -76,6 +77,8 @@
     --ls-primary-text-color: var(--bujo-foreground3);
     --ls-secondary-text-color: var(--bujo-foreground1);
     --bujo-text-accent: var(--bujo-foreground1);
+
+    --bujo-header-with-bg-text: var(--bujo-fill3);
 
     --ls-selection-text-color: var(--bujo-background1);
     --ls-selection-background-color: var(--bujo-highlight-clean);

@@ -78,6 +78,8 @@
     --ls-secondary-text-color: var(--bujo-foreground2);
     --bujo-text-accent: var(--bujo-foreground3);
 
+    --bujo-header-with-bg-text: var(--ls-primary-text-color);
+
     --ls-selection-text-color: var(--ls-secondary-text-color);
     --ls-selection-background-color: var(--bujo-highlight-clean);
     --bujo-code-selection-background: var(--bujo-highlight-normal);

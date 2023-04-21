@@ -284,6 +284,8 @@ a.menu-link .search-result .type-icon:not(.highlight)::before {
 .with-bg-color {
     border-radius: 3px;
     padding: 5px 6px;
+
+    color: var(--bujo-header-with-bg-text);
 }
 
 .with-bg-color:is(h1, h2, h3, h4, h5, h6) {
@@ -309,7 +311,7 @@ mark > strong,
 mark > i,
 mark > i > b,
 mark > b > i {
-    color: var(--bujo-text-accent);
+    color: var(--bujo-text-accent) !important;
 }
 
 mark > code {
