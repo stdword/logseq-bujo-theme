@@ -57,7 +57,6 @@
     --bujo-shadow-black: rgba(0, 0, 0, .2);
 }
 
-
 #app-container {
     background-image: radial-gradient(
         var(--bujo-dots) 5%,
@@ -65,6 +64,9 @@
     );
     background-position: 0 0;
     background-size: 25px 25px;
+}
+body[data-page=whiteboard] #app-container {
+    background-image: none;
 }
 
 ::selection {
