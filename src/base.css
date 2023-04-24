@@ -1057,16 +1057,44 @@ a.tag[data-ref^="."] {
     display: unset;
 }
 
+/* .numlist1 is a clone of .numlist but with different counter name */
+/* to prevent intersection when there is a need to use it nested */
+
+.ls-block[data-refs-self*='".numlist1"'] > .block-children-container > .block-children > .ls-block {
+    counter-increment: lvlNumber1;
+}
+
+.ls-block[data-refs-self*='".numlist1"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container > .bullet {
+    visibility: hidden;
+}
+
+.ls-block[data-refs-self*='".numlist1"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container::before {
+    content: counters(lvlNumber1, ".") ":";
+    position: absolute;
+    display: block;
+    width: 25px;
+}
+
+.ls-block[data-refs-self*='".numlist1"'] > .block-children-container > .block-children > .ls-block > div > div > a:hover > .bullet-container,
+.ls-block[data-refs-self*='".numlist1"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container.bullet-closed {
+    font-weight: bold;
+    background-color: unset;
+}
+
+.ls-block[data-refs-self*='".numlist1"'] > .block-children-container > .block-children > .ls-block[data-collapsed^="{"] > div > div > .block-control > .control-hide {
+    display: unset;
+}
+
 
 /* numbered lists - second level */
 /* (forked from logtools) */
 
 .ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block {
-    counter-increment: lvlNumber;
+    counter-increment: lvlNumber2;
 }
 
 .ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container::before {
-    content: counters(lvlNumber, ".") ":";
+    content: counters(lvlNumber2, ".") ":";
     position: absolute;
     display: block;
     width: 25px;
@@ -1077,7 +1105,7 @@ a.tag[data-ref^="."] {
 }
 
 .ls-block[data-refs-self*='".numlist2"'] > .block-children-container > .block-children > .ls-block > .block-children-container > .block-children > .ls-block > div > div > a > .bullet-container::before {
-    content: counters(lvlNumber, ".") "." counters(sublvlNumber, ".") ":";
+    content: counters(lvlNumber2, ".") "." counters(sublvlNumber, ".") ":";
     position: absolute;
     display: block;
     padding-right: 0.25em;
