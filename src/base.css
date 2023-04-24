@@ -961,7 +961,7 @@ a.tag[data-ref^="."]:hover {
     line-height: 1.3rem;
     font-size: 1.0rem !important;
     transition: 0s;
-    
+
     color: var(--ls-primary-text-color) !important;
     border: 1px solid var(--ls-primary-text-color);
 }
@@ -970,9 +970,9 @@ a.tag[data-ref^="."] {
     font-family: monospace;
     font-size: 0px !important;
     transition: 0s;
-    
+
     color: var(--ls-primary-text-color) !important;
-    background-color: none !important;
+    background-color: unset !important;
 
     border: none;
     border-radius: 3px;
@@ -980,7 +980,7 @@ a.tag[data-ref^="."] {
 }
 
 
-/* columnized view */
+/* column view */
 /* (forked from logtools) */
 
 .ls-block[data-refs-self*='".columns'] > .block-children-container {
@@ -1008,7 +1008,7 @@ a.tag[data-ref^="."] {
     width: max-content;
 }
 
-/* remove left border for columnized */
+/* remove left border for column view */
 .ls-block[data-refs-self*='".columns'] > .block-children-container > .block-children > .ls-block {
     margin-left: 0px;
 }
