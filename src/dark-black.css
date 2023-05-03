@@ -13,6 +13,7 @@
     --bujo-highlight-lit:     hsl(355, 55%, 56%);
     --bujo-highlight-bright:  hsl(355, 83%, 63%);
 
+    --bujo-accent-dark:       hsl(80, 55%, 48%);
     --bujo-accent-dimmed:     hsl(80, 55%, 55%);
     --bujo-accent-normal:     hsl(80, 61%, 65%);
     --bujo-accent-clean:      hsl(80, 90%, 77%);
@@ -164,6 +165,7 @@
 
     /* settings */
     --bujo-settings-background: var(--bujo-background3);
+
     --bujo-toggle-switcher-off: var(--bujo-foreground2);
     --bujo-toggle-switcher-on:  var(--bujo-foreground3);
     --bujo-toggle-off: var(--bujo-background5);
@@ -171,9 +173,17 @@
     --bujo-toggle-on: var(--bujo-accent-dimmed);
     --bujo-toggle-on-hover: var(--bujo-accent-normal);
 
-    --bujo-button-text: var(--bujo-foreground4);
-    --bujo-button-background: var(--bujo-accent-dimmed);
-    --bujo-button-background-hover: var(--bujo-accent-normal);
+    --bujo-button-accent-text: var(--bujo-foreground3);
+    --bujo-button-accent-background: var(--bujo-accent-dark);
+    --bujo-button-accent-background-hover: var(--bujo-accent-normal);
+    --bujo-button-accent-border: var(--bujo-accent-dimmed);
+    --bujo-button-accent-border-focus: var(--bujo-accent-clean);
+
+    --bujo-button-text: var(--ls-secondary-text-color);
+    --bujo-button-background: var(--bujo-background6);
+    --bujo-button-background-hover: var(--bujo-background7);
+    --bujo-button-border: var(--bujo-background6);
+    --bujo-button-border-focus: var(--bujo-accent-normal);
 
 
     /* other ui */

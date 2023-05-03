@@ -955,6 +955,34 @@ svg.tip {
     opacity: 1;
 }
 
+button[type="button"] {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
+    border-color: var(--bujo-button-border);
+}
+button[type="button"]:hover {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background-hover);
+    border-color: var(--bujo-button-border);
+}
+button[type="button"]:focus {
+    border-color: var(--bujo-button-border-focus);
+}
+
+button[type="button"].ui__modal-enter {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
+    border-color: var(--bujo-button-accent-border);
+}
+button[type="button"].ui__modal-enter:hover {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background-hover);
+    border-color: var(--bujo-button-accent-border);
+}
+button[type="button"].ui__modal-enter:focus {
+    border-color: var(--bujo-button-accent-border-focus);
+}
+
 
 /* toggle */
 

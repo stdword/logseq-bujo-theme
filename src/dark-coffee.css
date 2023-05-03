@@ -167,16 +167,25 @@
 
     /* settings */
     --bujo-settings-background: var(--bujo-background3);
+
     --bujo-toggle-switcher-off: var(--bujo-foreground1);
     --bujo-toggle-switcher-on:  var(--bujo-foreground3);
     --bujo-toggle-off: var(--ls-quaternary-background-color);
     --bujo-toggle-off-hover: var(--bujo-background6);
-    --bujo-toggle-on: var(--ls-link-text-color);
-    --bujo-toggle-on-hover: var(--ls-link-text-hover-color);
+    --bujo-toggle-on: var(--bujo-accent-normal);
+    --bujo-toggle-on-hover: var(--bujo-accent-clean);
 
-    --bujo-button-text: var(--bujo-foreground4);
-    --bujo-button-background: var(--bujo-accent-dimmed);
-    --bujo-button-background-hover: var(--bujo-accent-normal);
+    --bujo-button-accent-text: var(--bujo-foreground4);
+    --bujo-button-accent-background: var(--bujo-accent-normal);
+    --bujo-button-accent-background-hover: var(--bujo-accent-clean);
+    --bujo-button-accent-border: var(--bujo-accent-dimmed);
+    --bujo-button-accent-border-focus: var(--bujo-accent-normal);
+
+    --bujo-button-text: var(--ls-secondary-text-color);
+    --bujo-button-background: var(--bujo-background6);
+    --bujo-button-background-hover: var(--bujo-background7);
+    --bujo-button-border: var(--bujo-background6);
+    --bujo-button-border-focus: var(--bujo-accent-normal);
 
 
     /* other ui */
