@@ -751,8 +751,167 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
     background-color: var(--bujo-resizer);
 }
 
+.extensions__pdf-container[data-theme=light] .extensions__pdf-toolbar .buttons,
+.extensions__pdf-container[data-theme=warm] .extensions__pdf-toolbar .buttons,
+.extensions__pdf-container[data-theme=dark] .extensions__pdf-toolbar .buttons {
+    background-color: var(--ls-primary-background-color);
+}
 .extensions__pdf-toolbar a.button {
     color: var(--ls-icon-color);
+}
+
+.extensions__pdf-settings-item.theme-picker > button,
+.extensions__pdf-settings-item.theme-picker > button:hover {
+    border-color: transparent;
+}
+
+
+.hls-popup-box {
+    background-color: var(--ls-tertiary-background-color);
+    box-shadow: 0 2px 4px 0 hsl(0deg 0% 53% / 59%);
+}
+.extensions__pdf-settings-item.toggle-input {
+    border-top-color: var(--bujo-link-ref-brackets);
+    opacity: 1;
+}
+.extensions__pdf-settings-item,
+.extensions__pdf-settings-item > a.is-info {
+    color: var(--ls-primary-text-color);
+}
+.extensions__pdf-settings-item > a.is-info:hover {
+    color: var(--ls-link-text-hover-color);
+}
+
+
+.extensions__pdf-outline-tabs,
+.extensions__pdf-outline-tabs > .inner {
+    border: 1px solid var(--bujo-link-ref-brackets);
+}
+.extensions__pdf-outline-tabs > .inner > button {
+    color: var(--ls-primary-text-color);
+}
+.extensions__pdf-outline-tabs > .inner > button:active {
+    color: var(--ls-primary-text-color);
+    background-color: var(--ls-quaternary-background-color);
+}
+.extensions__pdf-outline-tabs > .inner > button.active {
+    background-color: var(--ls-quaternary-background-color);
+}
+
+
+.extensions__pdf-highlights-list-item > p {
+    color: var(--ls-primary-text-color);
+}
+.extensions__pdf-highlights-list-item:hover {
+    opacity: 1 !important;
+}
+.extensions__pdf-highlights-list-item:hover > p {
+    color: var(--ph-link-color);
+}
+.extensions__pdf-highlights-list-item.active > h6 strong,
+.extensions__pdf-highlights-list-item.active > p,
+.extensions__pdf-highlights-list-item.active:hover > p {
+    color: var(--bujo-foreground4);
+}
+
+.extensions__pdf-outline-panels section.is-empty {
+    font-size: 0.75em;
+}
+
+.extensions__pdf-finder.hls-popup-box > .result-inner {
+    color: var(--ls-primary-text-color);
+}
+
+
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button {
+    background-color: var(--bujo-button-background) !important;
+    opacity: .9 !important;
+}
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button .ui__icon {
+    background-color: unset !important;
+    color: var(--bujo-button-text) !important;
+}
+
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button.active,
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button:hover {
+    background-color: var(--bujo-button-background-hover) !important;
+}
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button.active .ui__icon,
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button:hover .ui__icon {
+    background-color: unset !important;
+    color: var(--bujo-button-text) !important;
+}
+
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button:hover,
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button:hover .ui__icon {
+    opacity: 1 !important;
+}
+
+.extensions__pdf-finder.hls-popup-box>.input-inner .input-wrap,
+.extensions__pdf-finder.hls-popup-box>.input-inner .input-wrap {
+    border: none;
+}
+.extensions__pdf-finder.hls-popup-box>.input-inner input {
+    background-color: var(--ls-primary-background-color);
+    border: 2px solid var(--ls-border-color);
+    color: var(--ls-primary-textaliceblue-color);
+    box-shadow: none;
+}
+.extensions__pdf-finder.hls-popup-box>.input-inner input:focus {
+    border: 2px solid var(--bujo-accent-normal);
+}
+
+.extensions__pdf-finder.hls-popup-box>.input-inner .ui__button.icon-enter {
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+}
+
+.extensions__pdf-toolbar>.inner .pager>.nu input {
+    background-color: var(--ls-primary-background-color);
+    border-color: var(--ls-border-color);
+    border: 2px solid var(--ls-border-color);
+    font-size: 0.80em;
+    box-shadow: none;
+}
+
+
+.extensions__pdf-highlights-list-item small[data-color="yellow"] {
+    background-color: var(--bujo-pdf-pin-yellow);
+    border-color: var(--bujo-pdf-pin-yellow);
+}
+.extensions__pdf-highlights-list-item small[data-color="red"] {
+    background-color: var(--bujo-pdf-pin-red);
+    border-color: var(--bujo-pdf-pin-red);
+}
+.extensions__pdf-highlights-list-item small[data-color="green"] {
+    background-color: var(--bujo-pdf-pin-green);
+    border-color: var(--bujo-pdf-pin-green);
+}
+.extensions__pdf-highlights-list-item small[data-color="blue"] {
+    background-color: var(--bujo-pdf-pin-blue);
+    border-color: var(--bujo-pdf-pin-blue);
+}
+.extensions__pdf-highlights-list-item small[data-color="purple"] {
+    background-color: var(--bujo-pdf-pin-purple);
+    border-color: var(--bujo-pdf-pin-purple);
+}
+
+
+.extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="yellow"] {
+    background-color: var(--bujo-pdf-pin-yellow);
+}
+.extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="red"] {
+    background-color: var(--bujo-pdf-pin-red);
+}
+.extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="green"] {
+    background-color: var(--bujo-pdf-pin-green);
+}
+.extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="blue"] {
+    background-color: var(--bujo-pdf-pin-blue);
+}
+.extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="purple"] {
+    background-color: var(--bujo-pdf-pin-purple);
 }
 
 .ls-hl-colored .block-content[data-hl-color="purple"] .prefix-link:before {
@@ -954,12 +1113,12 @@ svg.tip {
 /* buttons */
 
 /* "intent" and "link" values are from plugins page */
-.ui__button:not([intent="link"]):not([intent="logseq"]) {
+.ui__button:not([intent="link"]):not([intent="logseq"]):not([intent="true"]) {
     background: var(--bujo-button-accent-background);
     color: var(--bujo-button-accent-text);
     opacity: .9;
 }
-.ui__button:not([intent="link"]):not([intent="logseq"]):hover {
+.ui__button:not([intent="link"]):not([intent="logseq"]):not([intent="true"]):hover {
     background: var(--bujo-button-accent-background-hover);
     opacity: 1;
 }
