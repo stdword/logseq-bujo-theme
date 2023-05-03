@@ -325,9 +325,13 @@ mark > code {
 
 /* page title */
 
-.page-title-sizer-wrapper > .title {
+.page-title-sizer-wrapper > .title,
+.page-title-sizer-wrapper > .edit-input-wrapper.editing,
+.page-title-sizer-wrapper > .edit-input-wrapper.editing > .edit-input {
     font-weight: 700;
+    color: var(--ls-title-text-color);
 }
+
 a.asset-ref { /* title in pdf extension */
     color:  var(--ls-title-text-color);
 }
