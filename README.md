@@ -1,4 +1,4 @@
-# Logseq BuJo Theme
+# ☕️ Logseq BuJo Theme
 A theme for https://logseq.com, inspired by Bullet Journals.
 
 ⚠️ This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
@@ -47,6 +47,11 @@ In Logseq:
   }
   ```
 
+## Integrated with plugins:
+* Copy code
+* Block calendar
+* Days
+* Smartblocks
 
 # Credits
 * Original author of all themes — [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme): `Copyright (c) 2021 Piotr Skarżyński`
