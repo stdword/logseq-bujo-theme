@@ -325,11 +325,47 @@ mark > code {
 
 /* page title */
 
-h1.title {
+.page-title-sizer-wrapper > .title {
     font-weight: 700;
 }
 a.asset-ref { /* title in pdf extension */
     color:  var(--ls-title-text-color);
+}
+
+
+/* headings */
+
+.editor-inner .uniline-block.h1,
+.ls-block h1 {
+    border-bottom-color: var(--ls-guideline-color);
+    font-size: 2em;
+    font-weight: 600;
+}
+.editor-inner .uniline-block.h2,
+.ls-block h2 {
+    border-bottom-color: var(--ls-guideline-color);
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.editor-inner .uniline-block.h3,
+.ls-block h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.editor-inner .uniline-block.h4,
+.ls-block h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.editor-inner .uniline-block.h5,
+.ls-block h5 {
+    font-size: 1em;
+    font-weight: 600;
+}
+.editor-inner .uniline-block.h6,
+.ls-block h6 {
+    font-size: 1em;
+    font-weight: 500;
 }
 
 
@@ -738,10 +774,6 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 }
 .block-children-left-border:hover {
     background-color: var(--bujo-guideline-hover);
-}
-
-.editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2) {
-    border-bottom-color: var(--ls-guideline-color);
 }
 
 
