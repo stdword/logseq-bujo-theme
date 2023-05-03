@@ -460,9 +460,26 @@ mark .page-reference:hover,
 /* TODO: review after :has become available */
 /* TODO: add support for .dsl-query */
 
+.block-ref {
+    border-bottom: none;
+
+    color: var(--bujo-block-ref-background);
+}
+.block-ref:hover {
+    color: var(--bujo-block-ref-background);
+}
+.block-ref > .block-content {
+    color: var(--ls-primary-text-color);
+}
+
+
 .block-ref :is(b, strong, i) {
     color: var(--bujo-block-ref-text);
 }
+.block-ref > :is(b, strong, i) {
+    color: var(--bujo-block-ref-background);
+}
+
 
 .block-ref > .block-content > .block-content-inner > :not(:empty) {
     padding: 2px 5px;
@@ -493,13 +510,6 @@ mark .page-reference:hover,
 .block-ref > .block-content > .block-body > .is-paragraph:not(:empty) {
     border-bottom: 0.5px solid;
     border-bottom-color: var(--ls-block-ref-link-text-color);
-}
-
-.block-ref {
-    border-bottom: none;
-}
-.block-ref:hover {
-    color: unset;
 }
 
 
