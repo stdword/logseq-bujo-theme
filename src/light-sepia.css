@@ -194,7 +194,7 @@
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--bujo-foreground4);
 
-    /* onboarding and some unknown ui */
+    /* on-boarding and some unknown ui */
     --ls-active-primary-color: var(--bujo-highlight-clean);
     --ls-active-secondary-color: var(--bujo-fill1);
 
@@ -208,30 +208,30 @@
     /* block references border color and slash-commands group color */
     --ls-block-ref-link-text-color: var(--bujo-highlight-clean); /* !confusing name */
 
-    /*  days plugin  */
+    /* days plugin  */
     --bujo-days-plugin-today-text: var(--ls-primary-text-color);
     --bujo-days-plugin-today-background: var(--bujo-accent);
 
 
-    /* block background hightlights */
-    --ls-highlight-color-gray:   hsl(200 3% 53% / 1);
+    /* block background highlights */
+    --ls-highlight-color-gray:   hsl(200  3% 53% / 1);
     --ls-highlight-color-red:    hsl(356 32% 53% / 1);
-    --ls-highlight-color-yellow: hsl(46 40% 53% / 1);
+    --ls-highlight-color-yellow: hsl( 46 40% 53% / 1);
     --ls-highlight-color-green:  hsl(106 13% 53% / 1);
     --ls-highlight-color-blue:   hsl(205 25% 53% / 1);
     --ls-highlight-color-purple: hsl(260 18% 53% / 1);
-    --ls-highlight-color-pink: hsl(345 25% 60% / 1);
+    --ls-highlight-color-pink:   hsl(345 25% 60% / 1);
 /*     --ls-highlight-color-pink:   hsl(305 23% 53% / 1); */
 
 
-    --bujo-pdf-pin-red: var(--color-purple-900);
-    --bujo-pdf-pin-yellow: var(--color-green-700);
-    --bujo-pdf-pin-green: var(--color-red-800);
+    --bujo-pdf-pin-red: var(--color-red-800);
+    --bujo-pdf-pin-yellow: var(--color-yellow-700);
+    --bujo-pdf-pin-green: var(--color-green-700);
     --bujo-pdf-pin-blue: var(--color-blue-800);
-    --bujo-pdf-pin-purple: var(--color-yellow-700);
+    --bujo-pdf-pin-purple: var(--color-purple-900);
 
 
-    /* embeded block levels */
+    /* embedded block levels */
     --color-level-1: var(--bujo-background4);
     --color-level-2: var(--bujo-background6);
     --color-level-3: var(--bujo-background8);

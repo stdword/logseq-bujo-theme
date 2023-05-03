@@ -195,7 +195,7 @@
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--ls-secondary-text-color);
 
-    /* onboarding and some unknown ui */
+    /* on-boarding and some unknown ui */
     --ls-active-primary-color: var(--bujo-background7);
     --ls-active-secondary-color: var(--bujo-foreground1);
 
@@ -209,29 +209,30 @@
     /* block references border color and slash-commands group color */
     --ls-block-ref-link-text-color: var(--bujo-accent-dimmed); /* !confusing name */
 
-    /*  days plugin  */
+    /* days plugin  */
     --bujo-days-plugin-today-text: var(--ls-primary-text-color);
     --bujo-days-plugin-today-background: var(--bujo-highlight-normal);
 
 
-    /* block background hightlights */
-    --ls-highlight-color-gray: hsl(0, 0%, 32%);
-    --ls-highlight-color-red: hsl(0, 68% ,26%);
-    --ls-highlight-color-yellow: hsl(23, 40%, 33%);
-    --ls-highlight-color-green: hsl(130, 50%, 20%);
-    --ls-highlight-color-blue: hsl(222, 80%, 30%);
+    /* block background highlights */
+    --ls-highlight-color-gray:   hsl(  0,  0%, 32%);
+    --ls-highlight-color-red:    hsl(  0, 68%, 26%);
+    --ls-highlight-color-yellow: hsl( 23, 40%, 33%);
+    --ls-highlight-color-green:  hsl(130, 50%, 20%);
+    --ls-highlight-color-blue:   hsl(222, 80%, 30%);
     --ls-highlight-color-purple: hsl(274, 60%, 28%);
-    --ls-highlight-color-pink: hsl(336, 70%, 25%);
+    --ls-highlight-color-pink:   hsl(336, 70%, 25%);
 
 
-    --bujo-pdf-pin-red: var(--color-purple-500);
-    --bujo-pdf-pin-yellow: var(--color-green-500);
-    --bujo-pdf-pin-green: var(--color-red-400);
+    /* pdf pins */
+    --bujo-pdf-pin-red: var(--color-red-400);
+    --bujo-pdf-pin-yellow: var(--color-yellow-400);
+    --bujo-pdf-pin-green: var(--color-green-500);
     --bujo-pdf-pin-blue: var(--color-blue-500);
-    --bujo-pdf-pin-purple: var(--color-yellow-400);
+    --bujo-pdf-pin-purple: var(--color-purple-500);
 
 
-    /* embeded block levels */
+    /* embedded block levels */
     --color-level-1: var(--ls-secondary-background-color);
     --color-level-2: var(--ls-tertiary-background-color);
     --color-level-3: var(--ls-quaternary-background-color);

@@ -193,7 +193,7 @@
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--bujo-foreground2);
 
-    /* onboarding and some unknown ui */
+    /* on-boarding and some unknown ui */
     --ls-active-primary-color: var(--bujo-fill2);
     --ls-active-secondary-color: var(--bujo-fill3);
 
@@ -207,29 +207,29 @@
     /* block references border color and slash-commands group color */
     --ls-block-ref-link-text-color: var(--bujo-highlight-normal); /* !confusing name */
 
-    /*  days plugin  */
+    /* days plugin  */
     --bujo-days-plugin-today-text: var(--ls-primary-text-color);
     --bujo-days-plugin-today-background: var(--bujo-highlight-clean);
 
 
-    /* block background hightlights */
-    --ls-highlight-color-gray: hsl(0, 0%, 36%);
-    --ls-highlight-color-red: hsl(0, 71%, 34%);
-    --ls-highlight-color-yellow: hsl(57, 83%, 33%);
-    --ls-highlight-color-green: hsl(101, 75%, 28%);
-    --ls-highlight-color-blue: hsl(217, 80%, 38%);
+    /* block background highlights */
+    --ls-highlight-color-gray:   hsl(  0,  0%, 36%);
+    --ls-highlight-color-red:    hsl(  0, 71%, 34%);
+    --ls-highlight-color-yellow: hsl( 57, 83%, 33%);
+    --ls-highlight-color-green:  hsl(101, 75%, 28%);
+    --ls-highlight-color-blue:   hsl(217, 80%, 38%);
     --ls-highlight-color-purple: hsl(274, 58%, 34%);
-    --ls-highlight-color-pink: hsl(336, 70%, 30%);
+    --ls-highlight-color-pink:   hsl(336, 70%, 30%);
 
 
-    --bujo-pdf-pin-red: var(--color-purple-500);
-    --bujo-pdf-pin-yellow: var(--color-green-500);
-    --bujo-pdf-pin-green: var(--color-red-400);
+    --bujo-pdf-pin-red: var(--color-red-400);
+    --bujo-pdf-pin-yellow: var(--color-yellow-400);
+    --bujo-pdf-pin-green: var(--color-green-500);
     --bujo-pdf-pin-blue: var(--color-blue-500);
-    --bujo-pdf-pin-purple: var(--color-yellow-400);
+    --bujo-pdf-pin-purple: var(--color-purple-500);
 
 
-    /* embeded block levels */
+    /* embedded block levels */
     --color-level-1: var(--bujo-background2);
     --color-level-2: var(--bujo-background3);
     --color-level-3: var(--bujo-background4);

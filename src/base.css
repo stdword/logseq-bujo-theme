@@ -40,6 +40,15 @@
 
 /* global color vars */
 :root {
+    --ph-highlight-color-blue: var(--bujo-pdf-pin-blue);
+    --ph-highlight-color-green: var(--bujo-pdf-pin-green);
+    --ph-highlight-color-red: var(--bujo-pdf-pin-red);
+    --ph-highlight-color-purple: var(--bujo-pdf-pin-purple);
+    --ph-highlight-color-yellow: var(--bujo-pdf-pin-yellow);
+
+    --ph-link-color: var(--ls-link-ref-text-color);
+    --ph-highlight-scroll-into-color: rgba(255,75,93,.67);
+
     --ls-error-color: var(--color-red-500);
     --ls-warning-color: var(--color-yellow-400);
     --ls-success-color: var(--color-green-500);
@@ -653,7 +662,7 @@ a.priority::before {
     margin-right: 0px;
     border-radius: 2px;
     position: relative;
-    color: var(--ls-selection-text-color);
+    color: var(--ls-secondary-text-color);
 }
 a.priority[href="#/page/A" i]::before {
     content: "\ea66";
