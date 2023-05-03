@@ -946,12 +946,12 @@ svg.tip {
 
 /* "intent" and "link" values are from plugins page */
 .ui__button:not([intent="link"]):not([intent="logseq"]) {
-    background: var(--bujo-button-background);
-    color: var(--bujo-button-text);
+    background: var(--bujo-button-accent-background);
+    color: var(--bujo-button-accent-text);
     opacity: .9;
 }
 .ui__button:not([intent="link"]):not([intent="logseq"]):hover {
-    background: var(--bujo-button-background-hover);
+    background: var(--bujo-button-accent-background-hover);
     opacity: 1;
 }
 
