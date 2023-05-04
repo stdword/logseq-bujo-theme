@@ -1172,7 +1172,20 @@ svg.tip {
 
 .form-input {
     background-color: var(--ls-primary-background-color) !important;
+    box-shadow: none !important;
 }
+.form-input:focus {
+    border-color: var(--bujo-ui-border-focus);
+}
+
+.form-select {
+    background-color: var(--ls-primary-background-color) !important;
+    box-shadow: none !important;
+}
+.form-select:focus {
+    border-color: var(--bujo-ui-border-focus);
+}
+
 #settings .ui__modal-panel {
     background: var(--bujo-settings-background);
 }

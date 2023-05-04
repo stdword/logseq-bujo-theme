@@ -168,6 +168,8 @@
     /* settings */
     --bujo-settings-background: var(--bujo-background3);
 
+    --bujo-ui-border-focus: var(--bujo-accent-normal);
+
     --bujo-toggle-switcher-off: var(--bujo-foreground1);
     --bujo-toggle-switcher-on:  var(--bujo-foreground3);
     --bujo-toggle-off: var(--ls-quaternary-background-color);
