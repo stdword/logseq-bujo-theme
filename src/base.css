@@ -1079,6 +1079,22 @@ label.day-enabled {
 }
 
 
+/* notifications */
+
+.ui__notifications-content .ui__icon.ls-icon-info-circle {
+    color: var(--bujo-info-text);
+}
+.ui__notifications-content .ui__icon.ls-icon-circle-check {
+    color: var(--ls-success-text-color);
+}
+.ui__notifications-content .ui__icon.ls-icon-alert-circle {
+    color: var(--ls-warning-text-color);
+}
+.ui__notifications-content .ui__icon.ls-icon-circle-x {
+    color: var(--ls-error-text-color);
+}
+
+
 /* callouts (admonitions) */
 
 svg.tip {

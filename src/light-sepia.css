@@ -238,6 +238,16 @@
     --color-level-4: var(--bujo-background9);
     --color-level-5: var(--bujo-background10);
     --color-level-6: var(--bujo-background11);
+
+    --ls-error-text-color: var(--ls-highlight-color-red);
+    --ls-warning-text-color: var(--ls-highlight-color-yellow);
+    --ls-success-text-color: hsl(106, 23%, 50%);
+    --bujo-info-text: hsl(200, 90%, 40%);
+
+    --ls-error-background-color: var(--ls-highlight-color-red);
+    --ls-warning-background-color: var(--ls-highlight-color-yellow);
+    --ls-success-background-color: var(--ls-highlight-color-green);
+    --bujo-info-background: var(--ls-highlight-color-blue);
 }
 
 
