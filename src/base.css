@@ -1180,46 +1180,84 @@ svg.tip {
 
 /* buttons */
 
-/* "intent" and "link" values are from plugins page */
-.ui__button:not([intent="link"]):not([intent="logseq"]):not([intent="true"]) {
-    background: var(--bujo-button-accent-background);
-    color: var(--bujo-button-accent-text);
-    opacity: .9;
+.cp__all_pages .actions .actions-wrap button {
+    opacity: .5;
+    pointer-events: none;
 }
-.ui__button:not([intent="link"]):not([intent="logseq"]):not([intent="true"]):hover {
-    background: var(--bujo-button-accent-background-hover);
+.cp__all_pages .actions.has-selected .actions-wrap button {
+    opacity: .9;
+    pointer-events: unset;
+
+    background-color: var(--bujo-button-accent-background);
+    color: var(--bujo-button-accent-text);
+}
+.cp__all_pages .actions.has-selected .actions-wrap button:hover {
+    background-color: var(--bujo-button-accent-background-hover);
     opacity: 1;
 }
 
 
 /* modal buttons */
 
-button[type="button"] {
+.ui__modal button[type="button"] {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background);
     border-color: var(--bujo-button-border);
 }
-button[type="button"]:hover {
+.ui__modal button[type="button"]:hover {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background-hover);
     border-color: var(--bujo-button-border);
 }
-button[type="button"]:focus {
+.ui__modal button[type="button"]:focus {
     border-color: var(--bujo-button-border-focus);
 }
 
-button[type="button"].ui__modal-enter {
+.ui__modal button[type="button"].ui__modal-enter {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background);
     border-color: var(--bujo-button-accent-border);
 }
-button[type="button"].ui__modal-enter:hover {
+.ui__modal button[type="button"].ui__modal-enter:hover {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background-hover);
     border-color: var(--bujo-button-accent-border);
 }
-button[type="button"].ui__modal-enter:focus {
+.ui__modal button[type="button"].ui__modal-enter:focus {
     border-color: var(--bujo-button-accent-border-focus);
+}
+
+
+/* common ui buttons  */
+
+button[type="button"]:not(.to-heading-button).ui__button {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
+    border-color: var(--bujo-button-accent-border);
+}
+button[type="button"]:not(.to-heading-button).ui__button:hover {
+    color: var(--bujo-button-accent-text);
+    border-color: var(--bujo-button-accent-border);
+    opacity: .9;
+}
+button[type="button"]:not(.to-heading-button).ui__button:focus {
+    border-color: var(--bujo-button-accent-border-focus);
+}
+
+
+/* settings buttons */
+
+#settings button[type="button"].ui__button {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
+    border-color: var(--bujo-button-border);
+    opacity: 1;
+}
+#settings button[type="button"].ui__button:hover {
+    opacity: .9;
+}
+#settings button[type="button"].ui__button:focus {
+    border-color: var(--bujo-button-border-focus);
 }
 
 
