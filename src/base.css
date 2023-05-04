@@ -1004,6 +1004,16 @@ html[data-theme=light] .extensions__pdf-hls-ctx-menu > li.item-colors > a:hover 
 /* MISC */
 /* ---- */
 
+/* disable icons in «All pages» page */
+
+.cp__all_pages table.cp__all_pages_table > thead > tr > th.icon {
+    display: none;
+}
+.cp__all_pages table.cp__all_pages_table > tbody > tr > td.icon {
+    display: none;
+}
+
+
 /* guidelines */
 
 .block-children-left-border {
