@@ -334,10 +334,18 @@ mark > code {
 
 /* page title */
 
+h1.page-title {
+    color: var(--ls-title-text-color);
+}
+
 .page-title-sizer-wrapper > .title,
 .page-title-sizer-wrapper > .edit-input-wrapper.editing,
 .page-title-sizer-wrapper > .edit-input-wrapper.editing > .edit-input {
     font-weight: 700;
+}
+
+.page-title-sizer-wrapper > .edit-input-wrapper.editing,
+.page-title-sizer-wrapper > .edit-input-wrapper.editing > .edit-input {
     color: var(--ls-title-text-color);
 }
 
