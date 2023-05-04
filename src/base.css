@@ -1191,6 +1191,9 @@ svg.tip {
     opacity: 1;
 }
 
+
+/* modal buttons */
+
 button[type="button"] {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background);
@@ -1217,6 +1220,21 @@ button[type="button"].ui__modal-enter:hover {
 }
 button[type="button"].ui__modal-enter:focus {
     border-color: var(--bujo-button-accent-border-focus);
+}
+
+
+/* context menu: heading buttons */
+
+button[type="button"].to-heading-button {
+    background: none;
+    border: none;
+    transition-duration: 0s;
+}
+button[type="button"].to-heading-button > .ui__icon {
+    color: var(--bujo-menu-icon);
+}
+button[type="button"].to-heading-button:hover > .ui__icon {
+    color: var(--bujo-menu-icon);
 }
 
 
