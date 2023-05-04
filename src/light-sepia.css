@@ -214,14 +214,14 @@
 
 
     /* block background highlights */
-    --ls-highlight-color-gray:   hsl(200  3% 53% / 1);
-    --ls-highlight-color-red:    hsl(356 32% 53% / 1);
-    --ls-highlight-color-yellow: hsl( 46 40% 53% / 1);
-    --ls-highlight-color-green:  hsl(106 13% 53% / 1);
-    --ls-highlight-color-blue:   hsl(205 25% 53% / 1);
-    --ls-highlight-color-purple: hsl(260 18% 53% / 1);
-    --ls-highlight-color-pink:   hsl(345 25% 60% / 1);
-/*     --ls-highlight-color-pink:   hsl(305 23% 53% / 1); */
+    --ls-highlight-color-gray:   hsl(200,  3%, 53%);
+    --ls-highlight-color-red:    hsl(356, 32%, 53%);
+    --ls-highlight-color-yellow: hsl( 46, 40%, 53%);
+    --ls-highlight-color-green:  hsl(106, 13%, 53%);
+    --ls-highlight-color-blue:   hsl(205, 25%, 53%);
+    --ls-highlight-color-purple: hsl(260, 18%, 53%);
+    --ls-highlight-color-pink:   hsl(345, 25%, 60%);
+/*     --ls-highlight-color-pink:   hsl(305 23% 53%); */
 
 
     --bujo-pdf-pin-red: var(--color-red-800);
@@ -244,10 +244,10 @@
     --ls-success-text-color: hsl(106, 23%, 50%);
     --bujo-info-text: hsl(200, 90%, 40%);
 
-    --ls-error-background-color: var(--ls-highlight-color-red);
-    --ls-warning-background-color: var(--ls-highlight-color-yellow);
-    --ls-success-background-color: var(--ls-highlight-color-green);
-    --bujo-info-background: var(--ls-highlight-color-blue);
+    --ls-error-background-color: hsl(356, 32%, 80%);
+    --ls-warning-background-color: hsl( 46, 40%, 70%);
+    --ls-success-background-color: hsl(106, 13%, 70%);
+    --bujo-info-background: hsl(205, 25%, 70%);
 }
 
 
