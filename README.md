@@ -48,6 +48,7 @@ In Logseq:
   ```
 
 ## Integrated with plugins:
+* [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
 * [Copy code](https://github.com/vyleung/logseq-copy-code-plugin)
 * [Block Calendar](https://github.com/vipzhicheng/logseq-plugin-block-calendar)
 * [Days](https://github.com/sethyuan/logseq-plugin-days)
