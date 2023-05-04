@@ -48,10 +48,10 @@ In Logseq:
   ```
 
 ## Integrated with plugins:
-* Copy code
-* Block calendar
-* Days
-* Smartblocks
+* [Copy code](https://github.com/vyleung/logseq-copy-code-plugin)
+* [Block Calendar](https://github.com/vipzhicheng/logseq-plugin-block-calendar)
+* [Days](https://github.com/sethyuan/logseq-plugin-days)
+* [SmartBlocks](https://github.com/sawhney17/logseq-smartblocks)
 
 # Credits
 * Original author of all themes — [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme): `Copyright (c) 2021 Piotr Skarżyński`
