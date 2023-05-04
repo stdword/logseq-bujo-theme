@@ -1188,11 +1188,12 @@ svg.tip {
     border-color: var(--bujo-ui-border-focus);
 }
 
-.form-select {
+select, .form-select {
     background-color: var(--ls-primary-background-color) !important;
+    border-color: var(--ls-border-color);
     box-shadow: none !important;
 }
-.form-select:focus {
+select:focus, .form-select:focus {
     border-color: var(--bujo-ui-border-focus);
 }
 
