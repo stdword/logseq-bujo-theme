@@ -1190,6 +1190,23 @@ svg.tip {
     background: var(--bujo-settings-background);
 }
 
+input[type="color"] {
+    -webkit-appearance: none;
+    border-color: var(--ls-border-color);
+    width: 28px;
+    height: 28px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border-color: var(--ls-active-primary-color);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: var(--ls-quaternary-background-color);
+}
+
 
 /* buttons */
 
