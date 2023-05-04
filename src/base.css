@@ -40,14 +40,14 @@
 
 /* global color vars */
 :root {
-    --ph-highlight-color-blue: var(--bujo-pdf-pin-blue);
-    --ph-highlight-color-green: var(--bujo-pdf-pin-green);
-    --ph-highlight-color-red: var(--bujo-pdf-pin-red);
-    --ph-highlight-color-purple: var(--bujo-pdf-pin-purple);
-    --ph-highlight-color-yellow: var(--bujo-pdf-pin-yellow);
+    --ph-highlight-color-blue: var(--color-blue-300);
+    --ph-highlight-color-green: var(--color-green-300);
+    --ph-highlight-color-red: var(--color-red-300);
+    --ph-highlight-color-purple: var(--color-purple-300);
+    --ph-highlight-color-yellow: var(--color-yellow-300);
 
     --ph-link-color: var(--ls-link-ref-text-color);
-    --ph-highlight-scroll-into-color: rgba(255,75,93,.67);
+    --ph-highlight-scroll-into-color: rgba(255, 75, 93, .67);
 
     --ls-error-color: var(--color-red-500);
     --ls-warning-color: var(--color-yellow-400);
@@ -746,38 +746,52 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 
 /* pdf extension */
 
+/* pdf resizer */
+
 .extensions__pdf-resizer {
     height: 100vh;
     top: 0vh;
     width: 4px;
     transition-duration: 0.3s;
 }
-
 .extensions__pdf-resizer:active,
 .extensions__pdf-resizer:focus,
 .extensions__pdf-resizer:hover {
     background-color: var(--bujo-resizer);
 }
 
+
+/* pdf toolbar */
+
 .extensions__pdf-container[data-theme=light] .extensions__pdf-toolbar .buttons,
 .extensions__pdf-container[data-theme=warm] .extensions__pdf-toolbar .buttons,
 .extensions__pdf-container[data-theme=dark] .extensions__pdf-toolbar .buttons {
-    background-color: var(--ls-primary-background-color);
+    background-color: var(--bujo-pdf-menu-background);
 }
 .extensions__pdf-toolbar a.button {
     color: var(--ls-icon-color);
 }
+.extensions__pdf-toolbar > .inner .pager > .nu input {
+    background-color: var(--ls-primary-background-color);
+    border-color: var(--ls-border-color);
+    border: 2px solid var(--ls-border-color);
+    font-size: 0.80em;
+    box-shadow: none;
+}
+
+.hls-popup-box {
+    background-color: var(--bujo-pdf-menu-background);
+    box-shadow: 0 2px 4px 0 hsl(0deg 0% 53% / 59%);
+}
+
+
+/* pdf settings */
 
 .extensions__pdf-settings-item.theme-picker > button,
 .extensions__pdf-settings-item.theme-picker > button:hover {
     border-color: transparent;
 }
 
-
-.hls-popup-box {
-    background-color: var(--ls-tertiary-background-color);
-    box-shadow: 0 2px 4px 0 hsl(0deg 0% 53% / 59%);
-}
 .extensions__pdf-settings-item.toggle-input {
     border-top-color: var(--bujo-link-ref-brackets);
     opacity: 1;
@@ -791,6 +805,8 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 }
 
 
+/* pdf outline */
+
 .extensions__pdf-outline-tabs,
 .extensions__pdf-outline-tabs > .inner {
     border: 1px solid var(--bujo-link-ref-brackets);
@@ -800,12 +816,18 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 }
 .extensions__pdf-outline-tabs > .inner > button:active {
     color: var(--ls-primary-text-color);
-    background-color: var(--ls-quaternary-background-color);
+    background-color: var(--bujo-pdf-menu-background);
 }
 .extensions__pdf-outline-tabs > .inner > button.active {
-    background-color: var(--ls-quaternary-background-color);
+    background-color: var(--bujo-pdf-menu-background-hover);
 }
 
+.extensions__pdf-outline-panels section.is-empty {
+    font-size: 0.75em;
+}
+
+
+/* pdf highlights */
 
 .extensions__pdf-highlights-list-item > p {
     color: var(--ls-primary-text-color);
@@ -819,17 +841,35 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 .extensions__pdf-highlights-list-item.active > h6 strong,
 .extensions__pdf-highlights-list-item.active > p,
 .extensions__pdf-highlights-list-item.active:hover > p {
-    color: var(--bujo-foreground4);
+    color: var(--bujo-pdf-menu-highlight-accent);
 }
 
-.extensions__pdf-outline-panels section.is-empty {
-    font-size: 0.75em;
+.extensions__pdf-highlights-list-item > h6 small {
+    opacity: .8;
 }
+
+.extensions__pdf-highlights-list-item small[data-color="yellow"] {
+    background-color: var(--bujo-pdf-pin-yellow);
+}
+.extensions__pdf-highlights-list-item small[data-color="red"] {
+    background-color: var(--bujo-pdf-pin-red);
+}
+.extensions__pdf-highlights-list-item small[data-color="green"] {
+    background-color: var(--bujo-pdf-pin-green);
+}
+.extensions__pdf-highlights-list-item small[data-color="blue"] {
+    background-color: var(--bujo-pdf-pin-blue);
+}
+.extensions__pdf-highlights-list-item small[data-color="purple"] {
+    background-color: var(--bujo-pdf-pin-purple);
+}
+
+
+/* pdf finder */
 
 .extensions__pdf-finder.hls-popup-box > .result-inner {
     color: var(--ls-primary-text-color);
 }
-
 
 .extensions__pdf-finder.hls-popup-box>.input-inner .ui__button {
     background-color: var(--bujo-button-background) !important;
@@ -842,7 +882,7 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 
 .extensions__pdf-finder.hls-popup-box>.input-inner .ui__button.active,
 .extensions__pdf-finder.hls-popup-box>.input-inner .ui__button:hover {
-    background-color: var(--bujo-button-background-hover) !important;
+    background-color: var(--bujo-pdf-menu-background) !important;
 }
 .extensions__pdf-finder.hls-popup-box>.input-inner .ui__button.active .ui__icon,
 .extensions__pdf-finder.hls-popup-box>.input-inner .ui__button:hover .ui__icon {
@@ -866,7 +906,7 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
     box-shadow: none;
 }
 .extensions__pdf-finder.hls-popup-box>.input-inner input:focus {
-    border: 2px solid var(--bujo-accent-normal);
+    border: 2px solid var(--bujo-button-accent-border-focus);
 }
 
 .extensions__pdf-finder.hls-popup-box>.input-inner .ui__button.icon-enter {
@@ -875,52 +915,56 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
     bottom: 2px;
 }
 
-.extensions__pdf-toolbar>.inner .pager>.nu input {
-    background-color: var(--ls-primary-background-color);
-    border-color: var(--ls-border-color);
-    border: 2px solid var(--ls-border-color);
-    font-size: 0.80em;
-    box-shadow: none;
+
+/* pdf context menu */
+
+.extensions__pdf-hls-ctx-menu {
+    background-color: var(--bujo-pdf-menu-background);
 }
 
-
-.extensions__pdf-highlights-list-item small[data-color="yellow"] {
-    background-color: var(--bujo-pdf-pin-yellow);
-    border-color: var(--bujo-pdf-pin-yellow);
+.extensions__pdf-hls-ctx-menu > li.item-colors > a {
+    border-color: var(--bujo-tiny-shadow-black);
 }
-.extensions__pdf-highlights-list-item small[data-color="red"] {
-    background-color: var(--bujo-pdf-pin-red);
-    border-color: var(--bujo-pdf-pin-red);
-}
-.extensions__pdf-highlights-list-item small[data-color="green"] {
-    background-color: var(--bujo-pdf-pin-green);
-    border-color: var(--bujo-pdf-pin-green);
-}
-.extensions__pdf-highlights-list-item small[data-color="blue"] {
-    background-color: var(--bujo-pdf-pin-blue);
-    border-color: var(--bujo-pdf-pin-blue);
-}
-.extensions__pdf-highlights-list-item small[data-color="purple"] {
-    background-color: var(--bujo-pdf-pin-purple);
-    border-color: var(--bujo-pdf-pin-purple);
-}
-
 
 .extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="yellow"] {
-    background-color: var(--bujo-pdf-pin-yellow);
+    background-color: var(--ph-highlight-color-yellow);
 }
 .extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="red"] {
-    background-color: var(--bujo-pdf-pin-red);
+    background-color: var(--ph-highlight-color-red);
 }
 .extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="green"] {
-    background-color: var(--bujo-pdf-pin-green);
+    background-color: var(--ph-highlight-color-green);
 }
 .extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="blue"] {
-    background-color: var(--bujo-pdf-pin-blue);
+    background-color: var(--ph-highlight-color-blue);
 }
 .extensions__pdf-hls-ctx-menu > li.item-colors > a[data-color="purple"] {
-    background-color: var(--bujo-pdf-pin-purple);
+    background-color: var(--ph-highlight-color-purple);
 }
+
+html[data-theme=dark] .extensions__pdf-hls-ctx-menu > li.item-colors > a {
+    opacity: .8;
+}
+html[data-theme=dark] .extensions__pdf-hls-ctx-menu > li.item-colors > a:hover {
+    opacity: 1;
+}
+html[data-theme=light] .extensions__pdf-hls-ctx-menu > li.item-colors > a {
+    opacity: 1;
+}
+html[data-theme=light] .extensions__pdf-hls-ctx-menu > li.item-colors > a:hover {
+    opacity: .8;
+}
+
+.extensions__pdf-hls-ctx-menu > li {
+    color: var(--ls-primary-text-color);
+}
+.extensions__pdf-hls-ctx-menu > li.item:hover {
+    color: var(--ls-secondary-text-color);
+    background-color: var(--bujo-pdf-menu-background-hover);
+}
+
+
+/* pdf pins */
 
 .ls-hl-colored .block-content[data-hl-color="purple"] .prefix-link:before {
     content: "\ec9c  "; /* https://tabler-icons.io/i/pin */

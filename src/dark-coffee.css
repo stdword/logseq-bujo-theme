@@ -188,6 +188,18 @@
     --bujo-button-border-focus: var(--bujo-accent-normal);
 
 
+    /* pdf extension */
+    --bujo-pdf-menu-background: var(--ls-tertiary-background-color);
+    --bujo-pdf-menu-background-hover: var(--bujo-background6);
+    --bujo-pdf-menu-highlight-accent: var(--bujo-foreground4);
+
+    --bujo-pdf-pin-red: var(--color-red-400);
+    --bujo-pdf-pin-yellow: var(--color-yellow-400);
+    --bujo-pdf-pin-green: var(--color-green-500);
+    --bujo-pdf-pin-blue: var(--color-blue-500);
+    --bujo-pdf-pin-purple: var(--color-purple-500);
+
+
     /* other ui */
     --bujo-resizer: var(--bujo-background7);
     --bujo-hover-shadow: var(--bujo-tiny-shadow-white);
@@ -222,14 +234,6 @@
     --ls-highlight-color-blue:   hsl(222, 80%, 30%);
     --ls-highlight-color-purple: hsl(274, 60%, 28%);
     --ls-highlight-color-pink:   hsl(336, 70%, 25%);
-
-
-    /* pdf pins */
-    --bujo-pdf-pin-red: var(--color-red-400);
-    --bujo-pdf-pin-yellow: var(--color-yellow-400);
-    --bujo-pdf-pin-green: var(--color-green-500);
-    --bujo-pdf-pin-blue: var(--color-blue-500);
-    --bujo-pdf-pin-purple: var(--color-purple-500);
 
 
     /* embedded block levels */
