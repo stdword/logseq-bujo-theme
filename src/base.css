@@ -1004,6 +1004,16 @@ html[data-theme=light] .extensions__pdf-hls-ctx-menu > li.item-colors > a:hover 
 /* MISC */
 /* ---- */
 
+/* re-index progress bar */
+
+div.w-full.bg-indigo-200.rounded-full.animate-pulse {
+    background-color: var(--bujo-progress-bar-rest);
+}
+div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
+    background-color: var(--bujo-progress-bar-done);
+}
+
+
 /* disable icons in «All pages» page */
 
 .cp__all_pages table.cp__all_pages_table > thead > tr > th.icon {

@@ -204,6 +204,9 @@
     --bujo-resizer: var(--bujo-background7);
     --bujo-hover-shadow: var(--bujo-tiny-shadow-white);
 
+    --bujo-progress-bar-done: var(--bujo-accent-dark);
+    --bujo-progress-bar-rest: var(--bujo-accent-clean);
+
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--bujo-foreground2);
 
