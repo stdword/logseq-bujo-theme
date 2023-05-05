@@ -27,17 +27,17 @@
     --bujo-background8:       hsl(24, 11%, 40%);
 
     --bujo-foreground1:       hsl(27, 20%, 52%);
-    --bujo-foreground2_hsl: /*hsl(27, 20%, 71%)*/ 27, 20%, 71%;
+    --bujo-foreground2_hsl:    /*hsl(27, 20%, 71%)*/ 27, 20%, 71%;
     --bujo-foreground3:       hsl(37, 25%, 84%);
     --bujo-foreground4:       hsl(37, 25%, 90%);
 
     --bujo-foreground2: hsl(var(--bujo-foreground2_hsl));
 
-    --bujo-fill1_hsl:       /*hsl(353, 22%, 19%)*/ 353, 22%, 19%; 
+    --bujo-fill1_hsl:          /*hsl(353, 22%, 19%)*/ 353, 22%, 19%;
     --bujo-fill2:             hsl(353, 19%, 27%);
     --bujo-fill3:             hsl(353, 22%, 30%);
     --bujo-fill4:             hsl(353, 23%, 47%);
-    --bujo-fill5_hsl:       /*hsl(324, 13%, 42%)*/ 324, 13%, 42%;
+    --bujo-fill5_hsl:          /*hsl(324, 13%, 42%)*/ 324, 13%, 42%;
 
     --bujo-fill1: hsl(var(--bujo-fill1_hsl));
     --bujo-fill5: hsl(var(--bujo-fill5_hsl));

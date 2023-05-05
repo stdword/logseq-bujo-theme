@@ -9,7 +9,7 @@
     --bujo-highlight-clean:   hsl(360, 26%, 49%);
     --bujo-highlight-lit:     hsl(355, 55%, 56%);
     --bujo-highlight-bright:  hsl(360, 72%, 45%);
-    --bujo-highlight_hsl:   /*hsl(360, 52%, 41%)*/ 360, 52%, 41%;
+    --bujo-highlight_hsl:      /*hsl(360, 52%, 41%)*/ 360, 52%, 41%;
 
     --bujo-highlight: hsl(var(--bujo-highlight_hsl));
 
@@ -19,7 +19,7 @@
     --bujo-accent-clean:      hsl(106,  6%, 59%);
  
     --bujo-foreground1:       hsl(38,  9%, 10%);
-    --bujo-foreground2_hsl: /*hsl(38,  9%, 20%)*/ 38, 9%, 20%;
+    --bujo-foreground2_hsl:    /*hsl(38,  9%, 20%)*/ 38, 9%, 20%;
     --bujo-foreground3:       hsl(38,  9%, 25%);
     --bujo-foreground4:       hsl(38,  9%, 30%);
     --bujo-foreground5:       hsl(38,  5%, 40%);
@@ -252,12 +252,12 @@
     --ls-error-text-color: var(--ls-highlight-color-red);
     --ls-warning-text-color: var(--ls-highlight-color-yellow);
     --ls-success-text-color: hsl(106, 23%, 50%);
-    --bujo-info-text: hsl(200, 90%, 40%);
+    --bujo-info-text:        hsl(200, 90%, 40%);
 
-    --ls-error-background-color: hsl(356, 32%, 80%);
+    --ls-error-background-color:   hsl(356, 32%, 80%);
     --ls-warning-background-color: hsl( 46, 40%, 70%);
     --ls-success-background-color: hsl(106, 13%, 70%);
-    --bujo-info-background: hsl(205, 25%, 70%);
+    --bujo-info-background:        hsl(205, 25%, 70%);
 }
 
 

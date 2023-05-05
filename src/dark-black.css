@@ -19,7 +19,7 @@
     --bujo-accent-clean:      hsl(80, 90%, 77%);
 
     --bujo-foreground1:       hsl(45, 100%,  74%);
-    --bujo-foreground2_hsl: /*hsl(40, 100%, 83%)*/ 40, 100%, 83%;
+    --bujo-foreground2_hsl:    /*hsl(40, 100%, 83%)*/ 40, 100%, 83%;
     --bujo-foreground3:       hsl(40, 100%, 94%);
     --bujo-foreground4:       hsl(40, 100%, 100%);
 
@@ -32,7 +32,7 @@
     --bujo-background5:       hsl(0, 0%, 22%);
     --bujo-background6:       hsl(0, 0%, 25%);
     --bujo-background7:       hsl(0, 0%, 35%);
-    --bujo-background8_hsl: /*hsl(0, 0%, 40%)*/ 0, 0%, 40%;
+    --bujo-background8_hsl:    /*hsl(0, 0%, 40%)*/ 0, 0%, 40%;
 
     --bujo-background8: hsl(var(--bujo-background8_hsl));
 
