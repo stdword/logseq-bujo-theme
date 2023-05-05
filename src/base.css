@@ -1240,11 +1240,39 @@ button[type="button"]:not(.to-heading-button).ui__button {
 }
 button[type="button"]:not(.to-heading-button).ui__button:hover {
     color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background-hover);
     border-color: var(--bujo-button-accent-border);
     opacity: .9;
 }
 button[type="button"]:not(.to-heading-button).ui__button:focus {
     border-color: var(--bujo-button-accent-border-focus);
+}
+
+
+/* onboarding buttons  */
+
+.cp__onboarding-quick-tour button.shepherd-button {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
+    border-color: var(--bujo-button-accent-border);
+}
+.cp__onboarding-quick-tour button.shepherd-button:hover {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background-hover);
+    border-color: var(--bujo-button-accent-border);
+    opacity: .9;
+}
+.cp__onboarding-quick-tour button.shepherd-button:focus {
+    border-color: var(--bujo-button-accent-border-focus);
+}
+
+button.cp__onboarding-skip-quick-tour {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
+    border-color: var(--bujo-button-accent-border);
+}
+button.cp__onboarding-skip-quick-tour i.ti {
+    color: var(--bujo-button-accent-text);
 }
 
 
