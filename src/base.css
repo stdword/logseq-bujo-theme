@@ -1228,6 +1228,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: var(--ls-quaternary-background-color);
 }
 
+/* whiteboards */
+
+.logseq-tldraw {
+    --color-selectedFill: var(--bujo-button-accent-background);
+    --color-selectedContrast: var(--bujo-whiteboard-text-accent);
+}
+
+.tl-button[data-selected=true] > i:is(.ti, .tie) {
+    color: var(--bujo-whiteboard-text-accent);
+}
+.tl-toggle-group-input-button:hover,
+.tl-toggle-group-input-button[data-state=on] {
+    background-color: var(--bujo-whiteboard-background-accent);
+}
+.tl-toggle-input:hover,
+.tl-toggle-input[data-state=on] {
+    background-color: var(--bujo-whiteboard-background-accent);
+}
+.tl-select-input-trigger:hover {
+    background-color: var(--ls-primary-background-color);
+}
+
+.tl-select-input-select-item[data-state=checked],
+.tl-select-input-select-item:not([data-state=checked]):focus-visible,
+.tl-select-input-select-item:not([data-state=checked]):hover {
+    background-color: var(--bujo-whiteboard-input-select-background-accent);
+    color: var(--ls-primary-text-color);
+}
+.tl-select-input-select-item:focus-visible {
+    outline: 1px dashed var(--bujo-whiteboard-input-select-border-accent);
+}
+
 
 /* buttons */
 
