@@ -1231,6 +1231,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* buttons */
 
+/* common ui buttons  */
+
+button[type="button"]:not(.to-heading-button).ui__button {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
+    border-color: var(--bujo-button-accent-border);
+}
+button[type="button"]:not(.to-heading-button).ui__button:hover {
+    color: var(--bujo-button-accent-text);
+    border-color: var(--bujo-button-accent-border);
+    opacity: .9;
+}
+button[type="button"]:not(.to-heading-button).ui__button:focus {
+    border-color: var(--bujo-button-accent-border-focus);
+}
+
+
+/* «All pages» buttons */
+
 .cp__all_pages .actions .actions-wrap button {
     opacity: .5;
     pointer-events: none;
@@ -1279,20 +1298,46 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* common ui buttons  */
+/* marketplace buttons */
 
-button[type="button"]:not(.to-heading-button).ui__button {
-    color: var(--bujo-button-accent-text);
-    background-color: var(--bujo-button-accent-background);
-    border-color: var(--bujo-button-accent-border);
-}
-button[type="button"]:not(.to-heading-button).ui__button:hover {
-    color: var(--bujo-button-accent-text);
-    border-color: var(--bujo-button-accent-border);
+.cp__plugins-page button[type="button"].ui__button {
+    color: var(--bujo-button-text);
+    background-color: transparent;
+    border: 1px solid transparent;
     opacity: .9;
 }
-button[type="button"]:not(.to-heading-button).ui__button:focus {
-    border-color: var(--bujo-button-accent-border-focus);
+.cp__plugins-page button[type="button"].ui__button:hover {
+    color: var(--bujo-button-text);
+    border-color: transparent;
+    opacity: 1;
+}
+.cp__plugins-page button[type="button"].ui__button:focus {
+    border: 1px solid var(--bujo-button-accent-border-focus);
+}
+
+html[data-theme=light] .cp__plugins-page button[type="button"].ui__button.active {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background-hover);
+}
+html[data-theme=light] .cp__plugins-page button[type="button"].ui__button.active:hover {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
+}
+
+html[data-theme=dark] .cp__plugins-page button[type="button"].ui__button.active {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
+}
+html[data-theme=dark] .cp__plugins-page button[type="button"].ui__button.active:hover {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background-hover);
+}
+
+.cp__plugins-page .ui__dropdown-trigger > button > .ui__icon {
+    margin-right: 0px;
+}
+.cp__plugins-page .cp__plugins-item-card > .r > .ctl > .l > .de {
+    opacity: 1;
 }
 
 
