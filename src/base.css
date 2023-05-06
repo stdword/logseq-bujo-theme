@@ -1228,33 +1228,96 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: var(--ls-quaternary-background-color);
 }
 
+
 /* whiteboards */
 
-.logseq-tldraw {
+.whiteboard .logseq-tldraw {
     --color-selectedFill: var(--bujo-button-accent-background);
+    --color-selectedStroke: var(--bujo-whiteboard-border-accent);
     --color-selectedContrast: var(--bujo-whiteboard-text-accent);
 }
 
-.tl-button[data-selected=true] > i:is(.ti, .tie) {
+.whiteboard .tl-toolbar-separator {
+    margin: 0px 0px !important;
+    background-color: var(--bujo-whiteboard-border);
+    opacity: .5;
+}
+
+.whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-button {
+    color: var(--bujo-whiteboard-text-accent);
+    border: none;
+    /* border: 1px solid var(--bujo-whiteboard-border); */
+}
+.whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-button:hover {
+    background-color: var(--bujo-whiteboard-background-accent);
+}
+.whiteboard .tl-tools-floating-panel .tl-button[data-selected=true]:hover {
+    background-color: var(--bujo-button-accent-background);
+}
+.whiteboard .tl-tools-floating-panel .tl-button[data-selected=true] > i:is(.ti, .tie) {
     color: var(--bujo-whiteboard-text-accent);
 }
-.tl-toggle-group-input-button:hover,
-.tl-toggle-group-input-button[data-state=on] {
+
+.whiteboard .tl-context-bar .tl-geometry-toolbar .tl-button {
+    border: none;
+}
+
+.whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-popover-trigger-button[data-border=true] {
+    border: none;
+    /* border: 1px solid var(--bujo-whiteboard-border); */
+}
+.whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-color-drip {
+    border: 1px solid var(--bujo-whiteboard-border);
+    color: var(--ls-secondary-text-color);
+}
+.whiteboard .tl-context-bar .tl-slider-track {
+    background: linear-gradient(90deg, transparent, var(--ls-tertiary-background-color));
+    border: 1px solid var(--bujo-whiteboard-border);
+}
+.whiteboard .tl-context-bar .tl-slider-thumb {
+    background-color: var(--ls-secondary-background-color);
+    border: 1px solid var(--bujo-whiteboard-border-accent);
+    box-shadow: 0 0 1px var(--ls-secondary-border-color);
+}
+.whiteboard .tl-context-bar .tl-slider-thumb:hover {
+    background-color: var(--ls-tertiary-background-color);
+}
+
+.whiteboard .tl-context-bar .tl-button.tl-toggle-input:hover {
     background-color: var(--bujo-whiteboard-background-accent);
 }
-.tl-toggle-input:hover,
-.tl-toggle-input[data-state=on] {
+.whiteboard .tl-context-bar .tl-button.tl-toggle-input[data-state=on] {
+    background-color: var(--ls-tertiary-background-color);
+}
+.whiteboard .tl-context-bar .tl-button.tl-toggle-input[data-state=on]:hover {
     background-color: var(--bujo-whiteboard-background-accent);
 }
-.tl-select-input-trigger:hover {
-    background-color: var(--ls-primary-background-color);
+
+.whiteboard .tl-context-bar .tl-toggle-group-input {
+    box-shadow: 0 0 0 1px var(--bujo-whiteboard-border);
+}
+.whiteboard .tl-context-bar .tl-toggle-group-input-button:hover {
+    opacity: 1;
+    background-color: var(--bujo-whiteboard-background-accent);
+}
+.whiteboard .tl-context-bar .tl-toggle-group-input-button[data-state=on] {
+    background-color: var(--ls-tertiary-background-color);
+}
+
+.whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-select-input-trigger {
+    background-color: var(--ls-secondary-background-color);
+    box-shadow: 0 0 0 1px var(--bujo-whiteboard-border);
+    color: var(--ls-secondary-text-color);
+}
+.whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-select-input-trigger:hover {
+    background-color: var(--bujo-whiteboard-input-select-background);
 }
 
 .tl-select-input-select-item[data-state=checked],
 .tl-select-input-select-item:not([data-state=checked]):focus-visible,
 .tl-select-input-select-item:not([data-state=checked]):hover {
     background-color: var(--bujo-whiteboard-input-select-background-accent);
-    color: var(--ls-primary-text-color);
+    color: var(--ls-secondary-text-color);
 }
 .tl-select-input-select-item:focus-visible {
     outline: 1px dashed var(--bujo-whiteboard-input-select-border-accent);
