@@ -199,7 +199,7 @@
     --bujo-whiteboard-input-select-background-accent: var(--bujo-accent-dimmed);
     --bujo-whiteboard-input-select-border-accent: var(--bujo-accent-clean);
 
-    --ls-wb-stroke-color-default: var(--bujo-whiteboard-border-accent);
+    --ls-wb-stroke-color-default: var(--bujo-background7);
 
 
     /* pdf extension */

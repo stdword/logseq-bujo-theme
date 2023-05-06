@@ -191,9 +191,17 @@
 
     /* whiteboards */
     --bujo-whiteboard-text-accent: var(--bujo-background5);
-    --bujo-whiteboard-background-accent: var(--bujo-background9);
+    --bujo-whiteboard-background: var(--bujo-background9);
+    --bujo-whiteboard-background-accent: var(--bujo-background1);
+
+    --bujo-whiteboard-border: var(--bujo-background9);
+    --bujo-whiteboard-border-accent: var(--bujo-background11);
+
+    --bujo-whiteboard-input-select-background: var(--bujo-background1);
     --bujo-whiteboard-input-select-background-accent: var(--bujo-accent-dimmed);
     --bujo-whiteboard-input-select-border-accent: var(--bujo-accent-clean);
+
+    --ls-wb-stroke-color-default: var(--bujo-background9);
 
 
     /* pdf extension */
