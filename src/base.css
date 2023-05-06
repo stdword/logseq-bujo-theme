@@ -1280,14 +1280,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     box-shadow: 0 0 1px var(--ls-secondary-border-color);
 }
 .whiteboard .tl-context-bar .tl-slider-thumb:hover {
-    background-color: var(--ls-tertiary-background-color);
+    background-color: var(--bujo-whiteboard-background-accent);
 }
 
 .whiteboard .tl-context-bar .tl-button.tl-toggle-input:hover {
     background-color: var(--bujo-whiteboard-background-accent);
 }
 .whiteboard .tl-context-bar .tl-button.tl-toggle-input[data-state=on] {
-    background-color: var(--ls-tertiary-background-color);
+    background-color: var(--bujo-whiteboard-background);
 }
 .whiteboard .tl-context-bar .tl-button.tl-toggle-input[data-state=on]:hover {
     background-color: var(--bujo-whiteboard-background-accent);
@@ -1301,7 +1301,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: var(--bujo-whiteboard-background-accent);
 }
 .whiteboard .tl-context-bar .tl-toggle-group-input-button[data-state=on] {
-    background-color: var(--ls-tertiary-background-color);
+    background-color: var(--bujo-whiteboard-background);
 }
 
 .whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-select-input-trigger {
@@ -1311,6 +1311,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-select-input-trigger:hover {
     background-color: var(--bujo-whiteboard-input-select-background);
+}
+
+.whiteboard .tl-context-bar .tl-button .tl-shape-links-count {
+    color: var(--ls-primary-text-color);
+}
+.whiteboard .tl-context-bar .tl-button:hover .tl-shape-links-count {
+    background-color: var(--bujo-button-accent-background);
+    color: var(--bujo-whiteboard-text-accent);
 }
 
 .tl-select-input-select-item[data-state=checked],

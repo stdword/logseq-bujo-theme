@@ -189,6 +189,7 @@
 
     /* whiteboards */
     --bujo-whiteboard-text-accent: var(--bujo-background5);
+    --bujo-whiteboard-background: var(--bujo-background5);
     --bujo-whiteboard-background-accent: var(--bujo-background8);
 
     --bujo-whiteboard-border: var(--bujo-background4);

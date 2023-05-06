@@ -161,8 +161,8 @@
     --bujo-right-sidebar-table-even-background: var(--bujo-background4);
 
     --ls-border-color: var(--bujo-fill1);
-    --ls-secondary-border-color: var(--ls-border-color);
-    --ls-tertiary-border-color: var(--ls-border-color);
+    --ls-secondary-border-color: var(--bujo-fill2);
+    --ls-tertiary-border-color: var(--bujo-fill5);
 
 
     /* settings */
@@ -188,6 +188,21 @@
     --bujo-button-background-hover: var(--bujo-background7);
     --bujo-button-border: var(--bujo-background6);
     --bujo-button-border-focus: var(--bujo-accent-normal);
+
+
+    /* whiteboards */
+    --bujo-whiteboard-text-accent: var(--bujo-background5);
+    --bujo-whiteboard-background: var(--bujo-background6);
+    --bujo-whiteboard-background-accent: var(--bujo-background8);
+
+    --bujo-whiteboard-border: var(--bujo-background5);
+    --bujo-whiteboard-border-accent: var(--bujo-background7);
+
+    --bujo-whiteboard-input-select-background: var(--bujo-background7);
+    --bujo-whiteboard-input-select-background-accent: var(--bujo-accent-dimmed);
+    --bujo-whiteboard-input-select-border-accent: var(--bujo-accent-clean);
+
+    --ls-wb-stroke-color-default: var(--bujo-background6);
 
 
     /* pdf extension */
