@@ -35,6 +35,18 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 * The only point here is: every new theme release should be also updated manually
 
 
+## How to disable dots in background?
+In Logseq:
+* Click «...» and open the «Settings» section (or press `t s`)
+* Click «Edit custom.css»
+* Add following lines to the end
+
+  ```css
+  #app-container {
+    background-image: none !important;
+  }
+  ```
+
 ## How to turn off property icons?
 In Logseq:
 * Click «...» and open the «Settings» section (or press `t s`)
