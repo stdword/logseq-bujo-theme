@@ -1492,7 +1492,7 @@ button.cp__onboarding-skip-quick-tour i.ti {
     opacity: .9;
 }
 .cp__plugins-page button[type="button"].ui__button:hover {
-    color: var(--bujo-button-text);
+    color: var(--bujo-button-accent-text);
     border-color: transparent;
     opacity: 1;
 }
