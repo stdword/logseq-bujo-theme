@@ -259,11 +259,20 @@ a.menu-link:hover .search-item>svg {
 /* new page icon */
 a.menu-link .search-result .type-icon.highlight {
     color: var(--bujo-search-item-new-page-icon-text);
-    border-color: var(--bujo-search-item-new-page-icon-background);
+    border-color: var(--bujo-search-item-new-page-icon-border);
 }
 a.menu-link .search-result .type-icon.highlight::before {
     background: var(--bujo-search-item-new-page-icon-background);
-    opacity: .8;
+    opacity: 1;
+}
+
+/* new page text */
+a.menu-link .search-result div.self-center > div.text {
+    color: var(--ls-secondary-text-color);
+}
+a.menu-link .search-result div.self-center > div.text > span.ml-1 {
+    color: var(--ls-primary-text-color);
+    font-weight: 400;
 }
 
 /* other icons */
@@ -1321,6 +1330,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--bujo-whiteboard-text-accent);
 }
 
+/* choices select input */
 .tl-select-input-select-item[data-state=checked],
 .tl-select-input-select-item:not([data-state=checked]):focus-visible,
 .tl-select-input-select-item:not([data-state=checked]):hover {
@@ -1331,6 +1341,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     outline: 1px dashed var(--bujo-whiteboard-input-select-border-accent);
 }
 
+/* quick links */
 .whiteboard .tl-quick-links-container .tl-quick-links .tl-quick-links-row:first-child {
     background-color: var(--color-selectedFill);
     color: var(--bujo-whiteboard-text-accent);
@@ -1346,6 +1357,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .whiteboard .tl-quick-links-container .tl-quick-links .tl-quick-links-row:nth-child(2):hover {
     opacity: 1;
+}
+
+/* new page/whiteboard icon */
+.whiteboard .tl-quick-search-options .tl-quick-search-option .tl-type-tag[data-active=true] {
+    background: none;
+    background-color: var(--bujo-search-item-new-page-icon-background);
+    border: 1px solid var(--bujo-search-item-new-page-icon-border);
+}
+.whiteboard .tl-quick-search-options .tl-quick-search-option .tl-type-tag[data-active=true] > i:is(.ti, .tie) {
+    color: var(--bujo-search-item-new-page-icon-text);
+}
+.whiteboard .tl-quick-search-options .tl-quick-search-option[data-focused=true] .tl-type-tag[data-active=true] > i:is(.ti, .tie) {
+    color: var(--bujo-search-item-new-page-icon-text);
+}
+
+/* existed page/block icon */
+.whiteboard .tl-quick-search-options .tl-quick-search-option .tl-type-tag {
+    background: none;
+    background-color: var(--ls-primary-background-color);
+    border: none;
+}
+.whiteboard .tl-quick-search-options .tl-quick-search-option .tl-type-tag > i:is(.ti, .tie) {
+    color: var(--ls-primary-text-color);
+}
+.whiteboard .tl-quick-search-options .tl-quick-search-option[data-focused=true] .tl-type-tag > i:is(.ti, .tie) {
+    color: var(--bujo-search-item-text-hover);
 }
 
 

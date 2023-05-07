@@ -6,8 +6,10 @@
     /* PALETTE */
     /* ------- */
 
-    --bujo-highlight-dimmed:  hsl(331, 50%, 24%);
-    --bujo-highlight-normal:  hsl(331, 64%, 28%);
+    --bujo-highlight-dimmed:    hsl(331, 50%, 24%);
+    --bujo-highlight-normal_hsl: /*hsl(331, 64%, 28%)*/ 331, 64%, 28%;
+
+    --bujo-highlight-normal:  hsl(var(--bujo-highlight-normal_hsl));
 
     --bujo-highlight-clean:   hsl(355, 52%, 44%);
     --bujo-highlight-lit:     hsl(355, 55%, 56%);
@@ -112,7 +114,8 @@
 
     --ls-search-icon-color: var(--bujo-accent-normal);
     --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
-    --bujo-search-item-new-page-icon-background: var(--bujo-highlight-normal);
+    --bujo-search-item-new-page-icon-background: hsla(var(--bujo-highlight-normal_hsl), .8);
+    --bujo-search-item-new-page-icon-border: var(--bujo-highlight-normal);
 
 
     /* external links */
