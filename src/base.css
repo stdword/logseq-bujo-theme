@@ -1331,6 +1331,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     outline: 1px dashed var(--bujo-whiteboard-input-select-border-accent);
 }
 
+.whiteboard .tl-quick-links-container .tl-quick-links .tl-quick-links-row:first-child {
+    background-color: var(--color-selectedFill);
+    color: var(--bujo-whiteboard-text-accent);
+    opacity: 1;
+}
+.whiteboard .tl-quick-links-container .tl-quick-links .tl-quick-links-row:first-child:hover {
+    background-color: var(--bujo-button-accent-background-hover);
+    opacity: 1;
+}
+.whiteboard .tl-quick-links-container .tl-quick-links .tl-quick-links-row:nth-child(2) {
+    color: var(--ls-secondary-text-color);
+    opacity: .6;
+}
+.whiteboard .tl-quick-links-container .tl-quick-links .tl-quick-links-row:nth-child(2):hover {
+    opacity: 1;
+}
+
 
 /* buttons */
 
