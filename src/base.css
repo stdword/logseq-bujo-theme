@@ -695,6 +695,13 @@ a.priority[href="#/page/C" i]::before {
 }
 
 
+/* bullets */
+.bullet-link-wrap:hover > .bullet-container .bullet {
+    transform: none;
+    font-weight: bold;
+    color: var(--ls-link-text-color);
+}
+
 /* ----------- */
 /* Code Mirror */
 /* ----------- */
@@ -1406,7 +1413,7 @@ button[type="button"]:not(.to-heading-button).ui__button:focus {
 }
 
 
-/* onboarding buttons  */
+/* on-boarding buttons  */
 
 .cp__onboarding-quick-tour button.shepherd-button {
     color: var(--bujo-button-accent-text);
