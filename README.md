@@ -5,18 +5,24 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 
 
 ## How it looks
-### Coffee
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png)
-### White (will be reviewed soon)
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.jpeg)
-### Sepia
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png)
-### Black
-![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png)
+||||
+|:--:|:--:|:--:|
+|*Light*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png"/><p>Sepia</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.jpeg"/><p>White (will be [reviewed](https://github.com/stdword/logseq-bujo-theme/issues/2))</p>|
+|*Dark*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png"/><p>Coffee</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png"/><p>Black</p>|
 
 
 ## Theme adds special tags to change appearance of blocks
 ### To hide tag reference: just start it with dot «.» sign
+<img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/bbc43d6c-2b0f-4d28-afee-14e379273d21"/>
+
+### Column view: `#.columns` & `#.columns-fit`
+<img width="500px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/54288b01-878e-47cf-be01-574807ae872c"/>
+
+### Column view: `#.border`
+<img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/0fda5810-db21-4b25-b3d4-41b8c7cb5c89"/>
+
+### Column view: `#.border-child`
+<img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/83c8bc6f-a0a0-4ce9-a198-7371dafbdfae"/>
 
 
 ## Installation
