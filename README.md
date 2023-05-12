@@ -15,6 +15,10 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 ![](https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png)
 
 
+## Theme adds special tags to change appearance of blocks
+### To hide tag reference: just start it with dot «.» sign
+
+
 ## Installation
 ### From Logseq (recommended way)
 * Click «...» and open the «Plugins» section (or press `t p`)
@@ -35,9 +39,9 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 * The only point here is: every new theme release should be also updated manually
 
 
-## How to disable dots in background?
-In Logseq:
-* Click «...» and open the «Settings» section (or press `t s`)
+## FAQ
+### How to disable dots in background?
+* In Logseq: click «...» and open the «Settings» section (or press `t s`)
 * Click «Edit custom.css»
 * Add following lines to the end
 
@@ -47,9 +51,8 @@ In Logseq:
   }
   ```
 
-## How to turn off property icons?
-In Logseq:
-* Click «...» and open the «Settings» section (or press `t s`)
+### How to turn off property icons?
+* In Logseq: click «...» and open the «Settings» section (or press `t s`)
 * Click «Edit custom.css»
 * Add following lines to the end
 
