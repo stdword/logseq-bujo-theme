@@ -11,8 +11,7 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 |*Dark*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png"/><p>Coffee</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png"/><p>Black</p>|
 
 ### Property icons
-<img width="800px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/e1c34367-5349-4559-afa4-68db922bd0be"/>
-
+<img width="700px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/e1c34367-5349-4559-afa4-68db922bd0be"/>
 
 
 ## Theme adds special tags to change appearance of blocks
