@@ -759,6 +759,7 @@ html[data-theme=light] .CodeMirror,
 html[data-theme=dark]  .CodeMirror {
     border-radius: 4px;
     text-shadow: none;
+    box-shadow: none;
 }
 html[data-theme=light] .CodeMirror .CodeMirror-cursor,
 html[data-theme=dark]  .CodeMirror .CodeMirror-cursor {
