@@ -36,6 +36,10 @@
     --bujo-background6:       hsl(38, 25%, 87%);
     --bujo-background7:       hsl(38, 23%, 86%);
     --bujo-background8:       hsl(39, 22%, 85%);
+    --bujo-background8_5:     hsl(39, 21%, 82%);
+    --bujo-background8_7:     hsl(39, 21%, 79%);
+    --bujo-background8_9:     hsl(38, 21%, 76%);
+
     --bujo-background9:       hsl(42, 20%, 81%);
     --bujo-background10:      hsl(38, 25%, 80%);
     --bujo-background11:      hsl(47, 21%, 74%);
@@ -263,9 +267,9 @@
     --color-level-1: var(--bujo-background4);
     --color-level-2: var(--bujo-background6);
     --color-level-3: var(--bujo-background8);
-    --color-level-4: var(--bujo-background9);
-    --color-level-5: var(--bujo-background10);
-    --color-level-6: var(--bujo-background11);
+    --color-level-4: var(--bujo-background8_5);
+    --color-level-5: var(--bujo-background8_7);
+    --color-level-6: var(--bujo-background8_9);
 
     --ls-error-text-color: var(--ls-highlight-color-red);
     --ls-warning-text-color: var(--ls-highlight-color-yellow);
