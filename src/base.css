@@ -1757,7 +1757,6 @@ a.tag[data-ref^="."] {
     font-family: 'tabler-icons';
 
     padding-right: 4px;
-    vertical-align: bottom;
 
     color: var(--ls-primary-text-color);
     opacity: .8;
