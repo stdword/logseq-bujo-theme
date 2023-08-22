@@ -104,8 +104,21 @@
 
 
     /* block parts */
-    --ls-block-bullet-color: var(--bujo-background9);
+    --ls-block-bullet-color: var(--color-level-4);
+    --bujo-block-bullet-level1: var(--color-level-4);
+    --bujo-block-bullet-level2: var(--color-level-5);
+    --bujo-block-bullet-level3: var(--color-level-5);
+    --bujo-block-bullet-level4: var(--color-level-6);
+    --bujo-block-bullet-level5: var(--color-level-3);
+    --bujo-block-bullet-level6: var(--color-level-3);
+
     --ls-block-bullet-border-color: hsla(var(--bujo-foreground2_hsl), 0.25);
+    --bujo-block-bullet-border-level1: var(--ls-block-bullet-border-color);
+    --bujo-block-bullet-border-level2: var(--ls-block-bullet-border-color);
+    --bujo-block-bullet-border-level3: var(--ls-block-bullet-border-color);
+    --bujo-block-bullet-border-level4: var(--ls-block-bullet-border-color);
+    --bujo-block-bullet-border-level5: var(--ls-block-bullet-border-color);
+    --bujo-block-bullet-border-level6: var(--ls-block-bullet-border-color);
 
     --bujo-block-ref-text: var(--bujo-fill2);
     --bujo-block-ref-background: hsla(var(--bujo-highlight_hsl), .5);

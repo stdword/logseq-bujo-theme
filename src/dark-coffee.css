@@ -21,6 +21,7 @@
 
     --bujo-background1:       hsl(13, 18%, 10%);
     --bujo-background2:       hsl(10, 10%, 12%);
+    --bujo-background2_5:     hsl(13, 11%, 13%);
     --bujo-background3:       hsl(15, 11%, 14%);
     --bujo-background4:       hsl( 9,  9%, 15%);
     --bujo-background4_5:     hsl( 9,  9%, 17%);
@@ -54,7 +55,7 @@
     --bujo-dots: var(--bujo-background6);
     --bujo-dots-background: var(--bujo-background2);
 
-    --ls-primary-background-color: var(--bujo-background2);
+    --ls-primary-background-color: var(--bujo-background2_5);
     --ls-secondary-background-color: var(--bujo-background3);
     --ls-tertiary-background-color: var(--bujo-background4);
     --ls-quaternary-background-color: var(--bujo-background5);
@@ -66,7 +67,7 @@
     --bujo-menu-icon: var(--ls-secondary-text-color);
     --bujo-menu-text: var(--ls-primary-text-color);
 
-    --bujo-left-sidebar-background: var(--ls-secondary-background-color);
+    --bujo-left-sidebar-background: var(--bujo-background2_5);
     --bujo-left-sidebar-page-icon: var(--ls-primary-text-color);
     --bujo-left-sidebar-page-text: var(--ls-primary-text-color);
 
@@ -101,8 +102,21 @@
 
 
     /* block parts */
-    --ls-block-bullet-color: var(--bujo-background6);
-    --ls-block-bullet-border-color: var(--bujo-background7);
+    --ls-block-bullet-color: var(--color-level-4);
+    --bujo-block-bullet-level1: var(--color-level-4);
+    --bujo-block-bullet-level2: var(--color-level-4);
+    --bujo-block-bullet-level3: var(--color-level-5);
+    --bujo-block-bullet-level4: var(--color-level-6);
+    --bujo-block-bullet-level5: var(--color-level-2);
+    --bujo-block-bullet-level6: var(--color-level-3);
+
+    --ls-block-bullet-border-color: var(--color-level-5);
+    --bujo-block-bullet-border-level1: var(--color-level-5);
+    --bujo-block-bullet-border-level2: var(--color-level-5);
+    --bujo-block-bullet-border-level3: var(--color-level-2);
+    --bujo-block-bullet-border-level4: var(--color-level-3);
+    --bujo-block-bullet-border-level5: var(--color-level-4);
+    --bujo-block-bullet-border-level6: var(--color-level-5);
 
     --bujo-block-ref-text: var(--ls-secondary-text-color);
     --bujo-block-ref-background: hsla(var(--bujo-fill5_hsl), .5);
@@ -154,7 +168,7 @@
 
 
     /* properties */
-    --ls-page-properties-background-color: var(--bujo-background3);
+    --ls-page-properties-background-color: var(--bujo-background2_5);
     --ls-block-properties-background-color: var(--ls-page-properties-background-color);
     --bujo-right-sidebar-properties-background: var(--bujo-background2);
     --bujo-property-text-hover: var(--bujo-text-accent);
@@ -261,7 +275,7 @@
 
 
     /* embedded block levels */
-    --color-level-1: var(--ls-secondary-background-color);
+    --color-level-1: var(--bujo-background2_5);
     --color-level-2: var(--ls-tertiary-background-color);
     --color-level-3: var(--ls-quaternary-background-color);
     --color-level-4: var(--bujo-background6);

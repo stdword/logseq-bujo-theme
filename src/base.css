@@ -702,6 +702,44 @@ a.priority[href="#/page/C" i]::before {
     color: var(--ls-link-text-color);
 }
 
+.color-level .bullet-link-wrap:hover > .bullet-container {
+    background-color: var(--bujo-block-bullet-border-level1);
+}
+.color-level .color-level .bullet-link-wrap:hover > .bullet-container {
+    background-color: var(--bujo-block-bullet-border-level2);
+}
+.color-level .color-level .color-level .bullet-link-wrap:hover > .bullet-container {
+    background-color: var(--bujo-block-bullet-border-level3);
+}
+.color-level .color-level .color-level .color-level .bullet-link-wrap:hover > .bullet-container {
+    background-color: var(--bujo-block-bullet-border-level4);
+}
+.color-level .color-level .color-level .color-level .color-level .bullet-link-wrap:hover > .bullet-container {
+    background-color: var(--bujo-block-bullet-border-level5);
+}
+.color-level .color-level .color-level .color-level .color-level .color-level .bullet-link-wrap:hover > .bullet-container {
+    background-color: var(--bujo-block-bullet-border-level6);
+}
+
+.color-level .bullet-container .bullet {
+    background-color: var(--bujo-block-bullet-level1)
+}
+.color-level .color-level .bullet-container .bullet {
+    background-color: var(--bujo-block-bullet-level2)
+}
+.color-level .color-level .color-level .bullet-container .bullet {
+    background-color: var(--bujo-block-bullet-level3)
+}
+.color-level .color-level .color-level .color-level .bullet-container .bullet {
+    background-color: var(--bujo-block-bullet-level4)
+}
+.color-level .color-level .color-level .color-level .color-level .bullet-container .bullet {
+    background-color: var(--bujo-block-bullet-level5)
+}
+.color-level .color-level .color-level .color-level .color-level .color-level .bullet-container .bullet {
+    background-color: var(--bujo-block-bullet-level6)
+}
+
 /* ----------- */
 /* Code Mirror */
 /* ----------- */

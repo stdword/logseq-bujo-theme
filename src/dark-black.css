@@ -28,6 +28,7 @@
     --bujo-foreground2: hsl(var(--bujo-foreground2_hsl));
 
     --bujo-background1:       hsl(0, 0%,  9%);
+    --bujo-background1_5:     hsl(0, 0%, 11%);
     --bujo-background2:       hsl(0, 0%, 13%);
     --bujo-background3:       hsl(0, 0%, 15%);
     --bujo-background4:       hsl(0, 0%, 19%);
@@ -63,7 +64,7 @@
     --bujo-menu-icon: var(--ls-secondary-text-color);
     --bujo-menu-text: var(--ls-primary-text-color);
 
-    --bujo-left-sidebar-background: var(--bujo-background2);
+    --bujo-left-sidebar-background: var(--bujo-background1_5);
     --bujo-left-sidebar-page-icon: var(--ls-primary-text-color);
     --bujo-left-sidebar-page-text: var(--ls-primary-text-color);
 
@@ -98,8 +99,21 @@
 
 
     /* block parts */
-    --ls-block-bullet-color: var(--bujo-background6);
+    --ls-block-bullet-color: var(--color-level-6);
+    --bujo-block-bullet-level1: var(--color-level-6);
+    --bujo-block-bullet-level2: var(--color-level-6);
+    --bujo-block-bullet-level3: var(--color-level-6);
+    --bujo-block-bullet-level4: var(--color-level-2);
+    --bujo-block-bullet-level5: var(--color-level-3);
+    --bujo-block-bullet-level6: var(--color-level-3);
+
     --ls-block-bullet-border-color: var(--bujo-background8);
+    --bujo-block-bullet-border-level1: var(--bujo-background8);
+    --bujo-block-bullet-border-level2: var(--bujo-background8);
+    --bujo-block-bullet-border-level3: var(--bujo-background8);
+    --bujo-block-bullet-border-level4: var(--bujo-background7);
+    --bujo-block-bullet-border-level5: var(--bujo-background7);
+    --bujo-block-bullet-border-level6: var(--bujo-background7);
 
     --bujo-block-ref-text: var(--ls-secondary-text-color);
     --bujo-block-ref-background: hsla(var(--bujo-background8_hsl), .4);
@@ -151,9 +165,9 @@
 
 
     /* properties */
-    --ls-page-properties-background-color: var(--bujo-background3);
+    --ls-page-properties-background-color: var(--bujo-background1_5);
     --ls-block-properties-background-color: var(--ls-page-properties-background-color);
-    --bujo-right-sidebar-properties-background: var(--bujo-background3);
+    --bujo-right-sidebar-properties-background: var(--bujo-background2);
     --bujo-property-text-hover: var(--ls-link-text-color);
 
 
@@ -257,12 +271,12 @@
 
 
     /* embedded block levels */
-    --color-level-1: var(--bujo-background2);
-    --color-level-2: var(--bujo-background3);
-    --color-level-3: var(--bujo-background4);
-    --color-level-4: var(--bujo-background5);
-    --color-level-5: var(--bujo-background6);
-    --color-level-6: var(--bujo-background7);
+    --color-level-1: var(--bujo-background1_5);
+    --color-level-2: var(--bujo-background2);
+    --color-level-3: var(--bujo-background3);
+    --color-level-4: var(--bujo-background4);
+    --color-level-5: var(--bujo-background5);
+    --color-level-6: var(--bujo-background6);
 
     --ls-error-text-color: var(--color-red-500);
     --ls-warning-text-color: var(--color-yellow-400);
