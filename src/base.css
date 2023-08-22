@@ -91,7 +91,7 @@ body[data-page=whiteboard] #app-container {
 /* right sidebar */
 
 #right-sidebar .cp__right-sidebar-topbar {
-    background-color: var(--color-level-1);
+    background: none;
 }
 
 #right-sidebar .button:hover {
@@ -99,9 +99,9 @@ body[data-page=whiteboard] #app-container {
 }
 
 #right-sidebar .sidebar-item {
-    padding: 10px 20px 10px 6px;
+    padding: 0px 0px 0px 0px;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-radius: 4px;
 }
 
