@@ -322,8 +322,13 @@ mark {
 }
 
 
-b, strong, i {
+b, strong {
     color: var(--ls-secondary-text-color);
+}
+
+i {
+    color: var(--ls-secondary-text-color);
+    font-weight: 500;
 }
 
 mark > b,
