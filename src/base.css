@@ -1284,6 +1284,11 @@ svg.tip {
     opacity: 0;
 }
 
+/* decrease top & bottom margin */
+.admonitionblock {
+    margin: 5px;
+}
+
 
 /* settings */
 
