@@ -476,6 +476,13 @@ mark .page-reference:hover,
 }
 
 
+/* tags: align tags just as refs */
+a.tag {
+    display: inline;
+    text-align: unset;
+}
+
+
 /* page tags section */
 
 .page-tags a {
