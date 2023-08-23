@@ -555,6 +555,20 @@ a.tag {
 }
 
 
+/* external links */
+/* source: logseq-plugin-automatic-url-title */
+.external-link {
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 2px;
+    border: 0;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+
 /* filters modal */
 
 .ls-filters > div:first-child > div:first-child {
@@ -825,7 +839,9 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 }
 
 
-/* pdf extension */
+/* --- */
+/* PDF */
+/* --- */
 
 /* pdf resizer */
 
@@ -1192,7 +1208,7 @@ div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
 }
 
 
-/* decrease embeded videos' margins */
+/* decrease embedded videos' margins */
 
 iframe {
     margin-bottom: 0.2rem;
