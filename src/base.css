@@ -1131,6 +1131,54 @@ div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
 }
 
 
+/* ------- */
+/* PLUGINS */
+/* ------- */
+
+/* awesome links */
+
+.awLi-icon {
+    top: 1px;
+}
+.title .awLi-icon {
+    top: -2px;
+    right: 4px;
+    line-height: initial;
+}
+
+/* favicon style fix */
+.awLi-favicon {
+    border-radius: initial;
+    margin: -2px 5px 0 0;
+    height: 16px;
+    width: 16px;
+}
+
+/* adapt to new sidebar styles */
+#right-sidebar .page-title.awLi-color > span.ui__icon,
+#right-sidebar .page-title.awLi-color > div.text-md {
+    display: none;
+}
+#right-sidebar .page-title.awLi-color > .awLi-icon {
+    top: -5px;
+    right: 5px;
+    margin-right: 3px;
+}
+#right-sidebar .page-title.awLi-color > .awLi-icon[data-is-emoji=true] {
+    top: -2px;
+    right: 0px;
+    font-size: 1.1em !important;
+    margin-right: 5px;
+}
+.left-sidebar-inner .page-title.awLi-color:has(> .awLi-icon[data-is-emoji=true]) {
+    margin-left: 2px;
+}
+.left-sidebar-inner .page-title.awLi-color > .awLi-icon[data-is-emoji=true] {
+    right: -1px;
+    font-size: 1.1em !important;
+}
+
+
 /* copy-button plugin */
 
 .copy-button:hover {
