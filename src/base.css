@@ -598,6 +598,20 @@ div.macro > div.inline {
 }
 
 
+/* custom query: decrease title size */
+
+.custom-query > .th {
+    position: relative;
+}
+.custom-query > .th > div:last-child {
+    animation: none;
+    opacity: 1;
+
+    position: absolute;
+    right: 0px;
+}
+
+
 /* custom query first line */
 
 .custom-query-title .title-text {
