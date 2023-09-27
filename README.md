@@ -3,6 +3,8 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 
 ⚠️ This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
 
+❗️ Required Logseq version ≥ `0.9.11`
+
 
 ## How it looks
 ||||
