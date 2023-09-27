@@ -493,65 +493,76 @@ a.tag {
 }
 
 
-/* block references */
-
+/* block references: fix default styles */
 .block-ref p.warning {
     display: inline;
 }
 
-/* TODO: review after :has become available */
-/* TODO: add support for .dsl-query */
-
 .block-ref {
     border-bottom: none;
-
-    color: var(--bujo-block-ref-background);
 }
 .block-ref:hover {
-    color: var(--bujo-block-ref-background);
-}
-.block-ref > .block-content {
-    color: var(--ls-primary-text-color);
+    color: unset;
 }
 
 
-.block-ref :is(b, strong, i) {
-    color: var(--bujo-block-ref-text);
-}
-.block-ref > :is(b, strong, i) {
-    color: var(--bujo-block-ref-background);
-}
+/* block references */
+.block-ref-wrap {
+    border-bottom: none;
 
-
-.block-ref > .block-content > .block-content-inner > :not(:empty) {
     padding: 2px 5px;
     border-radius: 3px;
-
-    color: var(--bujo-block-ref-text);
     background: var(--bujo-block-ref-background);
 }
-.block-ref:hover > .block-content > .block-content-inner > :not(:empty) {
+.block-ref-wrap:hover {
     background: var(--bujo-block-ref-background-hover);
 }
 
-.block-ref:is(*, :hover) .block-ref > .block-content > .block-content-inner > :not(:empty) {
-    padding-top: 3px;
-    padding-bottom: 3px;
+.block-ref-wrap .block-ref-wrap {
+    padding: 3px 0px;
 }
-.block-ref:is(*, :hover) .block-ref .block-ref > .block-content > .block-content-inner > :not(:empty) {
-    padding-top: 4px;
-    padding-bottom: 4px;
+.block-ref-wrap .block-ref-wrap .block-ref-wrap {
+    padding: 4px 0px;
 }
-.block-ref:is(*, :hover) .block-ref .block-ref .block-ref > .block-content > .block-content-inner > :not(:empty) {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.block-ref-wrap .block-ref-wrap .block-ref-wrap .block-ref-wrap {
+    padding: 5px 0px;
+}
+.block-ref-wrap .block-ref-wrap .block-ref-wrap .block-ref-wrap .block-ref-wrap {
+    padding: 6px 0px;
 }
 
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-body),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-properties),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .timestamp),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .image-resize),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .dsl-query),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .embed-block),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .embed-page) {
+    display: block;
+    cursor: alias;
 
-.block-ref > .block-content > .block-body > :not(:empty),
-.block-ref > .block-content > .block-body > .is-paragraph:not(:empty) {
-    border-bottom: 0.5px solid;
-    border-bottom-color: var(--ls-block-ref-link-text-color);
+    padding: 1px 5px;
+}
+
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .image-resize),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .embed-block),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-body > .cp__fenced-code-block) {
+    padding: 5px 5px;
+}
+.block-ref-wrap .block-ref > .block-content > .block-body blockquote:first-child,
+.block-ref-wrap .block-ref > .block-content > .block-body pre:first-child,
+.block-ref-wrap .block-ref > .block-content > .block-body table,
+.block-ref-wrap .block-ref > .block-content > .block-content-inner > div > span > .embed-page,
+.block-ref-wrap .block-ref > .block-content > .block-content-inner > div > span > .dsl-query table {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.block-ref-wrap .block-ref > .block-content > .block-content-inner > div > span > .image-resize > .asset-container {
+    margin-top: 0px;
+}
+.block-ref-wrap .admonitionblock {
+    margin-bottom: 9px;
+    margin-top: 9px;
 }
 
 
