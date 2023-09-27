@@ -52,9 +52,9 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 
 ## FAQ
 ### How to use themes on mobile devices?
-1. Copy whole content of src/base.css to the bottom of custom.css
-2. Copy whole content of selected theme (e.g. src/dark-coffee.css) to the bottom of custom.css
-3. Remove line @import './base.css';
+1. Copy whole content of `src/base.css` to the bottom of `custom.css`
+2. Copy whole content of selected theme (e.g. `src/dark-coffee.css`) to the bottom of `custom.css`
+3. Remove line `@import './base.css';`
 
 ### How to disable dots in background?
 * In Logseq: click «...» and open the «Settings» section (or press `t s`)
