@@ -1149,43 +1149,43 @@ div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
 /* awesome links */
 
 .awLi-icon {
-    top: 1px;
+    top: 1px !important;
 }
 .title .awLi-icon {
-    top: -2px;
-    right: 4px;
-    line-height: initial;
+    top: -2px !important;
+    right: 4px !important;
+    line-height: initial !important;
 }
 
 /* favicon style fix */
 .awLi-favicon {
-    border-radius: initial;
-    margin: -2px 5px 0 0;
-    height: 16px;
-    width: 16px;
+    border-radius: initial !important;
+    margin: -2px 5px 0 0 !important;
+    height: 16px !important;
 }
 
 /* adapt to new sidebar styles */
 #right-sidebar .page-title.awLi-color > span.ui__icon,
 #right-sidebar .page-title.awLi-color > div.text-md {
-    display: none;
+    display: none !important;
 }
 #right-sidebar .page-title.awLi-color > .awLi-icon {
-    top: -5px;
-    right: 5px;
-    margin-right: 3px;
+    top: -5px !important;
+    right: 5px !important;
+    margin-right: 3px !important;
+    /* width: 16px !important; */
 }
 #right-sidebar .page-title.awLi-color > .awLi-icon[data-is-emoji=true] {
-    top: -2px;
-    right: 0px;
+    top: -2px !important;
+    right: 0px !important;
     font-size: 1.1em !important;
-    margin-right: 5px;
+    margin-right: 5px !important;
 }
 .left-sidebar-inner .page-title.awLi-color:has(> .awLi-icon[data-is-emoji=true]) {
-    margin-left: 2px;
+    margin-left: 2px !important;
 }
 .left-sidebar-inner .page-title.awLi-color > .awLi-icon[data-is-emoji=true] {
-    right: -1px;
+    right: -1px !important;
     font-size: 1.1em !important;
 }
 
