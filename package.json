@@ -31,12 +31,6 @@
                 "url": "./src/light-white.css",
                 "description": "White",
                 "mode": "light"
-            },
-            {
-                "name": "White (old)",
-                "url": "./src/light-white-old.css",
-                "description": "White",
-                "mode": "light"
             }
         ]
     }
