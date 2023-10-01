@@ -118,7 +118,6 @@
     --bujo-block-bullet-border-level5: var(--color-level-4);
     --bujo-block-bullet-border-level6: var(--color-level-5);
 
-    --bujo-block-ref-text: var(--ls-secondary-text-color);
     --bujo-block-ref-background: hsla(var(--bujo-fill5_hsl), .5);
     --bujo-block-ref-background-hover: hsla(var(--bujo-fill5_hsl), .6);
 

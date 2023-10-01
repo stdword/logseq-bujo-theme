@@ -120,9 +120,8 @@
     --bujo-block-bullet-border-level5: var(--ls-block-bullet-border-color);
     --bujo-block-bullet-border-level6: var(--ls-block-bullet-border-color);
 
-    --bujo-block-ref-text: var(--bujo-fill2);
-    --bujo-block-ref-background: hsla(var(--bujo-highlight_hsl), .5);
-    --bujo-block-ref-background-hover: hsla(var(--bujo-highlight_hsl), .6);
+    --bujo-block-ref-background: hsla(var(--bujo-highlight_hsl), .3);
+    --bujo-block-ref-background-hover: hsla(var(--bujo-highlight_hsl), .4);
 
 
     /* search results palette */
