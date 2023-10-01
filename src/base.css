@@ -679,7 +679,7 @@ div.macro > div.inline {
 }
 
 span:is(.later, .now, .todo, .doing, .done, .wait, .canceled, .cancelled) .form-checkbox {
-    z-index: var(--ls-z-index-level-1);
+    z-index: 1;
 }
 
 .marker-switch {
