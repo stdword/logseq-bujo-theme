@@ -105,6 +105,10 @@ body[data-page=whiteboard] #app-container {
     border-radius: 4px;
 }
 
+#right-sidebar .sidebar-item .page-title {
+    text-align: left;
+}
+
 #right-sidebar .resizer:active,
 #right-sidebar .resizer:focus,
 #right-sidebar .resizer:hover {
