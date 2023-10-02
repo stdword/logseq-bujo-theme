@@ -772,6 +772,10 @@ a.priority[href="#/page/C" i]::before {
     background-color: var(--bujo-block-bullet-border-level6);
 }
 
+.bullet-link-wrap:hover > .bullet-container.as-order-list {
+    background-color: transparent;
+}
+
 .color-level .bullet-container .bullet {
     background-color: var(--bujo-block-bullet-level1)
 }
