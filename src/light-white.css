@@ -344,7 +344,7 @@ html[data-theme=light] .CodeMirror {
     background-color: var(--bujo-background3);
 }
 html[data-theme=light] .CodeMirror .CodeMirror-gutters {
-    background-color: var(--bujo-background4);
+    background-color: var(--bujo-background5);
 }
 
 html[data-theme=light] .CodeMirror .cm-keyword {
