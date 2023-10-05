@@ -296,6 +296,16 @@
     --ls-highlight-color-pink:   hsl(307, 78%, 88%);
 
 
+    /* code block text colors */
+    --bujo-color-text-gray:   hsl(160,  0%, 50%);
+    --bujo-color-text-red:    hsl(355, 50%, 50%);
+    --bujo-color-text-yellow: hsl( 60, 80%, 40%);
+    --bujo-color-text-green:  hsl(160, 50%, 50%);
+    --bujo-color-text-blue:   hsl(200, 80%, 50%);
+    --bujo-color-text-purple: hsl(260, 70%, 60%);
+    --bujo-color-text-pink:   hsl(300, 40%, 50%);
+
+
     /* embedded block levels */
     --color-level-1: var(--bujo-background2);
     --color-level-2: var(--bujo-background4);
@@ -307,14 +317,6 @@
 
     /* notifications */
     --bujo-notification-background: var(--bujo-background1);
-
-    --bujo-color-text-gray:   hsl(160,  0%, 50%);
-    --bujo-color-text-red:    hsl(355, 50%, 50%);
-    --bujo-color-text-yellow: hsl( 60, 80%, 40%);
-    --bujo-color-text-green:  hsl(160, 50%, 50%);
-    --bujo-color-text-blue:   hsl(200, 80%, 50%);
-    --bujo-color-text-purple: hsl(260, 70%, 60%);
-    --bujo-color-text-pink:   hsl(300, 40%, 50%);
 
     --ls-error-text-color:   var(--bujo-color-text-red);
     --ls-warning-text-color: var(--bujo-color-text-yellow);
