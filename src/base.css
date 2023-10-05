@@ -888,8 +888,8 @@ html[data-theme=dark]  .cm-s-default .CodeMirror-line > span > span::selection {
 .extensions__pdf-container[data-theme=dark] .extensions__pdf-toolbar .buttons {
     background-color: var(--bujo-pdf-menu-background);
 }
-.extensions__pdf-toolbar a.button {
-    color: var(--ls-icon-color);
+.extensions__pdf-toolbar > .inner > .r a.button {
+    color: var(--bujo-pdf-menu-icon);
 }
 .extensions__pdf-toolbar > .inner .pager > .nu input {
     background-color: var(--ls-primary-background-color);

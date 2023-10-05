@@ -225,6 +225,7 @@
 
 
     /* pdf extension */
+    --bujo-pdf-menu-icon: var(--bujo-foreground1);
     --bujo-pdf-menu-background: var(--ls-tertiary-background-color);
     --bujo-pdf-menu-background-hover: var(--bujo-background6);
     --bujo-pdf-menu-highlight-accent: var(--bujo-foreground4);

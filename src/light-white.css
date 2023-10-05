@@ -234,6 +234,7 @@
     --bujo-pdf-menu-background: var(--bujo-background3);
     --bujo-pdf-menu-background-hover: var(--bujo-background7);
     --bujo-pdf-menu-highlight-accent: var(--bujo-background0);
+    --bujo-pdf-menu-icon: var(--bujo-foreground5) ;
 
     --bujo-pdf-pin-red: var(--color-red-800);
     --bujo-pdf-pin-yellow: var(--color-yellow-700);
