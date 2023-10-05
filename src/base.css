@@ -1581,12 +1581,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 button[type="button"]:not(.to-heading-button).ui__button {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background);
-    border-color: var(--bujo-button-accent-border);
 }
 button[type="button"]:not(.to-heading-button).ui__button:hover {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background-hover);
-    border-color: var(--bujo-button-accent-border);
     opacity: .9;
 }
 button[type="button"]:not(.to-heading-button).ui__button:focus {
