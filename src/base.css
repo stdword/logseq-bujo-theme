@@ -1263,6 +1263,12 @@ div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
     background-color: var(--bujo-days-plugin-today-background) !important;
 }
 
+.kef-days-current,
+.kef-days-current:hover {
+    color: var(--bujo-days-plugin-selected-text) !important;
+    background-color: var(--bujo-days-plugin-selected-background) !important;
+}
+
 .kef-days-contentful {
     background: var(--ls-link-ref-text-hover-color) !important;
 }

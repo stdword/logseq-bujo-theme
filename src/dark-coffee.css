@@ -265,9 +265,12 @@
     /* block references border color and slash-commands group color */
     --ls-block-ref-link-text-color: var(--bujo-accent-dimmed); /* !confusing name */
 
+
     /* days plugin  */
     --bujo-days-plugin-today-text: var(--ls-primary-text-color);
-    --bujo-days-plugin-today-background: var(--bujo-highlight-normal);
+    --bujo-days-plugin-today-background: var(--bujo-fill3);
+    --bujo-days-plugin-selected-text: var(--ls-secondary-text-color);
+    --bujo-days-plugin-selected-background: var(--bujo-highlight-normal);
 
 
     /* block background highlights */
