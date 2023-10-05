@@ -289,6 +289,10 @@
     --color-level-5: var(--bujo-background8_7);
     --color-level-6: var(--bujo-background8_9);
 
+
+    /* notifications */
+    --bujo-notification-background: var(--ls-tertiary-background-color);
+
     --ls-error-text-color: var(--ls-highlight-color-red);
     --ls-warning-text-color: var(--ls-highlight-color-yellow);
     --ls-success-text-color: hsl(106, 23%, 50%);

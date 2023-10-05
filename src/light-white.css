@@ -302,6 +302,8 @@
     --ls-warning-background-color: hsl( 46, 40%, 70%);
     --ls-success-background-color: hsl(106, 13%, 70%);
     --bujo-info-background:        hsl(205, 25%, 70%);
+    /* notifications */
+    --bujo-notification-background: var(--bujo-background1) ;
 }
 
 

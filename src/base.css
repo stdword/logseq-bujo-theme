@@ -1321,6 +1321,9 @@ label.day-enabled {
 
 /* notifications */
 
+.ui__notifications .notification-area {
+    background-color: var(--bujo-notification-background);
+}
 .ui__notifications-content .ui__icon.ls-icon-info-circle {
     color: var(--bujo-info-text);
 }
