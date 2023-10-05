@@ -9,7 +9,7 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 ## How it looks
 ||||
 |:--:|:--:|:--:|
-|*Light*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png"/><p>Sepia</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.jpeg"/><p>White (will be [reviewed](https://github.com/stdword/logseq-bujo-theme/issues/2))</p>|
+|*Light*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png"/><p>Sepia</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.png"/><p>White</p>|
 |*Dark*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png"/><p>Coffee</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png"/><p>Black</p>|
 
 ### Property icons
@@ -35,9 +35,11 @@ A theme for https://logseq.com, inspired by Bullet Journals.
 * Click «...» and open the «Plugins» section (or press `t p`)
 * Click on the «Marketplace»
 * Select the «Themes» tab
-* Search for «BuJo theme» and click install
+* Search for «BuJo themes» and click install
 
-  <img src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/marketplace.png" width="400"/>
+  <img src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/marketplace1.png" width="403px" />
+  <br>
+  <img src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/marketplace2.png" width="403px" />
 * Close «Marketplace» and open «...» → «Themes» (or press `t i`) to bring up the theme selection window
 * Select one with «BuJo» prefix
 * To switch between Light and Dark themes press `t t`
