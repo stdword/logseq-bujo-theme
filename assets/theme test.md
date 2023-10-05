@@ -1,11 +1,10 @@
 title:: Theme test
 description:: page to test appearance
-link:: [[Theme test]], [Google](http://google.com)
 tags:: ⌘/skip-tasks,
 
 - Examples of *page* **properties** `above` ==and *some* **formatted** ***text*** __*with*__ `highlight`==
   id:: 63b8e38c-a943-4ba0-b8d7-ad704453e29e
-- ![booklet.pdf](../assets/nvc-booklet_1668037509996_0.pdf)
+- Links: [[logseq/themes/bujo]] #tags, [external](http://google.com), ![booklet.pdf](../assets/nvc-booklet_1668037509996_0.pdf)
   id:: 6423a937-76b6-4234-a772-9c42b88cacca
 - # Header
   id:: 6423a937-e0c1-47b0-8ebb-e130f9b3a67a
@@ -16,44 +15,58 @@ tags:: ⌘/skip-tasks,
   - DONE [#C] task done
     id:: 644251cc-34dc-49a2-85cb-85c5c90074de
     SCHEDULED: <2022-10-01 Sat>
-  - Wait task reference: ((634dec63-f521-48b6-8b1a-2c1a318a0e28))
-  - [[2022-10-17 Mon]] #[[Theme test]] [external link](http://google.com) ((634d5d93-5e38-4ca0-9c7a-f42c8378158b))
-    id:: 634dcf1c-3513-4aac-8a23-39279ee4e520
-  - Inside block reference
+  - Reference: ((6423a937-76b6-4234-a772-9c42b88cacca))
+    id:: 651efbd5-1a76-44dc-a366-f2915615b7f4
+  - Double ((651efbd5-1a76-44dc-a366-f2915615b7f4))
     id:: 634d5efa-2b06-402b-ad48-1de87fb2d770
-    ((634dcf1c-3513-4aac-8a23-39279ee4e520))
     - id:: 6423a937-8754-4730-85af-2cf69558ab8c
       > Quote with indent
-  - ## Sub header
-    - id:: 6369c344-1948-4821-bbec-5c747cbb83b0
-      ```python
-      version = 3.9
-      print(f'Python v{version} code block')
+  - ## Selected Block
+    - Sidebar demo
+      heading:: true
+      - id:: 6369c344-1948-4821-bbec-5c747cbb83b0
+        ```python
+        version = 3.9
+        print(f'Python v{version} code block')
 
-      @decorator
-      def f(a, b=True):
-        # docstring
-        return self.name or None
-      ```
-    - {{query (namespace [[logseq/themes]])}}
-      id:: 644251d6-9766-4d20-8c92-eacf6b84bbe1
-      query-properties:: [:icon :page :test]
-    - # Header 1
-      background-color:: gray
-      id:: 644251cc-16ab-463e-986d-c46331b28ed3
-    - ## Header2
-      background-color:: red
-    - ### Header3
-      background-color:: yellow
-    - #### Header4
-      background-color:: green
-    - ##### Header5
-      background-color:: blue
-    - ###### Header6
-      background-color:: purple
-    - ###### Header6 #.columns
-      background-color:: pink
-      id:: 644251cc-066c-4544-a01a-80b09d5c0b99
+        @decorator
+        def f(a, b=True):
+          # docstring
+          return self.name or None
+        ```
+      - # Header 1
+        background-color:: gray
+        id:: 644251cc-16ab-463e-986d-c46331b28ed3
+      - ## Header 2
+        background-color:: red
+      - ### Header 3
+        background-color:: yellow
+      - #### Header 4
+        background-color:: green
+      - ##### Header 5
+        background-color:: blue
+      - ###### Header 6
+        background-color:: purple
+      - ###### Header 6
+        background-color:: pink
+        id:: 644251cc-066c-4544-a01a-80b09d5c0b99
+      - ### References #.columns
+        -
+          - 1 [**ref**](((644251cc-16ab-463e-986d-c46331b28ed3)))
+            id:: 64424b33-db00-4545-8676-896bebb9a5e9
+          - 2 ((64424b33-db00-4545-8676-896bebb9a5e9))
+            id:: 64424b44-772f-4b60-abfb-b0e1232b9c60
+          - 3 ((64424b44-772f-4b60-abfb-b0e1232b9c60))
+            id:: 64424b4c-eb2d-4520-8193-dcddb01b8415
+          - 4 ((64424b4c-eb2d-4520-8193-dcddb01b8415))
+            id:: 64424b4e-b6b0-4ceb-9994-bd512f3d4579
+          - 5 ((64424b4e-b6b0-4ceb-9994-bd512f3d4579))
+            id:: 64424b4f-c13a-46f1-927f-90294d80c735
+          - 6 ((64424b4f-c13a-46f1-927f-90294d80c735))
+            id:: 64424b51-cb52-4487-9f03-4b04b0620f08
+        -
+          - ((644251cc-34dc-49a2-85cb-85c5c90074de))
+          - ((6423a937-8754-4730-85af-2cf69558ab8c))
     - #.columns
       - Border for parent #.border
         id:: 6423a937-6a72-4d42-9b4e-74de1cbea7c5
@@ -69,6 +82,9 @@ tags:: ⌘/skip-tasks,
       |first|row (odd)|
       |second|row (even)|
       |third|row (odd)|
+    - {{query (namespace [[logseq/themes]])}}
+      id:: 644251d6-9766-4d20-8c92-eacf6b84bbe1
+      query-properties:: [:icon :page :test]
     - highlighted ==page ref [[Theme test]], [link](http://google.com)==
       id:: 6423a937-f1fe-4bfa-bf28-f7f19b54f893
     - Check /date picker and {{cloze cloze}}
@@ -133,8 +149,9 @@ tags:: ⌘/skip-tasks,
     - ![image.png](../assets/image_1687098889273_0.png){:height 200, :width 318}
       id:: 648f1eef-f645-4387-a9fe-eae6bd4ddb4d
     -
-    - #.columns
+    - Admonitions
       id:: 644256ae-3c2c-4d15-9600-ffd55a766600
+      heading:: true
       - id:: 63b8e38c-738e-4056-a742-79e47d9b9051
         #+BEGIN_NOTE
         Note
@@ -142,25 +159,27 @@ tags:: ⌘/skip-tasks,
       - #+BEGIN_PINNED
         Pinned
         #+END_PINNED
-    - #.columns
       - #+BEGIN_TIP
         Tip
         #+END_TIP
       - #+BEGIN_IMPORTANT
         Important
         #+END_IMPORTANT
-    - #.columns
       - #+BEGIN_CAUTION
         Caution
         #+END_CAUTION
       - #+BEGIN_WARNING
         Warning
         #+END_WARNING
-    - ### Macros
+    -
+    - Macros
+      heading:: true
       - before {{wrong macro}} after
       - before {{{wrong macro}}} after
       - before {{i f25f}} after
-    - ### Embedding
+    -
+    - Embedding
+      heading:: true
       - Page:
         - {{embed [[Theme test]]}}
           id:: 644256ae-44c9-46d1-8222-ade14e052a5d
@@ -207,7 +226,6 @@ tags:: ⌘/skip-tasks,
       - ((648f1eef-f645-4387-a9fe-eae6bd4ddb4d))
       -
       - ((634d5d93-5e38-4ca0-9c7a-f42c8378158b))
-      - ((644251cc-34dc-49a2-85cb-85c5c90074de))
       -
       - ((6372cb45-3390-4b48-a16f-7204ee7b0698))
       - ((6372cb5e-3fd0-4fd8-bfbf-c7aad7f4398e))
@@ -222,24 +240,6 @@ tags:: ⌘/skip-tasks,
       - ((644258c8-1788-4d9b-ac65-be74d4ecf8dc))
       - ((644258ce-f6ae-4996-83b7-5f09524610a3))
       - ((644258e7-3696-4d66-8591-eb7359c262d3))
-      -
-      - first **line**
-        id:: 64424b33-db00-4545-8676-896bebb9a5e9
-        text
-      - 1 ((64424b33-db00-4545-8676-896bebb9a5e9))
-        id:: 64424b44-772f-4b60-abfb-b0e1232b9c60
-      - 2 ((64424b44-772f-4b60-abfb-b0e1232b9c60))
-        id:: 64424b4c-eb2d-4520-8193-dcddb01b8415
-      - 3 ((64424b4c-eb2d-4520-8193-dcddb01b8415))
-        id:: 64424b4e-b6b0-4ceb-9994-bd512f3d4579
-      - 4 ((64424b4e-b6b0-4ceb-9994-bd512f3d4579))
-        id:: 64424b4f-c13a-46f1-927f-90294d80c735
-      - 5 ((64424b4f-c13a-46f1-927f-90294d80c735))
-        id:: 64424b51-cb52-4487-9f03-4b04b0620f08
-      - 6 ((64424b51-cb52-4487-9f03-4b04b0620f08))
-        id:: 64424b53-314a-4c6d-93eb-8e9f3d78cdec
-      - 7 ((64424b53-314a-4c6d-93eb-8e9f3d78cdec))
-        id:: 64424b55-f5e7-4444-b5a8-48e10c42c06e
       -
       - r1 ((64424ba8-f435-47fa-b7eb-b911c3a5a3e4))
         id:: 64424b83-d11e-491f-b2d2-0536763bd8ad
@@ -376,6 +376,7 @@ tags:: ⌘/skip-tasks,
           keywords::
           mode::
     - ### Other
+      collapsed:: true
       - {{video https://www.youtube.com/watch?v=kJDxdpy4E1E}}
         - {{youtube-timestamp 100}} go 1
         - {{youtube-timestamp 00:01:45}} go 2
