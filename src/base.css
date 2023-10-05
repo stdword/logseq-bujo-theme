@@ -1361,6 +1361,15 @@ svg.tip {
 }
 
 
+/* themes */
+
+.cp__themes-installed .it {
+    background-color: transparent;
+}
+.cp__themes-installed .it.is-active {
+    background-color: var(--bujo-themes-switch-selected-background);
+}
+
 /* settings */
 
 .form-input {

@@ -246,7 +246,10 @@
     --bujo-progress-bar-done: var(--bujo-accent-normal);
     --bujo-progress-bar-rest: var(--bujo-accent-dimmed);
 
-    /* pdf extension toolbar, filter & edit buttons on main layout */
+    /* themes switch ui */
+    --bujo-themes-switch-selected-background: var(--bujo-background5);
+
+    /* filter & edit buttons on main layout */
     --ls-icon-color: var(--bujo-foreground4);
 
     /* on-boarding and some unknown ui */
@@ -276,7 +279,6 @@
     --ls-highlight-color-blue:   hsl(205, 25%, 53%);
     --ls-highlight-color-purple: hsl(260, 18%, 53%);
     --ls-highlight-color-pink:   hsl(345, 25%, 60%);
-/*     --ls-highlight-color-pink:   hsl(305 23% 53%); */
 
 
     /* embedded block levels */

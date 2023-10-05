@@ -245,7 +245,10 @@
     --bujo-progress-bar-done: var(--bujo-highlight-normal);
     --bujo-progress-bar-rest: var(--bujo-highlight-clean);
 
-    /* pdf extension toolbar, filter & edit buttons on main layout */
+    /* themes switch ui */
+    --bujo-themes-switch-selected-background: var(--bujo-background4);
+
+    /* filter & edit buttons on main layout */
     --ls-icon-color: var(--ls-secondary-text-color);
 
     /* on-boarding and some unknown ui */

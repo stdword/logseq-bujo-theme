@@ -250,6 +250,8 @@
 
     --bujo-progress-bar-done: var(--bujo-accent-normal);
     --bujo-progress-bar-rest: var(--bujo-accent-dimmed);
+    /* themes switch ui */
+    --bujo-themes-switch-selected-background: var(--bujo-background3) ;
 
     /* pdf extension toolbar, filter & edit buttons on main layout */
     --ls-icon-color: var(--bujo-foreground10) ;
