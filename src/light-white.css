@@ -308,10 +308,18 @@
     /* notifications */
     --bujo-notification-background: var(--bujo-background1);
 
-    --ls-error-text-color: hsl(355, 50%, 50%);
-    --ls-warning-text-color: hsl(60, 80%, 40%);
-    --ls-success-text-color: hsl(160, 50%, 50%);
-    --bujo-info-text:        hsl(200, 80%, 50%);
+    --bujo-color-text-gray:   hsl(160,  0%, 50%);
+    --bujo-color-text-red:    hsl(355, 50%, 50%);
+    --bujo-color-text-yellow: hsl( 60, 80%, 40%);
+    --bujo-color-text-green:  hsl(160, 50%, 50%);
+    --bujo-color-text-blue:   hsl(200, 80%, 50%);
+    --bujo-color-text-purple: hsl(260, 70%, 60%);
+    --bujo-color-text-pink:   hsl(300, 40%, 50%);
+
+    --ls-error-text-color:   var(--bujo-color-text-red);
+    --ls-warning-text-color: var(--bujo-color-text-yellow);
+    --ls-success-text-color: var(--bujo-color-text-green);
+    --bujo-info-text:        var(--bujo-color-text-blue);
 
     --ls-error-background-color:   var(--ls-highlight-color-red);
     --ls-warning-background-color: var(--ls-highlight-color-yellow);
@@ -325,7 +333,7 @@
 /* ---------- */
 
 html[data-theme=light] .CodeMirror {
-    color: hsla(var(--bujo-foreground4_hsl), .7);
+    color: hsla(var(--bujo-foreground4_hsl), .5);
 }
 html[data-theme=light] .CodeMirror .CodeMirror-activeline-background  {
     background: var(--bujo-shadow-white);
@@ -338,30 +346,30 @@ html[data-theme=light] .CodeMirror .CodeMirror-gutters {
 }
 
 html[data-theme=light] .CodeMirror .cm-keyword {
-    color: var(--ls-highlight-color-red);
+    color: var(--bujo-color-text-red);
 }
 html[data-theme=light] .CodeMirror .cm-operator {
     color: var(--ls-primary-text-color);
     opacity: 0.7;
 }
 html[data-theme=light] .CodeMirror .cm-property {
-    color: var(--ls-highlight-color-blue);
+    color: var(--bujo-color-text-blue);
 }
 html[data-theme=light] .CodeMirror .cm-builtin {
-    color: var(--ls-highlight-color-purple);
+    color: var(--bujo-color-text-purple);
 }
 html[data-theme=light] .CodeMirror .cm-number {
-    color: var(--ls-highlight-color-pink);
+    color: var(--bujo-color-text-pink);
 }
 html[data-theme=light] .CodeMirror .cm-meta {
-    color: var(--ls-highlight-color-green);
+    color: var(--bujo-color-text-green);
 }
 html[data-theme=light] .CodeMirror .cm-string,
 html[data-theme=light] .CodeMirror .cm-string-2 {
-    color: var(--ls-highlight-color-yellow);
+    color: var(--bujo-color-text-yellow);
 }
 html[data-theme=light] .CodeMirror .cm-comment {
-    color: var(--ls-highlight-color-gray);
+    color: var(--bujo-color-text-gray);
 }
 html[data-theme=light] .CodeMirror .cm-variable,
 html[data-theme=light] .CodeMirror .cm-qualifier,
@@ -379,7 +387,7 @@ html[data-theme=light] .CodeMirror .cm-def,
 html[data-theme=light] .CodeMirror .cm-attribute,
 html[data-theme=light] .CodeMirror .cm-atom,
 html[data-theme=light] .CodeMirror .cm-tag {
-    color: var(--ls-highlight-color-blue);
+    color: var(--bujo-color-text-blue);
     font-style: italic;
 }
 
