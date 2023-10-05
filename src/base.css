@@ -1429,7 +1429,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* whiteboards */
 
 .whiteboard .logseq-tldraw {
-    --color-selectedFill: var(--bujo-button-accent-background);
+    --color-selectedFill: var(--bujo-whiteboard-fill);
     --color-selectedStroke: var(--bujo-whiteboard-border-accent);
     --color-selectedContrast: var(--bujo-whiteboard-text-accent);
 }
@@ -1449,7 +1449,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: var(--bujo-whiteboard-background-accent);
 }
 .whiteboard .tl-tools-floating-panel .tl-button[data-selected=true]:hover {
-    background-color: var(--bujo-button-accent-background);
+    background-color: var(--bujo-whiteboard-fill);
 }
 .whiteboard .tl-tools-floating-panel .tl-button[data-selected=true] > i:is(.ti, .tie) {
     color: var(--bujo-whiteboard-text-accent);

@@ -208,6 +208,8 @@
 
 
     /* whiteboards */
+    --bujo-whiteboard-fill: var(--bujo-button-accent-background);
+
     --bujo-whiteboard-text-accent: var(--bujo-background5);
     --bujo-whiteboard-background: var(--bujo-background5);
     --bujo-whiteboard-background-accent: var(--bujo-background8);
