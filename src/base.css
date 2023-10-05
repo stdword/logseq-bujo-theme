@@ -1380,8 +1380,14 @@ select:focus, .form-select:focus {
     border-color: var(--bujo-ui-border-focus);
 }
 
-#settings .ui__modal-panel {
-    background: var(--bujo-settings-background);
+.ui__modal-panel {
+    background-color: var(--bujo-settings-background);
+}
+.cp__settings-inner > aside {
+    background-color: var(--bujo-settings-menu-background);
+}
+.cp__settings-inner > article {
+    background-color: var(--bujo-settings-background);
 }
 
 input[type="color"] {

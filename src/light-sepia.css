@@ -186,7 +186,8 @@
 
 
     /* settings */
-    --bujo-settings-background: var(--bujo-background3);
+    --bujo-settings-menu-background: var(--bujo-background4);
+    --bujo-settings-background: var(--bujo-background2);
 
     --bujo-ui-border-focus: var(--bujo-accent-normal);
 
