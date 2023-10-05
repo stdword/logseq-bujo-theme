@@ -249,8 +249,8 @@
     --ls-icon-color: var(--bujo-foreground2);
 
     /* on-boarding and some unknown ui */
-    --ls-active-primary-color: var(--bujo-fill2);
-    --ls-active-secondary-color: var(--bujo-fill3);
+    --ls-active-primary-color: var(--bujo-background8);
+    --ls-active-secondary-color: var(--bujo-fill2);
 
     --ls-guideline-color: var(--bujo-background3);
     --bujo-guideline-hover: var(--bujo-fill2);
