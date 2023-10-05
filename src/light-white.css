@@ -183,6 +183,7 @@
     /* scrollbars, table header and various ui borders */
     --ls-table-tr-even-background-color: var(--bujo-background4);
     --bujo-right-sidebar-table-even-background: var(--bujo-background4);
+    --bujo-right-sidebar-item-header-background: var(--bujo-background3) ;
 
     --ls-border-color: var(--bujo-background6);
     --ls-secondary-border-color: var(--bujo-background9);
