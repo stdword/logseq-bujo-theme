@@ -37,17 +37,17 @@
 
     --bujo-foreground4: hsl(var(--bujo-foreground4_hsl));
 
-    --bujo-background0:       hsl(160, 11%, 100%);
-    --bujo-background1:       hsl(160, 11%, 99%);
-    --bujo-background2:       hsl(160, 11%, 97%);
-    --bujo-background3:       hsl(160, 11%, 94%);
-    --bujo-background4:       hsl(160, 11%, 92%);
-    --bujo-background5:       hsl(160, 11%, 88%);
-    --bujo-background6:       hsl(160, 11%, 86%);
-    --bujo-background7:       hsl(160, 11%, 84%);
-    --bujo-background8:       hsl(160, 11%, 82%);
-    --bujo-background9:       hsl(160, 11%, 80%);
-    --bujo-background10:      hsl(160, 11%, 75%);
+    --bujo-background0:       hsl(200, 11%, 100%);
+    --bujo-background1:       hsl(200, 11%, 99%);
+    --bujo-background2:       hsl(200, 11%, 97%);
+    --bujo-background3:       hsl(200, 11%, 94%);
+    --bujo-background4:       hsl(200, 11%, 92%);
+    --bujo-background5:       hsl(200, 11%, 88%);
+    --bujo-background6:       hsl(200, 11%, 86%);
+    --bujo-background7:       hsl(200, 11%, 84%);
+    --bujo-background8:       hsl(200, 11%, 82%);
+    --bujo-background9:       hsl(200, 11%, 80%);
+    --bujo-background10:      hsl(200, 11%, 75%);
 
     --bujo-fill1:             hsl(160, 27%, 68%);
     --bujo-fill2:             hsl(160, 35%, 55%);
@@ -299,7 +299,7 @@
     /* code block text colors */
     --bujo-color-text-gray:   hsl(160,  0%, 50%);
     --bujo-color-text-red:    hsl(355, 50%, 50%);
-    --bujo-color-text-yellow: hsl( 60, 80%, 40%);
+    --bujo-color-text-yellow: hsl( 60, 60%, 45%);
     --bujo-color-text-green:  hsl(160, 50%, 50%);
     --bujo-color-text-blue:   hsl(200, 80%, 50%);
     --bujo-color-text-purple: hsl(260, 70%, 60%);
