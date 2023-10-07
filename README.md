@@ -1,5 +1,5 @@
 # <img align="top" width="40px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/icon.png"/> Logseq BuJo Theme
-A theme for https://logseq.com, inspired by Bullet Journals.
+A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 
 ⚠️ This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
 
