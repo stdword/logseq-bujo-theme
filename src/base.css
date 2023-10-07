@@ -1163,10 +1163,16 @@ div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
 .awLi-icon {
     top: 1px !important;
 }
-.title .awLi-icon {
+.title .awLi-icon[data-is-emoji="false"] {
     top: -2px !important;
     right: 4px !important;
     line-height: initial !important;
+}
+.title .awLi-icon[data-is-emoji="true"] {
+    top: -4px !important;
+    right: -4px !important;
+    font-size: 1em !important;
+    margin-right: 0.4em !important;
 }
 
 /* favicon style fix */
