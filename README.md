@@ -58,7 +58,9 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 2. Copy whole content of selected theme (e.g. `src/dark-coffee.css`) to the bottom of `custom.css`
 3. Remove line `@import './base.css';`
 
-### How to disable dots in background?
+### How to disable dots in the background?
+<img width="200px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/7d79781f-642f-4dca-bf4b-1356823faa8d"/>
+
 * In Logseq: click «...» and open the «Settings» section (or press `t s`)
 * Click «Edit custom.css»
 * Add following lines to the end
@@ -66,6 +68,20 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
   ```css
   #app-container {
     background-image: none !important;
+  }
+  ```
+
+### How to align dots in the background with distance between bullets of the adjacent levels?
+<img width="200px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/96679a60-4b88-44f3-a4b3-4f24e4d821fc"/>
+
+* In Logseq: click «...» and open the «Settings» section (or press `t s`)
+* Click «Edit custom.css»
+* Add following lines to the end
+
+  ```css
+  #app-container {
+      background-position: -2.5px 0px;
+      background-size: 30px 30px;
   }
   ```
 
