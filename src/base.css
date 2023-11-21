@@ -1790,6 +1790,17 @@ button[type="button"].to-heading-button:hover > .ui__icon {
 }
 
 
+/* ---- */
+/* MISC */
+/* ---- */
+
+/* disable animation */
+.left-sidebar-inner *,
+.cp__header * {
+    transition: none !important;
+}
+
+
 /* ---------- */
 /* EXTENSIONS */
 /* ---------- */
