@@ -242,6 +242,8 @@
 
 
     /* other ui */
+    --bujo-audio-control: var(--bujo-background8_5);
+
     --bujo-resizer: var(--bujo-fill1);
     --bujo-hover-shadow: var(--bujo-tiny2-shadow-black);
 

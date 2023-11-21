@@ -1167,6 +1167,19 @@ div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
     position: relative;
     bottom: 0.1rem;
 }
+
+/* audio controls */
+
+audio {
+    width: 500px;
+    height: 40px;
+}
+audio::-webkit-media-controls-enclosure {
+    border-radius: 10px;
+    background-color: var(--bujo-audio-control);
+}
+
+
 /* ------- */
 /* PLUGINS */
 /* ------- */
