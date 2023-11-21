@@ -1211,12 +1211,12 @@ audio::-webkit-media-controls-enclosure {
 
 /* media-ts */
 
-.kef-media-ts-ts {
-    display: inline;
+[data-ref="logseq-media-ts"] > .kef-media-ts-ts {
+    display: inline !important;
 }
-.kef-media-ts-ts > svg {
-    position: relative;
-    bottom: 0.1rem;
+[data-ref="logseq-media-ts"] > .kef-media-ts-ts > svg {
+    position: relative !important;
+    bottom: 0.1rem !important;
 }
 
 
