@@ -1201,9 +1201,6 @@ audio::-webkit-media-controls-enclosure {
 .block-children-left-border+.block-children {
     border-left-width: 1px !important;
 }
-.block-children-left-border {
-    width: 2px !important;
-}
 .ls-block[haschild] > div > .block-content-wrapper::before {
     left: -14px !important;
 }
