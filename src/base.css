@@ -1171,6 +1171,16 @@ div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
 /* PLUGINS */
 /* ------- */
 
+/* media-ts */
+
+.kef-media-ts-ts {
+    display: inline;
+}
+.kef-media-ts-ts > svg {
+    position: relative;
+    bottom: 0.1rem;
+}
+
 /* awesome links */
 
 .awLi-icon {
