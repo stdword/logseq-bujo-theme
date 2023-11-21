@@ -1826,7 +1826,7 @@ button[type="button"].to-heading-button:hover > .ui__icon {
 
 a.tag[data-ref^="."]::before {
     content: "…";
-    font-size: 1.0rem;
+    font-size: 0.7rem;
     line-height: 1.0rem;
 }
 
