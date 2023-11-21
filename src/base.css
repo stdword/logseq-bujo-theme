@@ -803,6 +803,13 @@ a.priority[href="#/page/C" i]::before {
     background-color: var(--bujo-block-bullet-level6)
 }
 
+
+/* align bullets for headers */
+.block-main-container.items-baseline {
+    align-items: center;
+}
+
+
 /* ----------- */
 /* Code Mirror */
 /* ----------- */
