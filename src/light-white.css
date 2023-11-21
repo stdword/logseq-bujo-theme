@@ -281,7 +281,11 @@
     --ls-block-ref-link-text-color: var(--bujo-highlight-clean); /* !confusing name */
 
 
-    /* days plugin  */
+    /* tabbed sidebar plugin */
+    --bujo-tabbed-sidebar-plugin-active-background: var(--ls-quaternary-background-color);
+
+
+    /* days plugin */
     --bujo-days-plugin-today-text: var(--ls-primary-text-color);
     --bujo-days-plugin-today-background: var(--bujo-background5);
     --bujo-days-plugin-selected-text: var(--ls-primary-text-color);

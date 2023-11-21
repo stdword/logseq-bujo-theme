@@ -270,7 +270,11 @@
     --ls-block-ref-link-text-color: var(--bujo-accent-dimmed); /* !confusing name */
 
 
-    /* days plugin  */
+    /* tabbed sidebar plugin */
+    --bujo-tabbed-sidebar-plugin-active-background: var(--bujo-fill2);
+
+
+    /* days plugin */
     --bujo-days-plugin-today-text: var(--ls-primary-text-color);
     --bujo-days-plugin-today-background: var(--bujo-fill3);
     --bujo-days-plugin-selected-text: var(--ls-secondary-text-color);

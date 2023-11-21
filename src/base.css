@@ -1184,6 +1184,17 @@ audio::-webkit-media-controls-enclosure {
 /* PLUGINS */
 /* ------- */
 
+/* tabbed sidebar */
+
+.kef-ts-header.kef-ts-active {
+    background-color: var(--bujo-tabbed-sidebar-plugin-active-background) !important;
+    color: var(--ls-secondary-text-color) !important;
+}
+.kef-ts-header {
+    color: var(--ls-primary-text-color) !important;
+}
+
+
 /* bullet threading */
 
 /* override block thread width */
