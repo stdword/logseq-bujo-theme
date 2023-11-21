@@ -1184,6 +1184,23 @@ audio::-webkit-media-controls-enclosure {
 /* PLUGINS */
 /* ------- */
 
+/* bullet threading */
+
+/* override block thread width */
+.block-children-left-border+.block-children {
+    border-left-width: 1px !important;
+}
+.block-children-left-border {
+    width: 2px !important;
+}
+.ls-block[haschild] > div > .block-content-wrapper::before {
+    left: -14px !important;
+}
+.bullet-container {
+    transform: translate(0px, -1px) !important;
+}
+
+
 /* media-ts */
 
 .kef-media-ts-ts {
@@ -1193,6 +1210,7 @@ audio::-webkit-media-controls-enclosure {
     position: relative;
     bottom: 0.1rem;
 }
+
 
 /* awesome links */
 
