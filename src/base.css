@@ -98,6 +98,9 @@ body[data-page=whiteboard] #app-container {
     background-color: var(--ls-menu-hover-color);
 }
 
+#right-sidebar .sidebar-item-list {
+    background: none;
+}
 #right-sidebar .sidebar-item-header {
     background-color: var(--bujo-right-sidebar-item-header-background);
 }
@@ -106,6 +109,7 @@ body[data-page=whiteboard] #app-container {
     padding: 0px 0px 0px 0px;
     border: none;
     margin-bottom: 0px;
+    margin-right: 0.5rem;
     border-radius: 4px;
 }
 
@@ -302,7 +306,8 @@ a.menu-link .search-result .type-icon:not(.highlight)::before {
 /* MAIN */
 /* ---- */
 
-.cp__sidebar-main-layout {
+.dark .cp__sidebar-main-layout,
+.light .cp__sidebar-main-layout {
     background: none;
 }
 
@@ -1251,15 +1256,16 @@ audio::-webkit-media-controls-enclosure {
 }
 #right-sidebar .page-title.awLi-color > .awLi-icon {
     top: -5px !important;
-    right: 5px !important;
-    margin-right: 3px !important;
-    /* width: 16px !important; */
+    right: 4px !important;
+    margin-right: 4px !important;
+    min-width: 21px !important;
 }
 #right-sidebar .page-title.awLi-color > .awLi-icon[data-is-emoji=true] {
     top: -2px !important;
     right: 0px !important;
     font-size: 1.1em !important;
     margin-right: 5px !important;
+    min-width: 21px !important;
 }
 .left-sidebar-inner .page-title.awLi-color:has(> .awLi-icon[data-is-emoji=true]) {
     margin-left: 2px !important;
@@ -1646,18 +1652,51 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* common ui buttons  */
 
-button[type="button"]:not(.to-heading-button).ui__button {
+button:not(.to-heading-button, .ui__button-theme-gray).ui__button {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background);
 }
-button[type="button"]:not(.to-heading-button).ui__button:hover {
+button:not(.to-heading-button, .ui__button-theme-gray).ui__button:hover {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background-hover);
     opacity: .9;
 }
-button[type="button"]:not(.to-heading-button).ui__button:focus {
+button:not(.to-heading-button, .ui__button-theme-gray).ui__button:focus {
     border-color: var(--bujo-button-accent-border-focus);
 }
+
+
+button.ui__button.ui__button-theme-text {
+    color: var(--bujo-button-text);
+    background-color: transparent;
+}
+button.ui__button.ui__button-theme-text:hover {
+    color: var(--bujo-button-accent-text);
+    background-color: transparent;
+}
+button.ui__button.ui__button-theme-text:focus {
+    border: none;
+}
+
+
+button.ui__button.ui__button-tiled,
+.keyboard-shortcut > .ui__button-theme-gray.ui__button-color-custom {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
+    border-color: var(--bujo-button-border);
+    opacity: 1;
+}
+button.ui__button.ui__button-tiled:hover,
+.keyboard-shortcut > .ui__button-theme-gray.ui__button-color-custom:hover {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
+    opacity: 1;
+}
+button.ui__button.ui__button-tiled:focus,
+.keyboard-shortcut > .ui__button-theme-gray.ui__button-color-custom:focus {
+    border-color: var(--bujo-button-border);
+}
+
 
 
 /* on-boarding buttons  */
@@ -1708,68 +1747,76 @@ button.cp__onboarding-skip-quick-tour i.ti {
 
 /* modal buttons */
 
-.ui__modal button[type="button"] {
+.ui__modal :not(.keyboard-shortcut) > * > button.ui__button-theme-gray {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background);
     border-color: var(--bujo-button-border);
 }
-.ui__modal button[type="button"]:hover {
+.ui__modal :not(.keyboard-shortcut) > * > button.ui__button-theme-gray:hover {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background-hover);
     border-color: var(--bujo-button-border);
 }
-.ui__modal button[type="button"]:focus {
+.ui__modal :not(.keyboard-shortcut) > * > button.ui__button-theme-gray:focus {
     border-color: var(--bujo-button-border-focus);
 }
 
-.ui__modal button[type="button"].ui__modal-enter {
+.ui__modal button.ui__modal-enter {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background);
     border-color: var(--bujo-button-accent-border);
 }
-.ui__modal button[type="button"].ui__modal-enter:hover {
+.ui__modal button.ui__modal-enter:hover {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-accent-background-hover);
     border-color: var(--bujo-button-accent-border);
 }
-.ui__modal button[type="button"].ui__modal-enter:focus {
+.ui__modal button.ui__modal-enter:focus {
     border-color: var(--bujo-button-accent-border-focus);
 }
 
 
 /* marketplace buttons */
 
-.cp__plugins-page button[type="button"].ui__button {
+.cp__plugins-page button.ui__button.ui__button-theme-color {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-background);
+    border: 1px solid transparent;
+    opacity: .9;
+}
+
+.cp__plugins-page button.ui__button {
     color: var(--bujo-button-text);
     background-color: transparent;
     border: 1px solid transparent;
     opacity: .9;
 }
-.cp__plugins-page button[type="button"].ui__button:hover {
+.cp__plugins-page button.ui__button:hover {
     color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-background);
     border-color: transparent;
     opacity: 1;
 }
-.cp__plugins-page button[type="button"].ui__button:focus {
+.cp__plugins-page button.ui__button:focus {
     border: 1px solid var(--bujo-button-accent-border-focus);
 }
 
-html[data-theme=light] .cp__plugins-page button[type="button"].ui__button.active {
+.light .cp__plugins-page button.ui__button.active {
     color: var(--bujo-button-accent-text);
-    background-color: var(--bujo-button-accent-background-hover);
+    background-color: transparent;
 }
-html[data-theme=light] .cp__plugins-page button[type="button"].ui__button.active:hover {
+.light .cp__plugins-page button.ui__button.active:hover {
     color: var(--bujo-button-accent-text);
-    background-color: var(--bujo-button-accent-background);
+    background-color: transparent;
 }
 
-html[data-theme=dark] .cp__plugins-page button[type="button"].ui__button.active {
-    color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background);
+.dark .cp__plugins-page button.ui__button.active {
+    color: var(--bujo-button-accent-background);
+    background-color: transparent;
 }
-html[data-theme=dark] .cp__plugins-page button[type="button"].ui__button.active:hover {
-    color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background-hover);
+.dark .cp__plugins-page button.ui__button.active:hover {
+    color: var(--bujo-button-accent-background);
+    background-color: transparent;
 }
 
 .cp__plugins-page .ui__dropdown-trigger > button > .ui__icon {
@@ -1780,34 +1827,10 @@ html[data-theme=dark] .cp__plugins-page button[type="button"].ui__button.active:
 }
 
 
-/* settings buttons */
+/* keymap */
 
-#settings button[type="button"].ui__button {
-    color: var(--bujo-button-accent-text);
-    background-color: var(--bujo-button-accent-background);
-    border-color: var(--bujo-button-border);
-    opacity: 1;
-}
-#settings button[type="button"].ui__button:hover {
-    opacity: .9;
-}
-#settings button[type="button"].ui__button:focus {
-    border-color: var(--bujo-button-border-focus);
-}
-
-
-/* context menu: heading buttons */
-
-button[type="button"].to-heading-button {
-    background: none;
-    border: none;
-    transition-duration: 0s;
-}
-button[type="button"].to-heading-button > .ui__icon {
-    color: var(--bujo-menu-icon);
-}
-button[type="button"].to-heading-button:hover > .ui__icon {
-    color: var(--bujo-menu-icon);
+a.action-wrap > code:not(:has(> button)) {
+    background-color: var(--ls-page-inline-code-bg-color);
 }
 
 
