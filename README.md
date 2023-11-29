@@ -102,6 +102,9 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 * [Block Calendar](https://github.com/vipzhicheng/logseq-plugin-block-calendar)
 * [Days](https://github.com/sethyuan/logseq-plugin-days)
 * [SmartBlocks](https://github.com/sawhney17/logseq-smartblocks)
+* [Media Timestamp](https://github.com/sethyuan/logseq-plugin-media-ts)
+* [Bullet Threading](https://github.com/pengx17/logseq-plugin-bullet-threading)
+* [Tabbed Sidebar](https://github.com/sethyuan/logseq-plugin-tabbed-sidebar)
 
 # Credits
 * Original author of all themes — [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme): `Copyright (c) 2021 Piotr Skarżyński`
