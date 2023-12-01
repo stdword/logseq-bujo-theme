@@ -306,8 +306,8 @@ a.menu-link .search-result .type-icon:not(.highlight)::before {
 /* MAIN */
 /* ---- */
 
-.dark .cp__sidebar-main-layout,
-.light .cp__sidebar-main-layout {
+html[data-theme="dark"] .cp__sidebar-main-layout,
+html[data-theme="light"] .cp__sidebar-main-layout {
     background: none;
 }
 
@@ -1784,6 +1784,13 @@ button.cp__onboarding-skip-quick-tour i.ti {
     opacity: .9;
 }
 
+html[data-theme="light"] .cp__plugins-page button.ui__button.ui__button-theme-color {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
+    border: 1px solid transparent;
+    opacity: .9;
+}
+
 .cp__plugins-page button.ui__button {
     color: var(--bujo-button-text);
     background-color: transparent;
@@ -1791,7 +1798,7 @@ button.cp__onboarding-skip-quick-tour i.ti {
     opacity: .9;
 }
 .cp__plugins-page button.ui__button:hover {
-    color: var(--bujo-button-accent-text);
+    color: var(--bujo-button-text);
     background-color: var(--bujo-button-background);
     border-color: transparent;
     opacity: 1;
@@ -1800,20 +1807,20 @@ button.cp__onboarding-skip-quick-tour i.ti {
     border: 1px solid var(--bujo-button-accent-border-focus);
 }
 
-.light .cp__plugins-page button.ui__button.active {
-    color: var(--bujo-button-accent-text);
-    background-color: transparent;
+html[data-theme="light"] .cp__plugins-page button.ui__button.active {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
 }
-.light .cp__plugins-page button.ui__button.active:hover {
-    color: var(--bujo-button-accent-text);
-    background-color: transparent;
+html[data-theme="light"] .cp__plugins-page button.ui__button.active:hover {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
 }
 
-.dark .cp__plugins-page button.ui__button.active {
+html[data-theme="dark"] .cp__plugins-page button.ui__button.active {
     color: var(--bujo-button-accent-background);
     background-color: transparent;
 }
-.dark .cp__plugins-page button.ui__button.active:hover {
+html[data-theme="dark"] .cp__plugins-page button.ui__button.active:hover {
     color: var(--bujo-button-accent-background);
     background-color: transparent;
 }
