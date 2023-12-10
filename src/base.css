@@ -1323,13 +1323,6 @@ audio::-webkit-media-controls-enclosure {
 .kef-days-num:hover {
     background-color: var(--bujo-hover-shadow) !important;
 }
-/* uncomment to enable opacity for days text
-.kef-days-num > span {
-    opacity: .7 !important;
-}
-.kef-days-highlight > span {
-    opacity: 1 !important;
-} */
 
 .kef-days-weekend {
     color: var(--ls-primary-text-color) !important;
@@ -1426,13 +1419,6 @@ label.day-enabled {
 svg.tip {
     color: var(--ls-primary-text-color);
 }
-/*
-.admonition-icon[title="Caution"]::before {
-    content: "\ec2c";
-    font-family: "tabler-icons";
-    font-size: 2.5rem;
-    color: var(--bujo-caution-color);
-} */
 .admonition-icon[title="Caution"] {
     /* change colors here to --bujo-caution-color */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-160 -1 700 512' fill='%23f59e0b' class='h-8 w-8 caution'%3E%3Cpath d='M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z'%3E%3C/path%3E%3C/svg%3E");
@@ -1456,6 +1442,7 @@ svg.tip {
     background-color: var(--bujo-themes-switch-selected-background);
 }
 
+
 /* settings */
 
 .form-input {
@@ -1475,9 +1462,6 @@ select:focus, .form-select:focus {
     border-color: var(--bujo-ui-border-focus);
 }
 
-.ui__modal-panel {
-    background-color: var(--bujo-settings-background);
-}
 .cp__settings-inner > aside {
     background-color: var(--bujo-settings-menu-background);
 }
@@ -1749,20 +1733,6 @@ button.cp__onboarding-skip-quick-tour i.ti {
 
 
 /* modal buttons */
-
-.ui__modal :not(.keyboard-shortcut) > * > button.ui__button-theme-gray {
-    color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background);
-    border-color: var(--bujo-button-border);
-}
-.ui__modal :not(.keyboard-shortcut) > * > button.ui__button-theme-gray:hover {
-    color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background-hover);
-    border-color: var(--bujo-button-border);
-}
-.ui__modal :not(.keyboard-shortcut) > * > button.ui__button-theme-gray:focus {
-    border-color: var(--bujo-button-border-focus);
-}
 
 .ui__modal button.ui__modal-enter {
     color: var(--bujo-button-accent-text);
