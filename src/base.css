@@ -1141,10 +1141,10 @@ html[data-theme=light] .extensions__pdf-hls-ctx-menu > li.item-colors > a:hover 
 
 /* re-index progress bar */
 
-div.w-full.bg-indigo-200.rounded-full.animate-pulse {
+div.w-full.rounded-full.animate-pulse {
     background-color: var(--bujo-progress-bar-rest);
 }
-div.w-full.bg-indigo-200.rounded-full.animate-pulse > div[transition] {
+div.w-full.rounded-full.animate-pulse > div[transition] {
     background-color: var(--bujo-progress-bar-done);
 }
 
