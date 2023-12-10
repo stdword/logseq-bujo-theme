@@ -1716,6 +1716,10 @@ button.cp__onboarding-skip-quick-tour i.ti {
 
 /* marketplace buttons */
 
+.cp__plugins-page {
+    background-color: var(--ls-primary-background-color);
+}
+
 .cp__plugins-page button.ui__button.ui__button-theme-color {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-background);
@@ -1724,8 +1728,8 @@ button.cp__onboarding-skip-quick-tour i.ti {
 }
 
 html[data-theme="light"] .cp__plugins-page button.ui__button.ui__button-theme-color {
-    color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background);
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-accent-background);
     border: 1px solid transparent;
     opacity: .9;
 }
@@ -1747,12 +1751,12 @@ html[data-theme="light"] .cp__plugins-page button.ui__button.ui__button-theme-co
 }
 
 html[data-theme="light"] .cp__plugins-page button.ui__button.active {
-    color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background);
+    color: var(--bujo-button-accent-background);
+    background-color: transparent;
 }
 html[data-theme="light"] .cp__plugins-page button.ui__button.active:hover {
-    color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background);
+    color: var(--bujo-button-accent-background);
+    background-color: transparent;
 }
 
 html[data-theme="dark"] .cp__plugins-page button.ui__button.active {
