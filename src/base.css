@@ -1487,6 +1487,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+/* keymap */
+
+html[data-theme="light"] .cp__shortcut-page-x > article > ul li.th {
+    background-color: var(--ls-secondary-background-color);
+}
+html[data-theme="dark"] .cp__shortcut-page-x > article > ul li.th {
+    background-color: var(--ls-quaternary-background-color);
+}
+
+
 /* whiteboards */
 
 .whiteboard .logseq-tldraw {
