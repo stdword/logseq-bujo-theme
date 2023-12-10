@@ -625,6 +625,10 @@ a.tag {
     color: var(--ls-icon-color);
 }
 
+.references-blocks-item {
+    background-color: var(--color-level-1);
+}
+
 
 /* macros */
 
