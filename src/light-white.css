@@ -261,6 +261,7 @@
     --bujo-progress-bar-rest: var(--bujo-highlight-shine);
 
     /* themes switch ui */
+    --bujo-themes-switch-background: var(--bujo-background1);
     --bujo-themes-switch-selected-background: var(--bujo-background3);
 
     /* filter & edit buttons on main layout */

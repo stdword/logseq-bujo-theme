@@ -122,8 +122,8 @@
     /* search results palette */
     --bujo-search-item-text-hover: var(--bujo-accent-normal);
 
-    --bujo-search-item-background: var(--ls-primary-background-color);
-    --ls-a-chosen-bg: var(--ls-tertiary-background-color);
+    --bujo-search-item-background: var(--ls-secondary-background-color);
+    --bujo-search-item-chosen-background: var(--ls-tertiary-background-color);
 
     --ls-search-icon-color: var(--bujo-accent-normal);
     --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
@@ -247,6 +247,7 @@
     --bujo-progress-bar-rest: var(--bujo-accent-clean);
 
     /* themes switch ui */
+    --bujo-themes-switch-background: var(--bujo-background2);
     --bujo-themes-switch-selected-background: var(--bujo-background5);
 
     /* filter & edit buttons on main layout */

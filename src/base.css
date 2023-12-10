@@ -1435,6 +1435,9 @@ svg.tip {
 
 /* themes */
 
+.cp__themes-installed {
+    background-color: var(--bujo-themes-switch-background);
+}
 .cp__themes-installed .it {
     background-color: transparent;
 }

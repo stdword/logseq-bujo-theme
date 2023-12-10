@@ -251,6 +251,7 @@
     --bujo-progress-bar-rest: var(--bujo-accent-dimmed);
 
     /* themes switch ui */
+    --bujo-themes-switch-background: var(--bujo-background1);
     --bujo-themes-switch-selected-background: var(--bujo-background5);
 
     /* filter & edit buttons on main layout */
