@@ -127,8 +127,8 @@
     /* search results palette */
     --bujo-search-item-text-hover: var(--bujo-accent-normal);
 
-    --bujo-search-item-background: var(--ls-primary-background-color);
-    --ls-a-chosen-bg: var(--bujo-background3);
+    --bujo-search-item-background: var(--bujo-background4);
+    --bujo-search-item-chosen-background: var(--bujo-background7);
 
     --ls-search-icon-color: var(--bujo-accent-normal);
     --bujo-search-item-new-page-icon-text: var(--bujo-background4);

@@ -137,8 +137,8 @@
     /* search results palette */
     --bujo-search-item-text-hover: var(--bujo-highlight-clean);
 
-    --bujo-search-item-background: var(--ls-primary-background-color);
-    --ls-a-chosen-bg: var(--bujo-background2);
+    --bujo-search-item-background: var(--ls-secondary-background-color);
+    --bujo-search-item-chosen-background: var(--bujo-background5);
 
     --ls-search-icon-color: var(--bujo-highlight-clean);
     --bujo-search-item-new-page-icon-text: var(--bujo-highlight-lit);

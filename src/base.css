@@ -224,81 +224,31 @@ a[title=Pink] > .heading-bg {
 
 /* search */
 
-.ls-search {
+.cp__cmdk {
     background-color: var(--bujo-search-item-background);
 }
 
-/* make items in recent searches and search result modals have the same height */
-/*.ls-search a > span > div {
-    padding-top: 0;
-    padding-bottom: 0;
-}*/
-
-/* set that height ↑↑ */
-/*.ls-search .menu-link {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}*/
-
-/* search page: remove background */
-#search .menu-link:not(.chosen, :hover) {
-    background-color: unset;
+/* section */
+.cp__cmdk .border-b > div:first-child {
+    background-color: var(--bujo-search-item-background);
 }
 
-/* matching modal (.search-results-wrap) and page (.search-results) */
-div[class^="search-results"] a.menu-link,
-div[class^="search-results"] a.menu-link p {
-    color: var(--ls-primary-text-color);
+/* results */
+.cp__cmdk .search-results > div:hover {
+    color: var(--bujo-text-accent);
+}
+.cp__cmdk .search-results > div.\!opacity-100 {
+    background-color: var(--bujo-search-item-chosen-background);
+}
+html[data-theme="dark"] .cp__cmdk .ui__list-item-highlighted-span,
+html[data-theme="light"] .cp__cmdk .ui__list-item-highlighted-span {
+    background-color: var(--ls-page-mark-bg-color);
+    color: var(--bujo-text-accent);
 }
 
-div[class^="search-results"] a.menu-link.chosen,
-div[class^="search-results"] a.menu-link.chosen p,
-div[class^="search-results"] a.menu-link:hover,
-div[class^="search-results"] a.menu-link:hover p {
-    color: var(--bujo-search-item-text-hover);
-    background: var(--ls-a-chosen-bg);
-}
-
-/* magnifier icon */
-a.menu-link .search-item>svg {
-    color: var(--ls-primary-text-color);
-}
-a.menu-link.chosen .search-item>svg,
-a.menu-link:hover .search-item>svg {
-    color: var(--bujo-search-item-text-hover);
-}
-
-/* new page icon */
-a.menu-link .search-result .type-icon.highlight {
-    color: var(--bujo-search-item-new-page-icon-text);
-    border-color: var(--bujo-search-item-new-page-icon-border);
-}
-a.menu-link .search-result .type-icon.highlight::before {
-    background: var(--bujo-search-item-new-page-icon-background);
-    opacity: 1;
-}
-
-/* new page text */
-a.menu-link .search-result div.self-center > div.text {
-    color: var(--ls-secondary-text-color);
-}
-a.menu-link .search-result div.self-center > div.text > span.ml-1 {
-    color: var(--ls-primary-text-color);
-    font-weight: 400;
-}
-
-/* other icons */
-a.menu-link .search-result .type-icon:not(.highlight) {
-    color: var(--ls-primary-text-color);
-    border-color: var(--ls-primary-background-color);
-}
-a.menu-link.chosen .search-result .type-icon:not(.highlight),
-a.menu-link:hover .search-result .type-icon:not(.highlight) {
-    color: var(--bujo-search-item-text-hover);
-}
-
-a.menu-link .search-result .type-icon:not(.highlight)::before {
-    background: var(--ls-primary-background-color);
+/* shortcuts for commands */
+.cp__cmdk .search-results > div > div > div:has(> button.ui__button-tiled) {
+    opacity: 0.7 !important;
 }
 
 
