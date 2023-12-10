@@ -1685,6 +1685,7 @@ button.ui__button.ui__button-tiled,
     background-color: var(--bujo-button-background);
     border-color: var(--bujo-button-border);
     opacity: 1;
+    box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.15), inset 0 -1px 0 0 rgba(0,0,0,.15);
 }
 button.ui__button.ui__button-tiled:hover,
 .keyboard-shortcut > .ui__button-theme-gray.ui__button-color-custom:hover {
