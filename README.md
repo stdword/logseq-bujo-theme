@@ -23,10 +23,10 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 ### Column view: `#.columns` & `#.columns-fit`
 <img width="500px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/54288b01-878e-47cf-be01-574807ae872c"/>
 
-### Column view: `#.border`
+### Border for block: `#.border`
 <img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/0fda5810-db21-4b25-b3d4-41b8c7cb5c89"/>
 
-### Column view: `#.border-child`
+### Border for children blocks: `#.border-child`
 <img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/83c8bc6f-a0a0-4ce9-a198-7371dafbdfae"/>
 
 
