@@ -370,6 +370,12 @@ a.asset-ref { /* title in pdf extension */
     font-size: 1.1em;
 }
 
+:is(h1, h2, h3, h4, h5, h6) > .embed-page > .blocks-container {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
 /* properties */
 
 #right-sidebar .page-properties,
