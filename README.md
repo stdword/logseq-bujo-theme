@@ -1,4 +1,13 @@
 # <img align="top" width="40px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/icon.png"/> Logseq BuJo Theme
+
+<div align="left">
+
+[![](https://img.shields.io/badge/status-support-da8202)](https://github.com/stdword/logseq-bujo-theme/releases)
+[![Version](https://img.shields.io/github/v/release/stdword/logseq-bujo-theme?color=743b20)](https://github.com/stdword/logseq-bujo-theme/releases)
+[![Downloads](https://img.shields.io/github/downloads/stdword/logseq-bujo-theme/total.svg?color=a0522d)](https://github.com/stdword/logseq-bujo-theme?tab=readme-ov-file#from-logseq-recommended-way)
+
+</div>
+
 A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 
 ⚠️ This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
