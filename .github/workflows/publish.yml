@@ -1,0 +1,53 @@
+name: Release
+
+env:
+  PLUGIN_NAME: logseq-bujo-theme
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Build
+        id: build
+        run: |
+          mkdir ${{ env.PLUGIN_NAME }}
+          cp package.json src ${{ env.PLUGIN_NAME }}
+          mkdir ${{ env.PLUGIN_NAME }}/assets
+          cp assets/icon.png ${{ env.PLUGIN_NAME }}/assets
+          zip -r ${{ env.PLUGIN_NAME }}.zip ${{ env.PLUGIN_NAME }}
+          ls
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION: ${{ github.ref }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Upload zip file
+        uses: actions/upload-release-asset@v1
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./${{ env.PLUGIN_NAME }}.zip
+          asset_name: ${{ env.PLUGIN_NAME }}-${{ github.ref }}.zip
+          asset_content_type: application/zip
