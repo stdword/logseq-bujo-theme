@@ -1,4 +1,4 @@
-# <img align="top" width="40px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/icon.png"/> Logseq BuJo Theme
+# <img align="top" width="40px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/icon.png"/> Bullet Journals theme for Logseq
 
 <div align="left">
 
