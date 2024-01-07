@@ -1303,6 +1303,17 @@ audio::-webkit-media-controls-enclosure {
 }
 
 
+/* awesome content plugin */
+
+#today-queries .custom-query {
+    border: none !important;
+}
+[data-refs-self*=".kanban"] > .block-children-container > .block-children > .ls-block > .flex-row {
+    padding: 4px 0px;
+}
+[data-refs-self*=".kanban"] > .block-children-container > .block-children > .ls-block > .flex-row > .block-control-wrap {
+    margin-left: -18px;
+}
 /* calculator */
 
 .extensions__code-calc {
