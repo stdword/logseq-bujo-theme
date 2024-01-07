@@ -1326,6 +1326,15 @@ audio::-webkit-media-controls-enclosure {
 .cp__header * {
     transition: none !important;
 }
+
+
+/* today queries */
+
+#today-queries .custom-query {
+    margin-top: 1rem;
+}
+
+
 /* calculator */
 
 .extensions__code-calc {
