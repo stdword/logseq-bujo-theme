@@ -1,11 +1,11 @@
 {
     "name": "logseq-bujo-theme",
     "author": "PiotrSss & stdword",
-    "version": "1.0.0",
+    "version": "1.3.0",
     "description": "Sepia, Coffee, White, Black: 4 themes inspired by Bullet Journals",
     "logseq": {
         "id": "logseq-bujo-theme",
-        "title": "BuJo themes",
+        "title": "Bullet Journal theme",
         "icon": "./assets/icon.png",
         "themes": [
             {
