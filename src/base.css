@@ -1314,6 +1314,18 @@ audio::-webkit-media-controls-enclosure {
 [data-refs-self*=".kanban"] > .block-children-container > .block-children > .ls-block > .flex-row > .block-control-wrap {
     margin-left: -18px;
 }
+
+
+/**
+ * MISC
+ */
+
+/* disable animation */
+
+.left-sidebar-inner *,
+.cp__header * {
+    transition: none !important;
+}
 /* calculator */
 
 .extensions__code-calc {
@@ -1327,6 +1339,8 @@ audio::-webkit-media-controls-enclosure {
 iframe {
     margin-bottom: 0.2rem;
 }
+
+/* carriage */
 
 textarea {
     caret-color: var(--bujo-caret);
@@ -1467,7 +1481,9 @@ html[data-theme="dark"] .cp__shortcut-page-x > article > ul li.th {
 }
 
 
-/* whiteboards */
+/**
+ * WHITEBOARDS
+ */
 
 .whiteboard .logseq-tldraw {
     --color-selectedFill: var(--bujo-whiteboard-fill);
@@ -1615,7 +1631,9 @@ html[data-theme="dark"] .cp__shortcut-page-x > article > ul li.th {
 }
 
 
-/* buttons */
+/**
+ * BUTTONS
+ */
 
 /* common ui buttons  */
 
@@ -1834,16 +1852,6 @@ a.action-wrap > code:not(:has(> button)) {
 }
 
 
-/* ---- */
-/* MISC */
-/* ---- */
-
-/* disable animation */
-.left-sidebar-inner *,
-.cp__header * {
-    transition: none !important;
-}
-
 
 /* ---------- */
 /* EXTENSIONS */
@@ -1957,9 +1965,12 @@ a.tag[data-ref^="."] {
     border-left-width: 0px;
 }
 
+/**
+ * PROPERTIES ICONS
+ *
+ * (forked from logseq-flow-theme)
+ */
 
-/* property icons */
-/* (forked from logseq-flow-theme) */
 .page-property-key::before {
     content: "\eabc";
     font-family: 'tabler-icons';
