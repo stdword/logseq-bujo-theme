@@ -1,4 +1,10 @@
-# <img align="top" width="40px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/icon.png"/> Bullet Journals theme for Logseq
+<h1>
+<img align="top" width="40px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/icon.png"/>
+Bullet Journals theme for Logseq
+<a href="https://www.buymeacoffee.com/stdword">
+  <img align="right" src="https://github.com/stdword/logseq13-full-house-plugin/blob/main/assets/coffee.png?raw=true" height="30px"/>
+</a>
+</h1>
 
 <div align="left">
 
@@ -47,12 +53,19 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 * The only point here is: every new theme release should be also updated manually
 
 
+## If you ❤️ what I'm doing — consider to support my work
+<p align="left">
+  <a href="https://www.buymeacoffee.com/stdword" target="_blank">
+    <img src="https://github.com/stdword/logseq-bujo-theme/blob/main/assets/coffee.png?raw=true" alt="Buy Me A Coffee" height="60px" />
+  </a>
+</p>
+
+
 ## FAQ
 ### How to use themes on mobile devices?
 1. In mobile Logseq: tap «...» and open the «Settings»
 2. Tap «Edit custom.css»
-3. Insert this code to the top of `custom.css`:
-   
+3. Insert this code to the top of `custom.css`: <br/>
    Coffee:
    ```css
    @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/base.css");
