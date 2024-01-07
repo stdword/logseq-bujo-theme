@@ -25,20 +25,6 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 <img width="700px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/e1c34367-5349-4559-afa4-68db922bd0be"/>
 
 
-## Theme adds special tags to change appearance of blocks
-### To hide tag reference: just start it with dot «.» sign
-<img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/bbc43d6c-2b0f-4d28-afee-14e379273d21"/>
-
-### Column view: `#.columns` & `#.columns-fit`
-<img width="500px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/54288b01-878e-47cf-be01-574807ae872c"/>
-
-### Border for block: `#.border`
-<img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/0fda5810-db21-4b25-b3d4-41b8c7cb5c89"/>
-
-### Border for children blocks: `#.border-child`
-<img width="350px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/83c8bc6f-a0a0-4ce9-a198-7371dafbdfae"/>
-
-
 ## Installation
 ### From Logseq (recommended way)
 * Click «...» and open the «Plugins» section (or press `t p`)
@@ -63,9 +49,31 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 
 ## FAQ
 ### How to use themes on mobile devices?
-1. Copy whole content of `src/base.css` to the bottom of `custom.css`
-2. Copy whole content of selected theme (e.g. `src/dark-coffee.css`) to the bottom of `custom.css`
-3. Remove line `@import './base.css';`
+1. In mobile Logseq: tap «...» and open the «Settings»
+2. Tap «Edit custom.css»
+3. Insert this code to the top of `custom.css`:
+   
+   Coffee:
+   ```css
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/base.css");
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/dark-coffee.css");
+   ```
+   Black:
+   ```css
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/base.css");
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/dark-black.css");
+   ```
+   Sepia:
+   ```css
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/base.css");
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/light-sepia.css");
+   ```
+   White:
+   ```css
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/base.css");
+   @import url("https://raw.githack.com/stdword/logseq-bujo-theme/main/src/light-white.css");
+   ```
+4. Ensure Settings → General → Theme is Light for White and Sepia themes OR is Dark for Coffee and Black themes.
 
 ### How to disable dots in the background?
 
@@ -80,6 +88,10 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
   background-image: none !important;
 }
 ```
+
+### Where are `#.columns` & `#.columns-fit`, `#.border` & `#.border-child`?
+
+These views was moved to [Missing Commands & Views](https://github.com/stdword/logseq13-missing-commands) plugin to be theme-independent.
 
 ### How to align dots in the background with distance between bullets of the adjacent levels?
 
@@ -107,8 +119,10 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 }
 ```
 
+
 ## Integrated with plugins:
 * [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
+* [Awesome Content](https://github.com/yoyurec/logseq-awesome-content)
 * [Copy code](https://github.com/vyleung/logseq-copy-code-plugin)
 * [Block Calendar](https://github.com/vipzhicheng/logseq-plugin-block-calendar)
 * [Days](https://github.com/sethyuan/logseq-plugin-days)
@@ -117,8 +131,10 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 * [Bullet Threading](https://github.com/pengx17/logseq-plugin-bullet-threading)
 * [Tabbed Sidebar](https://github.com/sethyuan/logseq-plugin-tabbed-sidebar)
 
+
 # Credits
 * Original author of all themes — [@PiotrSss](https://github.com/PiotrSss/logseq-bujo-theme): `Copyright (c) 2021 Piotr Skarżyński`
-* Some CSS from [logseq-flow-theme](https://github.com/nmartin84/logseq-flow): `Copyright (c) 2021 Nicholas Martin` (under [MIT License](https://github.com/nmartin84/logseq-flow/blob/f0a6dacfe8469a978c681dbafa98b3bf2625f180/LICENSE))
-* Some CSS from [logtools](https://github.com/cannibalox/logtools): `Copyright (c) 2021 cannibalox` (under [MIT License](https://github.com/cannibalox/logtools/blob/79853d657f3b7d26469e685025de554cbd682e02/LICENSE))
+* [logseq-flow-theme](https://github.com/nmartin84/logseq-flow): `Copyright (c) 2021 Nicholas Martin`
+* [logtools](https://github.com/cannibalox/logtools): `Copyright (c) 2021 cannibalox`
+* [Awesome Content](https://github.com/yoyurec/logseq-awesome-content): `Copyright (c) 2023 yoyurec`
 * Coffee icon created by <a href="https://www.flaticon.com/free-icon/coffee_2954820" title="coffee icon">Smashicons</a>
