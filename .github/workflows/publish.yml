@@ -22,7 +22,7 @@ jobs:
         id: build
         run: |
           mkdir ${{ env.PLUGIN_NAME }}
-          cp package.json src ${{ env.PLUGIN_NAME }}
+          cp -r package.json src ${{ env.PLUGIN_NAME }}
           mkdir ${{ env.PLUGIN_NAME }}/assets
           cp assets/icon.png ${{ env.PLUGIN_NAME }}/assets
           zip -r ${{ env.PLUGIN_NAME }}.zip ${{ env.PLUGIN_NAME }}
