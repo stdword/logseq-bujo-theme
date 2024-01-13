@@ -9,6 +9,7 @@
     --bujo-highlight-lit:     hsl(209, 99%, 44%);
     --bujo-highlight-clean:   hsl(209, 60%, 52%);
     --bujo-highlight-bright:  hsl(209, 60%, 60%);
+    --bujo-highlight-clear:   hsl(209, 80%, 78%);
     --bujo-highlight:         hsl(209, 43%, 73%);
     --bujo-highlight-shine:   hsl(209, 43%, 83%);
 
@@ -99,7 +100,7 @@
     --ls-selection-text-color: var(--bujo-background0);
     --ls-selection-background-color: var(--bujo-highlight-clean);
     --bujo-code-selection-background: var(--bujo-highlight);
-    --ls-block-highlight-color: var(--bujo-accent-dimmed);
+    --ls-block-highlight-color: var(--bujo-highlight-clear);
 
     --ls-page-mark-color: var(--ls-secondary-text-color);
     --ls-page-mark-bg-color: var(--bujo-fill5);
