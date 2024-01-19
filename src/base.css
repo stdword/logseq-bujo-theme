@@ -35,6 +35,22 @@
     --ls-z-index-level-4: 9999;
     --ls-z-index-level-5: 99999;
 */
+
+    /* radix ui adaptation for components */
+    --ls-whiteboard-button-background-selected: var(--bujo-whiteboard-fill);
+    --ls-anchor-link-text-color: var(--ls-link-text-color);
+    --ls-anchor-link-text-color-hover: var(--ls-link-text-hover-color);
+    --ls-tag-text: var(--ls-tag-text-color);
+    --border: var(--ls-border-color);
+
+    /* logseq13-full-house-templates adaptation */
+    --fht-footer-text: var(--ls-page-inline-code-color);
+    --fht-hightlight: var(--ls-page-mark-bg-color);
+    --fht-label-text: var(--ls-page-inline-code-color);
+    --fht-active: var(--ls-quaternary-background-color);
+    --fht-active-text: var(--ls-secondary-text-color);
+    --fht-scrollbar-thumb: color-mix(in srgb, var(--ls-scrollbar-thumb-hover-color) 50%, transparent);
+    --fht-scrollbar-thumb-hover: var(--ls-scrollbar-thumb-hover-color);
 }
 
 

@@ -314,14 +314,6 @@
     --ls-warning-background-color: hsl( 46, 40%, 70%);
     --ls-success-background-color: hsl(106, 13%, 70%);
     --bujo-info-background:        hsl(205, 25%, 70%);
-
-
-    /* new ui components colors */
-    --ls-whiteboard-button-background-selected: var(--bujo-whiteboard-fill);
-    --ls-anchor-link-text-color: var(--ls-link-text-color);
-    --ls-anchor-link-text-color-hover: var(--ls-link-text-hover-color);
-    --ls-tag-text: var(--ls-tag-text-color);
-    --border: var(--ls-border-color);
 }
 
 
