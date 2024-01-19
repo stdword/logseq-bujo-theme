@@ -301,15 +301,24 @@
     /* notifications */
     --bujo-notification-background: var(--ls-tertiary-background-color);
 
-    --ls-error-text-color: var(--color-red-500);
+    --ls-error-text-color: var(--color-red-700);
     --ls-warning-text-color: var(--color-yellow-400);
-    --ls-success-text-color: var(--color-green-500);
+    --ls-success-text-color: var(--color-green-600);
     --bujo-info-text: hsl(199, 89%, 48%);
 
     --ls-error-background-color: var(--ls-highlight-color-red);
     --ls-warning-background-color: var(--ls-highlight-color-yellow);
     --ls-success-background-color: var(--ls-highlight-color-green);
     --bujo-info-background: var(--ls-highlight-color-blue);
+
+    /* new ui components colors */
+    --ls-whiteboard-button-background-selected: var(--bujo-whiteboard-fill);
+    --ls-anchor-link-text-color: var(--ls-link-text-color);
+    --ls-anchor-link-text-color-hover: var(--ls-link-text-hover-color);
+    --ls-tag-text: var(--ls-tag-text-color);
+    --border: var(--ls-border-color);
+/*    --primary: var(--ls-link-text-color);*/
+/*    --background: var();*/
 }
 
 

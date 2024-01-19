@@ -335,6 +335,16 @@
     --ls-warning-background-color: var(--ls-highlight-color-yellow);
     --ls-success-background-color: var(--ls-highlight-color-green);
     --bujo-info-background:        var(--ls-highlight-color-blue);
+
+
+    /* new ui components colors */
+    --ls-whiteboard-button-background-selected: var(--bujo-whiteboard-fill);
+    --ls-anchor-link-text-color: var(--ls-link-text-color);
+    --ls-anchor-link-text-color-hover: var(--ls-link-text-hover-color);
+    --ls-tag-text: var(--ls-tag-text-color);
+    --border: var(--ls-border-color);
+/*    --primary: var(--ls-link-text-color);*/
+/*    --background: var();*/
 }
 
 

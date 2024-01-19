@@ -49,8 +49,8 @@
     --ph-link-color: var(--ls-link-ref-text-color);
     --ph-highlight-scroll-into-color: rgba(255, 75, 93, .67);
 
-    --ls-error-color: var(--color-red-500);
-    --ls-warning-color: var(--color-yellow-400);
+    --ls-error-color: var(--color-red-700);
+    --ls-warning-color: var(--color-yellow-500);
     --ls-success-color: var(--color-green-500);
 
     --bujo-caution-color: hsl(29, 92%, 50%);
@@ -233,6 +233,11 @@ a[title=Pink] > .heading-bg {
     background-color: var(--bujo-search-item-background);
 }
 
+/* commands */
+.cp__cmdk .search-results div:has(> button.ui__button) {
+    opacity: 1 !important;
+}
+
 /* results */
 .cp__cmdk .search-results > div:hover {
     color: var(--bujo-text-accent);
@@ -306,6 +311,10 @@ mark > code {
     background: var(--bujo-page-inline-code-mark-color) !important;
     color: var(--bujo-text-accent) !important;
     padding: 3px 5px
+}
+
+blockquote {
+    border-left-color: var(--ls-page-blockquote-border-color);
 }
 
 
@@ -449,6 +458,9 @@ mark .page-reference:hover,
 a.tag {
     display: inline;
     text-align: unset;
+}
+a.tag:hover {
+    text-decoration: none;
 }
 
 
@@ -720,12 +732,22 @@ a.priority[href="#/page/C" i]::before {
 
 
 /* bullets */
-.bullet-link-wrap:hover > .bullet-container .bullet {
+.bullet-link-wrap > .bullet-container > .bullet {
+    opacity: 1;
+}
+.bullet-link-wrap > .bullet-container > .bullet.selected {
+    color: var(--ls-secondary-text-color);
+}
+.bullet-link-wrap > .bullet-container.as-order-list > .bullet.selected {
+    border: none;
+    color: var(--ls-secondary-text-color);
+}
+.bullet-link-wrap:hover > .bullet-container > .bullet {
     transform: none;
     font-weight: bold;
     color: var(--ls-link-text-color);
 }
-.bullet-link-wrap:hover > .bullet-container.as-order-list .bullet {
+.bullet-link-wrap:hover > .bullet-container.as-order-list > .bullet {
     background-color: transparent !important;
 }
 
@@ -1253,8 +1275,12 @@ audio::-webkit-media-controls-enclosure {
     background-color: var(--bujo-hover-shadow);
 }
 
-#right-sidebar .logseq-block-calendar tr:nth-child(2n) {
-    background-color: transparent;
+.logseq-block-calendar th {
+    border-bottom: 0 !important;
+}
+
+.logseq-block-calendar tr {
+    background-color: transparent !important;
 }
 
 
@@ -1646,50 +1672,82 @@ html[data-theme="dark"] .cp__shortcut-page-x > article > ul li.th {
 
 /* common ui buttons  */
 
-button:not(.to-heading-button, .ui__button-theme-gray).ui__button {
-    color: var(--bujo-button-accent-text);
-    background-color: var(--bujo-button-accent-background);
+button:not(.to-heading-button).ui__button {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
 }
-button:not(.to-heading-button, .ui__button-theme-gray).ui__button:hover {
+button:not(.to-heading-button).ui__button:hover {
     color: var(--bujo-button-accent-text);
-    background-color: var(--bujo-button-accent-background-hover);
+    background-color: var(--bujo-button-background-hover);
     opacity: .9;
 }
-button:not(.to-heading-button, .ui__button-theme-gray).ui__button:focus {
+button:not(.to-heading-button).ui__button:focus {
     border-color: var(--bujo-button-accent-border-focus);
 }
 
 
-button.ui__button.ui__button-theme-text {
+/* notifications: close all button */
+
+.ui__notifications-content .notification-clear button.ui__button{
+    color: var(--bujo-button-text-hover);
+    background-color: var(--bujo-button-background);
+    border-color: var(--bujo-button-border);
+    opacity: .5;
+}
+.ui__notifications-content .notification-clear button.ui__button:hover {
     color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background-hover);
+    opacity: 1;
+}
+.ui__notifications-content .notification-clear button.ui__button:focus {
+    border: none;
+    opacity: 1;
+}
+
+
+/* notifications: close button */
+
+.ui__notifications-content button.ui__button {
+    color: var(--bujo-button-text-hover);
     background-color: transparent;
     border-color: var(--bujo-button-border);
 }
-button.ui__button.ui__button-theme-text:hover {
+.ui__notifications-content button.ui__button:hover {
     color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background);
+    background-color: transparent;
 }
-button.ui__button.ui__button-theme-text:focus {
+.ui__notifications-content button.ui__button:focus {
     border: none;
 }
 
 
-button.ui__button.ui__button-tiled,
-.keyboard-shortcut > .ui__button-theme-gray.ui__button-color-custom {
+/* shortcuts buttons */
+
+.keyboard-shortcut > button.ui__button,
+.cp__shortcut-page-x a.action-wrap > code > button.ui__button,
+.cp__cmdk button.ui__button {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background);
     border-color: var(--bujo-button-border);
     opacity: 1;
     box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.15), inset 0 -1px 0 0 rgba(0,0,0,.15);
 }
-button.ui__button.ui__button-tiled:hover,
-.keyboard-shortcut > .ui__button-theme-gray.ui__button-color-custom:hover {
+.keyboard-shortcut > button.ui__button:hover,
+.cp__shortcut-page-x a.action-wrap > code > button.ui__button:hover,
+.cp__cmdk button.ui__button:hover {
     color: var(--bujo-button-text);
-    background-color: var(--bujo-button-background);
     opacity: 1;
 }
-button.ui__button.ui__button-tiled:focus,
-.keyboard-shortcut > .ui__button-theme-gray.ui__button-color-custom:focus {
+.cp__shortcut-page-x a.action-wrap > code > button.ui__button:hover {
+    background-color: var(--bujo-button-background-hover);
+}
+.keyboard-shortcut > button.ui__button:hover,
+.cp__cmdk button.ui__button:hover {
+    background-color: var(--bujo-button-background);
+}
+.keyboard-shortcut > button.ui__button:focus,
+.cp__shortcut-page-x a.action-wrap > code > button.ui__button:focus,
+.cp__cmdk button.ui__button:focus {
     border-color: var(--bujo-button-border);
 }
 
@@ -1778,6 +1836,22 @@ html[data-theme="light"] .cp__plugins-page button.ui__button.ui__button-theme-co
     opacity: .9;
 }
 
+.cp__plugins-page .tabs-inner button.ui__button.as-classic {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
+    border: 1px solid transparent;
+    opacity: .9;
+}
+.cp__plugins-page .tabs-inner button.ui__button:hover {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background-hover);
+    border-color: transparent;
+    opacity: 1;
+}
+.cp__plugins-page .tabs-inner button.ui__button:focus {
+    border: 1px solid var(--bujo-button-accent-border-focus);
+}
+
 .cp__plugins-page button.ui__button {
     color: var(--bujo-button-text);
     background-color: transparent;
@@ -1795,20 +1869,20 @@ html[data-theme="light"] .cp__plugins-page button.ui__button.ui__button-theme-co
 }
 
 html[data-theme="light"] .cp__plugins-page button.ui__button.active {
-    color: var(--bujo-button-accent-background);
+    color: var(--bujo-button-accent-background) !important;
     background-color: transparent;
 }
 html[data-theme="light"] .cp__plugins-page button.ui__button.active:hover {
-    color: var(--bujo-button-accent-background);
+    color: var(--bujo-button-accent-background) !important;
     background-color: transparent;
 }
 
 html[data-theme="dark"] .cp__plugins-page button.ui__button.active {
-    color: var(--bujo-button-accent-background);
+    color: var(--bujo-button-accent-background) !important;
     background-color: transparent;
 }
 html[data-theme="dark"] .cp__plugins-page button.ui__button.active:hover {
-    color: var(--bujo-button-accent-background);
+    color: var(--bujo-button-accent-background) !important;
     background-color: transparent;
 }
 
