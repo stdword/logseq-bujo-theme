@@ -1222,6 +1222,15 @@ audio::-webkit-media-controls-enclosure {
 }
 
 
+/* awesome props */
+
+[data-awpr-block-props-layout=grid] .block-properties:not(.page-properties)>div>:is(div,span,a):first-child::after,
+[data-awpr-page-props-layout=grid] .block-properties.page-properties>div>:is(div,span,a):first-child::after,
+.ls-block.ls-block[data-refs-self*=".awpr-layout-grid"] .block-properties>div>:is(div,span,a):first-child::after {
+    content: " " !important;
+}
+
+
 /* awesome links */
 
 .awLi-icon {
@@ -1985,9 +1994,12 @@ a.action-wrap > code:not(:has(> button)) {
     font-family: 'tabler-icons';
 
     padding-right: 4px;
-
-    color: var(--ls-primary-text-color);
     opacity: .8;
+
+    /* Awesome Props plugin overriding */
+    color: var(--ls-primary-text-color) !important;
+    font-size: 1em !important;
+    margin-right: 0.1em !important;
 }
 
 .page-property-key[data-ref|="tags"]::before        { content: "\ef86" }
