@@ -240,7 +240,7 @@
     /* other ui */
     --bujo-audio-control: var(--bujo-foreground1);
 
-    --bujo-resizer: var(--bujo-background7);
+    --bujo-resizer: var(--bujo-accent-dark);
     --bujo-hover-shadow: var(--bujo-tiny-shadow-white);
 
     --bujo-progress-bar-done: var(--bujo-accent-dark);

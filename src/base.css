@@ -174,21 +174,27 @@ body[data-page=whiteboard] #app-container {
 }
 #left-sidebar a.item:hover,
 #left-sidebar .header:hover,
-#left-sidebar .favorite-item > a:hover,
-#left-sidebar .recent-item > a:hover {
+#left-sidebar .favorite-item a:hover,
+#left-sidebar .recent-item a:hover {
     background-color: var(--ls-menu-hover-color);
 }
-#left-sidebar .favorite-item > a > .page-icon,
-#left-sidebar .recent-item > a > .page-icon {
+#left-sidebar .favorite-item a > .page-icon,
+#left-sidebar .recent-item a > .page-icon {
     color: var(--bujo-left-sidebar-page-icon);
 }
-#left-sidebar .favorite-item > a > .page-title,
-#left-sidebar .recent-item > a > .page-title {
+#left-sidebar .favorite-item a > .page-title,
+#left-sidebar .recent-item a > .page-title {
     color: var(--bujo-left-sidebar-page-text);
 }
 
 #left-sidebar > .left-sidebar-inner {
     background-color: var(--bujo-left-sidebar-background);
+}
+
+#left-sidebar .left-sidebar-resizer:active,
+#left-sidebar .left-sidebar-resizer:focus,
+#left-sidebar .left-sidebar-resizer:hover {
+    background-color: var(--bujo-resizer);
 }
 
 
@@ -1697,18 +1703,35 @@ html[data-theme="dark"] .cp__shortcut-page-x > article > ul li.th {
 
 /* common ui buttons  */
 
-button:not(.to-heading-button).ui__button {
+button.ui__button {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background);
 }
-button:not(.to-heading-button).ui__button:hover {
+button.ui__button:hover {
     color: var(--bujo-button-accent-text);
     background-color: var(--bujo-button-background-hover);
     opacity: .9;
 }
-button:not(.to-heading-button).ui__button:focus {
+button.ui__button:focus {
     border-color: var(--bujo-button-accent-border-focus);
 }
+
+
+/* heading buttons  */
+
+button.to-heading-button.ui__button {
+    color: var(--bujo-button-text);
+    background-color: transparent;
+}
+button.to-heading-button.ui__button:hover {
+    color: var(--bujo-button-accent-text);
+    background-color: var(--bujo-button-background);
+    opacity: .9;
+}
+button.to-heading-button.ui__button:focus {
+    border-color: var(--bujo-button-accent-border-focus);
+}
+
 
 /* settings */
 

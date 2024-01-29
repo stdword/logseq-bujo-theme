@@ -255,7 +255,7 @@
     /* other ui */
     --bujo-audio-control: var(--ls-quaternary-background-color);
 
-    --bujo-resizer: var(--bujo-fill3);
+    --bujo-resizer: var(--bujo-highlight-bright);
     --bujo-hover-shadow: var(--bujo-tiny2-shadow-black);
 
     --bujo-progress-bar-done: var(--bujo-highlight-clean);
