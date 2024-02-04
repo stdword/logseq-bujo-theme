@@ -21,43 +21,71 @@
 
     --bujo-accent-normal:  hsl(var(--bujo-accent-normal_hsl));
 
-
-    --bujo-foreground0:       hsl(38,  9%, 5%);
-    --bujo-foreground1:       hsl(38,  9%, 8%);
-    --bujo-foreground2:       hsl(38,  9%, 10%);
-    --bujo-foreground3:       hsl(38,  9%, 15%);
+    --bujo-foreground0_hsl:    /*hsl(38, 9%,  5%)*/ 38, 9%,  5%;
+    --bujo-foreground1_hsl:    /*hsl(38, 9%,  8%)*/ 38, 9%,  8%;
+    --bujo-foreground2_hsl:    /*hsl(38, 9%, 10%)*/ 38, 9%, 10%;
+    --bujo-foreground3_hsl:    /*hsl(38, 9%, 15%)*/ 38, 9%, 15%;
     --bujo-foreground4_hsl:    /*hsl(38, 9%, 24%)*/ 38, 9%, 24%;
-    --bujo-foreground5:       hsl(38,  9%, 25%);
-    --bujo-foreground6:       hsl(38,  6%, 30%);
-    --bujo-foreground7:       hsl(38,  4%, 40%);
-    --bujo-foreground8:       hsl(38,  2%, 48%);
-    --bujo-foreground9:       hsl(38,  2%, 58%);
-    --bujo-foreground10:      hsl(38,  2%, 68%);
-    --bujo-foreground11:      hsl(38,  1%, 78%);
-    --bujo-foreground12:      hsl(38,  1%, 88%);
+    --bujo-foreground5_hsl:    /*hsl(38, 9%, 25%)*/ 38, 9%, 25%;
+    --bujo-foreground6_hsl:    /*hsl(38, 6%, 30%)*/ 38, 6%, 30%;
+    --bujo-foreground7_hsl:    /*hsl(38, 4%, 40%)*/ 38, 4%, 40%;
+    --bujo-foreground8_hsl:    /*hsl(38, 2%, 48%)*/ 38, 2%, 48%;
+    --bujo-foreground9_hsl:    /*hsl(38, 2%, 58%)*/ 38, 2%, 58%;
+    --bujo-foreground10_hsl:   /*hsl(38, 2%, 68%)*/ 38, 2%, 68%;
+    --bujo-foreground11_hsl:   /*hsl(38, 1%, 78%)*/ 38, 1%, 78%;
+    --bujo-foreground12_hsl:   /*hsl(38, 1%, 88%)*/ 38, 1%, 88%;
 
-    --bujo-foreground4: hsl(var(--bujo-foreground4_hsl));
+    --bujo-foreground0:        hsl(var(--bujo-foreground0_hsl));
+    --bujo-foreground1:        hsl(var(--bujo-foreground1_hsl));
+    --bujo-foreground2:        hsl(var(--bujo-foreground2_hsl));
+    --bujo-foreground3:        hsl(var(--bujo-foreground3_hsl));
+    --bujo-foreground4:        hsl(var(--bujo-foreground4_hsl));
+    --bujo-foreground5:        hsl(var(--bujo-foreground5_hsl));
+    --bujo-foreground6:        hsl(var(--bujo-foreground6_hsl));
+    --bujo-foreground7:        hsl(var(--bujo-foreground7_hsl));
+    --bujo-foreground8:        hsl(var(--bujo-foreground8_hsl));
+    --bujo-foreground9:        hsl(var(--bujo-foreground9_hsl));
+    --bujo-foreground10:       hsl(var(--bujo-foreground10_hsl));
+    --bujo-foreground11:       hsl(var(--bujo-foreground11_hsl));
+    --bujo-foreground12:       hsl(var(--bujo-foreground12_hsl));
 
-    --bujo-background0:       hsl(200, 11%, 100%);
-    --bujo-background1:       hsl(200, 11%, 99%);
-    --bujo-background2:       hsl(200, 11%, 97%);
-    --bujo-background3:       hsl(200, 11%, 94%);
-    --bujo-background4:       hsl(200, 11%, 92%);
-    --bujo-background5:       hsl(200, 11%, 88%);
-    --bujo-background6:       hsl(200, 11%, 86%);
-    --bujo-background7:       hsl(200, 11%, 84%);
-    --bujo-background8:       hsl(200, 11%, 82%);
-    --bujo-background9:       hsl(200, 11%, 80%);
-    --bujo-background10:      hsl(200, 11%, 75%);
+    --bujo-background0_hsl:    /*hsl(200, 11%, 100%)*/ 200, 11%, 100%;
+    --bujo-background1_hsl:    /*hsl(200, 11%,  99%)*/ 200, 11%,  99%;
+    --bujo-background2_hsl:    /*hsl(200, 11%,  97%)*/ 200, 11%,  97%;
+    --bujo-background3_hsl:    /*hsl(200, 11%,  94%)*/ 200, 11%,  94%;
+    --bujo-background4_hsl:    /*hsl(200, 11%,  92%)*/ 200, 11%,  92%;
+    --bujo-background5_hsl:    /*hsl(200, 11%,  88%)*/ 200, 11%,  88%;
+    --bujo-background6_hsl:    /*hsl(200, 11%,  86%)*/ 200, 11%,  86%;
+    --bujo-background7_hsl:    /*hsl(200, 11%,  84%)*/ 200, 11%,  84%;
+    --bujo-background8_hsl:    /*hsl(200, 11%,  82%)*/ 200, 11%,  82%;
+    --bujo-background9_hsl:    /*hsl(200, 11%,  80%)*/ 200, 11%,  80%;
+    --bujo-background10_hsl:   /*hsl(200, 11%,  75%)*/ 200, 11%,  75%;
 
-    --bujo-fill1:             hsl(160, 27%, 68%);
-    --bujo-fill2:             hsl(160, 35%, 55%);
-    --bujo-fill3:             hsl(160, 46%, 49%);
+    --bujo-background0:        hsl(var(--bujo-background0_hsl));
+    --bujo-background1:        hsl(var(--bujo-background1_hsl));
+    --bujo-background2:        hsl(var(--bujo-background2_hsl));
+    --bujo-background3:        hsl(var(--bujo-background3_hsl));
+    --bujo-background4:        hsl(var(--bujo-background4_hsl));
+    --bujo-background5:        hsl(var(--bujo-background5_hsl));
+    --bujo-background6:        hsl(var(--bujo-background6_hsl));
+    --bujo-background7:        hsl(var(--bujo-background7_hsl));
+    --bujo-background8:        hsl(var(--bujo-background8_hsl));
+    --bujo-background9:        hsl(var(--bujo-background9_hsl));
+    --bujo-background10:       hsl(var(--bujo-background10_hsl));
+
+    --bujo-fill1_hsl:         /*hsl(160, 27%, 68%)*/ 160, 27%, 68%;
+    --bujo-fill2_hsl:         /*hsl(160, 35%, 55%)*/ 160, 35%, 55%;
+    --bujo-fill3_hsl:         /*hsl(160, 46%, 49%)*/ 160, 46%, 49%;
     --bujo-fill4_hsl:         /*hsl(160, 56%, 36%)*/ 162, 56%, 36%;
-    --bujo-fill5:             hsl(52, 100%, 80%);
-    --bujo-fill6:             hsl(52, 70%, 70%);
+    --bujo-fill5_hsl:         /*hsl( 52,100%, 80%)*/  52,100%, 80%;
+    --bujo-fill6_hsl:         /*hsl( 52, 70%, 70%)*/  52, 70%, 70%;
 
-    --bujo-fill4: hsl(var(--bujo-fill4_hsl));
+    --bujo-fill1:             hsl(var(--bujo-fill1_hsl));
+    --bujo-fill2:             hsl(var(--bujo-fill2_hsl));
+    --bujo-fill3:             hsl(var(--bujo-fill3_hsl));
+    --bujo-fill4:             hsl(var(--bujo-fill4_hsl));
+    --bujo-fill5:             hsl(var(--bujo-fill5_hsl));
+    --bujo-fill6:             hsl(var(--bujo-fill6_hsl));
 
 
     /* ---------- */
@@ -335,6 +363,116 @@
     --ls-warning-background-color: var(--ls-highlight-color-yellow);
     --ls-success-background-color: var(--ls-highlight-color-green);
     --bujo-info-background:        var(--ls-highlight-color-blue);
+}
+
+
+/* new way of setting vars in radix ui */
+/* logseq as an accent option */
+html[data-theme=light],
+html[data-theme=light][data-color=logseq] {
+    --lx-accent-01: var(--ls-primary-background-color);
+    --lx-accent-02: var(--ls-secondary-background-color);
+    --lx-accent-03: var(--ls-tertiary-background-color);
+    --lx-accent-04: var(--ls-quaternary-background-color);
+    --lx-accent-05: var(--ls-border-color);
+    --lx-accent-06: var(--ls-border-color);
+    --lx-accent-07: var(--ls-active-primary-color);
+    --lx-accent-08: var(--ls-active-primary-color);
+    --lx-accent-09: var(--ls-block-ref-link-text-color);
+    --lx-accent-10: var(--ls-active-secondary-color);
+    --lx-accent-11: var(--ls-active-primary-color);
+    --lx-accent-12: var(--ls-active-secondary-color);
+
+    --lx-accent-01-alpha: var(--lx-accent-01);
+    --lx-accent-02-alpha: var(--lx-accent-02);
+    --lx-accent-03-alpha: var(--lx-accent-03);
+    --lx-accent-04-alpha: var(--lx-accent-04);
+    --lx-accent-05-alpha: var(--lx-accent-05);
+    --lx-accent-06-alpha: var(--lx-accent-06);
+    --lx-accent-07-alpha: var(--lx-accent-07);
+    --lx-accent-08-alpha: var(--lx-accent-08);
+    --lx-accent-09-alpha: var(--lx-accent-09);
+    --lx-accent-10-alpha: var(--lx-accent-10);
+    --lx-accent-11-alpha: var(--lx-accent-11);
+    --lx-accent-12-alpha: var(--lx-accent-12);
+
+    --rx-gray-01-hsl: var(--bujo-background1_hsl);
+    --rx-gray-02-hsl: var(--bujo-background2_hsl);
+    --rx-gray-03-hsl: var(--bujo-background3_hsl);
+    --rx-gray-04-hsl: var(--bujo-background4_hsl);
+    --rx-gray-05-hsl: var(--bujo-background5_hsl);
+    --rx-gray-06-hsl: var(--bujo-background6_hsl);
+    --rx-gray-07-hsl: var(--bujo-background7_hsl);
+    --rx-gray-08-hsl: var(--bujo-background8_hsl);
+    --rx-gray-09-hsl: var(--bujo-background9_hsl);
+    --rx-gray-10-hsl: var(--bujo-background10_hsl);
+    --rx-gray-11-hsl: var(--bujo-foreground3_hsl);
+    --rx-gray-12-hsl: var(--bujo-foreground0_hsl);
+
+    --rx-gray-01: hsl(var(--rx-gray-01-hsl));
+    --rx-gray-02: hsl(var(--rx-gray-02-hsl));
+    --rx-gray-03: hsl(var(--rx-gray-03-hsl));
+    --rx-gray-04: hsl(var(--rx-gray-04-hsl));
+    --rx-gray-05: hsl(var(--rx-gray-05-hsl));
+    --rx-gray-06: hsl(var(--rx-gray-06-hsl));
+    --rx-gray-07: hsl(var(--rx-gray-07-hsl));
+    --rx-gray-08: hsl(var(--rx-gray-08-hsl));
+    --rx-gray-09: hsl(var(--rx-gray-09-hsl));
+    --rx-gray-10: hsl(var(--rx-gray-10-hsl));
+    --rx-gray-11: hsl(var(--rx-gray-11-hsl));
+    --rx-gray-12: hsl(var(--rx-gray-12-hsl));
+/*
+    --lx-gray-01: var(--rx-gray-01);
+    --lx-gray-02: var(--rx-gray-02);
+    --lx-gray-03: var(--rx-gray-03);
+    --lx-gray-04: var(--rx-gray-04);
+    --lx-gray-05: var(--rx-gray-05);
+    --lx-gray-06: var(--rx-gray-06);
+    --lx-gray-07: var(--rx-gray-07);
+    --lx-gray-08: var(--rx-gray-08);
+    --lx-gray-09: var(--rx-gray-09);
+    --lx-gray-10: var(--rx-gray-10);
+    --lx-gray-11: var(--rx-gray-11);
+    --lx-gray-12: var(--rx-gray-12);
+
+    --lx-gray-01-alpha: var(--rx-gray-01);
+    --lx-gray-02-alpha: var(--rx-gray-02);
+    --lx-gray-03-alpha: var(--rx-gray-03);
+    --lx-gray-04-alpha: var(--rx-gray-04);
+    --lx-gray-05-alpha: var(--rx-gray-05);
+    --lx-gray-06-alpha: var(--rx-gray-06);
+    --lx-gray-07-alpha: var(--rx-gray-07);
+    --lx-gray-08-alpha: var(--rx-gray-08);
+    --lx-gray-09-alpha: var(--rx-gray-09);
+    --lx-gray-10-alpha: var(--rx-gray-10);
+    --lx-gray-11-alpha: var(--rx-gray-11);
+    --lx-gray-12-alpha: var(--rx-gray-12);
+*/
+
+    --background:  var(--bujo-background0_hsl);
+    --primary:     var(--bujo-background1_hsl);
+    --secondary:   var(--bujo-background2_hsl);
+    --accent:      var(--bujo-background3_hsl);
+
+    --foreground:             var(--bujo-foreground3_hsl);
+    --primary-foreground:     var(--bujo-foreground3_hsl);
+    --secondary-foreground:   var(--bujo-foreground0_hsl);
+    --accent-foreground:      var(--bujo-foreground0_hsl);
+
+    --card:        var(--background);
+    --popover:     var(--background);
+    --muted:       var(--background);
+    --destructive: var(--background);
+
+    --card-foreground:        var(--foreground);
+    --popover-foreground:     var(--foreground);
+    --muted-foreground:       var(--foreground);
+    --destructive-foreground: var(--foreground);
+
+    --border:      var(--bujo-background5_hsl);
+    --muted:       var(--bujo-background5_hsl);
+    --input:       var(--bujo-background5_hsl);
+    --ring:        var(--bujo-background5_hsl);
 }
 
 

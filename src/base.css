@@ -41,7 +41,6 @@
     --ls-anchor-link-text-color: var(--ls-link-text-color);
     --ls-anchor-link-text-color-hover: var(--ls-link-text-hover-color);
     --ls-tag-text: var(--ls-tag-text-color);
-    --border: var(--ls-border-color);
 
     /* logseq13-full-house-templates adaptation */
     --fht-footer-text: var(--ls-page-inline-code-color);
@@ -195,6 +194,23 @@ body[data-page=whiteboard] #app-container {
 #left-sidebar .left-sidebar-resizer:focus,
 #left-sidebar .left-sidebar-resizer:hover {
     background-color: var(--bujo-resizer);
+}
+
+.ui__context-menu-content {
+    /* use default --accent & --accent-foreground vars */
+    --accent: unset !important;
+    --accent-foreground: unset !important;
+}
+
+.left-sidebar-inner .nav-contents-container.is-scrolled {
+    border-color: var(--ls-secondary-border-color);
+}
+
+
+/* block context menu */
+
+.custom-context-menu {
+    transition: none;
 }
 
 
@@ -1722,6 +1738,7 @@ button.ui__button:focus {
 button.to-heading-button.ui__button {
     color: var(--bujo-button-text);
     background-color: transparent;
+    transition: none;
 }
 button.to-heading-button.ui__button:hover {
     color: var(--bujo-button-accent-text);
