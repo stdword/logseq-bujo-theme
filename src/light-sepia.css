@@ -127,6 +127,9 @@
 
 
     /* block parts */
+    --bujo-block-bullet-selected: var(--ls-primary-text-color);
+    --bujo-block-ordered-bullet: var(--bujo-accent-normal);
+
     --ls-block-bullet-color: var(--color-level-4);
     --bujo-block-bullet-level1: var(--color-level-4);
     --bujo-block-bullet-level2: var(--color-level-5);

@@ -143,6 +143,9 @@
 
 
     /* block parts */
+    --bujo-block-bullet-selected: var(--ls-primary-text-color);
+    --bujo-block-ordered-bullet: var(--bujo-highlight-bright);
+
     --ls-block-bullet-color: var(--bujo-foreground11);
     --bujo-block-bullet-level1: var(--bujo-foreground11);
     --bujo-block-bullet-level2: var(--bujo-foreground10);
