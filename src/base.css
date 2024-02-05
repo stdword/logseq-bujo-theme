@@ -1234,20 +1234,22 @@ body:has(> #logseq-bullet-threading_lsp_main) {
         border-left-width: 1px !important;
     }
 
-    & .ls-block .ls-block > .block-main-container > .block-control-wrap::before {
-        top: -6px;
-    }
-    & .ls-block .block-children:focus-within > .ls-block:not(:focus-within)::before {
-        top: -2px;
-    }
+    & .ls-block[haschild] {
+        & > .block-main-container > .block-content-wrapper::before {
+            left: -14px !important;
+            top: 15px !important;
+        }
+        & > .block-main-container > .block-control-wrap.is-order-list + .block-content-wrapper::before {
+            left: -16px !important;
+            top: 22px !important;
+        }
 
-    & .ls-block[haschild] > .block-main-container > .block-content-wrapper::before {
-        left: -14px !important;
-        top: 15px !important;
-    }
-    & .ls-block[haschild] > .block-main-container > .block-control-wrap.is-order-list + .block-content-wrapper::before {
-        left: -16px !important;
-        top: 22px !important;
+        & .ls-block > .block-main-container > .block-control-wrap::before {
+            top: -6px;
+        }
+        & .block-children:focus-within > .ls-block:not(:focus-within)::before {
+            top: -2px;
+        }
     }
 }
 
