@@ -774,9 +774,8 @@ a.priority[href="#/page/C" i]::before {
     opacity: 1;
 }
 
-.bullet-link-wrap > .bullet-container > .bullet.selected,
-.bullet-link-wrap:hover > .bullet-container > .bullet {
-    color: var(--bujo-block-bullet-selected) !important;
+.bullet-link-wrap > .bullet-container:not(.as-order-list) > .bullet.selected {
+    background-color: var(--bujo-block-bullet-selected) !important;
 }
 
 .ls-block.selected .bullet-link-wrap > .bullet-container.as-order-list > .bullet:not(.selected) {
