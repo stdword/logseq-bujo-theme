@@ -136,6 +136,7 @@ These views was moved to [Missing Commands & Views](https://github.com/stdword/l
 ## Integrated with plugins:
 * [Awesome Links](https://github.com/yoyurec/logseq-awesome-links)
 * [Awesome Content](https://github.com/yoyurec/logseq-awesome-content)
+* [Awesome Props](https://github.com/yoyurec/logseq-awesome-props)
 * [Copy code](https://github.com/vyleung/logseq-copy-code-plugin)
 * [Block Calendar](https://github.com/vipzhicheng/logseq-plugin-block-calendar)
 * [Days](https://github.com/sethyuan/logseq-plugin-days)
