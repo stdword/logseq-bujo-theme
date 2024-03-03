@@ -144,6 +144,8 @@
 
     --bujo-search-item-background: var(--ls-secondary-background-color);
     --bujo-search-item-chosen-background: var(--ls-tertiary-background-color);
+    --bujo-search-item-icon-text: var(--bujo-text-accent);
+    --bujo-search-item-icon-background: var(--bujo-background5);
 
     --ls-search-icon-color: var(--bujo-accent-normal);
     --bujo-search-item-new-page-icon-text: var(--bujo-text-accent);
@@ -335,8 +337,8 @@
 
 /* new way of setting vars in radix ui */
 /* logseq as an accent option */
-html[data-theme=dark],
-html[data-theme=dark][data-color=logseq] {
+html[data-theme=dark] {
+    /*
     --lx-accent-01: var(--ls-primary-background-color);
     --lx-accent-02: var(--ls-secondary-background-color);
     --lx-accent-03: var(--ls-tertiary-background-color);
@@ -388,7 +390,7 @@ html[data-theme=dark][data-color=logseq] {
     --rx-gray-10: hsl(var(--rx-gray-10-hsl));
     --rx-gray-11: hsl(var(--rx-gray-11-hsl));
     --rx-gray-12: hsl(var(--rx-gray-12-hsl));
-/*
+
     --lx-gray-01: var(--rx-gray-01);
     --lx-gray-02: var(--rx-gray-02);
     --lx-gray-03: var(--rx-gray-03);
@@ -414,7 +416,7 @@ html[data-theme=dark][data-color=logseq] {
     --lx-gray-10-alpha: var(--rx-gray-10);
     --lx-gray-11-alpha: var(--rx-gray-11);
     --lx-gray-12-alpha: var(--rx-gray-12);
-*/
+    */
 
     --background:  var(--bujo-background2_hsl);
     --primary:     var(--bujo-background2_hsl);
@@ -447,60 +449,58 @@ html[data-theme=dark][data-color=logseq] {
 /* CODE BLOCK */
 /* ---------- */
 
-html[data-theme="dark"] .CodeMirror {
-    color: hsla(var(--bujo-foreground2_hsl), .7);
+html[data-theme=dark] .CodeMirror {
+    color: hsla(var(--bujo-foreground2_hsl), .7) !important;
+    background-color: var(--ls-primary-background-color) !important;
 }
 html[data-theme=dark] .CodeMirror .CodeMirror-activeline-background  {
     background: var(--bujo-tiny-shadow-white);
-}
-html[data-theme=dark] .CodeMirror {
-    background-color: var(--ls-primary-background-color);
 }
 html[data-theme=dark] .CodeMirror .CodeMirror-gutters {
     background-color: var(--ls-secondary-background-color);
 }
 
-html[data-theme="dark"] .CodeMirror .cm-keyword {
+html[data-theme=dark] .CodeMirror .cm-keyword {
     color: var(--ls-secondary-text-color);
 }
-html[data-theme="dark"] .CodeMirror .cm-operator {
+html[data-theme=dark] .CodeMirror .cm-operator {
     color: var(--ls-primary-text-color);
     opacity: 0.7;
 }
-html[data-theme="dark"] .CodeMirror .cm-property {
+html[data-theme=dark] .CodeMirror .cm-property {
     color: var(--ls-primary-text-color);
 }
-html[data-theme="dark"] .CodeMirror .cm-builtin {
+html[data-theme=dark] .CodeMirror .cm-builtin {
     color: var(--bujo-accent-dimmed);
 }
-html[data-theme="dark"] .CodeMirror .cm-number {
+html[data-theme=dark] .CodeMirror .cm-number {
     color: var(--bujo-highlight-lit);
 }
-html[data-theme="dark"] .CodeMirror .cm-meta {
+html[data-theme=dark] .CodeMirror .cm-meta {
     color: var(--bujo-highlight-lit);
 }
-html[data-theme="dark"] .CodeMirror .cm-string,
-html[data-theme="dark"] .CodeMirror .cm-string-2 {
+html[data-theme=dark] .CodeMirror .cm-string,
+html[data-theme=dark] .CodeMirror .cm-string-2 {
     color: var(--bujo-fill3);
 }
-html[data-theme="dark"] .CodeMirror .cm-comment {
+html[data-theme=dark] .CodeMirror .cm-comment {
     color: var(--bujo-background6);
 }
-html[data-theme="dark"] .CodeMirror .cm-variable,
-html[data-theme="dark"] .CodeMirror .cm-qualifier,
-html[data-theme="dark"] .CodeMirror .cm-variable-3,
-html[data-theme="dark"] .CodeMirror .cm-type {
+html[data-theme=dark] .CodeMirror .cm-variable,
+html[data-theme=dark] .CodeMirror .cm-qualifier,
+html[data-theme=dark] .CodeMirror .cm-variable-3,
+html[data-theme=dark] .CodeMirror .cm-type {
     color: var(--ls-primary-text-color);
 }
-html[data-theme="dark"] .CodeMirror .cm-variable-2 {
+html[data-theme=dark] .CodeMirror .cm-variable-2 {
     color: var(--ls-primary-text-color);
     font-style: italic;
     opacity: 0.7;
 }
-html[data-theme="dark"] .CodeMirror .cm-def,
-html[data-theme="dark"] .CodeMirror .cm-attribute,
-html[data-theme="dark"] .CodeMirror .cm-atom,
-html[data-theme="dark"] .CodeMirror .cm-tag {
+html[data-theme=dark] .CodeMirror .cm-def,
+html[data-theme=dark] .CodeMirror .cm-attribute,
+html[data-theme=dark] .CodeMirror .cm-atom,
+html[data-theme=dark] .CodeMirror .cm-tag {
     color: var(--ls-secondary-text-color);
     font-style: italic;
 }

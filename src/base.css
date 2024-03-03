@@ -53,6 +53,21 @@
 }
 
 
+/* radix ui hacks */
+.text-gray-11 {
+    color: var(--ls-secondary-text-color);
+}
+.text-gray-12 {
+    color: var(--ls-primary-text-color);
+}
+.border-gray-06 {
+    border-color: var(--ls-border-color);
+}
+.border-gray-07 {
+    border-color: var(--ls-border-color);
+}
+
+
 /* global color vars */
 :root {
     --ph-highlight-color-blue: var(--color-blue-300);
@@ -94,8 +109,8 @@ body[data-page=whiteboard] #app-container {
 }
 
 ::selection {
-    background-color: var(--ls-selection-background-color);
-    color: var(--ls-selection-text-color);
+    background-color: var(--ls-selection-background-color) !important;
+    color: var(--ls-selection-text-color) !important;
 }
 
 
@@ -130,6 +145,15 @@ body[data-page=whiteboard] #app-container {
 
 #right-sidebar .sidebar-item .page-title {
     text-align: left;
+}
+
+#right-sidebar .item-actions > button.ui__button {
+    color: var(--ls-primary-text-color);
+    background-color: transparent;
+}
+#right-sidebar .item-actions > button.ui__button:hover {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background-hover);
 }
 
 #right-sidebar .resizer:active,
@@ -186,6 +210,15 @@ body[data-page=whiteboard] #app-container {
     color: var(--bujo-left-sidebar-page-text);
 }
 
+#left-sidebar button.ui__button {
+    color: var(--bujo-button-text);
+    background-color: transparent;
+}
+#left-sidebar button.ui__button:hover {
+    color: var(--bujo-button-text);
+    background-color: var(--bujo-button-background);
+}
+
 #left-sidebar > .left-sidebar-inner {
     background-color: var(--bujo-left-sidebar-background);
 }
@@ -196,10 +229,14 @@ body[data-page=whiteboard] #app-container {
     background-color: var(--bujo-resizer);
 }
 
-.ui__context-menu-content {
-    /* use default --accent & --accent-foreground vars */
+div[data-radix-popper-content-wrapper] > div[role=menu] > div[role=menuitem]:hover {
+    background-color: hsl(var(--accent));
+}
+.ui__context-menu-content, .ui__dropdown-menu-content, .ui__select-content {
+    /* use default vars */
     --accent: unset !important;
     --accent-foreground: unset !important;
+    --muted: unset !important;
 }
 
 .left-sidebar-inner .nav-contents-container.is-scrolled {
@@ -262,6 +299,9 @@ a[title=Pink] > .heading-bg {
 
 /* search */
 
+.ui__modal-panel {
+    border-color: var(--ls-border-color);
+}
 .cp__cmdk {
     background-color: var(--bujo-search-item-background);
 }
@@ -277,12 +317,22 @@ a[title=Pink] > .heading-bg {
 }
 
 /* results */
+.cp__cmdk .search-results > div.\!opacity-100,
 .cp__cmdk .search-results > div:hover {
-    color: var(--bujo-text-accent);
-}
-.cp__cmdk .search-results > div.\!opacity-100 {
     background-color: var(--bujo-search-item-chosen-background);
 }
+
+.cp__cmdk .search-results > div:hover {
+    color: var(--bujo-search-item-icon-text);
+}
+.cp__cmdk .search-results > div > div > div:has(> .ui__icon) {
+    background-color: var(--bujo-search-item-icon-background);
+}
+.cp__cmdk .search-results > div.\!opacity-100 > div > div:has(> .ui__icon),
+.cp__cmdk .search-results > div:hover > div > div:has(> .ui__icon) {
+    background-color: transparent;
+}
+
 html[data-theme="dark"] .cp__cmdk .ui__list-item-highlighted-span,
 html[data-theme="light"] .cp__cmdk .ui__list-item-highlighted-span {
     background-color: var(--ls-page-mark-bg-color);
@@ -292,6 +342,10 @@ html[data-theme="light"] .cp__cmdk .ui__list-item-highlighted-span {
 /* shortcuts for commands */
 .cp__cmdk .search-results > div > div > div:has(> button.ui__button-tiled) {
     opacity: 0.7 !important;
+}
+
+.cp__cmdk > .hints {
+    border-color: var(--ls-border-color);
 }
 
 
@@ -436,7 +490,10 @@ a.asset-ref { /* title in pdf extension */
 .page-properties {
     border-radius: var(--ls-border-radius-low);
 }
-.page-property-key:hover {
+.page-property-key.page-ref {
+    color: var(--ls-secondary-text-color);
+}
+.page-property-key.page-ref:hover {
     color: var(--bujo-property-text-hover);
     background-color: transparent;
     transition: .1s;
@@ -468,6 +525,13 @@ a.asset-ref { /* title in pdf extension */
 
 
 /* page link */
+
+.page-ref {
+    color: var(--ls-link-ref-text-color);
+}
+.page-ref:hover {
+    color: var(--ls-link-ref-text-hover-color);
+}
 
 .page-reference .bracket {
     opacity: .5;
@@ -775,7 +839,7 @@ a.priority[href="#/page/C" i]::before {
 }
 
 .bullet-link-wrap > .bullet-container:not(.as-order-list) > .bullet.selected {
-    background-color: var(--bujo-block-bullet-selected) !important;
+    color: var(--bujo-block-bullet-selected) !important;
 }
 
 .ls-block.selected .bullet-link-wrap > .bullet-container.as-order-list > .bullet:not(.selected) {
@@ -1267,6 +1331,7 @@ body:has(> #logseq-bullet-threading_lsp_main) {
 [data-ref="logseq-media-ts"] > .kef-media-ts-ts > svg {
     position: relative !important;
     bottom: 0.1rem !important;
+    color: var(--ls-secondary-text-color);
 }
 
 
@@ -1505,6 +1570,9 @@ label.day-enabled {
 
 /* callouts (admonitions) */
 
+svg.note {
+    color: var(--ls-primary-text-color);
+}
 svg.tip {
     color: var(--ls-primary-text-color);
 }
@@ -1527,11 +1595,11 @@ svg.tip {
 .cp__themes-installed {
     background-color: var(--bujo-themes-switch-background);
 }
-.cp__themes-installed .it {
-    background-color: transparent;
+.cp__themes-installed .it:hover {
+    background-color: transparent !important;
 }
 .cp__themes-installed .it.is-active {
-    background-color: var(--bujo-themes-switch-selected-background);
+    background-color: var(--bujo-themes-switch-selected-background) !important;
 }
 
 
@@ -1593,6 +1661,13 @@ html[data-theme="dark"] .cp__shortcut-page-x > article > ul li.th {
  * WHITEBOARDS
  */
 
+html[data-color=none] .tl-container {
+    --ls-primary-background-color: hsl(var(--background));
+    --ls-secondary-background-color: unset !important;
+    --ls-tertiary-background-color: unset !important;
+    --ls-quaternary-background-color: unset !important;
+}
+
 .whiteboard .logseq-tldraw {
     --color-selectedFill: var(--bujo-whiteboard-fill);
     --color-selectedStroke: var(--bujo-whiteboard-border-accent);
@@ -1613,11 +1688,26 @@ html[data-theme="dark"] .cp__shortcut-page-x > article > ul li.th {
 .whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-button:hover {
     background-color: var(--bujo-whiteboard-background-accent);
 }
+.whiteboard .tl-tools-floating-panel .tl-button[data-selected=true],
 .whiteboard .tl-tools-floating-panel .tl-button[data-selected=true]:hover {
     background-color: var(--bujo-whiteboard-fill);
 }
 .whiteboard .tl-tools-floating-panel .tl-button[data-selected=true] > i:is(.ti, .tie) {
     color: var(--bujo-whiteboard-text-accent);
+}
+
+.whiteboard .tl-action-bar .tl-button:hover {
+    background-color: var(--bujo-whiteboard-background);
+}
+
+.whiteboard .tl-action-bar .tl-button.tl-toggle-input:hover {
+    background-color: var(--bujo-whiteboard-background-accent);
+}
+.whiteboard .tl-action-bar .tl-button.tl-toggle-input[data-state=on] {
+    background-color: var(--bujo-whiteboard-background);
+}
+.whiteboard .tl-action-bar .tl-button.tl-toggle-input[data-state=on]:hover {
+    background-color: var(--bujo-whiteboard-background-accent);
 }
 
 .whiteboard .tl-context-bar .tl-geometry-toolbar .tl-button {

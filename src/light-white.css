@@ -171,6 +171,8 @@
 
     --bujo-search-item-background: var(--ls-secondary-background-color);
     --bujo-search-item-chosen-background: var(--bujo-background5);
+    --bujo-search-item-icon-text: var(--bujo-text-accent);
+    --bujo-search-item-icon-background: var(--bujo-background1);
 
     --ls-search-icon-color: var(--bujo-highlight-clean);
     --bujo-search-item-new-page-icon-text: var(--bujo-highlight-lit);
@@ -371,8 +373,8 @@
 
 /* new way of setting vars in radix ui */
 /* logseq as an accent option */
-html[data-theme=light],
-html[data-theme=light][data-color=logseq] {
+html[data-theme=light] {
+    /*
     --lx-accent-01: var(--ls-primary-background-color);
     --lx-accent-02: var(--ls-secondary-background-color);
     --lx-accent-03: var(--ls-tertiary-background-color);
@@ -424,7 +426,7 @@ html[data-theme=light][data-color=logseq] {
     --rx-gray-10: hsl(var(--rx-gray-10-hsl));
     --rx-gray-11: hsl(var(--rx-gray-11-hsl));
     --rx-gray-12: hsl(var(--rx-gray-12-hsl));
-/*
+
     --lx-gray-01: var(--rx-gray-01);
     --lx-gray-02: var(--rx-gray-02);
     --lx-gray-03: var(--rx-gray-03);
@@ -450,7 +452,7 @@ html[data-theme=light][data-color=logseq] {
     --lx-gray-10-alpha: var(--rx-gray-10);
     --lx-gray-11-alpha: var(--rx-gray-11);
     --lx-gray-12-alpha: var(--rx-gray-12);
-*/
+    */
 
     --background:  var(--bujo-background0_hsl);
     --primary:     var(--bujo-background1_hsl);
@@ -484,13 +486,11 @@ html[data-theme=light][data-color=logseq] {
 /* ---------- */
 
 html[data-theme=light] .CodeMirror {
-    color: hsla(var(--bujo-foreground4_hsl), .5);
+    color: hsla(var(--bujo-foreground4_hsl), .5) !important;
+    background-color: var(--bujo-background3) !important;
 }
 html[data-theme=light] .CodeMirror .CodeMirror-activeline-background  {
     background: var(--bujo-shadow-white);
-}
-html[data-theme=light] .CodeMirror {
-    background-color: var(--bujo-background3);
 }
 html[data-theme=light] .CodeMirror .CodeMirror-gutters {
     background-color: var(--bujo-background5);
