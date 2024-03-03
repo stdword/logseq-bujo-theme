@@ -20,6 +20,10 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 
 ❗️ Required Logseq version ≥ `0.9.11`
 
+‼️ Logseq accent color is not supported and should be disabled:
+
+<img width="516" alt="CleanShot 2024-03-03 at 04 13 37@2x" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/09a286d4-87d0-4a46-9364-631ddb0b2f64">
+
 
 ## How it looks
 ||||
