@@ -192,8 +192,8 @@ body[data-page=whiteboard] #app-container {
         border: 1px solid var(--ls-left-sidebar-border-color,var(--lx-gray-03,var(--ls-tertiary-background-color)));
         box-shadow: none;
         &:hover,
-        &:hover div > *,
-        &:hover div[role=region] > * /* band-aid for page graph */ {
+        &:hover div > *:not(button),
+        &:hover div[role=region] > *:not(button) /* band-aid for page graph */ {
             background: var(--ls-menu-hover-color);
             border-radius: 4px;
         }
