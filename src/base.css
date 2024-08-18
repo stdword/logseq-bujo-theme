@@ -2167,6 +2167,40 @@ a.action-wrap > code:not(:has(> button)) {
 }
 
 
+/* slider */
+
+input[type="range"] {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* slider progress trick  */
+    overflow: hidden;
+    border-radius: 16px;
+
+    &::-webkit-slider-runnable-track {
+        background: var(--bujo-progress-bar-rest);
+        height: 10px;
+    }
+    &::-webkit-slider-thumb {
+        /* removing default appearance */
+        -webkit-appearance: none;
+        appearance: none;
+
+        /* creating a custom design */
+        height: 10px;
+        width: 10px;
+        background-color: var(--bujo-toggle-switcher-on);
+        /* background-color: var(--bujo-progress-bar-done); */
+        border-radius: 50%;
+        /* border: 2px solid var(--bujo-progress-bar-done); */
+
+        /* slider progress trick */
+        box-shadow: -405px 0 0 400px var(--bujo-progress-bar-done);
+    }
+}
+
+
 /**
  * PROPERTIES ICONS
  *
