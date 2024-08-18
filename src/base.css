@@ -928,9 +928,11 @@ a.priority[href="#/page/C" i]::before {
 }
 
 
-/* ---------- */
-/* Flashcards */
-/* ---------- */
+/**
+* Flashcards
+*
+* (forked from logseq-awesome-content)
+**/
 
 .ls-block[data-refs-self*='"card"'] {
     --bujo-shift-size: 28px;
