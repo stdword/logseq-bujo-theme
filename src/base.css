@@ -210,11 +210,11 @@ body[data-page=whiteboard] #app-container {
     color: var(--bujo-left-sidebar-page-text);
 }
 
-#left-sidebar button.ui__button {
+#left-sidebar :not(.keyboard-shortcut) > button.ui__button {
     color: var(--bujo-button-text);
     background-color: transparent;
 }
-#left-sidebar button.ui__button:hover {
+#left-sidebar :not(.keyboard-shortcut) > button.ui__button:hover {
     color: var(--bujo-button-text);
     background-color: var(--bujo-button-background);
 }
