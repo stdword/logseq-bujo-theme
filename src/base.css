@@ -2135,34 +2135,34 @@ a.action-wrap > code:not(:has(> button)) {
 
 /* toggle */
 
-.ui__toggle [aria-checked],
+.ui__toggle span[aria-checked],
 .ui__toggle .switcher {
     transition-duration: 0s;
 }
 
-.ui__toggle [aria-checked="false"] {
+.ui__toggle span[aria-checked="false"] {
     background-color: var(--bujo-toggle-off);
 }
-.ui__toggle [aria-checked="false"]:hover {
+.ui__toggle span[aria-checked="false"]:hover {
     background-color: var(--bujo-toggle-off-hover);
 }
-.ui__toggle [aria-checked="false"] .switcher {
+.ui__toggle span[aria-checked="false"] .switcher {
     background-color: var(--bujo-toggle-switcher-off);
 }
-.ui__toggle [aria-checked="false"]:hover .switcher {
+.ui__toggle span[aria-checked="false"]:hover .switcher {
     background-color: var(--bujo-toggle-switcher-off);
 }
 
-.ui__toggle [aria-checked="true"] {
+.ui__toggle span[aria-checked="true"] {
     background-color: var(--bujo-toggle-on);
 }
-.ui__toggle [aria-checked="true"]:hover {
+.ui__toggle span[aria-checked="true"]:hover {
     background-color: var(--bujo-toggle-on-hover);
 }
-.ui__toggle [aria-checked="true"] .switcher {
+.ui__toggle span[aria-checked="true"] .switcher {
     background-color: var(--bujo-toggle-switcher-on);
 }
-.ui__toggle [aria-checked="true"]:hover .switcher {
+.ui__toggle span[aria-checked="true"]:hover .switcher {
     background-color: var(--bujo-toggle-switcher-on);
 }
 
