@@ -928,6 +928,62 @@ a.priority[href="#/page/C" i]::before {
 }
 
 
+/* ---------- */
+/* Flashcards */
+/* ---------- */
+
+.ls-block[data-refs-self*='"card"'] {
+    --bujo-shift-size: 28px;
+    --bujo-card-width: 4px;
+
+    position: relative;
+    margin: -2px 0px 8px var(--bujo-shift-size);
+    padding: 10px 2px 10px 0px;
+
+    border: 1px solid var(--ls-block-bullet-color);
+    border-left-width: var(--bujo-card-width);
+
+    box-shadow: none;
+    border-radius: 4px;
+}
+.ls-block[data-refs-self*='"card"'] > .block-main-container {
+    margin-left: calc(-1 * var(--bujo-shift-size) - var(--bujo-card-width));
+}
+.ls-block[data-refs-self*='"card"'] > .block-main-container > .block-control-wrap > .bullet-link-wrap > .bullet-container {
+    opacity: 0;
+
+    &:hover, &.bullet-closed {
+        opacity: 1;
+        background-color: var(--ls-block-bullet-color);
+    }
+    & > .bullet {
+        background-color: var(--ls-block-bullet-border-color);
+    }
+}
+.ls-block[data-refs-self*='"card"'] > .block-children-container {
+    margin-left: calc(1px + 29px - var(--bujo-shift-size) - var(--bujo-card-width));
+
+    & > .block-children-left-border {
+        margin-left: calc(-29px + var(--bujo-shift-size));
+    }
+
+    & > .block-children {
+        border-left: 0;
+    }
+}
+.ls-block[data-refs-self*='"card"'] > .flex.flex-row:before {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    content: "\ea38";
+    font-family: tabler-icons;
+    font-size: 20px;
+
+    opacity: .5;
+}
+
+
 /* ----------- */
 /* Code Mirror */
 /* ----------- */
@@ -1272,7 +1328,7 @@ div.w-full.rounded-full.animate-pulse > div[transition] {
 /* guidelines */
 
 .block-children-left-border {
-    opacity: 1;
+    opacity: 1 !important;
 }
 .block-children-left-border:hover {
     background-color: var(--bujo-guideline-hover);
