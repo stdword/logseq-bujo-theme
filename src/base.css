@@ -251,6 +251,14 @@ div[data-radix-popper-content-wrapper] > div[role=menu] > div[role=menuitem]:hov
 }
 
 
+/* slash menu */
+
+/* sections */
+.ui__ac-group-name {
+    color: var(--ls-secondary-text-color);
+}
+
+
 /* menu */
 
 #head .button:hover {
