@@ -775,10 +775,11 @@ div.macro > div.inline {
 
 .form-checkbox {
     border-radius: 2px;
+    top: -1px;
 }
 
 .canceled, .cancelled {
-     opacity: 1; /* default: .7 */
+    opacity: 1; /* default: .7 */
 }
 
 span:is(.later, .now, .todo, .doing, .done, .wait, .canceled, .cancelled) .form-checkbox {
