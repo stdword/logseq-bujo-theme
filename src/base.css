@@ -2211,6 +2211,8 @@ input[type="range"] {
     content: "\eabc";
     font-family: 'tabler-icons';
 
+    position: relative;
+    top: 1px;
     padding-right: 4px;
     opacity: .8;
 
@@ -2226,7 +2228,9 @@ input[type="range"] {
 .page-property-key[data-ref|="template"]::before    { content: "\eb39" }
 
 .page-property-key[data-ref|="tag"]::before,
-.page-property-key[data-ref|="label"]::before       { content: "\ef86" }
+.page-property-key[data-ref|="label"]::before,
+.page-property-key[data-ref|="keyword"]::before,
+.page-property-key[data-ref|="keywords"]::before       { content: "\ef86" }
 .page-property-key[data-ref|="ref"]::before,
 .page-property-key[data-ref|="reference"]::before,
 .page-property-key[data-ref|="source"]::before      { content: "\eb54" }
@@ -2261,7 +2265,8 @@ input[type="range"] {
 .page-property-key[data-ref|="price"]::before       { content: "\eb85" }
 .page-property-key[data-ref|="duration"]::before    { content: "\f146" }
 .page-property-key[data-ref|="time"]::before        { content: "\ea70" }
-.page-property-key[data-ref|="rating"]::before      { content: "\eb2e" }
+.page-property-key[data-ref|="rating"]::before,
+.page-property-key[data-ref|="score"]::before       { content: "\eb2e" }
 .page-property-key[data-ref|="location"]::before,
 .page-property-key[data-ref|="place"]::before,
 .page-property-key[data-ref|="where"]::before       { content: "\eae8" }
@@ -2341,3 +2346,7 @@ input[type="range"] {
 .page-property-key[data-ref|="arg"]::before,
 .page-property-key[data-ref|="param"]::before       { content: "\eb8d" }
 .page-property-key[data-ref|="plugin"]::before      { content: "\ebd9" }
+
+.page-property-key[data-ref|="creators"]::before,
+.page-property-key[data-ref|="cast"]::before        { content: "\ebf2" }
+.page-property-key[data-ref|="context"]::before     { content: "\f61a" }
