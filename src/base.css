@@ -710,6 +710,22 @@ div.macro > div.inline {
 }
 
 
+/* live query builder */
+.query-builder-picker .cp__select > .input-wrap > .cp__select-input {
+    background-color: var(--ls-primary-background-color) !important;
+    font-size: unset;
+
+    &::placeholder {
+        opacity: 0.7;
+        color: var(--ls-secondary-text-color);
+    }
+
+    &:focus {
+        border-color: var(--bujo-ui-border-focus);
+    }
+}
+
+
 /* custom query: decrease title size */
 
 .custom-query > .th {
