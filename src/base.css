@@ -1252,6 +1252,9 @@ div.w-full.rounded-full.animate-pulse > div[transition] {
 .block-children-left-border:hover {
     background-color: var(--bujo-guideline-hover);
 }
+.block-children-left-border:hover + .block-children {
+    border-left-color: transparent !important;
+}
 
 
 /* youtube timestamps */
