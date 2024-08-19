@@ -4,7 +4,7 @@ tags:: ⌘/skip-tasks,
 
 - Examples of *page* **properties** `above` ==and *some* **formatted** ***text*** __*with*__ `highlight`==
   id:: 63b8e38c-a943-4ba0-b8d7-ad704453e29e
-- Links: [[logseq/themes/bujo]] #tags, [external](http://google.com), ![booklet.pdf](../assets/nvc-booklet_1668037509996_0.pdf)
+- Links: [[Theme test]] #tags, [external](http://google.com), ![booklet.pdf](../assets/nvc-booklet_1668037509996_0.pdf)
   id:: 6423a937-76b6-4234-a772-9c42b88cacca
 - # Header
   id:: 6423a937-e0c1-47b0-8ebb-e130f9b3a67a
@@ -66,6 +66,7 @@ tags:: ⌘/skip-tasks,
             id:: 64424b51-cb52-4487-9f03-4b04b0620f08
         -
           - ((644251cc-34dc-49a2-85cb-85c5c90074de))
+            id:: 66894875-8f9b-4681-b6d5-6fedc320bf05
           - ((6423a937-8754-4730-85af-2cf69558ab8c))
     - #.columns
       - Border for parent #.border
@@ -112,7 +113,14 @@ tags:: ⌘/skip-tasks,
       background-color:: purple
     - Background pink color with ==highlight==, [link](http://google.com), [[Theme test]]
       background-color:: pink
-    -
+    - ---
+    - Flashcard #card
+      id:: 66c3280f-92e1-41f9-bc71-64e64c8fd7ff
+      - text
+    - Flash cards collapsed #card
+      collapsed:: true
+      - text
+    - ---
     - NOW task now
       id:: 6372cb45-3390-4b48-a16f-7204ee7b0698
     - LATER task later
@@ -123,7 +131,7 @@ tags:: ⌘/skip-tasks,
       id:: 6372cb66-4298-4e05-b7f6-7642e654a8c4
     - CANCELLED task cancel
       id:: 6372cb7c-97fb-4f0e-95cb-9c706fc0afe8
-    -
+    - ---
     - LATER task deadline
       id:: 64424ebe-68e4-4a9d-9e24-093c326da3dd
       DEADLINE: <2022-04-22 Sat>
@@ -134,7 +142,7 @@ tags:: ⌘/skip-tasks,
       id:: 64424f18-ca60-48fc-9b77-25f409d9a405
       DEADLINE: <2022-04-22 Fri>
       SCHEDULED: <2022-04-22 Sat 11:53>
-    -
+    - ---
     - block deadline
       id:: 644258c8-1788-4d9b-ac65-be74d4ecf8dc
       DEADLINE: <2022-04-21 Fri>
@@ -198,6 +206,7 @@ tags:: ⌘/skip-tasks,
       - ((63b8e38c-a943-4ba0-b8d7-ad704453e29e))
       - ((6423a937-76b6-4234-a772-9c42b88cacca))
         - before ((636c6d43-b06f-4726-a2b8-8aa3681e4728)) after
+          id:: 66894875-32d7-4237-ba3a-6ce5f661798c
         - ((65146483-1f05-4e6b-b672-a4feb7c0dba9))
         - before ((65146483-1f05-4e6b-b672-a4feb7c0dba9)) after
       - ((6423a937-e0c1-47b0-8ebb-e130f9b3a67a))
@@ -211,8 +220,11 @@ tags:: ⌘/skip-tasks,
       -
       - Reference with label:
         - [LABEL →](((63b8e38c-a943-4ba0-b8d7-ad704453e29e)))
+          id:: 66894875-f8b5-4bed-a17a-89c65b291f58
         - **[LABEL →](((63b8e38c-a943-4ba0-b8d7-ad704453e29e)))**
+          id:: 66894875-6d77-49a6-84e7-fbfcdebc1259
         - [**LABEL →**](((63b8e38c-a943-4ba0-b8d7-ad704453e29e)))
+          id:: 66894875-c178-4f24-9a92-0971aa4d5acd
       -
       - ((6423a937-8754-4730-85af-2cf69558ab8c))
       -
@@ -224,6 +236,8 @@ tags:: ⌘/skip-tasks,
       -
       - ((63b8e38c-738e-4056-a742-79e47d9b9051))
       - ((648f1eef-f645-4387-a9fe-eae6bd4ddb4d))
+      -
+      - ((66c3280f-92e1-41f9-bc71-64e64c8fd7ff))
       -
       - ((634d5d93-5e38-4ca0-9c7a-f42c8378158b))
       -
@@ -246,16 +260,16 @@ tags:: ⌘/skip-tasks,
       - r2 ((64424b83-d11e-491f-b2d2-0536763bd8ad))
         id:: 64424ba8-f435-47fa-b7eb-b911c3a5a3e4
     - ### Icons for properties
-      collapsed:: true
       - Logseq
         tags::
         alias::
         file::
         file-path::
-        template::
+        template:: .
         template-including-parent::
       - Other #.columns
-        - unknown::
+        - ```
+          unknown::
           tag::
           label::
           ref::
@@ -288,7 +302,9 @@ tags:: ⌘/skip-tasks,
           description::
           comment::
           note::
-        - category::
+          ```
+        - ```
+          category::
           topic::
           area::
           format::
@@ -322,7 +338,9 @@ tags:: ⌘/skip-tasks,
           progress::
           metric::
           criteria::
-        - health::
+          ```
+        - ```
+          health::
           cardio::
           activity::
           fitness::
@@ -351,7 +369,9 @@ tags:: ⌘/skip-tasks,
           coffee::
           alcohol::
           cigarette::
-        - asc::
+          ```
+        - ```
+          asc::
           ascending::
           desc::
           descending::
@@ -375,8 +395,15 @@ tags:: ⌘/skip-tasks,
           keyword::
           keywords::
           mode::
+          
+          creators::
+          cast::
+          score::
+          keyword::
+          keywords::
+          context::
+          ```
     - ### Other
-      collapsed:: true
       - {{video https://www.youtube.com/watch?v=kJDxdpy4E1E}}
         - {{youtube-timestamp 100}} go 1
         - {{youtube-timestamp 00:01:45}} go 2
@@ -405,18 +432,12 @@ tags:: ⌘/skip-tasks,
           logseq.order-list-type:: number
         - item
           logseq.order-list-type:: number
-          collapsed:: true
           - sub-item
             logseq.order-list-type:: number
         - item
           logseq.order-list-type:: number
-      - Columns #.columns
-        - first
-        - second
-          - sub
     - ### Levels
       id:: 636ecf85-8100-4373-80d8-cbe9fa8aefb9
-      collapsed:: true
       - embed
         id:: 636ecfd7-75b2-4a9e-80bd-11b29bd510c9
       - {{embed ((636ecfd7-75b2-4a9e-80bd-11b29bd510c9))}}
