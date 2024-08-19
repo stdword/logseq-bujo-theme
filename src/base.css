@@ -1755,8 +1755,8 @@ html[data-color=none] .tl-container {
 }
 
 .whiteboard .logseq-tldraw {
-    --color-selectedFill: var(--bujo-whiteboard-fill);
-    --color-selectedStroke: var(--bujo-whiteboard-border-accent);
+    --color-selectedFill: var(--bujo-whiteboard-fill-translucent);
+    --color-selectedStroke: var(--bujo-whiteboard-fill);
     --color-selectedContrast: var(--bujo-whiteboard-text-accent);
     --color-binding: var(--bujo-whiteboard-binding);
 }

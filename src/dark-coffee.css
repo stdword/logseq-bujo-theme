@@ -13,11 +13,13 @@
     --bujo-highlight-lit:       hsl(149, 31%, 60%);
     --bujo-highlight-bright:    hsl(140, 38%, 69%);
 
-    --bujo-highlight-normal:  hsl(var(--bujo-highlight-normal_hsl));
+    --bujo-highlight-normal:    hsl(var(--bujo-highlight-normal_hsl));
 
     --bujo-accent-dimmed:     hsl(12, 52%, 48%);
-    --bujo-accent-normal:     hsl(12, 66%, 61%);
+    --bujo-accent-normal_hsl: /*hsl(12, 66%, 61%)*/ 12, 66%, 61%;
     --bujo-accent-clean:      hsl(12, 74%, 69%);
+
+    --bujo-accent-normal:       hsl(var(--bujo-accent-normal_hsl));
 
     --bujo-background1_hsl:    /*hsl(13, 18%, 10%)*/ 13, 18%, 10%;
     --bujo-background2_hsl:    /*hsl(10, 10%, 12%)*/ 10, 10%, 12%;
@@ -233,7 +235,9 @@
 
 
     /* whiteboards */
-    --bujo-whiteboard-fill: var(--bujo-button-accent-background);
+    --ls-wb-stroke-color-default: var(--bujo-background6);
+    --bujo-whiteboard-fill: var(--bujo-accent-normal);
+    --bujo-whiteboard-fill-translucent: hsl(var(--bujo-accent-normal_hsl), .2);
     --bujo-whiteboard-binding: var(--bujo-highlight-clean);
 
     --bujo-whiteboard-text-accent: var(--bujo-background5);
@@ -246,8 +250,6 @@
     --bujo-whiteboard-input-select-background: var(--bujo-background7);
     --bujo-whiteboard-input-select-background-accent: var(--bujo-accent-dimmed);
     --bujo-whiteboard-input-select-border-accent: var(--bujo-accent-clean);
-
-    --ls-wb-stroke-color-default: var(--bujo-background6);
 
 
     /* pdf extension */
