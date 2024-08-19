@@ -1800,6 +1800,15 @@ html[data-color=none] .tl-container {
     border: none;
 }
 
+/* link button (with counter) */
+.whiteboard .tl-context-bar > .tl-button .ti-link {
+    margin-top: 2px;
+}
+.whiteboard .tl-context-bar > .tl-button .tl-shape-links-count {
+    margin-left: -3px;
+    font-size: .9em;
+}
+
 .whiteboard :is(.tl-context-bar, .tl-tools-floating-panel) .tl-popover-trigger-button[data-border=true] {
     border: none;
     /* border: 1px solid var(--bujo-whiteboard-border); */
