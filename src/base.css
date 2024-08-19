@@ -1400,6 +1400,10 @@ audio::-webkit-media-controls-enclosure {
 /* bullet threading */
 
 /* override block thread width */
+html[data-color=none] {
+    --ls-block-bullet-active-color: var(--ls-link-text-color) !important;
+}
+
 body:has(> #logseq-bullet-threading_lsp_main) {
     & .bullet-container {
         transform: translate(0px, -1px) !important;
@@ -1407,6 +1411,10 @@ body:has(> #logseq-bullet-threading_lsp_main) {
         & .bullet {
             font-size: 15px;
         }
+    }
+    & .block-children-left-border {
+        top: -1px;
+        width: 2px;
     }
     & .block-children-left-border + .block-children {
         border-left-width: 1px !important;
