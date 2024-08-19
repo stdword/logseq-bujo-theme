@@ -1,6 +1,6 @@
 <h1>
 <img align="top" width="40px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/icon.png"/>
-Bullet Journals theme for Logseq
+Bullet Journal theme for Logseq
 <a href="https://www.buymeacoffee.com/stdword">
   <img align="right" src="https://github.com/stdword/logseq13-full-house-plugin/blob/main/assets/coffee.png?raw=true" height="30px"/>
 </a>
@@ -18,7 +18,7 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 
 ⚠️ This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
 
-❗️ Required Logseq version ≥ `0.9.11`
+❗️ Required Logseq version ≥ `0.9.11` and ≤ `Logseq DB` (which won't be supported, at least at first 😢)
 
 ‼️ Logseq accent color is not supported and should be disabled:
 
@@ -26,10 +26,18 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 
 
 ## How it looks
-||||
-|:--:|:--:|:--:|
-|*Light*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png"/><p>Sepia</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.png"/><p>White</p>|
-|*Dark*|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png"/><p>Coffee</p>|<img width="400px" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png"/><p>Black</p>|
+#### «Sepia», *light theme*
+<img width="100%" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-sepia.png"/>
+
+#### «Coffee», *dark theme*
+<img width="100%" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-coffee.png"/>
+
+#### «White», *light theme*
+<img width="100%" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/light-white.png"/>
+
+#### «Black», *dark theme*
+<img width="100%" src="https://raw.githubusercontent.com/stdword/logseq-bujo-theme/main/assets/dark-black.png"/>
+
 
 ### Property icons
 <img width="700px" src="https://github.com/stdword/logseq-bujo-theme/assets/1984175/e1c34367-5349-4559-afa4-68db922bd0be"/>
