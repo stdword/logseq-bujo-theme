@@ -188,15 +188,8 @@ body[data-page=whiteboard] #app-container {
     .cp__right-sidebar-inner { /* apply border to right sidebar as with left sidebar */
         border-left: 1px solid var(--ls-left-sidebar-border-color,var(--lx-gray-03,var(--ls-tertiary-background-color)));
     }
-    .sidebar-item-list > .sidebar-item { /* change sidebar item aesthetic */
-        border: 1px solid var(--ls-left-sidebar-border-color,var(--lx-gray-03,var(--ls-tertiary-background-color)));
+    .sidebar-item-list > .sidebar-item {
         box-shadow: none;
-        &:hover,
-        &:hover div > *:not(button),
-        &:hover div[role=region] > *:not(button) /* band-aid for page graph */ {
-            background: var(--ls-menu-hover-color);
-            border-radius: 4px;
-        }
     }
 }
 
