@@ -231,6 +231,7 @@
 
     /* whiteboards */
     --bujo-whiteboard-fill: var(--bujo-button-accent-background);
+    --bujo-whiteboard-binding: var(--bujo-highlight-bright);
 
     --bujo-whiteboard-text-accent: var(--bujo-background5);
     --bujo-whiteboard-background: var(--bujo-background5);

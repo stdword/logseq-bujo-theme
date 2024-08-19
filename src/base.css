@@ -1758,6 +1758,7 @@ html[data-color=none] .tl-container {
     --color-selectedFill: var(--bujo-whiteboard-fill);
     --color-selectedStroke: var(--bujo-whiteboard-border-accent);
     --color-selectedContrast: var(--bujo-whiteboard-text-accent);
+    --color-binding: var(--bujo-whiteboard-binding);
 }
 
 .whiteboard .tl-toolbar-separator {

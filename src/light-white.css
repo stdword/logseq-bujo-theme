@@ -256,20 +256,20 @@
 
 
     /* whiteboards */
+    --ls-wb-stroke-color-default: var(--bujo-background9);
     --bujo-whiteboard-fill: var(--bujo-highlight-bright);
+    --bujo-whiteboard-binding: var(--bujo-fill2);
 
     --bujo-whiteboard-text-accent: var(--bujo-background0);
     --bujo-whiteboard-background: var(--bujo-background8);
     --bujo-whiteboard-background-accent: var(--bujo-background5);
 
     --bujo-whiteboard-border: var(--bujo-background9);
-    --bujo-whiteboard-border-accent: var(--bujo-background11);
+    --bujo-whiteboard-border-accent: var(--bujo-background10);
 
     --bujo-whiteboard-input-select-background: var(--bujo-background5);
     --bujo-whiteboard-input-select-background-accent: var(--bujo-highlight);
     --bujo-whiteboard-input-select-border-accent: var(--bujo-highlight-bright);
-
-    --ls-wb-stroke-color-default: var(--bujo-fill2);
 
 
     /* pdf extension */
