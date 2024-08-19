@@ -90,6 +90,9 @@
     --bujo-left-sidebar-page-icon: var(--ls-primary-text-color);
     --bujo-left-sidebar-page-text: var(--ls-primary-text-color);
 
+    --bujo-right-sidebar-item-header-background1: var(--bujo-background4);
+    --bujo-right-sidebar-item-header-background2: var(--bujo-background3);
+
     --ls-slide-background-color: var(--ls-primary-background-color);
 
 
@@ -198,8 +201,6 @@
 
 
     /* scrollbars, table header and various ui borders */
-    --bujo-right-sidebar-item-header-background: var(--color-level-2);
-
     --ls-table-tr-even-background-color: var(--bujo-background4);
     --bujo-right-sidebar-table-even-background: var(--bujo-background4);
 

@@ -114,25 +114,48 @@ body[data-page=whiteboard] #app-container {
 }
 
 
-/* ------------- */
-/* SIDEBARS      */
-/* ------------- */
+/**
+/* MENUS & SIDEBARS
+**/
 
 /* right sidebar */
 
 #right-sidebar .cp__right-sidebar-topbar {
     background: none;
+
+    .button {
+        background-color: var(--bujo-left-sidebar-background);
+    }
+    .button:hover {
+        background-color: var(--ls-menu-hover-color);
+    }
 }
 
-#right-sidebar .button:hover {
-    background-color: var(--ls-menu-hover-color);
-}
+#right-sidebar {
+    .cp__right-sidebar-inner {
+        background-color: var(--bujo-left-sidebar-background);
 
-#right-sidebar .sidebar-item-list {
-    background: none;
-}
-#right-sidebar .sidebar-item-header {
-    background-color: var(--bujo-right-sidebar-item-header-background);
+        /* apply border to right sidebar as with left sidebar */
+        border-left: 1px solid var(--ls-left-sidebar-border-color, var(--lx-gray-03, var(--ls-tertiary-background-color)));
+    }
+
+    .sidebar-item-list {
+        background: none;
+    }
+
+    .sidebar-item-list > .sidebar-item {
+        &.collapsed {
+            box-shadow: none;
+        }
+
+        /* &:is(.item-type-block, .item-type-page, .item-type-contents, .item-type-page-slide-view, .item-type-page-graph, .item-type-help) { */
+        & .sidebar-item-header {
+            background: linear-gradient(0deg, var(--bujo-right-sidebar-item-header-background2), var(--bujo-right-sidebar-item-header-background1));
+        }
+        &.collapsed .sidebar-item-header {
+            background: var(--bujo-right-sidebar-item-header-background1);
+        }
+    }
 }
 
 #right-sidebar .sidebar-item {
@@ -184,14 +207,6 @@ body[data-page=whiteboard] #app-container {
     color: var(--ls-link-ref-text-hover-color);
 }
 
-#right-sidebar {
-    .cp__right-sidebar-inner { /* apply border to right sidebar as with left sidebar */
-        border-left: 1px solid var(--ls-left-sidebar-border-color,var(--lx-gray-03,var(--ls-tertiary-background-color)));
-    }
-    .sidebar-item-list > .sidebar-item {
-        box-shadow: none;
-    }
-}
 
 /* left sidebar */
 
