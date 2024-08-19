@@ -184,6 +184,14 @@ body[data-page=whiteboard] #app-container {
     color: var(--ls-link-ref-text-hover-color);
 }
 
+#right-sidebar {
+    .cp__right-sidebar-inner { /* apply border to right sidebar as with left sidebar */
+        border-left: 1px solid var(--ls-left-sidebar-border-color,var(--lx-gray-03,var(--ls-tertiary-background-color)));
+    }
+    .sidebar-item-list > .sidebar-item {
+        box-shadow: none;
+    }
+}
 
 /* left sidebar */
 
