@@ -203,7 +203,7 @@
     --bujo-right-sidebar-table-even-background: var(--ls-table-tr-even-background-color);
 
     --ls-border-color: var(--bujo-fill1);
-    --ls-secondary-border-color: var(--bujo-fill2);
+    --ls-secondary-border-color: var(--bujo-background5);
     --ls-tertiary-border-color: var(--bujo-fill3);
 
 
