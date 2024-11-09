@@ -540,6 +540,9 @@ a.asset-ref { /* title in pdf extension */
     color: var(--ls-secondary-text-color);
     opacity: 0.8;
     transition: .3s;
+
+    position: relative;
+    top: 1px;
 }
 .asset-ref.is-pdf:hover::before {
     opacity: 1;
