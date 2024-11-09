@@ -510,6 +510,11 @@ a.asset-ref { /* title in pdf extension */
 
 /* properties */
 
+.open-block-ref-link {
+    position: relative;
+    z-index: 1;  /* to avoid clashing with flashcards icon */
+}
+
 #right-sidebar .page-properties,
 #right-sidebar .block-properties {
     background-color: var(--bujo-right-sidebar-properties-background);
