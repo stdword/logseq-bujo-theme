@@ -882,12 +882,10 @@ a.priority[href="#/page/C" i]::before {
 
 
 /* bullets */
-.bullet-link-wrap > .bullet-container > .bullet {
-    opacity: 1;
-}
 
-.bullet-link-wrap > .bullet-container:not(.as-order-list) > .bullet.selected {
-    color: var(--bujo-block-bullet-selected) !important;
+/* ordered */
+.bullet-link-wrap:hover > .bullet-container.as-order-list {
+    background-color: transparent !important;
 }
 
 .ls-block.selected .bullet-link-wrap > .bullet-container.as-order-list > .bullet:not(.selected) {
@@ -906,6 +904,18 @@ a.priority[href="#/page/C" i]::before {
     color: var(--bujo-block-bullet-selected) !important;
 }
 
+
+/* non-ordered  */
+.bullet-link-wrap > .bullet-container > .bullet {
+    opacity: 1;
+}
+
+.bullet-link-wrap > .bullet-container:not(.as-order-list) > .bullet.selected {
+    color: var(--bujo-block-bullet-selected) !important;
+}
+
+
+/* different layers */
 .color-level .bullet-link-wrap:hover > .bullet-container {
     background-color: var(--bujo-block-bullet-border-level1);
 }
