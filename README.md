@@ -18,7 +18,7 @@ A theme for [logseq.com](https://logseq.com), inspired by Bullet Journals.
 
 ⚠️ This is the repository for themes **redesigning** and **adaptation** to new versions of Logseq. See `Credits` section for info about original author of all themes.
 
-❗️ Required Logseq version ≥ `0.9.11` and ≤ `Logseq DB` (which won't be supported, at least at first 😢)
+❗️ Required Logseq version ≥ `0.9.11` and < `Logseq DB` (which won't be supported, at least at first 😢)
 
 ‼️ Logseq accent color is not supported and should be disabled:
 
