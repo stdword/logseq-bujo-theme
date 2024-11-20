@@ -895,6 +895,9 @@ a.priority[href="#/page/C" i]::before {
 .bullet-link-wrap:hover > .bullet-container.as-order-list {
     background-color: transparent !important;
 }
+.bullet-link-wrap > .bullet-container.as-order-list > .bullet {
+    background-color: transparent !important;
+}
 
 .ls-block.selected .bullet-link-wrap > .bullet-container.as-order-list > .bullet:not(.selected) {
     opacity: .5;
