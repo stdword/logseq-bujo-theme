@@ -817,11 +817,18 @@ div.macro > div.inline {
     top: -1px;
 }
 
-.canceled, .cancelled {
+.canceled, .cancelled,
+.ls-block[data-refs-self*='"canceled"']  > .block-main-container > .block-content-wrapper > div > div > .block-content > .block-content-inner > div > span.with-bg-color,
+.ls-block[data-refs-self*='"cancelled"'] > .block-main-container > .block-content-wrapper > div > div > .block-content > .block-content-inner > div > span.with-bg-color {
     opacity: 1; /* default: .7 */
+    text-decoration: line-through;
 }
 
-span:is(.later, .now, .todo, .doing, .done, .wait, .canceled, .cancelled) .form-checkbox {
+span:has(> .form-checkbox.checked) {
+    text-decoration: line-through;
+}
+
+span > .form-checkbox:has(+ .marker-switch) {
     z-index: 1;
 }
 
