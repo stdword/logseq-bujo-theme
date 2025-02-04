@@ -1977,6 +1977,20 @@ html[data-color=none] .tl-container {
     opacity: 1;
 }
 
+.whiteboard .tl-quick-links-container .tl-quick-links > .tl-quick-links-row {
+    & i {
+        color: var(--ls-secondary-text-color) !important;
+        font-weight: 500 !important;
+    }
+    & .block-link-reference-row > .breadcrumb > .ls-icon-chevron-right {
+        color: var(--ls-primary-text-color) !important;
+    }
+    & .block-link-reference-row > .breadcrumb > a > .inline-wrap {
+        color: var(--ls-primary-text-color) !important;
+    }
+}
+
+
 /* new page/whiteboard icon */
 .whiteboard .tl-quick-search-options .tl-quick-search-option .tl-type-tag[data-active=true] {
     background: none;
