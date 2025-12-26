@@ -1797,6 +1797,7 @@ select:focus, .form-select:focus {
 
 input[type="color"] {
     -webkit-appearance: none;
+    appearance: none;
     border-color: var(--ls-border-color);
     width: 28px;
     height: 28px;
@@ -1981,6 +1982,9 @@ html[data-color=none] .tl-container {
     & i {
         color: var(--ls-secondary-text-color) !important;
         font-weight: 500 !important;
+    }
+    & .block-link-reference-row > .breadcrumb > a > .page-ref {
+        color: var(--ls-primary-text-color) !important;
     }
     & .block-link-reference-row > .breadcrumb > .ls-icon-chevron-right {
         color: var(--ls-primary-text-color) !important;
