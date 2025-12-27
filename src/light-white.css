@@ -126,7 +126,7 @@
     --ls-title-text-color: var(--bujo-foreground2);
     --ls-primary-text-color: var(--bujo-foreground3);
     --ls-secondary-text-color: var(--bujo-foreground0);
-    --bujo-text-accent: var(--bujo-foregroun1);
+    --bujo-text-accent: var(--bujo-foreground1);
 
     --bujo-header-with-bg-text: var(--bujo-foreground4);
 
